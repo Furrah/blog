@@ -53,44 +53,44 @@ grill 10 mins / other recipes fry
 
 sauce
 
-chop ginger 15g
-add to oil 40ml
-add 4 cinnamin ticks 
-cardomoms 
-5 cloves
-and bay leaves 
-stir 2 mins 
+* chop ginger 15g
+* add to oil 40ml
+* add 4 cinnamin ticks 
+* cardomoms 
+* 5 cloves
+* add bay leaves 
+* stir 2 mins 
 
-and ginger
-and chillies (whole)
-add tomatoes
-stir for couple of mins
-add water and simmer for 25 mins
+* add ginger
+* add chillies (whole)
+* add tomatoes
+* stir for couple of mins
+* add water and simmer for 25 mins
 
-remove whole spices
+* remove whole spices
 
-blend remaining 
+* blend remaining 
 
-strain mixture 
-bring back to boil add water if needed
+* strain mixture 
+* bring back to boil add water if needed
 
-powder cashew nuts 50g and add some water to make paste
-add tomato paste and nuts and a bit of water to the sauce
-add 0.5tsp chilli powder and honey 1tbsp
-stir for 3 mins 
+* powder cashew nuts 50g and add some water to make paste
+* add tomato paste and nuts and a bit of water to the sauce
+* add 0.5tsp chilli powder and honey 1tbsp
+* stir for 3 mins 
 
-add butter 50g
-andd salt generioous
-add fenugreek 1tsp
-simmer for 20 mins
+* add butter 50g
+* andd salt generioous
+* add fenugreek 1tsp
+* simmer for 20 mins
 
-separate pan
-chop last 25g of cashew nuts 
-add to pan with butter (little bit)
-add chicken/tofu
-fry for 3 mins 
-add sauce to tofu and add cream 60ml
-stir for 3 mins whilst simmering 
+* separate pan
+* chop last 25g of cashew nuts 
+* add to pan with butter (little bit)
+* add chicken/tofu
+* fry for 3 mins 
+* add sauce to tofu and add cream 60ml
+* stir for 3 mins whilst simmering 
 
 
 
