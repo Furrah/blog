@@ -11,7 +11,8 @@ Its for chicken so lets adapt for tofu...
 
 ## Ingredients 
 
-for the chicken/tofu
+For the chicken/tofu
+
 * 500g chicken/tofu
 * 50g garlic and ginger paste
 * 0.5 tsp salt
@@ -20,7 +21,7 @@ for the chicken/tofu
 * 0.5 tbsp vegetable oil
 * 0.5 tsp garam masala powder
 
-sauce 
+Sauce 
 
 * 40ml vegetable oil
 * 5 cardamon pods
