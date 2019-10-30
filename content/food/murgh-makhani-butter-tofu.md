@@ -28,7 +28,7 @@ Sauce
 * 5 cloves
 * 4 bay leaves
 * 6 green chillies
-* 15g root ginger
+* 15g root ginger finely chopped
 * 750g of fresh tomatoes
 * 0.5 tsp kashmiri chilli powder
 * 75g cashew nuts
@@ -53,38 +53,20 @@ grill 10 mins / other recipes fry
 
 sauce
 
-* chop ginger 15g
-* add to oil 40ml
-* add 4 cinnamin ticks 
-* cardomoms 
-* 5 cloves
-* add bay leaves 
-* stir 2 mins 
 
-* add ginger
-* add chillies (whole)
-* add tomatoes
-* stir for couple of mins
-* add water and simmer for 25 mins
-
-* remove whole spices
-
-* blend remaining 
-
-* strain mixture 
-* bring back to boil add water if needed
-
-* powder cashew nuts 50g and add some water to make paste
-* add tomato paste and nuts and a bit of water to the sauce
+* Heat 40 ml of vegetable oil and add 4 cinnamon sticks, 5 cardamoms, 5 cloves, 4 bay leaves, and stir for two minutes.
+* Add the ginger, chillies(whole), and tomatoes. Stir for 2 mins on medium heat
+* Add 100ml of water and simmer for 25 mins
+* Once Simmered, remove the whole spices and blend the remaining in a food processor. Once blended, strain through a colander and bring back to boil. Add water if needed (ladle full).
+* powder cashew nuts 50g in a food processor and add some water to make thickish paste
+* add 1tbsp tomato paste and nuts and a bit of water to the sauce
 * add 0.5tsp chilli powder and honey 1tbsp
 * stir for 3 mins 
-
-* add butter 50g
-* andd salt generioous
-* add fenugreek 1tsp
+* add butter 50g, salt (couple of pinches), and 1tsp of fenugreek powder. Simmer for 20 mins
 * simmer for 20 mins
 
-* separate pan
+In a separate pan
+
 * chop last 25g of cashew nuts 
 * add to pan with butter (little bit)
 * add chicken/tofu
