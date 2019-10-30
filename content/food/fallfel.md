@@ -8,15 +8,19 @@ draft: false
 
 ## Ingredients
 
-* Chickpeas: I use canned chickpeas to save a step, rinsed and drained.
-* Fresh herbs: I love brightening up my falafel with lots and lots of fresh cilantro and parsley!  The fresh taste is unbeatable, and all of those herbs also the falafel a lovely green hue.
-* Garlic: Feel free to add a little extra garlic to the recipe below if you’re a mega garlic lover.
-* Onion: White, red or yellow will work.
-* Flour: I typically use white whole wheat flour, but feel free to use your preferred kind of flour.  (This gluten-free flour blend also works great.)
-* Oil: Any mild high-heat oil will work here, such as avocado, grapeseed or vegetable oil.
-* Baking powder: To make the falafel a bit more light and airy.
-* Seasonings: Fine sea salt, black pepper and ground cumin.
-* Lemon juice: The final ingredient to round out all of those yummy fresh flavors. 
+* 1 (15-ounce) can chickpeas, rinsed and drained
+* 1 cup fresh parsley leaves, tightly-packed
+* 1 cup fresh cilantro leaves, tightly-packed
+* 1/2 cup diced red or yellow onion
+* 1/3 cup flour (such as all-purpose, white whole wheat, chickpea, or a 1:1 gluten-free flour)
+* 1 tablespoon fresh lemon juice
+* 1 1/2 teaspoons baking powder
+* 1 1/2 teaspoons ground cumin
+* 1 teaspoon fine sea salt
+* 1/2 teaspoon black pepper
+* 6 small garlic cloves, peeled and roughly chopped
+* 4–6 tablespoons high-heat oil (such as avocado oil, grapeseed oil or vegetable oil)
+* for serving: pita bread, chopped lettuce, sliced red onions, sliced tomatoes, tzatziki sauce, tahini sauce and/or hummus
 
 ## Method
 
