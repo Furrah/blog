@@ -28,9 +28,10 @@ In the image below, $V_2$ is a DAC.
 
 The op amp will try its best to ensure that the inverting terminal voltage is equal to the non inverting terminal. It does this by increasing or decreasing its current output into the feedback loop resulting in a potential across the feedback resistors.
 
+In an ideal world no current flows into the inverting terminal of the op amp so we can ignore this path and assume the central node is equal to $V_1$. This leaves us with current flow through $R_1$, $R_2$ and $R_3$
+
 This circuit can be solved using Kirchoff's current law. It states that all current entering a node must exit. I.e the sum of currents must be equal to zero. 
 
-In an ideal world no current flows into the inverting terminal of the op amp so we can ignore this path and assume the central node is equal to $V_1$. This leaves us with current flow through $R_1$, $R_2$ and $R_3$
 
 Derivation 
 
@@ -59,7 +60,7 @@ V_1(1 + \frac{R_2}{R_1} + \frac{R_2}{R_3}) - \frac{V_2 R_2}{R_3}  = V_o
 Lets use some real numbers and components. DACs range in their resolution and supply voltages so lets go with a 12-bit 5V DAC.
 R1 = R2 = 2k5, R3 = 200k, and V1 = 1V.
 
-the range form 0-5V output from the DAC would give a voltage output between 1.95V to 2.0125V in steps of 15.2$\mu$V (2.0125 - 1.95)/2<sup>12</sup>.
+The full range (0-5V) from the DAC would give a voltage output between 1.95V to 2.0125V in steps of 15.2$\mu$V (2.0125 - 1.95)/2<sup>12</sup>.
 
 
 
