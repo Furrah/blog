@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  left: 10px;
+  background: #F1F1F1;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+
+/*.sidenav a:focus {
+  color: #eee;
+}*/
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<!-- <div class="sidenav">
+{{ range where .Site.Pages "Type" "imagePage" }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{ end }}
+ -->
+<div class="sidenav">
+{{ range where .Site.Pages "Section" .Section }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{ end }}
+
+<!-- <div class="sidenav">
+{{ range where .Site.Pages "Type" .Type }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{ end }} -->
+
+
+</div>

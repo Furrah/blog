@@ -11,7 +11,7 @@ Its for chicken so lets adapt for tofu...
 
 ## Ingredients 
 
-For the chicken/tofu
+###### For the chicken/tofu
 
 * 500g chicken/tofu
 * 50g garlic and ginger paste
@@ -21,7 +21,7 @@ For the chicken/tofu
 * 0.5 tbsp vegetable oil
 * 0.5 tsp garam masala powder
 
-Sauce 
+###### Sauce 
 
 * 40ml vegetable oil
 * 5 cardamon pods
@@ -39,7 +39,8 @@ Sauce
 * 60ml single cream 
 
 ## Method
-chicken/tofu
+
+###### Chicken/tofu
 
 wash chicken/tofu
 season chicken/tofu - add ginger and garlic paste
@@ -51,7 +52,7 @@ chill for 4 hours
 grill 10 mins / other recipes fry 
 
 
-sauce
+###### Sauce
 
 
 * Heat 40 ml of vegetable oil and add 4 cinnamon sticks, 5 cardamoms, 5 cloves, 4 bay leaves, and stir for two minutes.
@@ -62,10 +63,10 @@ sauce
 * add 1tbsp tomato paste and nuts and a bit of water to the sauce
 * add 0.5tsp chilli powder and honey 1tbsp
 * stir for 3 mins 
-* add butter 50g, salt (couple of pinches), and 1tsp of fenugreek powder. Simmer for 20 mins
+* add butter 50g, salt (couple of pinches), and 1tsp of fenugreek powder.
 * simmer for 20 mins
 
-In a separate pan
+###### In a separate pan
 
 * chop last 25g of cashew nuts 
 * add to pan with butter (little bit)
@@ -74,9 +75,13 @@ In a separate pan
 * add sauce to tofu and add cream 60ml
 * stir for 3 mins whilst simmering 
 
+## Pictures
+This is what it should vaguely look like...
 
-
-
+![Curry](/food/images/IMG_0847-2.jpg)<br><br>
+![Curry](/food/images/20191102_202440-2.jpg)<br><br>
+![Curry](/food/images/20191102_202450-2.jpg)<br><br>
+![Curry](/food/images/20191102_210224-2.jpg)<br><br>
 
 
 

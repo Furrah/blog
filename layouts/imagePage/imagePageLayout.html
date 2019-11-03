@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "headIPL.html" . }}
+
+  <body>
+        {{ partial "nav.html" . }} 
+
+    <div class="container">
+      <main id="main">
+
+
+      <h1>{{ .Title }}</h1>
+      {{ partial "date-and-tags.html" . }}
+      <br><br>
+
+      <div class="col-lg-3"> 
+        <!-- {{partial "sidebar.html" .}} -->
+      </div>
+
+      {{ .Content }}
+
+
+
+      </main>
+
+    </div>
+    {{ partial "script.html" . }} 
+
+  </body>
+</html>

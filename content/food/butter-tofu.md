@@ -46,3 +46,7 @@ Recipe taken from : https://www.feastingathome.com/indian-butter-chicken-or-caul
 ## Comments
 
 I did not realise how much fenugreek leaves effect the taste of a dish. I imagine this dish is very nice but on the only attempt of making, I added some brocolli last minute as it needed to be eaten... I feel it somewhat tarnished the dish...
+
+## Pictures
+
+![Curry](/food/images/IMG_0827-2.jpg)<br><br>

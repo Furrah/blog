@@ -34,4 +34,5 @@ Recipe taken from : https://www.theendlessmeal.com/creamy-coconut-lentil-curry/
 
 Made this several times. very much liking it!
 
-![Curry](/food/images/rogan-and-dhal-2.jpg)
+![Curry](/food/images/rogan-and-dhal-2.jpg)<br><br>
+![Curry](/food/images/IMG_0736 copy.jpg)

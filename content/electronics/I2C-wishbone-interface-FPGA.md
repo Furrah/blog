@@ -2,6 +2,7 @@
 title: "FPGA I2C Wishbone Interface and Testing "
 date: 2019-10-27T20:04:40+01:00
 tags: ["FPGA", "I2C", "wishbone", "interface", "verilog", "VHDL"]
+type: "E"
 draft: false
 ---
 

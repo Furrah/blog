@@ -6,10 +6,21 @@
     <description>Recent content on An Attempt to Organise my Mind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Oct 2019 19:45:27 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2019 22:24:10 +0100</lastBuildDate>
     
 	<atom:link href="https://furrah.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Precision Op Amp Gain Adjustment with DACs</title>
+      <link>https://furrah.github.io/op-amp-gain-adjustment-dac/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://furrah.github.io/op-amp-gain-adjustment-dac/</guid>
+      <description>Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;
+\begin{align} Gain = \frac{R_2}{R_1} + 1 \end{align}
+It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2.</description>
+    </item>
     
     <item>
       <title>Chinese Egg Plant With Garlic Sauce</title>
@@ -44,7 +55,7 @@ Ingredients For the chicken
 Its for chicken so lets adapt for tofu&amp;hellip;
 Ingredients For the chicken/tofu
  500g chicken/tofu 50g garlic and ginger paste 0.5 tsp salt 65ml natural yogurt 0.5 tsp kashmiri chilli powder 0.5 tbsp vegetable oil 0.5 tsp garam masala powder  Sauce
- 40ml vegetable oil 5 cardamon pods 5 cloves 4 bay leaves 6 green chillies 15g root ginger 750g of fresh tomatoes 0.5 tsp kashmiri chilli powder 75g cashew nuts 1 tbsp of honey 0.</description>
+ 40ml vegetable oil 5 cardamon pods 5 cloves 4 bay leaves 6 green chillies 15g root ginger finely chopped 750g of fresh tomatoes 0.</description>
     </item>
     
     <item>
@@ -53,37 +64,37 @@ Ingredients For the chicken/tofu
       <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
       
       <guid>https://furrah.github.io/fallfel/</guid>
-      <description>Ingredients  Chickpeas: I use canned chickpeas to save a step, rinsed and drained. Fresh herbs: I love brightening up my falafel with lots and lots of fresh cilantro and parsley! The fresh taste is unbeatable, and all of those herbs also the falafel a lovely green hue. Garlic: Feel free to add a little extra garlic to the recipe below if you’re a mega garlic lover. Onion: White, red or yellow will work.</description>
+      <description>Ingredients  1 (15-ounce) can chickpeas, rinsed and drained 1 cup fresh parsley leaves, tightly-packed 1 cup fresh cilantro leaves, tightly-packed 1&amp;frasl;2 cup diced red or yellow onion 1&amp;frasl;3 cup flour (such as all-purpose, white whole wheat, chickpea, or a 1:1 gluten-free flour) 1 tablespoon fresh lemon juice 1 1&amp;frasl;2 teaspoons baking powder 1 1&amp;frasl;2 teaspoons ground cumin 1 teaspoon fine sea salt 1&amp;frasl;2 teaspoon black pepper 6 small garlic cloves, peeled and roughly chopped 4–6 tablespoons high-heat oil (such as avocado oil, grapeseed oil or vegetable oil) for serving: pita bread, chopped lettuce, sliced red onions, sliced tomatoes, tzatziki sauce, tahini sauce and/or hummus  Method  Roughly purée your ingredients.</description>
     </item>
     
     <item>
       <title>Lancaster - Bowland Forest</title>
-      <link>https://furrah.github.io/photography/lancaster-bowland-forest/</link>
+      <link>https://furrah.github.io/lancaster-bowland-forest/</link>
       <pubDate>Sun, 27 Oct 2019 22:04:40 +0100</pubDate>
       
-      <guid>https://furrah.github.io/photography/lancaster-bowland-forest/</guid>
+      <guid>https://furrah.github.io/lancaster-bowland-forest/</guid>
       <description>This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film.</description>
     </item>
     
     <item>
       <title>FPGA I2C Wishbone Interface and Testing </title>
-      <link>https://furrah.github.io/electronics/i2c-wishbone-interface-fpga/</link>
+      <link>https://furrah.github.io/i2c-wishbone-interface-fpga/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
       
-      <guid>https://furrah.github.io/electronics/i2c-wishbone-interface-fpga/</guid>
+      <guid>https://furrah.github.io/i2c-wishbone-interface-fpga/</guid>
       <description>Requirements  Lua 5.14+ (recommended 5.15) (https://github.com/rjpcomputing/luaforwindows/releases/tag/v5.1.5-52) wbgen2 https://www.ohwr.org/project/wishbone-gen MCP2221A USB2.0 to I2C/UART Protocol Converter with GPIO  Any USB to I2C device will work.   Creating an I2C wishbone interface for FPGA The wishbone interface acts as a bridge between the FPGA and external signals containing a master and a slave. In this example the FPGA will be acting as an I2C slave with two registers;
  1 read/write 1 read only.</description>
     </item>
     
     <item>
       <title>Comparison of Integrated Noise Spectrum of JFET and BJT input Operational Amplifiers</title>
-      <link>https://furrah.github.io/electronics/integrated-noise-spectrum/</link>
+      <link>https://furrah.github.io/integrated-noise-spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
       
-      <guid>https://furrah.github.io/electronics/integrated-noise-spectrum/</guid>
+      <guid>https://furrah.github.io/integrated-noise-spectrum/</guid>
       <description>Reference material: https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf
 When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.
-|:&amp;ndash;:| |Figure1 - CMOS, BJT, and JFET flicker noise|</description>
+Figure1 - CMOS, BJT, and JFET flicker noise</description>
     </item>
     
     <item>

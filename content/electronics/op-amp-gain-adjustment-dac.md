@@ -2,6 +2,7 @@
 title: "Precision Op Amp Gain Adjustment with DACs"
 date: 2019-10-30T22:24:10+01:00
 tags: ['op amp', 'DAC', 'gain', 'adjustment', 'operational', 'amplifier', 'basics']
+type: "E"
 draft: false
 ---
 

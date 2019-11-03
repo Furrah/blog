@@ -6,30 +6,41 @@
     <description>Recent content in Electronics on An Attempt to Organise my Mind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Oct 2019 20:04:40 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2019 22:24:10 +0100</lastBuildDate>
     
 	<atom:link href="https://furrah.github.io/electronics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Precision Op Amp Gain Adjustment with DACs</title>
+      <link>https://furrah.github.io/op-amp-gain-adjustment-dac/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://furrah.github.io/op-amp-gain-adjustment-dac/</guid>
+      <description>Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;
+\begin{align} Gain = \frac{R_2}{R_1} + 1 \end{align}
+It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2.</description>
+    </item>
+    
+    <item>
       <title>FPGA I2C Wishbone Interface and Testing </title>
-      <link>https://furrah.github.io/electronics/i2c-wishbone-interface-fpga/</link>
+      <link>https://furrah.github.io/i2c-wishbone-interface-fpga/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
       
-      <guid>https://furrah.github.io/electronics/i2c-wishbone-interface-fpga/</guid>
+      <guid>https://furrah.github.io/i2c-wishbone-interface-fpga/</guid>
       <description>Requirements  Lua 5.14+ (recommended 5.15) (https://github.com/rjpcomputing/luaforwindows/releases/tag/v5.1.5-52) wbgen2 https://www.ohwr.org/project/wishbone-gen MCP2221A USB2.0 to I2C/UART Protocol Converter with GPIO  Any USB to I2C device will work.   Creating an I2C wishbone interface for FPGA The wishbone interface acts as a bridge between the FPGA and external signals containing a master and a slave. In this example the FPGA will be acting as an I2C slave with two registers;
  1 read/write 1 read only.</description>
     </item>
     
     <item>
       <title>Comparison of Integrated Noise Spectrum of JFET and BJT input Operational Amplifiers</title>
-      <link>https://furrah.github.io/electronics/integrated-noise-spectrum/</link>
+      <link>https://furrah.github.io/integrated-noise-spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
       
-      <guid>https://furrah.github.io/electronics/integrated-noise-spectrum/</guid>
+      <guid>https://furrah.github.io/integrated-noise-spectrum/</guid>
       <description>Reference material: https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf
 When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.
-|:&amp;ndash;:| |Figure1 - CMOS, BJT, and JFET flicker noise|</description>
+Figure1 - CMOS, BJT, and JFET flicker noise</description>
     </item>
     
   </channel>

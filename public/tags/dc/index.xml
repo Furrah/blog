@@ -13,13 +13,13 @@
     
     <item>
       <title>Comparison of Integrated Noise Spectrum of JFET and BJT input Operational Amplifiers</title>
-      <link>https://furrah.github.io/electronics/integrated-noise-spectrum/</link>
+      <link>https://furrah.github.io/integrated-noise-spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
       
-      <guid>https://furrah.github.io/electronics/integrated-noise-spectrum/</guid>
+      <guid>https://furrah.github.io/integrated-noise-spectrum/</guid>
       <description>Reference material: https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf
 When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.
-|:&amp;ndash;:| |Figure1 - CMOS, BJT, and JFET flicker noise|</description>
+Figure1 - CMOS, BJT, and JFET flicker noise</description>
     </item>
     
   </channel>

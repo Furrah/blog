@@ -13,10 +13,10 @@
     
     <item>
       <title>FPGA I2C Wishbone Interface and Testing </title>
-      <link>https://furrah.github.io/electronics/i2c-wishbone-interface-fpga/</link>
+      <link>https://furrah.github.io/i2c-wishbone-interface-fpga/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
       
-      <guid>https://furrah.github.io/electronics/i2c-wishbone-interface-fpga/</guid>
+      <guid>https://furrah.github.io/i2c-wishbone-interface-fpga/</guid>
       <description>Requirements  Lua 5.14+ (recommended 5.15) (https://github.com/rjpcomputing/luaforwindows/releases/tag/v5.1.5-52) wbgen2 https://www.ohwr.org/project/wishbone-gen MCP2221A USB2.0 to I2C/UART Protocol Converter with GPIO  Any USB to I2C device will work.   Creating an I2C wishbone interface for FPGA The wishbone interface acts as a bridge between the FPGA and external signals containing a master and a slave. In this example the FPGA will be acting as an I2C slave with two registers;
  1 read/write 1 read only.</description>
     </item>

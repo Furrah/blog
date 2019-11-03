@@ -1,14 +1,16 @@
 baseURL = "https://furrah.github.io/"
 languageCode = "en-us"
 title = "An Attempt to Organise my Mind"
+
 pygmentsCodefences = true
 pygmentsUseClasses = false
 pygmentsStyle = 'friendly' #required for lexer to work
 
 [permalinks]
-  blog = "/:filename/"
+  electronics = "/:filename/"
   food = "/:filename/"
-
+  misc = "/:filename/"
+  photography = "/:filename/"
 
 
 [menu]
@@ -17,26 +19,31 @@ pygmentsStyle = 'friendly' #required for lexer to work
     pre = "home"
     url = "/"
     weight = 1
+
   [[menu.main]]
     name = "Electronics"
     pre = "cpu"
     url = "/electronics/"
     weight = 2
+
   [[menu.main]]
     name = "Food"
     pre = "heart"
     url = "/food/"
     weight = 3
+
   [[menu.main]]
     name = "Photography"
     pre = "aperture"
     url = "/photography/"
     weight = 4    
+
   [[menu.main]]
     name = "Misc"
     pre = "coffee"
     url = "/misc/"
-    weight = 5      
+    weight = 5    
+
   [[menu.main]]
     name = "Tags"
     pre = "tag"
