@@ -5,6 +5,8 @@ tags: ['chinese', 'aubergine', 'garlic', 'sauce']
 draft: false
 ---
 
+Recipe taken from: http://allrecipes.com.au/recipe/10769/chinese-eggplant-with-garlic-soy-sauce.aspx
+
 ## Ingredients
 
 Serves: 6 

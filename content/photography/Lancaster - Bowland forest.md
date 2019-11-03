@@ -1,5 +1,5 @@
 ---
-title: "Lancaster - Bowland Forest"
+title: "Lancaster"
 date: 2019-10-27T22:04:40+01:00
 tags: []
 draft: false

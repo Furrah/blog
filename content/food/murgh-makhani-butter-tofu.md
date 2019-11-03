@@ -77,6 +77,7 @@ grill 10 mins / other recipes fry
 
 ## Pictures
 This is what it should vaguely look like...
+I also added 2 white onions to the sauce base.
 
 ![Curry](/food/images/IMG_0847-2.jpg)<br><br>
 ![Curry](/food/images/20191102_202440-2.jpg)<br><br>
