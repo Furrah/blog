@@ -1,5 +1,5 @@
 ---
-title: "Fallafel"
+title: "Falafel"
 date: 2019-10-27T23:00:57+01:00
 tags: ["fallafel", "wraps", "food"]
 draft: false
