@@ -6,18 +6,29 @@
     <description>Recent content in Photography on An Attempt to Organise my Mind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Oct 2019 22:04:40 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 15:21:48 +0100</lastBuildDate>
     
 	<atom:link href="https://furrah.github.io/photography/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Lancaster - Bowland Forest</title>
+      <title>Morocco - The Atlas Mountains</title>
+      <link>https://furrah.github.io/morroco/</link>
+      <pubDate>Sun, 03 Nov 2019 15:21:48 +0100</pubDate>
+      
+      <guid>https://furrah.github.io/morroco/</guid>
+      <description>In August 2018 my friends and I visited the Atlas mountains of Morocco and walked up Mount Toubkal. Despite my camera having a horrendous light leak I managed to get a few photos of that walk.
+We had envisioned a hike though the Atlas mountains off the typical tourist route, following the Berber trails. It became apparent after the first day of ascent that we weren&amp;rsquo;t equipped for this route. I remember feeling the exposure of the desert mountains, not being able to hide from the sun and slipping down constantly.</description>
+    </item>
+    
+    <item>
+      <title>Lancaster</title>
       <link>https://furrah.github.io/lancaster-bowland-forest/</link>
       <pubDate>Sun, 27 Oct 2019 22:04:40 +0100</pubDate>
       
       <guid>https://furrah.github.io/lancaster-bowland-forest/</guid>
-      <description>This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film.</description>
+      <description>This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film. 
+Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not.</description>
     </item>
     
   </channel>
