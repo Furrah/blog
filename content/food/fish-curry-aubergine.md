@@ -35,3 +35,21 @@ For the tamarind water:
 TIP
 
 * You can freeze this dish as it is, as long as you are careful when you reheat it, because the fish will break up if you fiddle with it too much. Even better would be to just freeze some of the sauce – that way you can just defrost it and add some fresh fish. The sauce is also versatile enough to work with chicken or grilled vegetables.
+
+
+<p align="center"> 
+<img src="/food/images/IMG_1043-2.jpg" alt="drawing" width="600"/>
+</p>
+<br>
+
+
+<p align="center"> 
+<img src="/food/images/IMG_1044-2.jpg" alt="drawing" width="600"/>
+</p>
+<br>
+
+
+<p align="center"> 
+<img src="/food/images/IMG_1048-2.jpg" alt="drawing" width="600"/>
+</p>
+<br>

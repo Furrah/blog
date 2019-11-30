@@ -1,6 +1,7 @@
 ---
 title: "Andhra Spiced Egg Curry"
 date: 2019-11-18T19:21:08+01:00
+tags: ['curry', 'eggs']
 draft: false
 ---
 
