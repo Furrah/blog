@@ -57,8 +57,7 @@ requires 45 Ohm single ended traces with a differential impedance of 90 Ohm. I l
  target="_blank">here.</a>
 The table below shows some initial design parameters to start the design.
 
-
-<table class="w3-table-all w3-card-4">
+<table class="w3-table-all w3-card-4" table style="width:400px" align="center">
   <tr>
     <th>Parameter</th>
     <th>Value</th>
