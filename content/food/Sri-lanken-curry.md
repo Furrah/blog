@@ -6,6 +6,9 @@ draft: false
 
 Recipe taken from: http://thebellephant.com/recipes/sri-lankan-coconut-lentil-curry/
 
+
+
+
 ## Ingredients 
 
 * 450g red split lentils
