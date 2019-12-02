@@ -16,7 +16,7 @@ draft: false
 ## USB Connector 
 For this particular design I have chosen a USB-B female connector from Mouser.
 <div>
-  <table class="w3-table-all w3-card-4">
+  <table class="w3-table-all w3-card-4" table style="width:70%" align="center">
     <tr>
       <th>Mouser #</th>
       <th>Manufacturer #</th>
@@ -57,7 +57,7 @@ requires 45 Ohm single ended traces with a differential impedance of 90 Ohm. I l
  target="_blank">here.</a>
 The table below shows some initial design parameters to start the design.
 
-<table class="w3-table-all w3-card-4" table style="width:400px" align="center">
+<table class="w3-table-all w3-card-4" table style="width:50%" align="center">
   <tr>
     <th>Parameter</th>
     <th>Value</th>
@@ -73,6 +73,10 @@ The table below shows some initial design parameters to start the design.
   <tr>
     <td>Trace Thickness (mm)</td>
     <td>0.035</td>
+  </tr>
+    <tr>
+    <td>Dielectric Thickness (mm)</td>
+    <td>0.3</td>
   </tr>
   <tr>
     <td>Relative Dielectric Constant</td>

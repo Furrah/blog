@@ -1,5 +1,5 @@
 ---
-title: "XOR Buffer Inverter"
+title: "XOR Logic used as a Buffer or Inverter"
 date: 2019-11-22T23:02:47Z
 tags: ['XOR', 'Logic', 'Gates', 'Buffer', 'Inverter']
 draft: false
