@@ -6,12 +6,9 @@ type: "E"
 draft: false
 ---
 
-Reference material: https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf
+Reference material: <a href=https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf target="_blank">Texas Instruments - Op Amp Technical Overview</a>
 
 When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.
-
-
-
 
 
 ![Noise](/electronics/images/JFET-vs-BJT-flicker-noise.png)

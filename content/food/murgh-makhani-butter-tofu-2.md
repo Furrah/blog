@@ -5,7 +5,9 @@ tags: ['butter', 'tofu', 'Indian', 'murgh', 'makhani', 'food']
 draft: false
 ---
 
-Recipe taken from : https://www.youtube.com/watch?v=a03U45jFxOI
+Recipe taken from : 
+<a href=https://www.youtube.com/watch?v=a03U45jFxOI target="_blank">Youtube - Get Curried - Butter Chicken</a>
+
 
 ## Ingredients 
 

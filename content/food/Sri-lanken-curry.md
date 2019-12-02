@@ -4,8 +4,8 @@ date: 2019-11-08T19:48:15+01:00
 draft: false
 ---
 
-Recipe taken from: http://thebellephant.com/recipes/sri-lankan-coconut-lentil-curry/
-
+Recipe taken from:
+<a href=http://thebellephant.com/recipes/sri-lankan-coconut-lentil-curry/ target="_blank">The Bellephant - Sri Lankan Coconut Lentil Curry</a>
 
 
 

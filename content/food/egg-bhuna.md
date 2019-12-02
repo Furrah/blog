@@ -1,11 +1,13 @@
 ---
 title: "Egg Bhuna"
 date: 2019-11-04T21:42:02+01:00
-tags: []
+tags: ['egg', 'curry', 'bhuna', 'indian']
 draft: false
 ---
 
-Recipe taken from: http://fatimacooks.net/recipe/anda-bhuna/
+Recipe taken from: 
+<a href=http://fatimacooks.net/recipe/anda-bhuna/ target="_blank">Fatima Cooks - Anda Bhuna</a>
+
 
 ## Ingredients 
 

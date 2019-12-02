@@ -5,7 +5,9 @@ tags: ["rogan", "josh", "curry", "aubergine", "indian", "food"]
 draft: false
 ---
 
-Recipe taken from : https://www.you.co.uk/rogan-bosh-recipe/
+Recipe taken from : 
+<a href=https://www.you.co.uk/rogan-bosh-recipe/ target="_blank">You - Rogon bosh</a>
+
 
 ## Ingredients
 

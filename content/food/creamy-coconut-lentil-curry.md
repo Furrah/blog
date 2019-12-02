@@ -5,7 +5,9 @@ draft: false
 tags: ["lentil", "curry", "creamy", "coconut", "food"]
 ---
 
-Recipe taken from : https://www.theendlessmeal.com/creamy-coconut-lentil-curry/
+Recipe taken from : 
+<a href=https://www.theendlessmeal.com/creamy-coconut-lentil-curry/ target="_blank">The Endless Meal - Creamy Coconut Lentil Curry</a>
+
 
 ## Ingredients
 

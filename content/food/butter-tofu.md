@@ -7,7 +7,9 @@ tags: ["tofu", "curry", "Indian", "butter", "food"]
 
  
 
-Recipe taken from : https://www.feastingathome.com/indian-butter-chicken-or-cauliflower/
+Recipe taken from : 
+<a href=https://www.feastingathome.com/indian-butter-chicken-or-cauliflower/ target="_blank">Feasting at Home - Indian Butter Chicken or Cauliflower</a>
+
 
 ## Ingredients 
 * 1 mug of rice / 2 mugs of water - serves 3

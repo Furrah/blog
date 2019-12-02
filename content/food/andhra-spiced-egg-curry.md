@@ -5,7 +5,9 @@ tags: ['curry', 'eggs']
 draft: false
 ---
 
-Recipe taken from: http://maunikagowardhan.co.uk/cook-in-a-curry/andhra-spiced-egg-curry/
+Recipe taken from: 
+<a href=http://maunikagowardhan.co.uk/cook-in-a-curry/andhra-spiced-egg-curry/ target="_blank">Mauni Kagowardhan - Andhra Spiced Egg Curry</a>
+
 
 ## Ingredients 
 

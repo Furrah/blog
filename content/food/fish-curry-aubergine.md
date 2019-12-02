@@ -1,11 +1,12 @@
 ---
 title: "Fish Curry but with Aubergine!"
 date: 2019-11-19T00:05:54+01:00
+tags: ['aubergine', 'curry', 'tomato', 'indian', 'tamarind']
 draft: false
 ---
 
-Recipe taken from: https://www.telegraph.co.uk/foodanddrink/recipes/11470131/Rick-Steins-fish-curry-with-snapper-tomato-and-tamarind-recipe.html
-
+Recipe taken from: 
+<a href=https://www.telegraph.co.uk/foodanddrink/recipes/11470131/Rick-Steins-fish-curry-with-snapper-tomato-and-tamarind-recipe.html target="_blank">Telegraph - Rick Stein - Fish Curry</a>
 
 ## Ingredients 
 

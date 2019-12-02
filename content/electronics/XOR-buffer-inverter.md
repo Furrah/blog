@@ -12,6 +12,10 @@ XOR gates can be used to form inverters or buffers when a single input is tied t
 <img src="/electronics/images/XOR buffer inverter.png" alt="drawing" width="300">
 </p>
 
-The SN74LVC2G86 is a dual package XOR that can operate at voltages up to 5.5V and deliver up to 50mA of continuous current. Other notable features include a propagation delay between 1.4 and 4.2nS.
+The
+ <a href=https://www.ti.com/lit/ds/symlink/sn74lvc2g86.pdf target="_blank">SN74LVC2G86 (Datasheet)</a>
+is a dual package XOR that can operate at voltages up to 5.5V and deliver up to 50mA of continuous current. Other notable features include a propagation delay between 1.4 and 4.2nS.
 
-https://www.ti.com/lit/ds/symlink/sn74lvc2g86.pdf
+
+
+
