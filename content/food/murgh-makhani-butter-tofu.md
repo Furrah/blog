@@ -6,7 +6,7 @@ draft: false
 ---
 
 Recipe taken from:
-<a href=https://www.youtube.com/watch?v=Ba0Lsa5vdM4 target="_blank">Youtube - Videojug - Murgh Makhni  </a>
+<a href=https://www.youtube.com/watch?v=Ba0Lsa5vdM4 target="_blank">Youtube - Videojug - Murgh Makhni</a>
 
 Its for chicken so lets adapt for tofu...
 
