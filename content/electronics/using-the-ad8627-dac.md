@@ -1,5 +1,5 @@
 ---
-title: "Using the AD5627 DAC"
+title: "Using the AD8627 DAC"
 date: 2019-12-08T11:23:58+01:00
 tags: ['DAC', 'AD5627', 'level shifting']
 draft: false
@@ -9,11 +9,11 @@ draft: false
 
 The 
 <a href=https://www.analog.com/media/en/technical-documentation/data-sheets/AD8625_8626_8627.pdf target="_blank">AD5627RBRMZ (Datasheet)</a> is part of a series of 12/14/16 bit nano DACs with an I2C interface.
-The DAC we are interested in is the 12 bit AD5627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V output.
+The DAC we are interested in is the 12 bit AD8627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V output.
 
 ## Design 
 
-A typical I2C bus operates at 3.3 Volts. In order to use the full scale output of the DAC (5V) a level shifter is required as the AD5627 sees an I2C high at 0.8 Vcc - 4V.
+A typical I2C bus operates at 3.3 Volts. In order to use the full scale output of the DAC (5V) a level shifter is required as the AD8627 sees an I2C high at 0.8 Vcc - 4V.
 
 For this I am using the 
 <a href=https://www.nxp.com/docs/en/data-sheet/PCA9306.pdf target="_blank">PCA9306 Bidirectional I2C level shifter (Datasheet)</a> 
