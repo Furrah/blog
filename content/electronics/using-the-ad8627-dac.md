@@ -2,7 +2,7 @@
 title: "Using the AD5627 DAC"
 date: 2019-12-08T11:23:58+01:00
 tags: ['DAC', 'AD5627', 'level shifting']
-draft: true
+draft: false
 ---
 
 ## Introduction 
@@ -58,8 +58,6 @@ Data - 12 bits to make full scale value FFF so 50% voltage would be 7FF.
 last 4 bits should be set to 1 for operation - F 
 
 3 bytes = 0x1F,0x7F,0xFF
-
-## Resources 
 
 
 
