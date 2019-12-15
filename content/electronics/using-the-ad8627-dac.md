@@ -1,14 +1,14 @@
 ---
 title: "Using the AD8627 DAC"
 date: 2019-12-08T11:23:58+01:00
-tags: ['DAC', 'AD5627', 'level shifting']
+tags: ['DAC', 'AD8627', 'level shifting']
 draft: false
 ---
 
 ## Introduction 
 
 The 
-<a href=https://www.analog.com/media/en/technical-documentation/data-sheets/AD8625_8626_8627.pdf target="_blank">AD5627RBRMZ (Datasheet)</a> is part of a series of 12/14/16 bit nano DACs with an I2C interface.
+<a href=https://www.analog.com/media/en/technical-documentation/data-sheets/AD8625_8626_8627.pdf target="_blank">AD8627RBRMZ (Datasheet)</a> is part of a series of 12/14/16 bit nano DACs with an I2C interface.
 The DAC we are interested in is the 12 bit AD8627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V output.
 
 ## Design 
