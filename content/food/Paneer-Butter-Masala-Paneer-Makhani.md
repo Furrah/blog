@@ -66,10 +66,14 @@ Recipe taken from <a href=https://www.cookwithmanali.com/paneer-butter-masala-re
 <img src="/food/images/IMG_1398-2.jpg" alt="drawing" width="80%"/>
 </p>
 
-
-
 <p align="center"> 
 <img src="/food/images/IMG_1393-2.jpg" alt="drawing" width="80%"/>
+</p>
+
+Here its made with mushrooms and potato. The images above do not do this justice. My absolute go to curry <3 
+
+<p align="center"> 
+<img src="/food/images/IMG_1929-2.jpg" alt="drawing" width="80%"/>
 </p>
 
 

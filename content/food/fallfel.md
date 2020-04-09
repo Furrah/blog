@@ -34,3 +34,10 @@ Recipe taken from:
 * Form into patties.  Use a medium (2-tablespoon) cookie scoop or a spoon to scoop out 2 tablespoons of the mixture, and then use your hands to shape it into a ball.  Lay the ball on a parchment-covered sheet, then gently flatten it slightly with your hand so that it is about 1/2-inch thick.  Repeat with the remaining dough mixture.
 * Pan-fry the falafel.  Heat the oil over medium-heat.  Then carefully add about 4-5 falafel to the oil and cook for about 2-3 minutes per side until browned and crispy.  Transfer the falafels to a plate lined with paper-towels to soak up any extra oil.  Repeat with the remaining falafels.
 * Serve! Then serve them up while they’re nice and warm and crispy, and enjoy!
+
+## Picture
+
+<p align="center"> 
+<img src="/food/images/IMG_1949-2.jpg" alt="drawing" width="500"/>
+</p>
+<br>
