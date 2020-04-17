@@ -37,3 +37,7 @@ I enjoy this most in wraps with fresh lettuce, peppers, etc
 
 ## Pictures
 
+<p align="center"> 
+<img src="/food/images/IMG_2046-2.jpg" alt="drawing" width="600"/>
+</p>
+<br>
