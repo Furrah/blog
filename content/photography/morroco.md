@@ -11,7 +11,7 @@ In August 2018 my friends and I visited the Atlas mountains of Morocco and walke
 
 We had envisioned a hike though the Atlas mountains off the typical tourist route, following the Berber trails. It became apparent after the first day of ascent that we weren't equipped for this route. I remember feeling the exposure of the desert mountains, not being able to hide from the sun and slipping down constantly. The scree was so loose it made it very difficult to climb. So, after reaching the top we decided it was unsafe to press on any further and opted to go back to base camp. 
 
-Morale was down but we wanted to climb Toubkal so we set off for the small village of Imlil and set up camp for a day. After a days rest we set off for Toubkal which was a 2 day walk from Imlil.
+Morale was down but we wanted to climb Toubkal so we set off for the small village of Imlil and set up camp for a day. After a days rest we headed for Toubkal which was a 2 day walk from Imlil.
 
 ![Morocco](/photography/images/Morroco/1-07.jpg)<br><br>
 
@@ -35,7 +35,7 @@ A man also feeling pretty good about reaching the top.
 ![Morroco](/photography/images/Morroco/1-02.jpg)<br><br>
 
 
-Finally, we finished off by heading to Marrakesh and looking around the markets. One Item I bought from a man in the mountains was a Trilobite fossil which I'm quite fond of! The Trilobite is an animal that was from the Paleozoic era - between 541-252 Million years ago!
+Finally, we finished off by heading to Marrakesh and looking around the markets. One Item I bought from a man in the mountains was a Trilobite fossil which I'm quite fond of! The Trilobite is an animal that was from the Paleozoic era - between 252-541 Million years ago!
 
 
 ![Morocco](/photography/images/Morroco/2-06.jpg)<br><br>

@@ -115,7 +115,7 @@ Create a directory called ```build```
 
 create a text file called ```CMakeLists.txt```
 
-inside add the following 
+Inside add the following 
 
 ```html
 cmake_minimum_required(VERSION 3.17.2)
@@ -131,9 +131,9 @@ add_executable( FT4222H_Version get-version.c )
 target_link_libraries( FT4222H_Version ${PROJECT_LINK_LIBS} )
 ```
 
-This tells the compiler where to find our files and links them to the project 
-inside link directories replace the first directory with the location of your build folder.
-navigate to the build folder and run 
+This tells the compiler where to find our files and links them to the project.<br>
+Inside link directories replace the first directory with the location of your build folder.
+Navigate to the build folder and run 
 
 ```bash
 cmake ..
@@ -147,7 +147,7 @@ execute with
 ./FT4222H_Version
 ```
 
-and again the following should be returned 
+Again, the following should be returned 
 
 ```bash
 Device 0: 'FT4222 A'
