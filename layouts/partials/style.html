@@ -69,4 +69,54 @@ th {
     }
 }
 
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #000;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.card-img{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card{
+  border-radius: 10px;
+}
+
+/* Copy buttons */
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+/*div.highlight:hover .copybtn, div.highlight .copybtn:focus {*/
+    //opacity: .3;
+/*}*/
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
 </style>

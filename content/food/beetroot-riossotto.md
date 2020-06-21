@@ -3,6 +3,7 @@ title: "Beetroot Risotto"
 date: 2020-03-31T09:32:01+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_1950-2.jpg"
 ---
 
 

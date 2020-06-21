@@ -3,6 +3,7 @@ title: "One Pot Mexican Quinoa"
 date: 2020-03-31T09:15:37+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_2046-2.jpg"
 ---
 Recipe taken from:
 <a href=https://damndelicious.net/2014/04/09/one-pan-mexican-quinoa/ target="_blank">Damn Delicious</a>

@@ -3,6 +3,7 @@ title: "Dal"
 date: 2019-12-14T20:54:50+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_1207.jpg"
 ---
 
 Recipe from my friend Abass.

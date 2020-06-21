@@ -3,6 +3,7 @@ title: "Mushroom Butter Masala"
 date: 2020-04-18T19:21:36+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_2072-2.jpg"
 ---
 
 Recipe based on recipe from:

@@ -3,6 +3,7 @@ title: "Dal Makhani"
 date: 2019-12-07T12:44:23+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_1087-2.jpg"
 ---
 
 Recipe taken from <a href=https://www.cookwithmanali.com/dal-makhani/ target="_blank">Cook With Manali - Dal Makhani</a>

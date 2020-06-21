@@ -3,6 +3,7 @@ title: "Rogan Josh"
 date: 2019-10-27T16:15:25+01:00
 tags: ["rogan", "josh", "curry", "aubergine", "indian", "food"]
 draft: false
+image: "/food/images/rogan-and-dhal-2.jpg"
 ---
 
 Recipe taken from : 

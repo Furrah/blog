@@ -3,6 +3,7 @@ title: "Egg Bhuna"
 date: 2019-11-04T21:42:02+01:00
 tags: ['egg', 'curry', 'bhuna', 'indian']
 draft: false
+image: "/food/images/IMG_0885-2.jpg"
 ---
 
 Recipe taken from: 

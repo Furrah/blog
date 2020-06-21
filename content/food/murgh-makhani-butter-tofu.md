@@ -3,6 +3,7 @@ title: "Murgh Makhani Butter Tofu"
 date: 2019-10-28T19:04:15+01:00
 tags: ['butter', 'tofu', 'Indian', 'murgh', 'makhani', 'food']
 draft: false
+image: "/food/images/20191102_210224-2.jpg"
 ---
 
 Recipe taken from:

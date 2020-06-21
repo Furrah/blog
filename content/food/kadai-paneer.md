@@ -3,6 +3,7 @@ title: "Kadai Paneer"
 date: 2019-12-14T18:24:36+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_1202-2.jpg"
 ---
 
 Recipe taken from <a href=https://www.cookwithmanali.com/kadai-paneer/ target="_blank">Cook with Manali - Kadai Paneer</a>

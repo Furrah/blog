@@ -3,6 +3,7 @@ title: "Palak Paneer"
 date: 2020-03-27T20:17:27Z
 tags: []
 draft: false
+image: "/food/images/IMG_1890-2.jpg"
 ---
 
 

@@ -1,0 +1,30 @@
+<script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><img src="https://clipboardjs.com/assets/images/clippy.svg" width="30" alt="Copy to clipboard"></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        //$(e.trigger).text("Copied!");
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    // Once the DOM is loaded for the page, attach clipboard buttons
+    addCopyButtonToCode();
+  });
+</script>

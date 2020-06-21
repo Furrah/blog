@@ -3,6 +3,7 @@ title: "Creamy Coconut Lentil Curry"
 date: 2019-10-27T15:08:04+01:00
 draft: false
 tags: ["lentil", "curry", "creamy", "coconut", "food"]
+image: "/food/images/IMG_0736 copy.jpg"
 ---
 
 Recipe taken from : 

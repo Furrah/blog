@@ -3,6 +3,7 @@ title: "Fish Curry but with Aubergine!"
 date: 2019-11-19T00:05:54+01:00
 tags: ['aubergine', 'curry', 'tomato', 'indian', 'tamarind']
 draft: false
+image: "/food/images/IMG_1044-2.jpg"
 ---
 
 Recipe taken from: 

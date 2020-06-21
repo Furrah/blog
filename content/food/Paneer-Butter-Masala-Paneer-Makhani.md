@@ -3,6 +3,7 @@ title: "Paneer Butter Masala (Paneer Makhani)"
 date: 2020-01-16T20:48:00+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_1929-2.jpg"
 ---
 This is one of my favourites so far! Doesn't take too long to make and tastes brilliant! 
 

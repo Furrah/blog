@@ -3,6 +3,7 @@ title: "Gobi Manchurian"
 date: 2019-12-08T10:58:59+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_1123-2.jpg"
 ---
 
 Recipe taken from 

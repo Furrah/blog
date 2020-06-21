@@ -3,6 +3,7 @@ title: "Indian Butter Tofu"
 date: 2019-10-27T13:31:50+01:00
 draft: false
 tags: ["tofu", "curry", "Indian", "butter", "food"]
+image: "/food/images/IMG_0827-2.jpg"
 ---
 
  

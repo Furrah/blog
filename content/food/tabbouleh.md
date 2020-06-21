@@ -3,6 +3,7 @@ title: "Tabbouleh"
 date: 2019-11-03T21:57:18+01:00
 tags: ['parsley', 'middle east', 'halloumi', 'broccoli', 'cous cous']
 draft: false
+image: "/food/images/IMG_8221-2.jpg"
 ---
 
 Recipe taken from 

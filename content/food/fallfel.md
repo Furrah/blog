@@ -3,6 +3,7 @@ title: "Falafel"
 date: 2019-10-27T23:00:57+01:00
 tags: ["falafel", "wraps", "food"]
 draft: false
+image: "/food/images/IMG_1949-2.jpg"
 ---
 
 Recipe taken from: 
