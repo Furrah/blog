@@ -20,7 +20,7 @@ Serves: 6
 * 1 tablespoon white sugar
 * 1 teaspoon cornflour
 * 2 tablespoons soy sauce
-* 2 tablespoons oyster sauce
+* 2 tablespoons oyster sauce (or vegetarian alternative!)
 
 ## Method 
 

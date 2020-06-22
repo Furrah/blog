@@ -3,6 +3,7 @@ title: "Flapjack"
 date: 2019-11-03T14:09:17+01:00
 tags: ["baking", "flapjack"]
 draft: false
+image: "/food/images/IMG_0868-2.jpg"
 ---
 
 ## Ingredients 
