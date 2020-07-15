@@ -13,6 +13,8 @@ This photo was taken on a walk around Bowland forest whilst I was studying at th
 
 <br>
 Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not. We are idiots.
-<br><br>
-![Giggleswick](/photography/images/Film/JOEIR 027.jpg)
+<br>
+<br>
+
+![Giggleswick](/photography/images/Film/JOEIR027.jpg)
 

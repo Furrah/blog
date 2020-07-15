@@ -6,6 +6,11 @@ pygmentsCodefences = true
 pygmentsUseClasses = false
 pygmentsStyle = 'friendly' #required for lexer to work
 
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
+
+
 [permalinks]
   electronics = "/:filename/"
   food = "/:filename/"

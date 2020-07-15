@@ -8,42 +8,38 @@ draft: false
 <!-- The Kalman filter combines measurements and a theoretical model to best estimate the state of a system. The example below is a simple RLC circuit, which is a second order system. If we imagine an ADC is measuring the  potential difference over the circuit, which will be noisy and for the Kalman filter to work this must be gaussian 
  -->
 
+
+<style>
+  code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}  
+
+</style>
+
+
 <p align="center"> 
 <img src="/misc/images/RLC_circuit.svg" alt="RLC" width = 500px>
 </p>
 
-
-<div>
-
 The RLC circuit above can be expressed by the following equation 
-
-
-$$
-\ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC}  -\frac{I_L}{LC} + \frac{I}{LC}
-$$
+<div>
+$$ \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC}  -\frac{I_L}{LC} + \frac{I}{LC} $$
 
 The equation can be expressed as two first order differential equations using the following method.
 
 $$ x_{1} = I_{L} $$
 
 $$ x_{2} = \dot{I}_{L} $$
-
 so 
-
-$$\dot{x}_{2} = \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_{L}}{LC} + \frac{I}{LC}$$
-
-
+$$ \dot{x}_{2} = \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_{L}}{LC} + \frac{I}{LC} $$
 and
-
 $$\dot{x}_{1} =\dot{I}_{L} =  x_{2}$$
-
 Replacing variables with state variables $\bf{X}$
-
 $$\dot{x}_{2} = - \frac{x_{2}}{RC} - \frac{x_{1}}{LC} + \frac{I}{LC}$$
-
 Using the formula below the derivative can be discretised.  
-
-
 $$  \dot{x} = \frac{x_{k+1}  - x_k   }{\Delta t} $$
 
 
@@ -71,12 +67,12 @@ $$
 The two equations can then be displayed in state space formalism. I have shifted the time step of the system by -1. The predicted value $x_{1_{k+1}} $ is now predicting the current state of the system as $x_{1_{k}}$ From here on, a hat above a variable indicates a predicted state and a tilde is a measured variable. -->
 
 The two equations can now be expressed in state space formalism. I have shifted the time step by -1 so $x_{1_{k+1}} $ is now $x_{1_{k}}$. This is done to maintain accordance with the kalman filter framework as shown below by the state transition model. 
-
+</div>
 $$
 \hat{X}_k = F_k X_{k-1} + B_{k} U_{k}
 $$
 
-</div>
+
 
 where
 
@@ -87,16 +83,12 @@ where
 * $\bf{B}$ - control input model
 * $\bf{U}$ - control input
 
-<div>
-
 From here on, a hat above a variable indicates a predicted state and a tilde is a measured variable.
 
-
+<div>
 \begin{align}
-
 \newcommand{\xoverbrace}[2][\vphantom{\dfrac{A}{A}}]{\overbrace{#1#2}}
 \newcommand{\pder}[2]{\frac{\partial#1}{\partial#2}}
-
 \overbrace{
 \begin{bmatrix}
 \hat{x}_{1_{k}}\\ 
@@ -110,7 +102,6 @@ From here on, a hat above a variable indicates a predicted state and a tilde is 
  -\frac{\Delta t}{LC} &  1 - \frac{\Delta t}{RC}
 \end{bmatrix} 
 }^\mathbf{F_k}
-
 \:
 \overbrace{
 \begin{bmatrix}
@@ -118,7 +109,6 @@ x_{1_{k-1}}\\
 x_{2_{k-1}}
 \end{bmatrix}
 }^\mathbf{\hat{{X}}_{k-1}}
-
 + 
 \overbrace{
 \begin{bmatrix}
@@ -130,9 +120,8 @@ x_{2_{k-1}}
 \xoverbrace{
 I_{k-1}
 }^\mathbf{U_{k}}
-
-
 \end{align}
+</div>
 
 The voltage induced across an inductor is equal to the rate of change of current passing through it multiplied by its inductance. 
 
@@ -141,43 +130,38 @@ $$
 $$
 
 
+
 <!-- The correction matrix is then equal to the prediction minus the measurement multiplied by the Kalman gain of the system.  -->
 The correction matrix takes the predicted value and adjusts it based on a measurement. How much the measurement is incorporated into the prediction is dependent on the Kalman gain. 
 
+<div>
 $$
 \begin{bmatrix}
 x_{1_{k}}\\ 
 x_{2_{k}}
-\end{bmatrix}= 
-
+\end{bmatrix}
+= 
 \overbrace{
 \begin{bmatrix}
 \hat{x}_{1_{k}}\\ 
 \hat{x}_{2_{k}}
 \end{bmatrix}
 }^\mathbf{\hat{X}} +
-
-
 K \left(
 \tilde{v}_k -
-
-\xoverbrace{
+\overbrace{
 \begin{bmatrix}
 0 & L
 \end{bmatrix} 
 }^\textbf{H}
-
-
 \begin{bmatrix}
 \hat{x}_{1_{k}}\\ 
 \hat{x}_{2_{k}}
 \end{bmatrix}
-
- \right )
-
+\right )
 $$
-
 </div>
+
 
 This is all that is needed in terms of design. The rest of the algorithm follows the formula below taken from Wikipedia.
 
