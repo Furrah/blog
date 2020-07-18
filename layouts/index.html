@@ -4,7 +4,7 @@
   <h1>{{ .Site.Title }}</h1>
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
 
-	{{ range .Site.RegularPages.ByPublishDate.Reverse  }}
+	{{ range first 10 .Site.RegularPages.ByPublishDate.Reverse  }}
 		<p>
 		  <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
 		  <br>
