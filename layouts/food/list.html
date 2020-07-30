@@ -6,27 +6,24 @@
 
 
 
-	<div class="card-columns">
-{{ range .Pages.ByPublishDate.Reverse }}
+<div class="card-columns">
+  {{ range .Pages.ByPublishDate.Reverse }}
 
 
   <div class="card">
     <a href="{{ .RelPermalink }}">
-    <img  class="card-img-top" src="{{ .Params.image }}">
+      <img  class="card-img-top" src="{{ .Params.image }}">
 
-    <div class="card-body text-center">
-      <a href="{{ .RelPermalink }}">
-        <h5 class="card-title">{{ .Title }}</h5>
-      </a>
+      <div class="card-body text-center">
+        <a href="{{ .RelPermalink }}">
+          <h5 class="card-title">{{ .Title }}</h5>
+        </a>
       
-      {{ partial "date.html" . }}
-    </div>
+        {{ partial "date.html" . }}
+      </div>
 
-  </a>
+    </a>
   </div>
-
-
-
 
 {{ end }}
 </div>

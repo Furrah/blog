@@ -37,5 +37,13 @@ Recipe taken from :
 
 Made this several times. very much liking it!
 
-![Curry](/food/images/rogan-and-dhal-2.jpg)<br><br>
-![Curry](/food/images/IMG_0736 copy.jpg)
+
+<p align="center"> 
+<img src="/food/images/rogan-and-dhal-2.jpg" alt="drawing" width="100%"/>
+</p>
+<br>
+
+<p align="center"> 
+<img src="/food/images/IMG_0736 copy.jpg" alt="drawing" width="100%"/>
+</p>
+<br>
