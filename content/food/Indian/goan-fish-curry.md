@@ -3,6 +3,7 @@ title: "Goan Fish Curry"
 date: 2020-07-29T22:27:13+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_0762.jpg"
 ---
 
 Recipe taken from 
