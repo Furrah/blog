@@ -1,8 +1,10 @@
 {{ define "main" }}
 
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1>{{ .Site.Title }}</h1>
+<div id="home-jumbotron" class="jumbotron-fluid text-center">
+	<div class='container'>
+  <h1> {{ .Site.Title }}</h1>
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+</div>
 
 	{{ range first 10 .Site.RegularPages.ByPublishDate.Reverse  }}
 		<p>
@@ -12,4 +14,5 @@
 
 		</p>
 	{{ end }}
+</div>
 {{ end }}
