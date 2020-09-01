@@ -23,7 +23,7 @@ Recipe taken from
 * 1½ tbsp harissa or sriracha 
 * 1 tbsp clear honey
 * 2 x 250g packs halloumi cheese, cut into 1cm-thick slices
-* 25g toasted flaked almond or fresh.
+* 25g fresh almonds.
 
 ## Method 
 
@@ -31,7 +31,7 @@ Recipe taken from
 * Blanch the broccoli for 2 mins, then drain well. Cut it into small pieces or blitz it in a food processor.
 * Fork the broccoli, spring onions, tomatoes, herbs, lemon zest, the juice of 1½ lemons and 2 tbsp oil through the couscous. Season and mix well.
 * To make the dressing, combine the harissa, honey, remaining lemon juice and oil, and some seasoning.
-* Heat a non-stick frying pan and cook the halloumi for 1-2 mins on each side until golden. Divide the couscous between the plates, top with the halloumi slices and dressing, then scatter over the almonds.
+* Heat a non-stick frying pan and cook the halloumi for 1-2 mins on each side until golden. Divide the couscous between the plates, top with the halloumi slices and dressing, then scatter over the almonds (sometimes i like to toast the almonds for a couple of minutes in pan). 
 
 
 ## Comments 

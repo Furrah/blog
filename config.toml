@@ -6,6 +6,9 @@ pygmentsCodefences = true
 pygmentsUseClasses = false
 pygmentsStyle = 'friendly' #required for lexer to work
 
+googleAnalytics = "UA-177014444-1"
+
+
 [markup]
 [markup.goldmark.renderer]
 unsafe = true
