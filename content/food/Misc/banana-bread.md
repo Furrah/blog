@@ -7,7 +7,7 @@ image: "/food/images/bananabread.jpeg"
 ---
 
 
-This recipe comes form my friend Tom who adapted the BBC goodfoods recipe. For my take I don't add chocolate to it because chocolate belongs in chocolate bars. <a href=https://tomdod.github.io/food/bananabread/ target="_blank">Link to Toms website Here!</a>
+This recipe comes from my friend Tom who adapted the BBC Goodfoods recipe. For my take I don't add chocolate to it because chocolate belongs in chocolate bars. <a href=https://tomdod.github.io/food/bananabread/ target="_blank">Link to Tom's website Here!</a>
 
 ## Ingredients 
 
@@ -34,7 +34,7 @@ This recipe comes form my friend Tom who adapted the BBC goodfoods recipe. For m
 
 ## Pictures 
 
-Temporarily borrowed the picture from Toms website! 
+Temporarily borrowed the picture from Tom's website! 
 
 <p align="center"> 
 <img src="/food/images/bananabread.jpeg" alt="drawing" width="600"/>
