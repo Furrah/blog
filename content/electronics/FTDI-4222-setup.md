@@ -39,8 +39,8 @@ mv libftd2xx.1.14.16.dylib /usr/local/lib
 9. move ```libft4222.h``` to /usr/local/include 
 10. Create symbolic links for `libft4222.1.4.4.14.dylib` and ```libftd2xx.1.4.16.dylib```
 ```bash
-sudo -ln -sf /usr/local/lib/libft4222.1.4.4.14.dylib /usr/local/lib/libft4222.dylib
-sudo -ln -sf /usr/local/lib/libftd2xx.1.4.16.dylib /usr/local/lib/libftd2xx.dylib
+sudo ln -s /usr/local/lib/libft4222.1.4.4.14.dylib /usr/local/lib/libft4222.dylib
+sudo ln -s /usr/local/lib/libftd2xx.1.4.16.dylib /usr/local/lib/libftd2xx.dylib
 ```
 
 #### Notes on installing 
