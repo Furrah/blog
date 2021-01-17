@@ -3,6 +3,7 @@ title: "Chinese Egg Plant With Garlic Sauce"
 date: 2019-10-28T19:45:27+01:00
 tags: ['chinese', 'aubergine', 'garlic', 'sauce']
 draft: false
+image: "/food/images/IMG_1646.jpg"
 ---
 
 Recipe taken from: 
@@ -31,3 +32,13 @@ Ready in:25min<br>
 
 * Heat the oil in a wok or frypan over high heat. Add the eggplant and stir the eggplant until soft, about 4 minutes.
 * Stir in the water, dried chilli flakes and garlic. Cover and simmer until all the water is absorbed. Meanwhile, mix sugar, cornflour, soy sauce and oyster sauce together in a bowl until sugar and cornflour have dissolved. Stir sauce into the eggplant, making sure to evenly coat the eggplant. Cook until the sauce has thickened.
+
+<p align="center"> 
+<img src="/food/images/IMG_1646.jpg" alt="drawing" width="600"/>
+</p>
+<br>
+
+<p align="center"> 
+<img src="/food/images/IMG_1649.jpg" alt="drawing" width="600"/>
+</p>
+<br>
