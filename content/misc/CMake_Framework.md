@@ -134,7 +134,7 @@ Generated Shell files
 ```
 #!/bin/sh
 
-./../build/SneezyJoe
+./../build/<project_name>
 ```
 
 ### build.sh
