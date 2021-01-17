@@ -20,9 +20,11 @@ mix 150ml of water with 150ml of D76 solution and ensure the temperature is 20 d
 
 ## Method 
 
-1. Fill the light box up with the 300ml of solution and agitate every minute. I like to rotate the box for 10 seconds ish and then an invert. 
-2. After the development process is complete empty the container and rinse with water for 4 minutes. Try to do this at the same temperature as the developer. 
-3. Fill the container up with diluted fix and leave for 10 minutes. Again agitating every minute. 
+1. Fill the light box up with the 300ml of solution and agitate every minute. I like to rotate the box for 10 seconds ish and then an invert.
+2. After the development process is complete empty the container down the sink and rinse with water for 4 minutes. Try to do this at the same temperature as the developer. 
+3. Fill the container up with diluted fix and leave for 10 minutes. Again agitating every minute. Once done, pour fix back into container.
 4. Rinse with water for 4 more minutes and your done! 
+5. Add a small amount of surfactant to the solution. This can be a single drop of soap or you can buy a a solution by Ilford or whoever. All were trying to do here is reduce the surface tension of the water on the film so we do'nt get watermarks! Soap works nicely...
+
 
 
