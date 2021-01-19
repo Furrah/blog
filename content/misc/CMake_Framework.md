@@ -64,6 +64,7 @@ with open("CMakeLists.txt", 'w+') as file:
 	
 	file.write("cmake_minimum_required(VERSION 3.18.4)\n\n")
 	file.write("project(" + PROJECT_NAME + ")\n\n")
+	file.write("set(CMAKE_CXX_STANDARD 17)\n\n")
 	file.write("add_executable(${PROJECT_NAME} main.cpp)\n\n")
 	file.write("add_subdirectory()\n\n")
 	file.write("target_include_directories(${PROJECT_NAME}\n\t#/usr/local/include\n\t)\n\n")
