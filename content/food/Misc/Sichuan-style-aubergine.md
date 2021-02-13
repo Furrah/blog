@@ -8,7 +8,7 @@ image: "/food/images/IMG_2514-2.jpg"
 
 ## Ingredients 
 
-* 3 long Chinese eggplants (about 600g) or small green type - I prefer the small green as they are crunchy! 
+* 3 long Chinese aubergines (about 600g) or small green type - I prefer the small green as they are crunchy! 
 * Sea salt
 * 2 Tbsp vegetable oil
 * 1 tsp Sichuan peppercorns, coarsely crushed - substitute with crushed coriander seeds, crushed pepper corns and a small amount of grated lemon

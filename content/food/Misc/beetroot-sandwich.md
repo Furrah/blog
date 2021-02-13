@@ -3,6 +3,7 @@ title: "Spicy Beetroot Sandwich Filler"
 date: 2020-10-26T17:19:17+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_1522-2.jpg"
 ---
 
 This sandwich filler comes from Lous friends mum. Its a belter!
@@ -22,3 +23,7 @@ This sandwich filler comes from Lous friends mum. Its a belter!
 
 ## Picture 
 
+<p align="center"> 
+<img src="/food/images/IMG_1522-2.jpg" alt="drawing" width="600"/>
+</p>
+<br>
