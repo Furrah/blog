@@ -20,7 +20,7 @@ image: "/food/images/IMG_2514-2.jpg"
 * Handful of coriander leaves, roughly chopped (optional)
 * Steamed jasmine rice, to serve
 
-Yu xiang sauce
+**Yu xiang sauce**
 * 1 tsp light soy sauce
 * 2 Tbsp Shaoxing rice wine
 * 1 Tbsp Chinese black vinegar - rice vinegar or apple cider vinegar alternatives 
