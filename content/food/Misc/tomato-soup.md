@@ -19,7 +19,7 @@ draft: false
 * 2 yellow onions, thinly sliced
 
 **Additions to the soup:**
-* 10g packed basil leaves
+* 10g  basil leaves
 * ½ teaspoon dried oregano
 * 200-500ml cups water or vegetarian broth, depending on how thick you want the soup
 * Freshly ground salt and pepper, to taste
