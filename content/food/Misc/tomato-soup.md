@@ -8,7 +8,6 @@ draft: false
 
 ## Ingredients
 
-
 **Roasted tomatoes**
 * 1kg  tomatoes, cut in half if using plum or into 5mm strips if not
 * 6 cloves garlic, peeled
@@ -26,9 +25,6 @@ draft: false
 * Freshly ground salt and pepper, to taste
 
 
-
-
-
 ## Method 
 
 1. Preheat oven to 200C
@@ -36,8 +32,6 @@ draft: false
 3. Add onions to a pan and caramalise for 40 mins on a low heat.
 4. Blend roasted tomato's and onions with the basil
 5. Add veg both or water if required.
-
-
 
 <!-- ## Pictures  -->
 
