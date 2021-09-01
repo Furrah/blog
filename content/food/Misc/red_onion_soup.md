@@ -3,6 +3,7 @@ title: "Red Onion Soup"
 date: 2021-08-21T13:24:36+01:00
 tags: []
 draft: false
+image: "/food/images/Red_Onion_Soup.jpeg"
 ---
 
 One of my Grandmas recipes for red onion soup I found whilst rummaging around her stack of recipes she has in her kitchen. This is one of the few that didn't involve copious amounts of meat! I found this particular recipe quite the riddle.
@@ -12,12 +13,12 @@ One of my Grandmas recipes for red onion soup I found whilst rummaging around he
 
 * 2 oz butter
 * 2lb red onion thinly sliced
-* 1 tbsp oil
+* 1 tbsp veg oil
 * 1 tsp salt
 * ½ tsp brown sugar  
 * 1½ oz plain flour
 * 3 pints brown stock
-* ½ pint ???? brown ale
+* ½ pint stout or brown ale
 
 ## Method
 
