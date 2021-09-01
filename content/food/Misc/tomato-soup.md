@@ -3,12 +3,12 @@ title: "Tomato Soup"
 date: 2021-08-19T21:04:33+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_4480.jpeg"
 ---
-
 
 ## Ingredients
 
-**Roasted tomatoes**
+**Roasted tomatoes:**
 * 1kg  tomatoes, cut in half if using plum or into 5mm strips if not
 * 6 cloves garlic, peeled
 * 3 tablespoons olive oil
