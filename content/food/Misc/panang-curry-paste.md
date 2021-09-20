@@ -3,6 +3,7 @@ title: "Panang Curry Paste"
 date: 2021-09-01T13:27:45+01:00
 tags: []
 draft: false
+image: "/food/images/panang/IMG_0914.jpeg"
 ---
 
 I've made this a fair few times! It's definitely one of my go to pastes! Recipe comes from 
@@ -46,13 +47,12 @@ I've made this a fair few times! It's definitely one of my go to pastes! Recipe 
 </p>
 <br>
 
-
 <p align="center"> 
 <img src="/food/images/panang/IMG_0914.jpeg" alt="drawing" width="400"/>
 </p>
 <br>
 
 <p align="center"> 
-<img src="/food/images/panang/IMG_0917.jpeg" alt="drawing" width="400"/>
+<img src="/food/images/panang/IMG_0990.jpeg" alt="drawing" width="400"/>
 </p>
 <br>
