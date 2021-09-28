@@ -42,6 +42,7 @@ This is inspired by the Helm Ston Cafe in Brighton which is bloody brilliant and
 * spinach
 * rice
 * seeds
+* A FRIED EGG!
 
 
 <p align="center"> 

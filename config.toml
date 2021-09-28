@@ -19,7 +19,7 @@ unsafe = true
   food = "/:filename/"
   misc = "/:filename/"
   photography = "/:filename/"
-
+  plants = "/:filename/"
 
 [menu]
   [[menu.main]]
@@ -54,10 +54,16 @@ unsafe = true
     weight = 5    
 
   [[menu.main]]
+    name = "Plants"
+    pre = "sun"
+    url = "/plants/"
+    weight = 6
+
+  [[menu.main]]
     name = "Tags"
     pre = "tag"
     url = "/tags/"
-    weight = 6
+    weight = 7
 
 [taxonomies]
   tag = "tags"
