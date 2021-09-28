@@ -13,7 +13,7 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
 <div class="container">
   <div class="row">
     <div class="col">
-      <h3>14th September 2021</h3>14th September 2021
+      <h3>14th September 2021</h3>
       Tooth pick up the seeds and suspend in water. There is a better method for this which is suspending the seed from the top and not tripoding like I have done. Next time....
     </div>
   <div class="col">
@@ -27,7 +27,7 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
 <div class="container">
   <div class="row">
     <div class="col">
-      <h3>28th September 2021</h3>14th September 2021
+      <h3>28th September 2021</h3>
 		The first root! Quite a lot of the seeds are going a bit mouldy. I have replaced the water twice now. Once last week and again today. 
     </div>
   <div class="col">
