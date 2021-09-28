@@ -1,5 +1,5 @@
 ---
-title: "Growing Avacados"
+title: "Growing Avocados"
 date: 2021-09-28T17:51:45+01:00
 tags: []
 draft: false
