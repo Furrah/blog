@@ -22,6 +22,7 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
 	</p>
   </div>
 </div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -35,5 +36,5 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
 	</p>
   </div>
 </div>
-
+</div>
 
