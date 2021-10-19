@@ -18,7 +18,7 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
     </div>
   <div class="col">
      <p align="center"> 
-		<img src="/plants/images/avacado/IMG_4885.jpeg" alt="drawing" width="400px"/>
+		<img src="/eukarya/images/avacado/IMG_4885.jpeg" alt="drawing" width="400px"/>
 	</p>
   </div>
 </div>
@@ -27,14 +27,15 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
 <div class="container">
   <div class="row">
     <div class="col">
-      <h3>28th September 2021</h3>
-		The first root! Quite a lot of the seeds are going a bit mouldy. I have replaced the water twice now. Once last week and again today. 
+      <h3>19th October 2021</h3>
+		It has come to my attention that the method of growing of avocados in water is not optimum. The seeds grow mould on them and require their water to be changed frequently. 
+    In an attempt to mitigate this I have removed all of the outer shell from the seeds apart from those that are showing signs of rooting which seems to have helped. I have also learnt that growing in water and transferring to soil can cause root shock, further stunting their growth.  
     </div>
   <div class="col">
 	<p align="center"> 
-		<img src="/plants/images/avacado/IMG_5025.jpeg" alt="drawing" width="400px"/>
+		<img src="/eukarya/images/avacado/IMG_5258.jpeg" alt="drawing" width="400px"/>
 	</p>
   </div>
 </div>
-</div>
+</div> 
 
