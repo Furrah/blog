@@ -80,6 +80,7 @@ We are interested in the i386 versions of the libraries. Create folder with the 
 ├── lib
 │   ├── LibFT4222.lib
 │   └── ftd2xx.lib
+│   └── LibFT4222.dll
 └── src
     ├── CMakeLists.txt
     ├── program.c
