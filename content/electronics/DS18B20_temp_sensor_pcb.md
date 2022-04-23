@@ -1,5 +1,5 @@
 ---
-title: "DS18B20_temp_sensor_pcb"
+title: "DS18B20 Temperature Sensor PCB"
 date: 2022-04-23T21:07:32+01:00
 tags: []
 draft: false
