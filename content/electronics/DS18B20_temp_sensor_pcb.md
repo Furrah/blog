@@ -64,7 +64,7 @@ pi pins 01 and 02 are closest to SD card.
 **Testing**
 
  
-navigate to ```cd /sys/bus/wi/devices```
+navigate to ```cd /sys/bus/w1/devices```
 
 I have 5 board daisy chained listed below 
 ```
