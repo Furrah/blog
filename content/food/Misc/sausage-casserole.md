@@ -3,6 +3,7 @@ title: "Benj's Essential Sausage Casserole"
 date: 2021-10-02T16:39:16+01:00
 tags: []
 draft: false
+image: "/food/images/sausage_casserole/pic.jpeg"
 ---
 
 Benj's essential sausage casserole with a few add-ons and maybe some things i've forgotten. 
