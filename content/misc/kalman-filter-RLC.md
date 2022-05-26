@@ -32,13 +32,25 @@ The equation can be expressed as two first order differential equations using th
 
 $$ x_{1} = I_{L} $$
 
-$$ x_{2} = \dot{I}_{L} $$
+$$ x_{2} = \dot{I}_{L}$$
+</div>
 so 
-$$ \dot{x}_{2} = \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_{L}}{LC} + \frac{I}{LC} $$
+
+<div>
+$$ 
+\dot{x}_{2} = \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_{L}}{LC} + \frac{I}{LC}
+$$
+</div>
+
 and
+<div>
 $$\dot{x}_{1} =\dot{I}_{L} =  x_{2}$$
+</div>
+
 Replacing variables with state variables $\bf{X}$
-$$\dot{x}_{2} = - \frac{x_{2}}{RC} - \frac{x_{1}}{LC} + \frac{I}{LC}$$
+<div>
+$$ \dot{x}_{2} = - \frac{x_{2}}{RC} - \frac{x_{1}}{LC} + \frac{I}{LC} $$
+</div>
 Using the formula below the derivative can be discretised.  
 $$  \dot{x} = \frac{x_{k+1}  - x_k   }{\Delta t} $$
 
@@ -67,11 +79,11 @@ $$
 The two equations can then be displayed in state space formalism. I have shifted the time step of the system by -1. The predicted value $x_{1_{k+1}} $ is now predicting the current state of the system as $x_{1_{k}}$ From here on, a hat above a variable indicates a predicted state and a tilde is a measured variable. -->
 
 The two equations can now be expressed in state space formalism. I have shifted the time step by -1 so $x_{1_{k+1}} $ is now $x_{1_{k}}$. This is done to maintain accordance with the kalman filter framework as shown below by the state transition model. 
-</div>
+<div>
 $$
 \hat{X}_k = F_k X_{k-1} + B_{k} U_{k}
 $$
-
+</div>
 
 
 where
@@ -125,11 +137,11 @@ I_{k-1}
 
 The voltage induced across an inductor is equal to the rate of change of current passing through it multiplied by its inductance. 
 
+<div>
 $$
 \tilde{v}(t) = L\dot{I}_{L}
 $$
-
-
+</div>
 
 <!-- The correction matrix is then equal to the prediction minus the measurement multiplied by the Kalman gain of the system.  -->
 The correction matrix takes the predicted value and adjusts it based on a measurement. How much the measurement is incorporated into the prediction is dependent on the Kalman gain. 
