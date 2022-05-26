@@ -45,7 +45,7 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
     <div class="col">
       <h3>12th May 2022</h3>
     Well. Of the twenty seeds planted, only four survived the U.K. winter. This isn't much of a surprise as my bedroom gets almost no light but nevertheless we have four survivors. Three of which I decided to plant in a single pot with the idea of plaiting their stems as they grew... Sam had decided that she could plait better than I so I entrusted her with the task... Within seconds an error had been made so the plant was unplaited? deplaited? By the third attempt the plant couldn't take it any more and snapped. Mega sad times. This had happened in early April from what I remember so the growth in the picture is it's recovery. Poor thing.
-    I've never seen Sam apologise for anything as much as she did for snapping an avocado tree! I think I will wait a little longer before another attempt it made!
+    I've never seen Sam apologise for anything as much as she did for snapping an avocado tree! I think I will wait a little longer before another attempt is made!
     </div>
     <div class="col">
     <p align="center"> 
