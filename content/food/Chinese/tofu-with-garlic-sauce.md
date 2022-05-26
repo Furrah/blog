@@ -3,6 +3,7 @@ title: "Tofu With Garlic Sauce"
 date: 2022-05-26T20:49:35+01:00
 tags: []
 draft: false
+image: "/food/images/IMG_6950.jpg"
 ---
 
 
@@ -40,7 +41,7 @@ draft: false
 2. Add 1 tablespoon of cooking oil frying pan. Stir fry ginger, garlic, fresh chilli & Sichuan chilli bean paste until fragrant.
 3. Pour in the liquid mixture (remember to stir well beforehand).
 
-**Serving:**<br>
+**Serving:**
 1. Place tofu squares back into the pan. Serve up when the sauce becomes thick and the tofu is evenly coated.
 Garnish with spring onion and sesame seeds. Serve with plain rice.
 
