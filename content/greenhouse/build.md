@@ -45,9 +45,12 @@ Before assembling the solar array a quick wash from Will's window cleaning servi
 <img src="/greenhouse/images/greenhouse/IMG_6115.jpeg" alt="drawing" width="700"/>
 </p>
 
-<!-- <p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_6125.jpeg" alt="drawing" width="700"/>
-</p> -->
+My first time drilling through a wall. I wish I had removed the plants before doing this as they ended up covered in dust and needed their own solar panels cleaning...
+
+
+<p align="center"> 
+<img src="/greenhouse/images/greenhouse/IMG_6077.jpeg" alt="drawing" width="400"/>
+</p>
 
 Here we have the 6mm cable from the solar panels coming in on the top left into the breaker and then into the charge controller. A Raspberry pi is the brains of the operation with an Arduino for analog sensors. In the bottom right is a custom relay board for controller 24V/16A loads each with their own breaker.
 <p align="center"> 
