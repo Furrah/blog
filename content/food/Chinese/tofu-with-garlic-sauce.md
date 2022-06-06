@@ -45,7 +45,7 @@ image: "/food/images/IMG_6950.jpg"
 1. Place tofu squares back into the pan. Serve up when the sauce becomes thick and the tofu is evenly coated.
 Garnish with spring onion and sesame seeds. Serve with plain rice.
 
-## Picture
+
 <p align="center"> 
 <img src="/food/images/IMG_6950.jpg" alt="drawing" width="700"/>
 </p>
