@@ -2,7 +2,7 @@
 title: "CMake Setup"
 date: 2020-05-23T21:45:48+02:00
 tags: []
-draft: false
+draft: true
 ---
 
 ## Installing CMake on macOS and adding to path

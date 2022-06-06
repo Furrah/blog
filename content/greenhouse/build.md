@@ -12,7 +12,7 @@ The date is the 5th of February 2022 and It's cold. It's really cold. Luckily fo
 
 ## The Greenhouse!
 
-The greenhouse is actually a conservatory tacked onto the side of the "old house" as we call it which is a 4x4m building that my grandparents lived in for many years before building their house across the road. This 4x4m building contained a kitchen, toilet, fireplace, and bed. A reminder of how privileged I am to be living in the current age. Fortunately for me, this building is now free range for projects and the fact that this project revolves around plants, well, I think my grandfather would approve. To the right is one of my grandfather original greenhouses wherehe used to  light methylated spirit burners in the winter to keep his plants warm. I'm doing the same, except using renewable resources but costing at least 100 times more...
+The greenhouse is actually a conservatory tacked onto the side of the "old house" as we call it which is a 4x4m building that my grandparents lived in for many years before building their house across the road. This 4x4m building contained a kitchen, toilet, fireplace, and a bed. A reminder of how privileged I am to be living in the current age. Fortunately for me, this building is now free range for projects and the fact that this project revolves around plants, well, I think my grandfather would approve. To the right is one of my grandfathers original greenhouses where he used to  light methylated spirit burners in the winter to keep his plants warm. I'm doing the same, except using renewable resources but costing at least 100 times more...
 
 <p align="center"> 
 <img src="/greenhouse/images/greenhouse/IMG_6225.jpeg" alt="drawing" width="700"/>
