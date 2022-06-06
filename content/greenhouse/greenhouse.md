@@ -1,5 +1,5 @@
 ---
-title: "Greenhouse"
+title: "The beginning"
 date: 2022-04-24T22:02:52+01:00
 tags: []
 draft: false
@@ -117,7 +117,7 @@ The Epever manual begins that process by recommending a circuit breaker between 
 
 
 <p align="center"> 
-<img src="/electronics/images/greenhouse/Epever_design.PNG" alt="drawing" width="700"/>
+<img src="/greenhouse/images/greenhouse/Epever_design.PNG" alt="drawing" width="700"/>
 </p>
 
 **Breaker**
@@ -153,43 +153,14 @@ The Epever controller accept a maximum cable size of 16mm. At the time of buildi
 The 3 panels are connected in parallel using connector like the ones shown below. These are rated to 30A which is safe but i'd like to upgrade these at some point to [this connector](https://www.amazon.co.uk/dp/B088N8WF2P/ref=sspa_dk_detail_2?pd_rd_i=B088N8C4ZM&pd_rd_w=YzkMc&content-id=amzn1.sym.9ca56d9d-fbab-435c-8df2-efa89f421d75&pf_rd_p=9ca56d9d-fbab-435c-8df2-efa89f421d75&pf_rd_r=HHN62CWDVQRTJRQEWKRX&pd_rd_wg=MZAbn&pd_rd_r=b09ae58d-5d7d-4280-bd42-c5841733051b&s=industrial&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFZVjE2NDRZWjAwQTcmZW5jcnlwdGVkSWQ9QTAyMTgyMjAxNUhVOU9WUE9JR1M2JmVuY3J5cHRlZEFkSWQ9QTEwMTg2MzUxN000RDZLWEpUUzI1JndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1) which are rated to 50A and are IP68 dust and water rated. It's not necessary for now but hopefully if the system grows...
 
 <p align="center"> 
-<img src="/electronics/images/greenhouse/Solar_Connector.PNG" alt="drawing" width="300"/>
+<img src="/greenhouse/images/greenhouse/Solar_Connector.PNG" alt="drawing" width="300"/>
 </p>
 
+## Concluding Thoughts
 
-## Let The Build Begin
+This is the bare essentials required to charge a 24V battery from solar. If I am to sell back to the grid I will mostly need to go to a much higher voltage which will require lots of panels in series with one another. An example is the [Fronius Symo 5.0-3-m](https://www.fronius.com/en-gb/uk/solar-energy/installers-partners/technical-data/all-products/inverters/fronius-symo/fronius-symo-5-0-3-m) This requires a minimum DC input voltage of 200V to feed into the grid with a nominal voltage of 595V! This is great news for keeping the cable size down but bad news for possible shadowing effects on the panels. I will also need 8 more panels...
 
-
-<p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_5667.jpeg" alt="drawing" width="700"/>
-</p>
-
-<p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_5668.jpeg" alt="drawing" width="700"/>
-</p>
-
-<p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_6082.jpeg" alt="drawing" width="700"/>
-</p>
-
-
-
-<p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_6115.jpeg" alt="drawing" width="700"/>
-</p>
-
-<p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_6125.jpeg" alt="drawing" width="700"/>
-</p>
-
-<p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_6130.jpeg" alt="drawing" width="700"/>
-</p>
-
-<p align="center"> 
-<img src="/electronics/images/greenhouse/IMG_6475.jpeg" alt="drawing" width="700"/>
-</p>
-
+Please see the next post: [Build](/greenhouse/build) to see some pictures of the build!
 
 
 

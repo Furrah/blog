@@ -54,9 +54,9 @@ unsafe = true
     weight = 5    
 
   [[menu.main]]
-    name = "Eukarya"
+    name = "Greenhouse"
     pre = "sun"
-    url = "/Eukarya/"
+    url = "/Greenhouse/"
     weight = 6
 
   [[menu.main]]
