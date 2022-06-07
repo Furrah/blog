@@ -36,7 +36,7 @@ Q_dot = (T_inside - T_outside) / R_total
 print(f'{Q_dot:.2f}W')
 ```
 
-This gives 256.74W but if you play about with the numbers you'll quickly see this can vary quite a lot, particularly for the inside heat transfer coefficient.
+This gives 256.74W but if you play about with the numbers you'll quickly see this can vary quite a lot.
 
 <form id="form" onsubmit="return false;">
 	k glass:   <input  type="text" id="k_glass" value="1.1" />
@@ -79,7 +79,6 @@ The PCB can be seen in the lower right of the electronics canvas. I should also 
 ## Concluding Thoughts
 
 This works for now but I would like to add in high side current monitoring to the relay board for additional telemetry.
-
 
 
 
