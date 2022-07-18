@@ -18,7 +18,7 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
     </div>
   <div class="col">
      <p align="center"> 
-		<img src="/eukarya/images/avacado/IMG_4885.jpeg" alt="drawing" width="400px"/>
+		<img src="/misc/images/avacado/IMG_4885.jpeg" alt="drawing" width="400px"/>
 	</p>
   </div>
 </div>
@@ -33,7 +33,7 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
     </div>
     <div class="col">
   	<p align="center"> 
-  		<img src="/eukarya/images/avacado/IMG_5258.jpeg" alt="drawing" width="400px"/>
+  		<img src="/misc/images/avacado/IMG_5258.jpeg" alt="drawing" width="400px"/>
   	</p>
     </div>
   </div>
@@ -49,7 +49,22 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
     </div>
     <div class="col">
     <p align="center"> 
-      <img src="/eukarya/images/avacado/IMG_6812.jpg" alt="drawing" width="400px"/>
+      <img src="/misc/images/avacado/IMG_6812.jpg" alt="drawing" width="400px"/>
+    </p>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>17th July 2022</h3>
+  Re-potted and now 46cm tall! I've also just planted sensitive plant seeds in the same pot so hopefully they will come up soon and add an element of fun!
+    </div>
+    <div class="col">
+    <p align="center"> 
+      <img src="/misc/images/avacado/IMG_7478.jpg" alt="drawing" width="400px"/>
     </p>
     </div>
   </div>
