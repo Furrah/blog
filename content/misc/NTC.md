@@ -119,12 +119,12 @@ function calculate_T()
               display: true
           },
           scales: {
-          	x:[{
+          	x:{
           		title:{
           			display: true,
-          			text: 'your title'
+          			text: 'Vout [V]'
           		}
-          	}]         
+          	}       
           }
       }
   });
@@ -144,7 +144,7 @@ function adddata(){
 <div>
 Characterise the NTC thermistor using the Beta method.
 
-$$r_{\infty} =  R25 * exp \left(\frac{-B}{T25}\right)$$
+$$r_{\infty} =  R_{25} \cdot exp \left(\frac{-B}{T_{25}}\right)$$
 
 Calculate the thermistor resistance from voltage and then use this to calculate temperature
 
