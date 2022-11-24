@@ -16,12 +16,12 @@ Out walking with my friend Will searching for one of the last blooming orchids i
   <div class="row">
     <div class="col">
 	    <p align="center"> 
-		<img src="/eukarya/images/fungi/StinkHorn/IMG_4964.jpeg" alt="drawing" width="400px"/>
+		<img src="/misc/images/fungi/StinkHorn/IMG_4964.jpeg" alt="drawing" width="400px"/>
 		</p>
     </div>
     <div class="col">
 	    <p align="center"> 
-		<img src="/eukarya/images/fungi/StinkHorn/IMG_4955.jpeg" alt="drawing" width="400px"/>
+		<img src="/misc/images/fungi/StinkHorn/IMG_4955.jpeg" alt="drawing" width="400px"/>
 		</p>
     </div>
   </div>
@@ -33,7 +33,7 @@ Out walking with my friend Will searching for one of the last blooming orchids i
 Apparently as the name suggests it tastes of chicken... or at least is a good replacement for chicken! 
 <br>
 <p align="center"> 
-	<img src="/eukarya/images/fungi/Chicken_of_the_woods/IMG_5018.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/Chicken_of_the_woods/IMG_5018.jpeg" alt="drawing" width="600px"/>
 </p>
 <br>
 
@@ -42,12 +42,12 @@ Apparently as the name suggests it tastes of chicken... or at least is a good re
   <div class="row">
     <div class="col">
 	    <p align="center"> 
-		<img src="/eukarya/images/fungi/Oyster/IMG_5004.jpeg" alt="drawing" width="400px"/>
+		<img src="/misc/images/fungi/Oyster/IMG_5004.jpeg" alt="drawing" width="400px"/>
 		</p>
     </div>
     <div class="col">
 	    <p align="center"> 
-		<img src="/eukarya/images/fungi/Oyster/IMG_5010.jpeg" alt="drawing" width="400px"/>
+		<img src="/misc/images/fungi/Oyster/IMG_5010.jpeg" alt="drawing" width="400px"/>
 		</p>
     </div>
   </div>
@@ -57,7 +57,7 @@ Apparently as the name suggests it tastes of chicken... or at least is a good re
 
 #### Coral Fungus  -  Kingley Vale - Chichester
 <p align="center"> 
-	<img src="/eukarya/images/fungi/Coral/IMG_5160.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/Coral/IMG_5160.jpeg" alt="drawing" width="600px"/>
 </p>
 <br>
 
@@ -65,7 +65,7 @@ Apparently as the name suggests it tastes of chicken... or at least is a good re
 ####  Stinkhorn  -  Kingley Vale - Chichester
 Surrounded by his fallen comrades. 
 <p align="center"> 
-	<img src="/eukarya/images/fungi/StinkHorn2/IMG_5112.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/StinkHorn2/IMG_5112.jpeg" alt="drawing" width="600px"/>
 </p>
 <br>
 
@@ -77,12 +77,12 @@ I want to show just how enormous this mushroom was. It diameter is roughly 10", 
   <div class="row">
     <div class="col">
 	    <p align="center"> 
-		<img src="/eukarya/images/fungi/Volvariella_bombycina/IMG_5200.jpeg" alt="drawing" width="400px"/>
+		<img src="/misc/images/fungi/Volvariella_bombycina/IMG_5200.jpeg" alt="drawing" width="400px"/>
 		</p>
     </div>
     <div class="col">
 	    <p align="center"> 
-		<img src="/eukarya/images/fungi/Volvariella_bombycina/IMG_5202.jpeg" alt="drawing" width="400px"/>
+		<img src="/misc/images/fungi/Volvariella_bombycina/IMG_5202.jpeg" alt="drawing" width="400px"/>
 		</p>
     </div>
   </div>
@@ -90,7 +90,7 @@ I want to show just how enormous this mushroom was. It diameter is roughly 10", 
 
 
 <p align="center"> 
-	<img src="/eukarya/images/fungi/Volvariella_bombycina/IMG_5094.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/Volvariella_bombycina/IMG_5094.jpeg" alt="drawing" width="600px"/>
 </p>
 <br>
 
@@ -98,16 +98,34 @@ I want to show just how enormous this mushroom was. It diameter is roughly 10", 
 Found walking with Adam whilst collecting sweet chestnuts. Adam wouldn't eat a foraged nut as he thinks food collection should be left to the professionals 🤷‍♂️.
 
 <p align="center"> 
-	<img src="/eukarya/images/fungi/Fly_agaric/IMG_5224.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/Fly_agaric/IMG_5224.jpeg" alt="drawing" width="600px"/>
 </p>
 <br>
 
 
-#### Lycoperdon Perlatum - Bagley Wood - Oxfordshire
+#### Lycoperdon Perlatum / Common Puffball - Bagley Wood - Oxfordshire
 
 <p align="center"> 
-	<img src="/eukarya/images/fungi/Lycoperdon_perlatum/IMG_5217.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/Lycoperdon_perlatum/IMG_5217.jpeg" alt="drawing" width="500px"/>
 </p>
 <br>
+
+
+#### Aniseed Funnel - Bernwood - Oxfordshire - October 2022
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+<p align="center"> 
+	<img src="/misc/images/fungi/Aniseed_Funnel/IMG_8749.jpeg" alt="drawing" width="600px"/>
+</p>
+    </div>
+    <div class="col">
+<p align="center"> 
+	<img src="/misc/images/fungi/Aniseed_Funnel/IMG_8753.jpeg" alt="drawing" width="600px"/>
+</p>
+    </div>
+  </div>
+</div>
 
 
