@@ -1,6 +1,6 @@
 ---
 title: "Growing Avocados"
-date: 2021-09-28T17:51:45+01:00
+date: 2022-11-25T12:45:45+01:00
 tags: []
 draft: false
 ---
@@ -65,6 +65,21 @@ I've just got back from the Isle of Skye in Scotland and have bought back 20 Avo
     <div class="col">
     <p align="center"> 
       <img src="/misc/images/avacado/IMG_7478.jpg" alt="drawing" width="400px"/>
+    </p>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>25th November 2022</h3>
+  All the sensitive plants died a slow painful death. The tallest tree is now 52cm! Sam and I have bought a house together and the avacado trees are sitting by a french door facing south west so hopefully they get lots of sun over the next year! 
+    </div>
+    <div class="col">
+    <p align="center"> 
+      <img src="/misc/images/avacado/IMG_9488.jpeg" alt="drawing" width="400px"/>
     </p>
     </div>
   </div>
