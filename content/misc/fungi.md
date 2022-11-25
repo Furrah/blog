@@ -1,9 +1,10 @@
 ---
 title: "Fungi"
-date: 2021-09-29T08:29:45+01:00
+date: 2022-11-24T08:29:45+01:00
 tags: []
 draft: false
 ---
+
 
 ## Introduction
 
@@ -90,7 +91,7 @@ I want to show just how enormous this mushroom was. It diameter is roughly 10", 
 
 
 <p align="center"> 
-	<img src="/misc/images/fungi/Volvariella_bombycina/IMG_5094.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/Volvariella_bombycina/IMG_5094.jpeg" alt="drawing" width="400px"/>
 </p>
 <br>
 
@@ -128,4 +129,58 @@ Found walking with Adam whilst collecting sweet chestnuts. Adam wouldn't eat a f
   </div>
 </div>
 
+
+####  Giant Funnel - Bagley Woods - Oxfordshire - October 2022
+
+<p align="center"> 
+	<img src="/misc/images/fungi/Giant_funnel/IMG_9142.jpeg" alt="drawing" width="700px"/>
+</p>
+<br>
+
+
+####  Candlesnuff Fungus - Bagley Woods - Oxfordshire - October 2022
+
+<p align="center"> 
+	<img src="/misc/images/fungi/Candlesnuff_fungus/IMG_9118.jpeg" alt="drawing" width="700px"/>
+</p>
+<br>
+
+
+####  Magpie Inkcap - Bagley Woods - Oxfordshire - October 2022
+
+<p align="center"> 
+	<img src="/misc/images/fungi/Magpie_inkcap/IMG_9018.jpeg" alt="drawing" width="700px"/>
+</p>
+<br>
+
+#### Grey Spotted Amantia - Benj's Forest #2 - North Wales - November 2022
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+<p align="center"> 
+	<img src="/misc/images/fungi/Grey_spotted_amantia/IMG_9217.jpeg" alt="drawing" width="600px"/>
+</p>
+    </div>
+    <div class="col">
+<p align="center"> 
+	<img src="/misc/images/fungi/Grey_spotted_amantia/IMG_9218.jpeg" alt="drawing" width="600px"/>
+</p>
+    </div>
+  </div>
+</div>
+
+#### Turkey Tail - Coed Felenrhyd - North Wales - November 2022
+
+<p align="center"> 
+	<img src="/misc/images/fungi/Turkey_tail/IMG_9321.jpeg" alt="drawing" width="700px"/>
+</p>
+<br>
+
+####  Black Bulgar - Coed Felenrhyd - North Wales - November 2022
+
+<p align="center"> 
+	<img src="/misc/images/fungi/Black_bulgar/IMG_9265.jpeg" alt="drawing" width="700px"/>
+</p>
+<br>
 
