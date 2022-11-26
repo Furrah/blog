@@ -66,7 +66,7 @@ Apparently as the name suggests it tastes of chicken... or at least is a good re
 ####  Stinkhorn  -  Kingley Vale - Chichester
 Surrounded by his fallen comrades. 
 <p align="center"> 
-	<img src="/misc/images/fungi/StinkHorn2/IMG_5112.jpeg" alt="drawing" width="600px"/>
+	<img src="/misc/images/fungi/StinkHorn/IMG_5112.jpeg" alt="drawing" width="600px"/>
 </p>
 <br>
 

@@ -1,0 +1,23 @@
+Species, Path,  Time, Latitude, Longitude
+Volvariella_bombycina,misc/images/fungi/Volvariella_bombycina/IMG_5094.jpeg,2021:10:09 15:08:48,50.87319166666667,-0.8298361111111111
+Volvariella_bombycina,misc/images/fungi/Volvariella_bombycina/IMG_5200.jpeg,2021:10:09 17:51:26,50.87318888888889,-0.8298
+Volvariella_bombycina,misc/images/fungi/Volvariella_bombycina/IMG_5202.jpeg,2021:10:09 17:51:31,50.87317777777778,-0.8297888888888889
+Coral,misc/images/fungi/Coral/IMG_5160.jpeg,2021:10:09 16:16:49,50.88788611111111,-0.8323444444444444
+Grey_spotted_amantia,misc/images/fungi/Grey_spotted_amantia/IMG_9218.jpeg,2022:11:07 15:57:19,53.186499999999995,-3.271975
+Grey_spotted_amantia,misc/images/fungi/Grey_spotted_amantia/IMG_9217.jpeg,2022:11:07 15:57:15,53.18655833333333,-3.272013888888889
+Lycoperdon_perlatum,misc/images/fungi/Lycoperdon_perlatum/IMG_5217.jpeg,2021:10:14 17:02:22,51.712136111111114,-1.2580444444444445
+Giant_funnel,misc/images/fungi/Giant_funnel/IMG_9142.jpeg,2022:10:30 16:09:19,51.7105,-1.2570583333333334
+Black_bulgar,misc/images/fungi/Black_bulgar/IMG_9265.jpeg,2022:11:09 12:30:29,52.93124722222222,-3.991811111111111
+Aniseed_Funnel,misc/images/fungi/Aniseed_Funnel/IMG_8749.jpeg,2022:10:16 16:15:13,51.78001388888889,-1.1205694444444445
+Aniseed_Funnel,misc/images/fungi/Aniseed_Funnel/IMG_8753.jpeg,2022:10:16 16:17:35,51.78001666666667,-1.1205972222222222
+Chicken_of_the_woods,misc/images/fungi/Chicken_of_the_woods/IMG_5018.jpeg,2021:09:27 17:51:22,51.72103611111111,-1.2639555555555555
+Oyster,misc/images/fungi/Oyster/IMG_5010.jpeg,2021:09:27 17:42:49,51.71790277777778,-1.2645583333333332
+Oyster,misc/images/fungi/Oyster/IMG_5004.jpeg,2021:09:27 17:42:13,51.71781666666667,-1.2644972222222222
+Fly_agaric,misc/images/fungi/Fly_agaric/IMG_5224.jpeg,2021:10:14 17:44:39,51.708936111111115,-1.261011111111111
+Turkey_tail,misc/images/fungi/Turkey_tail/IMG_9321.jpeg,2022:11:09 13:55:36,52.926402777777774,-3.9807055555555557
+UNKNOWN,misc/images/fungi/UNKNOWN/IMG_4914.jpeg,2021:09:19 08:31:43,50.89265833333333,-0.051825
+StinkHorn,misc/images/fungi/StinkHorn/IMG_5112.jpeg,2021:10:09 15:40:24,50.884505555555556,-0.8297916666666667
+StinkHorn,misc/images/fungi/StinkHorn/IMG_4955.jpeg,2021:09:25 15:16:54,51.371697222222224,-1.2422472222222223
+StinkHorn,misc/images/fungi/StinkHorn/IMG_4964.jpeg,2021:09:25 15:19:37,51.371697222222224,-1.242227777777778
+Candlesnuff_fungus,misc/images/fungi/Candlesnuff_fungus/IMG_9118.jpeg,2022:10:30 15:45:52,51.71284166666667,-1.2610611111111112
+Magpie_inkcap,misc/images/fungi/Magpie_inkcap/IMG_9018.jpeg,2022:10:29 15:18:25,51.71570833333334,-1.2632583333333334
