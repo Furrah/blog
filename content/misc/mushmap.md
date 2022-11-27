@@ -55,7 +55,8 @@ function valueCallBack(res){
 	for (let i = 1; i < res.length -1; i++) {
 		var fungi = res[i].split(',');
 
-		var markerB = L.marker([fungi[3], fungi[4]], {title: "This is a title"})
+		// var markerB = L.marker([fungi[3], fungi[4]], {title: "This is a title"})
+        var marker = L.marker([fungi[3], fungi[4]])
 			.addTo(map)
 			.bindPopup("<H3>" +fungi[0] + "</><img src=" + '/' + fungi[1] + "/>",{minWidth: 200})
 			.on('mouseover', function (e) {this.openPopup()})
