@@ -6,6 +6,7 @@ Coral,misc/images/fungi/Coral/IMG_5160.jpeg,2021:10:09 16:16:49,50.8878861111111
 Grey_spotted_amantia,misc/images/fungi/Grey_spotted_amantia/IMG_9218.jpeg,2022:11:07 15:57:19,53.186499999999995,-3.271975
 Grey_spotted_amantia,misc/images/fungi/Grey_spotted_amantia/IMG_9217.jpeg,2022:11:07 15:57:15,53.18655833333333,-3.272013888888889
 Lycoperdon_perlatum,misc/images/fungi/Lycoperdon_perlatum/IMG_5217.jpeg,2021:10:14 17:02:22,51.712136111111114,-1.2580444444444445
+Pleated_inkcap,misc/images/fungi/Pleated_inkcap/IMG_4914.jpeg,2021:09:19 08:31:43,50.89265833333333,-0.051825
 Giant_funnel,misc/images/fungi/Giant_funnel/IMG_9142.jpeg,2022:10:30 16:09:19,51.7105,-1.2570583333333334
 Upright_coral,misc/images/fungi/Upright_coral/IMG_9048.jpeg,2022:10:29 15:34:13,51.716175,-1.2613916666666667
 Upright_coral,misc/images/fungi/Upright_coral/IMG_9040.jpeg,2022:10:29 15:32:44,51.71607222222222,-1.261438888888889
@@ -13,6 +14,7 @@ Birch_polypore,misc/images/fungi/Birch_polypore/IMG_8539.jpeg,2022:10:03 17:57:3
 Shaggy_parasol,misc/images/fungi/Shaggy_parasol/IMG_9091.jpeg,2022:10:29 16:23:06,51.719055555555556,-1.2575805555555555
 Black_bulgar,misc/images/fungi/Black_bulgar/IMG_9265.jpeg,2022:11:09 12:30:29,52.93124722222222,-3.991811111111111
 Parasol,misc/images/fungi/Parasol/IMG_8725.jpeg,2022:10:16 15:33:04,51.78125,-1.1219777777777777
+Lilac_bonnet,misc/images/fungi/Lilac_bonnet/IMG_9052.jpeg,2022:10:29 15:38:18,51.71582777777778,-1.260375
 Lilac_bonnet,misc/images/fungi/Lilac_bonnet/IMG_8774.jpeg,2022:10:16 16:53:48,51.7746,-1.1199944444444445
 Aniseed_Funnel,misc/images/fungi/Aniseed_Funnel/IMG_8749.jpeg,2022:10:16 16:15:13,51.78001388888889,-1.1205694444444445
 Aniseed_Funnel,misc/images/fungi/Aniseed_Funnel/IMG_8753.jpeg,2022:10:16 16:17:35,51.78001666666667,-1.1205972222222222
@@ -32,9 +34,11 @@ Fly_agaric,misc/images/fungi/Fly_agaric/IMG_5224.jpeg,2021:10:14 17:44:39,51.708
 Turkey_tail,misc/images/fungi/Turkey_tail/IMG_9188.jpeg,2022:11:05 11:43:13,51.71143611111111,-1.2571416666666666
 Turkey_tail,misc/images/fungi/Turkey_tail/IMG_9321.jpeg,2022:11:09 13:55:36,52.926402777777774,-3.9807055555555557
 Jelly_ear,misc/images/fungi/Jelly_ear/IMG_8880.jpeg,2022:10:22 13:41:01,51.74787777777778,-1.1800388888888889
-UNKNOWN,misc/images/fungi/UNKNOWN/IMG_4914.jpeg,2021:09:19 08:31:43,50.89265833333333,-0.051825
+Couded_funnel,misc/images/fungi/Couded_funnel/IMG_9068.jpeg,2022:10:29 15:48:02,51.716433333333335,-1.259375
+Couded_funnel,misc/images/fungi/Couded_funnel/IMG_9070.jpeg,2022:10:29 15:48:10,51.71644722222222,-1.2593722222222221
 StinkHorn,misc/images/fungi/StinkHorn/IMG_5112.jpeg,2021:10:09 15:40:24,50.884505555555556,-0.8297916666666667
 StinkHorn,misc/images/fungi/StinkHorn/IMG_4955.jpeg,2021:09:25 15:16:54,51.371697222222224,-1.2422472222222223
 StinkHorn,misc/images/fungi/StinkHorn/IMG_4964.jpeg,2021:09:25 15:19:37,51.371697222222224,-1.242227777777778
 Candlesnuff_fungus,misc/images/fungi/Candlesnuff_fungus/IMG_9118.jpeg,2022:10:30 15:45:52,51.71284166666667,-1.2610611111111112
 Magpie_inkcap,misc/images/fungi/Magpie_inkcap/IMG_9018.jpeg,2022:10:29 15:18:25,51.71570833333334,-1.2632583333333334
+Magpie_inkcap,misc/images/fungi/Magpie_inkcap/IMG_9087.jpeg,2022:10:29 16:16:56,51.717463888888894,-1.2564305555555555

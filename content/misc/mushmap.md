@@ -4,7 +4,6 @@ date: 2022-11-26T16:50:40Z
 tags: []
 draft: false
 ---
-
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
      crossorigin=""/>
@@ -14,9 +13,7 @@ draft: false
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
      crossorigin=""></script>
 
-
 <div id="map"></div>
-
 <style> #map { height: 800px; }</style>
 
 
@@ -46,7 +43,7 @@ function valueCallBack(res){
 	var map = L.map('map').setView([51.71851, -1.25758], 15);
 
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 19,
+		maxZoom: 22, // was 19 
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
@@ -58,15 +55,13 @@ function valueCallBack(res){
 		// var markerB = L.marker([fungi[3], fungi[4]], {title: "This is a title"})
         var marker = L.marker([fungi[3], fungi[4]])
 			.addTo(map)
-			.bindPopup("<H3>" +fungi[0] + "</><img src=" + '/' + fungi[1] + "/>",{minWidth: 200})
+			.bindPopup("<H3>" +fungi[0] + "</><img src=" + '/' + fungi[1] + "/>",{minWidth: 300})
 			.on('mouseover', function (e) {this.openPopup()})
 			.on('mouseout', function (e) {this.closePopup()});
 	}
+    L.control.scale().addTo(map);
 
 }
-
-
-
 
 
 </script>
