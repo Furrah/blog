@@ -62,7 +62,7 @@ A couple of days later.
 
 # Harvest
 
-Three weeks have passed and it's time for harvest. All in all I managed to grow 620g of Oyster mushrooms in the first flush. The mushrooms should have been harvested a couple of days before but I was working way and wasn't able to monitor their growth. Hopefully the second flush gives at least 60% of the first harvest.
+Three weeks have passed and it's time for harvest. All in all I managed to grow 620g of Oyster mushrooms in the first flush. The mushrooms should have been harvested a couple of days before but I was working away and wasn't able to monitor their growth. Hopefully the second flush gives at least 60% of the first harvest.
 
 <div class="container">
   <div class="row">
