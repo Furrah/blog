@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.89.4" />
+  
+  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  
+  
+  <title>Python script for CMake Framework</title>
+  <style>
+.container {
+  max-width: 900px;
+}
+#nav a {
+  font-weight: bold;
+  color: inherit;
+
+}
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+#home-jumbotron {
+  background-color: inherit;
+}
+.font-125 {
+  font-size: 125%;
+}
+
+ 
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+ 
+
+
+a {
+  color: #007bff;
+ }  
+
+
+
+
+
+td, th {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+.card-img-top{
+   
+   
+   
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.card{
+  border-radius: 10px;
+
+}
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+
+
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-177014444-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  <body>
+    
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+        
+    <div class="container">
+      <main id="main">
+      
+<h1>Python script for CMake Framework</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2021-01-17">Jan 17, 2021</time>
+
+<br><br>
+<h2 id="outline">Outline</h2>
+<ul>
+<li>Generate file structure for program architecture.</li>
+<li>Generate generic CMakeLists.txt file for program compilation.</li>
+<li>Generate shell files to run CMake and execute program.</li>
+</ul>
+<h2 id="file-structure">File Structure</h2>
+<p>The file structure should be</p>
+<pre tabindex="0"><code>Project_name
+|--src
+|--|--CMakeLists.txt
+|--build
+|--|--build.sh
+|--run 
+|--|--run.sh
+</code></pre><h2 id="python-script">Python Script</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#60a0b0;font-style:italic">#!/usr/local/bin/python3</span>
+
+<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">os</span><span style="color:#666">,</span> <span style="color:#0e84b5;font-weight:bold">sys</span><span style="color:#666">,</span> <span style="color:#0e84b5;font-weight:bold">subprocess</span> 
+<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">argparse</span>
+
+parser <span style="color:#666">=</span> argparse<span style="color:#666">.</span>ArgumentParser()
+
+parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#39;-p&#39;</span>, action<span style="color:#666">=</span><span style="color:#4070a0">&#39;store&#39;</span>, dest<span style="color:#666">=</span><span style="color:#4070a0">&#39;project_name&#39;</span>,
+                    help<span style="color:#666">=</span><span style="color:#4070a0">&#39;Name of project&#39;</span>)
+
+results <span style="color:#666">=</span> parser<span style="color:#666">.</span>parse_args()
+
+<span style="color:#007020;font-weight:bold">if</span> <span style="color:#007020;font-weight:bold">not</span> os<span style="color:#666">.</span>path<span style="color:#666">.</span>exists(<span style="color:#4070a0">&#34;./build&#34;</span>):
+	os<span style="color:#666">.</span>makedirs(<span style="color:#4070a0">&#34;build&#34;</span>)
+
+<span style="color:#007020;font-weight:bold">if</span> <span style="color:#007020;font-weight:bold">not</span> os<span style="color:#666">.</span>path<span style="color:#666">.</span>exists(<span style="color:#4070a0">&#34;./run&#34;</span>):
+	os<span style="color:#666">.</span>makedirs(<span style="color:#4070a0">&#34;run&#34;</span>)
+
+<span style="color:#007020;font-weight:bold">if</span> <span style="color:#007020;font-weight:bold">not</span> os<span style="color:#666">.</span>path<span style="color:#666">.</span>exists(<span style="color:#4070a0">&#34;./src&#34;</span>):
+	os<span style="color:#666">.</span>makedirs(<span style="color:#4070a0">&#34;src&#34;</span>)
+
+os<span style="color:#666">.</span>chdir(<span style="color:#4070a0">&#34;src/&#34;</span>)
+
+<span style="color:#007020;font-weight:bold">if</span> <span style="color:#007020">len</span>(sys<span style="color:#666">.</span>argv) <span style="color:#666">&lt;=</span><span style="color:#40a070">1</span>:
+	<span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Not enough arguments, use -p to add project name&#34;</span>)
+	sys<span style="color:#666">.</span>exit()
+
+PROJECT_NAME <span style="color:#666">=</span> results<span style="color:#666">.</span>project_name
+
+<span style="color:#007020;font-weight:bold">with</span> <span style="color:#007020">open</span>(<span style="color:#4070a0">&#34;CMakeLists.txt&#34;</span>, <span style="color:#4070a0">&#39;w+&#39;</span>) <span style="color:#007020;font-weight:bold">as</span> file:
+	
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;cmake_minimum_required(VERSION 3.18.4)</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;project(&#34;</span> <span style="color:#666">+</span> PROJECT_NAME <span style="color:#666">+</span> <span style="color:#4070a0">&#34;)</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;set(CMAKE_CXX_STANDARD 17)</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;add_executable($</span><span style="color:#70a0d0;font-style:italic">{PROJECT_NAME}</span><span style="color:#4070a0"> main.cpp)</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;add_subdirectory()</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;target_include_directories($</span><span style="color:#70a0d0;font-style:italic">{PROJECT_NAME}</span><span style="color:#4070a0;font-weight:bold">\n\t</span><span style="color:#4070a0">#/usr/local/include</span><span style="color:#4070a0;font-weight:bold">\n\t</span><span style="color:#4070a0">)</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;target_link_directories($</span><span style="color:#70a0d0;font-style:italic">{PROJECT_NAME}</span><span style="color:#4070a0;font-weight:bold">\n\t</span><span style="color:#4070a0">#/usr/local/lib</span><span style="color:#4070a0;font-weight:bold">\n\t</span><span style="color:#4070a0">)</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;target_link_libraries($</span><span style="color:#70a0d0;font-style:italic">{PROJECT_NAME}</span><span style="color:#4070a0">)</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">&#34;</span>)
+
+os<span style="color:#666">.</span>chdir(<span style="color:#4070a0">&#34;../run&#34;</span>)
+
+<span style="color:#007020;font-weight:bold">with</span> <span style="color:#007020">open</span>(<span style="color:#4070a0">&#34;run.sh&#34;</span>, <span style="color:#4070a0">&#39;w+&#39;</span>) <span style="color:#007020;font-weight:bold">as</span> file:
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;#!/bin/sh</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">./../build/&#34;</span><span style="color:#666">+</span> PROJECT_NAME )
+
+subprocess<span style="color:#666">.</span>run([<span style="color:#4070a0">&#34;chmod&#34;</span>,<span style="color:#4070a0">&#34;+x&#34;</span>, <span style="color:#4070a0">&#34;run.sh&#34;</span>])
+
+os<span style="color:#666">.</span>chdir(<span style="color:#4070a0">&#34;../build&#34;</span>)
+
+<span style="color:#007020;font-weight:bold">with</span> <span style="color:#007020">open</span>(<span style="color:#4070a0">&#34;build.sh&#34;</span>, <span style="color:#4070a0">&#39;w+&#39;</span>) <span style="color:#007020;font-weight:bold">as</span> file:
+	file<span style="color:#666">.</span>write(<span style="color:#4070a0">&#34;#!/bin/sh</span><span style="color:#4070a0;font-weight:bold">\n\n</span><span style="color:#4070a0">cmake -S ../src -B .&#34;</span>)
+
+subprocess<span style="color:#666">.</span>run([<span style="color:#4070a0">&#34;chmod&#34;</span>,<span style="color:#4070a0">&#34;+x&#34;</span>, <span style="color:#4070a0">&#34;build.sh&#34;</span>])	
+</code></pre></div><h2 id="make-file-executable-system-wide">Make file executable system wide</h2>
+<p>Save the python script in a folder of your choice. I&rsquo;ve called mine &ldquo;cmf&rdquo; - CMakeFramework</p>
+<p>navigate to the script and make it executable with</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod +x cmf
+</code></pre></div><p>Then add to path by editing .bashrc/.zshrc or whatever shell you use.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007020">export</span> <span style="color:#bb60d5">PATH</span><span style="color:#666">=</span><span style="color:#bb60d5">$PATH</span>:&lt;path_to_script&gt;
+</code></pre></div><h2 id="cmakeliststxt-file">CMakeLists.txt file</h2>
+<p>below is the contents of the CMakeLists.txt file for a project called &ldquo;Test_Project&rdquo; This can be easily edited and just provides a simple framework for getting started with a C++ project.</p>
+<pre tabindex="0"><code>cmake_minimum_required(VERSION 3.18.4)
+
+project(Test_Project)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+add_subdirectory()
+
+target_include_directories(${PROJECT_NAME}
+        #/usr/local/include
+        )
+
+target_link_directories(${PROJECT_NAME}
+        #/usr/local/lib
+        )
+
+target_link_libraries(${PROJECT_NAME})
+</code></pre><h2 id="runsh--buildsh">run.sh &amp; build.sh</h2>
+<p>Generated Shell files</p>
+<h3 id="runsh">run.sh</h3>
+<pre tabindex="0"><code>#!/bin/sh
+
+./../build/&lt;project_name&gt;
+</code></pre><h3 id="buildsh">build.sh</h3>
+<pre tabindex="0"><code>#!/bin/sh
+
+cmake -S ../src -B .
+</code></pre>
+
+
+
+
+      </main>
+
+    </div>
+    
+<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>   
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>   
+  </body>
+</html>

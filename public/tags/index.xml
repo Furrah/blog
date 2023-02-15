@@ -1,382 +1,657 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on An Attempt to Organise my Mind</title>
-    <link>https://furrah.github.io/tags/</link>
-    <description>Recent content in Tags on An Attempt to Organise my Mind</description>
+    <title>Tags on Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/tags/</link>
+    <description>Recent content in Tags on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2019 14:09:17 +0100</lastBuildDate>
-    
-	<atom:link href="https://furrah.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 08 Dec 2019 11:23:58 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>baking</title>
-      <link>https://furrah.github.io/tags/baking/</link>
-      <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
+      <title>AD5627</title>
+      <link>https://mybrainhertz.co.uk/tags/ad5627/</link>
+      <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/baking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>flapjack</title>
-      <link>https://furrah.github.io/tags/flapjack/</link>
-      <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/flapjack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>adjustment</title>
-      <link>https://furrah.github.io/tags/adjustment/</link>
-      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/adjustment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>amplifier</title>
-      <link>https://furrah.github.io/tags/amplifier/</link>
-      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/amplifier/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>basics</title>
-      <link>https://furrah.github.io/tags/basics/</link>
-      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/basics/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/ad5627/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DAC</title>
-      <link>https://furrah.github.io/tags/dac/</link>
-      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      <link>https://mybrainhertz.co.uk/tags/dac/</link>
+      <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/dac/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/dac/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>gain</title>
-      <link>https://furrah.github.io/tags/gain/</link>
-      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      <title>level shifting</title>
+      <link>https://mybrainhertz.co.uk/tags/level-shifting/</link>
+      <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/gain/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/level-shifting/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>op amp</title>
-      <link>https://furrah.github.io/tags/op-amp/</link>
-      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      <title>design</title>
+      <link>https://mybrainhertz.co.uk/tags/design/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/op-amp/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/design/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>operational</title>
-      <link>https://furrah.github.io/tags/operational/</link>
-      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      <title>differential</title>
+      <link>https://mybrainhertz.co.uk/tags/differential/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/operational/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/differential/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ESD</title>
+      <link>https://mybrainhertz.co.uk/tags/esd/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/esd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guide</title>
+      <link>https://mybrainhertz.co.uk/tags/guide/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microstrip</title>
+      <link>https://mybrainhertz.co.uk/tags/microstrip/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/microstrip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>single-ended</title>
+      <link>https://mybrainhertz.co.uk/tags/single-ended/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/single-ended/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>USB</title>
+      <link>https://mybrainhertz.co.uk/tags/usb/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/usb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ADA4096</title>
+      <link>https://mybrainhertz.co.uk/tags/ada4096/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/ada4096/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ADC</title>
+      <link>https://mybrainhertz.co.uk/tags/adc/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/adc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LTC2990</title>
+      <link>https://mybrainhertz.co.uk/tags/ltc2990/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/ltc2990/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monitoring</title>
+      <link>https://mybrainhertz.co.uk/tags/monitoring/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>op amps</title>
+      <link>https://mybrainhertz.co.uk/tags/op-amps/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/op-amps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>power</title>
+      <link>https://mybrainhertz.co.uk/tags/power/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/power/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>supply</title>
+      <link>https://mybrainhertz.co.uk/tags/supply/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/supply/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Buffer</title>
+      <link>https://mybrainhertz.co.uk/tags/buffer/</link>
+      <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/buffer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gates</title>
+      <link>https://mybrainhertz.co.uk/tags/gates/</link>
+      <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/gates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inverter</title>
+      <link>https://mybrainhertz.co.uk/tags/inverter/</link>
+      <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/inverter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logic</title>
+      <link>https://mybrainhertz.co.uk/tags/logic/</link>
+      <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XOR</title>
+      <link>https://mybrainhertz.co.uk/tags/xor/</link>
+      <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/xor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>aubergine</title>
-      <link>https://furrah.github.io/tags/aubergine/</link>
-      <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
+      <link>https://mybrainhertz.co.uk/tags/aubergine/</link>
+      <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/aubergine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chinese</title>
-      <link>https://furrah.github.io/tags/chinese/</link>
-      <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/chinese/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>garlic</title>
-      <link>https://furrah.github.io/tags/garlic/</link>
-      <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/garlic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sauce</title>
-      <link>https://furrah.github.io/tags/sauce/</link>
-      <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/sauce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>butter</title>
-      <link>https://furrah.github.io/tags/butter/</link>
-      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/butter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>food</title>
-      <link>https://furrah.github.io/tags/food/</link>
-      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Indian</title>
-      <link>https://furrah.github.io/tags/indian/</link>
-      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/indian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>makhani</title>
-      <link>https://furrah.github.io/tags/makhani/</link>
-      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/makhani/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>murgh</title>
-      <link>https://furrah.github.io/tags/murgh/</link>
-      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/murgh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tofu</title>
-      <link>https://furrah.github.io/tags/tofu/</link>
-      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/tofu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fallafel</title>
-      <link>https://furrah.github.io/tags/fallafel/</link>
-      <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/fallafel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wraps</title>
-      <link>https://furrah.github.io/tags/wraps/</link>
-      <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/wraps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>FPGA</title>
-      <link>https://furrah.github.io/tags/fpga/</link>
-      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/fpga/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>I2C</title>
-      <link>https://furrah.github.io/tags/i2c/</link>
-      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/i2c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>interface</title>
-      <link>https://furrah.github.io/tags/interface/</link>
-      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/interface/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>verilog</title>
-      <link>https://furrah.github.io/tags/verilog/</link>
-      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/verilog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VHDL</title>
-      <link>https://furrah.github.io/tags/vhdl/</link>
-      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/vhdl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wishbone</title>
-      <link>https://furrah.github.io/tags/wishbone/</link>
-      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/wishbone/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BJT</title>
-      <link>https://furrah.github.io/tags/bjt/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/bjt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DC</title>
-      <link>https://furrah.github.io/tags/dc/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/dc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>integrated</title>
-      <link>https://furrah.github.io/tags/integrated/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/integrated/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JFET</title>
-      <link>https://furrah.github.io/tags/jfet/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/jfet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>noise</title>
-      <link>https://furrah.github.io/tags/noise/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/noise/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OPA227</title>
-      <link>https://furrah.github.io/tags/opa227/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/opa227/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opamps</title>
-      <link>https://furrah.github.io/tags/opamps/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/opamps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spectrum</title>
-      <link>https://furrah.github.io/tags/spectrum/</link>
-      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://furrah.github.io/tags/spectrum/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/aubergine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>curry</title>
-      <link>https://furrah.github.io/tags/curry/</link>
-      <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
+      <link>https://mybrainhertz.co.uk/tags/curry/</link>
+      <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/curry/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/curry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indian</title>
+      <link>https://mybrainhertz.co.uk/tags/indian/</link>
+      <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/indian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tamarind</title>
+      <link>https://mybrainhertz.co.uk/tags/tamarind/</link>
+      <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/tamarind/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tomato</title>
+      <link>https://mybrainhertz.co.uk/tags/tomato/</link>
+      <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/tomato/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eggs</title>
+      <link>https://mybrainhertz.co.uk/tags/eggs/</link>
+      <pubDate>Mon, 18 Nov 2019 19:21:08 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/eggs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bhuna</title>
+      <link>https://mybrainhertz.co.uk/tags/bhuna/</link>
+      <pubDate>Mon, 04 Nov 2019 21:42:02 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/bhuna/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>egg</title>
+      <link>https://mybrainhertz.co.uk/tags/egg/</link>
+      <pubDate>Mon, 04 Nov 2019 21:42:02 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/egg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>broccoli</title>
+      <link>https://mybrainhertz.co.uk/tags/broccoli/</link>
+      <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/broccoli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cous cous</title>
+      <link>https://mybrainhertz.co.uk/tags/cous-cous/</link>
+      <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/cous-cous/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>halloumi</title>
+      <link>https://mybrainhertz.co.uk/tags/halloumi/</link>
+      <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/halloumi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>middle east</title>
+      <link>https://mybrainhertz.co.uk/tags/middle-east/</link>
+      <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/middle-east/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parsley</title>
+      <link>https://mybrainhertz.co.uk/tags/parsley/</link>
+      <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/parsley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>baking</title>
+      <link>https://mybrainhertz.co.uk/tags/baking/</link>
+      <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/baking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flapjack</title>
+      <link>https://mybrainhertz.co.uk/tags/flapjack/</link>
+      <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/flapjack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adjustment</title>
+      <link>https://mybrainhertz.co.uk/tags/adjustment/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/adjustment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>amplifier</title>
+      <link>https://mybrainhertz.co.uk/tags/amplifier/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/amplifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>basics</title>
+      <link>https://mybrainhertz.co.uk/tags/basics/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/basics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gain</title>
+      <link>https://mybrainhertz.co.uk/tags/gain/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/gain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>op amp</title>
+      <link>https://mybrainhertz.co.uk/tags/op-amp/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/op-amp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operational</title>
+      <link>https://mybrainhertz.co.uk/tags/operational/</link>
+      <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/operational/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chinese</title>
+      <link>https://mybrainhertz.co.uk/tags/chinese/</link>
+      <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/chinese/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>garlic</title>
+      <link>https://mybrainhertz.co.uk/tags/garlic/</link>
+      <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/garlic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sauce</title>
+      <link>https://mybrainhertz.co.uk/tags/sauce/</link>
+      <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/sauce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>butter</title>
+      <link>https://mybrainhertz.co.uk/tags/butter/</link>
+      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/butter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>food</title>
+      <link>https://mybrainhertz.co.uk/tags/food/</link>
+      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>makhani</title>
+      <link>https://mybrainhertz.co.uk/tags/makhani/</link>
+      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/makhani/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>murgh</title>
+      <link>https://mybrainhertz.co.uk/tags/murgh/</link>
+      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/murgh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tofu</title>
+      <link>https://mybrainhertz.co.uk/tags/tofu/</link>
+      <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/tofu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>falafel</title>
+      <link>https://mybrainhertz.co.uk/tags/falafel/</link>
+      <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/falafel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wraps</title>
+      <link>https://mybrainhertz.co.uk/tags/wraps/</link>
+      <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/wraps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FPGA</title>
+      <link>https://mybrainhertz.co.uk/tags/fpga/</link>
+      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/fpga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I2C</title>
+      <link>https://mybrainhertz.co.uk/tags/i2c/</link>
+      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/i2c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interface</title>
+      <link>https://mybrainhertz.co.uk/tags/interface/</link>
+      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/interface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>verilog</title>
+      <link>https://mybrainhertz.co.uk/tags/verilog/</link>
+      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/verilog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VHDL</title>
+      <link>https://mybrainhertz.co.uk/tags/vhdl/</link>
+      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/vhdl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wishbone</title>
+      <link>https://mybrainhertz.co.uk/tags/wishbone/</link>
+      <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/wishbone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BJT</title>
+      <link>https://mybrainhertz.co.uk/tags/bjt/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/bjt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DC</title>
+      <link>https://mybrainhertz.co.uk/tags/dc/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/dc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>integrated</title>
+      <link>https://mybrainhertz.co.uk/tags/integrated/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/integrated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JFET</title>
+      <link>https://mybrainhertz.co.uk/tags/jfet/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/jfet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>noise</title>
+      <link>https://mybrainhertz.co.uk/tags/noise/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/noise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OPA227</title>
+      <link>https://mybrainhertz.co.uk/tags/opa227/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/opa227/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opamps</title>
+      <link>https://mybrainhertz.co.uk/tags/opamps/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/opamps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spectrum</title>
+      <link>https://mybrainhertz.co.uk/tags/spectrum/</link>
+      <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tags/spectrum/</guid>
       <description></description>
     </item>
     
     <item>
       <title>josh</title>
-      <link>https://furrah.github.io/tags/josh/</link>
+      <link>https://mybrainhertz.co.uk/tags/josh/</link>
       <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/josh/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/josh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rogan</title>
-      <link>https://furrah.github.io/tags/rogan/</link>
+      <link>https://mybrainhertz.co.uk/tags/rogan/</link>
       <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/rogan/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/rogan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>coconut</title>
-      <link>https://furrah.github.io/tags/coconut/</link>
+      <link>https://mybrainhertz.co.uk/tags/coconut/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/coconut/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/coconut/</guid>
       <description></description>
     </item>
     
     <item>
       <title>creamy</title>
-      <link>https://furrah.github.io/tags/creamy/</link>
+      <link>https://mybrainhertz.co.uk/tags/creamy/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/creamy/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/creamy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lentil</title>
-      <link>https://furrah.github.io/tags/lentil/</link>
+      <link>https://mybrainhertz.co.uk/tags/lentil/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tags/lentil/</guid>
+      <guid>https://mybrainhertz.co.uk/tags/lentil/</guid>
       <description></description>
     </item>
     

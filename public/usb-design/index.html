@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.89.4" />
+  
+  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  
+  
+  <title>USB Design Guide</title>
+  <style>
+.container {
+  max-width: 900px;
+}
+#nav a {
+  font-weight: bold;
+  color: inherit;
+
+}
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+#home-jumbotron {
+  background-color: inherit;
+}
+.font-125 {
+  font-size: 125%;
+}
+
+ 
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+ 
+
+
+a {
+  color: #007bff;
+ }  
+
+
+
+
+
+td, th {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+.card-img-top{
+   
+   
+   
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.card{
+  border-radius: 10px;
+
+}
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+
+
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-177014444-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  <body>
+    
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+        
+    <div class="container">
+      <main id="main">
+      
+<h1>USB Design Guide</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2019-11-30">Nov 30, 2019</time>
+
+  <br>
+  <i data-feather="tag"></i>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/usb">USB</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/design">design</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/guide">guide</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/microstrip">microstrip</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/differential">differential</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/single-ended">single-ended</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/esd">ESD</a>
+  
+
+<br><br>
+<h2 id="key-features">Key features</h2>
+<ul>
+<li>USB connector</li>
+<li>ESD protection</li>
+<li>Differential microstrip design for USB</li>
+</ul>
+<h2 id="usb-connector">USB Connector</h2>
+<p>For this particular design I have chosen a USB-B female connector from Mouser.</p>
+<div>
+  <table class="w3-table-all w3-card-4" table style="width:70%" align="center">
+    <tr>
+      <th>Mouser #</th>
+      <th>Manufacturer #</th>
+      <th>Manufacturer </th>
+    </tr>
+    <tr>
+      <td>571-292304-1</td>
+      <td>292304-1 </td>
+      <td>TE Connectivity</td>
+    </tr>
+  </table>
+</div>
+<br>
+<p align="center"> 
+<img src="/electronics/images/usb-b.png" alt="drawing" width="100">
+</p>
+<p>The USB connector datasheet can be found
+<a href="https://www.mouser.ch/datasheet/2/418/NG_DS_7-1773442-0_0306-1258760.pdf" target="_blank">here.</a></p>
+<h2 id="esd-protection">ESD Protection</h2>
+<p>The
+<a href="https://assets.nexperia.com/documents/data-sheet/PRTR5V0U4Y.pdf" target="_blank">PRTR5V0U4Y</a>
+is designed to protect Input/Output (I/O) ports that are sensitive to capacitive load, such as USB 2.0, Ethernet and DVI from destruction by ElectroStaticDischarge (ESD). It provides protection to downstream signal and supply components from ESD voltages as high as ±8 kV (contact discharge).The PRTR5V0U4Y incorporates four pairs of ultra-low capacitance rail-to-rail diodes plus a Zener diode. The rail-to-rail diodes are connected to the Zener diode which allows ESD protection to be independent of supply voltage. The PRTR5V0U4Y is fabricated using thin film-on-silicon technology integrating four ultra-low capacitance rail-to-rail ESD protection diodes in a miniature 6-lead SOT363 package.</p>
+<p align="center"> 
+<img src="/electronics/images/USB-routing.PNG" alt="drawing" width="700">
+</p>
+<h2 id="microstrip-design">Microstrip Design</h2>
+<p><a href=https://www.analog.com/en/analog-dialogue/articles/switching-in-usb-consumer-applications.html target="_blank">USB Design</a>
+requires 45 Ohm single ended traces with a differential impedance of 90 Ohm. I like to use the calculators from <a href="http://www.mantaro.com">www.mantaro.com</a> to design microstrip lines. The differential microstrip calculator can be found <a href=https://www.mantaro.com/resources/impedance-calculator.htm
+target="_blank">here.</a>
+The table below shows some initial design parameters to start the design.</p>
+<table class="w3-table-all w3-card-4" table style="width:50%" align="center">
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Trace Width (mm)</td>
+    <td>0.59</td>
+  </tr>
+  <tr>
+    <td>Trace Seperation (mm)</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Trace Thickness (mm)</td>
+    <td>0.035</td>
+  </tr>
+    <tr>
+    <td>Dielectric Thickness (mm)</td>
+    <td>0.3</td>
+  </tr>
+  <tr>
+    <td>Relative Dielectric Constant</td>
+    <td>4.5</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Differential Line Impedance</td>
+    <td>88.678</td>
+  </tr>
+  <tr>
+    <td>Single Ended Line Impedance</td>
+    <td>45.228</td>
+  </tr>
+</table>  
+<br>
+
+
+
+
+
+      </main>
+
+    </div>
+    
+<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>   
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>   
+  </body>
+</html>

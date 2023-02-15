@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.89.4" />
+  
+  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  
+  
+  <title>Kalman Filter RLC</title>
+  <style>
+.container {
+  max-width: 900px;
+}
+#nav a {
+  font-weight: bold;
+  color: inherit;
+
+}
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+#home-jumbotron {
+  background-color: inherit;
+}
+.font-125 {
+  font-size: 125%;
+}
+
+ 
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+ 
+
+
+a {
+  color: #007bff;
+ }  
+
+
+
+
+
+td, th {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+.card-img-top{
+   
+   
+   
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.card{
+  border-radius: 10px;
+
+}
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+
+
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-177014444-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  <body>
+    
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+        
+    <div class="container">
+      <main id="main">
+      
+<h1>Kalman Filter RLC</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2020-06-01">Jun 1, 2020</time>
+
+<br><br>
+<!-- The Kalman filter combines measurements and a theoretical model to best estimate the state of a system. The example below is a simple RLC circuit, which is a second order system. If we imagine an ADC is measuring the  potential difference over the circuit, which will be noisy and for the Kalman filter to work this must be gaussian 
+ -->
+<style>
+  code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}  
+
+</style>
+<p align="center"> 
+<img src="/misc/images/RLC_circuit.svg" alt="RLC" width = 500px>
+</p>
+<p>The RLC circuit above can be expressed by the following equation</p>
+<div>
+$$ \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC}  -\frac{I_L}{LC} + \frac{I}{LC} $$
+<p>The equation can be expressed as two first order differential equations using the following method.</p>
+<p>$$ x_{1} = I_{L} $$</p>
+<p>$$ x_{2} = \dot{I}_{L}$$</p>
+</div>
+so 
+<div>
+$$ 
+\dot{x}_{2} = \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_{L}}{LC} + \frac{I}{LC}
+$$
+</div>
+<p>and</p>
+<div>
+$$\dot{x}_{1} =\dot{I}_{L} =  x_{2}$$
+</div>
+<p>Replacing variables with state variables $\bf{X}$</p>
+<div>
+$$ \dot{x}_{2} = - \frac{x_{2}}{RC} - \frac{x_{1}}{LC} + \frac{I}{LC} $$
+</div>
+Using the formula below the derivative can be discretised.  
+$$  \dot{x} = \frac{x_{k+1}  - x_k   }{\Delta t} $$
+<p>$$ \frac{x_{1_{k+1}} - x_{1_{k}}}   {\Delta t} = x_{2_{k}}$$</p>
+<p>rearranging gives the future value for $x_{1}$</p>
+<p>$$ x_{1_{k+1}}  = \Delta t x_{2_{k}} + x_{1_{k}} $$</p>
+<p>The same method is then applied to $x_{2}$</p>
+<p>$$
+\frac{x_{2_{k+1}}- x_{2_k}}{\Delta t}  = -\frac{x_{1_k}} {LC}  -\frac{x_{2_{k}}}{RC} + \frac{I_k}{LC}
+$$</p>
+<p>Giving the future value for $x_{2}$</p>
+<p>$$
+x_{2_{k+1}} = -\frac{\Delta t x_{1_k}} {LC} -  x_{2_{k}}\left (1- \frac{\Delta t}{RC} \right) + \frac{\Delta t I_k}{LC}
+$$</p>
+<!-- 
+The two equations can then be displayed in state space formalism. I have shifted the time step of the system by -1. The predicted value $x_{1_{k+1}} $ is now predicting the current state of the system as $x_{1_{k}}$ From here on, a hat above a variable indicates a predicted state and a tilde is a measured variable. -->
+<p>The two equations can now be expressed in state space formalism. I have shifted the time step by -1 so $x_{1_{k+1}} $ is now $x_{1_{k}}$. This is done to maintain accordance with the kalman filter framework as shown below by the state transition model.</p>
+<div>
+$$
+\hat{X}_k = F_k X_{k-1} + B_{k} U_{k}
+$$
+</div>
+<p>where</p>
+<ul>
+<li>$\hat{\bf{X}}$ - estimated state</li>
+<li>$\bf{X_{k-1}}$ - previous time steps estimated true state (combination of estimate and measurement)</li>
+<li>$\bf{F}$ - state transition model</li>
+<li>$\bf{B}$ - control input model</li>
+<li>$\bf{U}$ - control input</li>
+</ul>
+<p>From here on, a hat above a variable indicates a predicted state and a tilde is a measured variable.</p>
+<div>
+\begin{align}
+\newcommand{\xoverbrace}[2][\vphantom{\dfrac{A}{A}}]{\overbrace{#1#2}}
+\newcommand{\pder}[2]{\frac{\partial#1}{\partial#2}}
+\overbrace{
+\begin{bmatrix}
+\hat{x}_{1_{k}}\\ 
+\hat{x}_{2_{k}}
+\end{bmatrix}
+}^\mathbf{\hat{X}_k}
+=
+\overbrace{
+\begin{bmatrix}
+1 & \Delta t \\ 
+ -\frac{\Delta t}{LC} &  1 - \frac{\Delta t}{RC}
+\end{bmatrix} 
+}^\mathbf{F_k}
+\:
+\overbrace{
+\begin{bmatrix}
+x_{1_{k-1}}\\  
+x_{2_{k-1}}
+\end{bmatrix}
+}^\mathbf{\hat{{X}}_{k-1}}
++ 
+\overbrace{
+\begin{bmatrix}
+0\\ 
+\frac{\Delta t}{LC}
+\end{bmatrix}
+}^{\mathbf{B_{k}}}
+\:
+\xoverbrace{
+I_{k-1}
+}^\mathbf{U_{k}}
+\end{align}
+</div>
+<p>The voltage induced across an inductor is equal to the rate of change of current passing through it multiplied by its inductance.</p>
+<div>
+$$
+\tilde{v}(t) = L\dot{I}_{L}
+$$
+</div>
+<!-- The correction matrix is then equal to the prediction minus the measurement multiplied by the Kalman gain of the system.  -->
+<p>The correction matrix takes the predicted value and adjusts it based on a measurement. How much the measurement is incorporated into the prediction is dependent on the Kalman gain.</p>
+<div>
+$$
+\begin{bmatrix}
+x_{1_{k}}\\ 
+x_{2_{k}}
+\end{bmatrix}
+= 
+\overbrace{
+\begin{bmatrix}
+\hat{x}_{1_{k}}\\ 
+\hat{x}_{2_{k}}
+\end{bmatrix}
+}^\mathbf{\hat{X}} +
+K \left(
+\tilde{v}_k -
+\overbrace{
+\begin{bmatrix}
+0 & L
+\end{bmatrix} 
+}^\textbf{H}
+\begin{bmatrix}
+\hat{x}_{1_{k}}\\ 
+\hat{x}_{2_{k}}
+\end{bmatrix}
+\right )
+$$
+</div>
+<p>This is all that is needed in terms of design. The rest of the algorithm follows the formula below taken from Wikipedia.</p>
+<p align="center"> 
+<img src="/misc/images/Kalman_Design_wiki.png" alt="RLC" width = 550px>
+</p>
+<h3 id="results">Results</h3>
+<p align="center"> 
+<img src="/misc/images/Inductor_current.png" alt="RLC" width = 800px>
+</p>
+<p align="center"> 
+<img src="/misc/images/Inductor_current_deriv.png" alt="RLC" width = 800px>
+</p>
+<p align="center"> 
+<img src="/misc/images/Inductor_voltage.png" alt="RLC" width = 800px>
+</p>
+<h2 id="python-implementation">Python Implementation</h2>
+<p>The implementation is made in a jupyter notebook which can be downloaded here.
+For ease of viewing I have pasted the code segments here - <a href="/docs/kalman_RLC.ipynb">Kalman RLC Notebook</a></p>
+<h4 id="requirements">Requirements</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">%</span>matplotlib qt
+<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">numpy</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">np</span>
+<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">matplotlib.pyplot</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">plt</span>
+<span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">numpy.linalg</span> <span style="color:#007020;font-weight:bold">import</span> inv
+<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">copy</span>
+</code></pre></div><h4 id="transition-model">Transition Model</h4>
+<div>
+$$
+\hat{X}_k = F_k X_{k-1} + B_{k} U_{k}
+$$
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prediction</span>(Il,Ildot,I,t):
+    
+    L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+    C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
+    R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
+    
+    A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, t],
+                  [<span style="color:#666">-</span>t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), <span style="color:#40a070">1</span> <span style="color:#666">-</span> (t<span style="color:#666">/</span>(R<span style="color:#666">*</span>C))]])
+    
+    X <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[Il],
+                 [Ildot]])
+    
+    B <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>],
+                  [t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C)]])
+    
+    U <span style="color:#666">=</span> I
+    
+    X_prediction <span style="color:#666">=</span> A<span style="color:#666">.</span>dot(X) <span style="color:#666">+</span> B<span style="color:#666">.</span>dot(U)
+
+    
+    <span style="color:#007020;font-weight:bold">return</span> X_prediction
+
+</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#60a0b0;font-style:italic">#time </span>
+T <span style="color:#666">=</span> <span style="color:#40a070">0.14</span>
+t <span style="color:#666">=</span> np<span style="color:#666">.</span>linspace(<span style="color:#40a070">0</span>,T,<span style="color:#40a070">100e3</span><span style="color:#666">*</span>T)
+
+<span style="color:#60a0b0;font-style:italic">#initialise inductor current and its derivertive</span>
+Il_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
+Ildot_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
+
+<span style="color:#60a0b0;font-style:italic">#cicuit component definitions</span>
+L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
+R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
+<span style="color:#60a0b0;font-style:italic">#create input signal </span>
+wr <span style="color:#666">=</span> <span style="color:#40a070">1</span><span style="color:#666">/</span>np<span style="color:#666">.</span>sqrt(L<span style="color:#666">*</span>C)
+
+I_true <span style="color:#666">=</span> <span style="color:#40a070">25e-6</span> <span style="color:#666">*</span> np<span style="color:#666">.</span>sin(wr <span style="color:#666">*</span> t)
+
+<span style="color:#60a0b0;font-style:italic">#time step</span>
+dt <span style="color:#666">=</span> t[<span style="color:#40a070">1</span>] <span style="color:#666">-</span> t[<span style="color:#40a070">0</span>]
+
+<span style="color:#60a0b0;font-style:italic">#create True data </span>
+I <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros((<span style="color:#40a070">2</span>,<span style="color:#007020">len</span>(t)))
+
+<span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>,<span style="color:#007020">len</span>(t)):
+    a <span style="color:#666">=</span>  prediction(I[<span style="color:#40a070">0</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I[<span style="color:#40a070">1</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I_true[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)<span style="color:#666">.</span>T
+    I[:,i] <span style="color:#666">=</span> a
+
+Il_true <span style="color:#666">=</span> I[<span style="color:#40a070">0</span>]
+Ildot_true <span style="color:#666">=</span> I[<span style="color:#40a070">1</span>]
+    
+V_true <span style="color:#666">=</span> L<span style="color:#666">*</span>Ildot_true
+noise <span style="color:#666">=</span> np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal(loc<span style="color:#666">=</span><span style="color:#40a070">0</span>, scale<span style="color:#666">=</span><span style="color:#40a070">0.5</span>, size<span style="color:#666">=</span><span style="color:#007020">len</span>(t))
+V_meas <span style="color:#666">=</span> V_true <span style="color:#666">+</span> noise
+</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#60a0b0;font-style:italic">#state transition model </span>
+A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, dt],
+              [<span style="color:#666">-</span>dt<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), (<span style="color:#40a070">1</span> <span style="color:#666">-</span> (dt<span style="color:#666">/</span>(R<span style="color:#666">*</span>C)))]],dtype<span style="color:#666">=</span><span style="color:#4070a0">&#39;float&#39;</span>)
+
+<span style="color:#60a0b0;font-style:italic">#process noise(model noise)</span>
+Q <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4e-9</span>, <span style="color:#40a070">0</span>],
+              [<span style="color:#40a070">0</span>, <span style="color:#40a070">4e-9</span>]])
+
+<span style="color:#60a0b0;font-style:italic">#measurement noise</span>
+R <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4</span>]])
+
+<span style="color:#60a0b0;font-style:italic">#Initial Predicted (a priori) estimate</span>
+P<span style="color:#666">=</span>Q
+<span style="color:#60a0b0;font-style:italic">#store values for plotting</span>
+Il_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
+Ildot_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
+
+<span style="color:#60a0b0;font-style:italic">#initial values</span>
+Il_a[<span style="color:#40a070">0</span>]    <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+Ildot_a[<span style="color:#40a070">0</span>] <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+
+<span style="color:#60a0b0;font-style:italic">#set the input matrix to be the true input</span>
+I_a <span style="color:#666">=</span> I_true
+
+<span style="color:#60a0b0;font-style:italic"># for i in range(1,len(t)):</span>
+<span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#007020">len</span>(t)):
+    <span style="color:#60a0b0;font-style:italic">#prediction</span>
+    X_hat <span style="color:#666">=</span> prediction(Il_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], Ildot_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], I_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)
+
+    <span style="color:#60a0b0;font-style:italic">#predicted estimate covariance</span>
+    P_hat <span style="color:#666">=</span> np<span style="color:#666">.</span>diag(np<span style="color:#666">.</span>diag(A<span style="color:#666">.</span>dot(P)<span style="color:#666">.</span>dot(A<span style="color:#666">.</span>T))) <span style="color:#666">+</span> Q
+
+    <span style="color:#60a0b0;font-style:italic">#observation matrix v(t) = Ldi/dt</span>
+    H <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>,L]])
+    
+    <span style="color:#60a0b0;font-style:italic">#innovation covariance</span>
+    S <span style="color:#666">=</span> H<span style="color:#666">.</span>dot(P_hat)<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T) <span style="color:#666">+</span> R
+    
+    <span style="color:#60a0b0;font-style:italic"># Kalman Gain</span>
+    K <span style="color:#666">=</span> P_hat<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T)<span style="color:#666">.</span>dot(inv(S))
+
+    <span style="color:#60a0b0;font-style:italic">#measurement - prediction </span>
+    y <span style="color:#666">=</span> V_meas[i] <span style="color:#666">-</span> H<span style="color:#666">.</span>dot(X_hat)   
+
+    <span style="color:#60a0b0;font-style:italic">#updated state estimate</span>
+    X <span style="color:#666">=</span> X_hat <span style="color:#666">+</span> K<span style="color:#666">.</span>dot(y)
+    
+    <span style="color:#60a0b0;font-style:italic">#Updated (a posteriori) estimate covariance</span>
+    P <span style="color:#666">=</span> (np<span style="color:#666">.</span>identity(<span style="color:#40a070">2</span>) <span style="color:#666">-</span> K<span style="color:#666">.</span>dot(H))<span style="color:#666">.</span>dot(P_hat)
+    
+    <span style="color:#60a0b0;font-style:italic">#update values</span>
+    Il_a[i]    <span style="color:#666">=</span> X[<span style="color:#40a070">0</span>]
+    Ildot_a[i] <span style="color:#666">=</span> X[<span style="color:#40a070">1</span>]
+</code></pre></div>
+
+
+
+
+      </main>
+
+    </div>
+    
+<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>   
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>   
+  </body>
+</html>

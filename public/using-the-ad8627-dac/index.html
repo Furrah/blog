@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.89.4" />
+  
+  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  
+  
+  <title>Using the AD5627 DAC</title>
+  <style>
+.container {
+  max-width: 900px;
+}
+#nav a {
+  font-weight: bold;
+  color: inherit;
+
+}
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+#home-jumbotron {
+  background-color: inherit;
+}
+.font-125 {
+  font-size: 125%;
+}
+
+ 
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+ 
+
+
+a {
+  color: #007bff;
+ }  
+
+
+
+
+
+td, th {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+.card-img-top{
+   
+   
+   
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.card{
+  border-radius: 10px;
+
+}
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+
+
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-177014444-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  <body>
+    
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+        
+    <div class="container">
+      <main id="main">
+      
+<h1>Using the AD5627 DAC</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2019-12-08">Dec 8, 2019</time>
+
+  <br>
+  <i data-feather="tag"></i>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/dac">DAC</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/ad5627">AD5627</a>
+  
+  
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/level-shifting">level shifting</a>
+  
+
+<br><br>
+<h2 id="introduction">Introduction</h2>
+<p>The
+<a href=https://www.analog.com/media/en/technical-documentation/data-sheets/AD5627R_5647R_5667R_5627_5667.pdf target="_blank">AD5627RBRMZ (Datasheet)</a> is part of a series of 12/14/16 bit nano DACs with an I2C interface.
+The DAC we are interested in is the 12 bit AD5627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V.</p>
+<h2 id="design">Design</h2>
+<p>The DAC requires a high I2C level to be 0.8 * Vcc, which is 4V if we are interested in using the full capability of the DAC. In this design the I2C is operating on a 3.3 Volt bus, therefore, a bidirectional I2C level shiter is required.</p>
+<p>For this I am using the
+<a href=https://www.nxp.com/docs/en/data-sheet/PCA9306.pdf target="_blank">PCA9306 Bidirectional I2C level shifter (Datasheet)</a></p>
+<h2 id="circuit">Circuit</h2>
+<p align="center"> 
+<img src="/electronics/images/ad5627.PNG" alt="drawing" width="100%"/>
+</p>
+<br>
+<h2 id="operation">Operation</h2>
+<h4 id="addressing">Addressing</h4>
+<p>The 7 bit address is set by the fist 5 MSBs 00011 and the state of the ADDR pin.</p>
+<center>
+<table>
+<thead>
+<tr>
+<th>ADDR Pin Connection</th>
+<th style="text-align:center">A1</th>
+<th style="text-align:center">A0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VDD</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td>No Connection</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td>GND</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+</center>
+<br>
+I have tied the pin to GND  so the address is 0011 11 - 0xF
+<h4 id="set-internal-reference">Set Internal Reference</h4>
+<p>On start up the internal reference is set to off. To turn it on send the command 0x38,0x00,0x01</p>
+<p>Command - Internal reference setup (on/off) - 111 <br>
+Address - Both DACS <br>
+Data - nothing <br>
+LDAC control - The DAC registers are updated after new data is read in. <br></p>
+<p>Byte 1 - 0x3F - 00111111 <br>
+Byte 2 - 0x00 - no data to send<br>
+Byte 3 - 0x01 - 0000001 <br></p>
+<p align="center"> 
+<img src="/electronics/images/ad5627 internal reference setup.png" alt="drawing" width="100%"/>
+</p>
+<br>
+<h4 id="setting-output-voltage">Setting Output Voltage</h4>
+<p>The voltage is set with a 16 bit data string but as the DAC is 12 bits the last 4 LSBs are not used.</p>
+<p>The voltage is set with a command followed by an address.
+command - Write to and update DAC channel n - 011
+address - both DACs - 111</p>
+<p>Bit 1 is reserved
+Bit 2 should be set to zero for 3 byte operation of chip</p>
+<p>00011111 - 1F</p>
+<p>Data - 12 bits to make full scale value FFF so 50% voltage would be 7FF.</p>
+<p>last 4 bits should be set to 1 for operation - F</p>
+<p>3 bytes = 0x1F,0x7F,0xFF</p>
+
+
+
+
+
+      </main>
+
+    </div>
+    
+<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>   
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>   
+  </body>
+</html>

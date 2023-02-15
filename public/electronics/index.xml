@@ -1,22 +1,113 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Electronics on An Attempt to Organise my Mind</title>
-    <link>https://furrah.github.io/electronics/</link>
-    <description>Recent content in Electronics on An Attempt to Organise my Mind</description>
+    <title>Electronics on Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/electronics/</link>
+    <description>Recent content in Electronics on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Oct 2019 22:24:10 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 23 Apr 2022 21:07:32 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DS18B20 Temperature Sensor PCB</title>
+      <link>https://mybrainhertz.co.uk/ds18b20_temp_sensor_pcb/</link>
+      <pubDate>Sat, 23 Apr 2022 21:07:32 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ds18b20_temp_sensor_pcb/</guid>
+      <description>Introduction In 2013 I discovered the DS18B20 digital thermometer IC made by Maxim Integrated. It&amp;rsquo;s a great little IC that has provides a 12 bit temperature measurement and interfaces over the 1-Wire bus allowing multiple sensors to be daisy chained! Back then I used veraboard and some terrible soldering to create the strings of sensors used in my greenhouse. Well its now 2022 and I&amp;rsquo;m back to thinking about greenhouses.</description>
+    </item>
     
-	<atom:link href="https://furrah.github.io/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FTDI4222 Project Setup for Windows</title>
+      <link>https://mybrainhertz.co.uk/ftdi4222_setup_windows/</link>
+      <pubDate>Fri, 03 Dec 2021 10:54:15 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ftdi4222_setup_windows/</guid>
+      <description>Setup Software required
+ MinGW compiler - gcc.exe - Version 6.3.0-1 MinGW make system - mingw32-make CMake - Version 3.22  Download the relevent drivers for the IC
+D2XX Drivers: FTD2XX
+FT4222H Driver: FT4222H
+This link may not work if the driver has been updated. If this is the case then the link can be found at FTDI4222 Windows Library
+Install the D2xx driver from the downloaded installer.
+FTDI4222 Library Folder</description>
+    </item>
     
+    <item>
+      <title>Interfacing with FTDIs FT4222H USB 2.0 to Quad SPI / I2C Bridge IC</title>
+      <link>https://mybrainhertz.co.uk/ftdi-4222-setup/</link>
+      <pubDate>Sat, 23 May 2020 17:20:32 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ftdi-4222-setup/</guid>
+      <description>A tutorial for interfacing with FTDIs FT4222H USB 2.0 to Quad SPI / I2C Bridge IC on macOS
+Setup Download the relevent drivers for the IC
+D2XX Drivers: FTD2XX
+FT4222H Driver: FT4222H
+ Open D2XX1.4.16.dmg and copy the D2XX folder to your desktop Inside we are interested in 3 files:   ftd2xx.h WinTypes.h libftd2xx.1.14.16.dylib  Open a terminal and navigate to the D2XX folder on your desktop Move .h files to /usr/local/include  mv ftd2xx.</description>
+    </item>
+    
+    <item>
+      <title>Rules and Permissions for USB Blaster Setup in Linux Virtual Machine</title>
+      <link>https://mybrainhertz.co.uk/usb-blaster-linux-quartus2-virtual-machine/</link>
+      <pubDate>Sun, 22 Mar 2020 20:14:00 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/usb-blaster-linux-quartus2-virtual-machine/</guid>
+      <description>SOURCE: https://stackoverflow.com/questions/18704913/unable-to-lock-chain-insufficient-port-permissions
+If when jtagconfig is ran
+1) USB-Blaster varient [2-1] unable to lock chain(Insufficient port permissions) is returned and Quartus cant program your FPGA. The following steps should fix this problem. An amazing resource on setting up Quartus and other Altera related design software is Altera Design Software 
+Before a USB Blaster can be used its jtag rules and permissions must be configured.
+First kill jtagd.
+sudo killall -9 jtagd If jtagconfig is ran whilst jtagd is already running then jtagconfig will have no effect.</description>
+    </item>
+    
+    <item>
+      <title>Using the AD5627 DAC</title>
+      <link>https://mybrainhertz.co.uk/using-the-ad8627-dac/</link>
+      <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/using-the-ad8627-dac/</guid>
+      <description>Introduction The AD5627RBRMZ (Datasheet) is part of a series of 12/14/16 bit nano DACs with an I2C interface. The DAC we are interested in is the 12 bit AD5627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V.
+Design The DAC requires a high I2C level to be 0.8 * Vcc, which is 4V if we are interested in using the full capability of the DAC. In this design the I2C is operating on a 3.</description>
+    </item>
+    
+    <item>
+      <title>USB Design Guide</title>
+      <link>https://mybrainhertz.co.uk/usb-design/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/usb-design/</guid>
+      <description>Key features  USB connector ESD protection Differential microstrip design for USB  USB Connector For this particular design I have chosen a USB-B female connector from Mouser.
+  Mouser # Manufacturer # Manufacturer    571-292304-1 292304-1  TE Connectivity    The USB connector datasheet can be found here.
+ESD Protection The PRTR5V0U4Y is designed to protect Input/Output (I/O) ports that are sensitive to capacitive load, such as USB 2.</description>
+    </item>
+    
+    <item>
+      <title>Voltage Monitoring</title>
+      <link>https://mybrainhertz.co.uk/voltage-monitring/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/voltage-monitring/</guid>
+      <description>The ADA4096 operational amplifier comes in a dual and quad package. Its inputs are protected by overvoltage protection diodes making it a perfect candidate for monitoring voltages, especially when power to the IC could be lost.
+ADA4096 Datasheet
+The LTC2990 is a Quad I2C voltage, current, and temperature monitor. When used in conjunction with the ADA4096 it makes a simple monitoring interface through I2C.
+LTC2990 Datasheet
+The LTC2990 supply voltages are between 3.</description>
+    </item>
+    
+    <item>
+      <title>XOR Logic used as a Buffer or Inverter</title>
+      <link>https://mybrainhertz.co.uk/xor-buffer-inverter/</link>
+      <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/xor-buffer-inverter/</guid>
+      <description>XOR gates can be used to form inverters or buffers when a single input is tied to Vdd or Ground. In the figure below, U1 is setup as an inverter, and U2 is setup as a buffer.
+The SN74LVC2G86 (Datasheet) is a dual package XOR that can operate at voltages up to 5.5V and deliver up to 50mA of continuous current. Other notable features include a propagation delay between 1.4 and 4.</description>
+    </item>
     
     <item>
       <title>Precision Op Amp Gain Adjustment with DACs</title>
-      <link>https://furrah.github.io/op-amp-gain-adjustment-dac/</link>
+      <link>https://mybrainhertz.co.uk/op-amp-gain-adjustment-dac/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
       
-      <guid>https://furrah.github.io/op-amp-gain-adjustment-dac/</guid>
+      <guid>https://mybrainhertz.co.uk/op-amp-gain-adjustment-dac/</guid>
       <description>Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;
 \begin{align} Gain = \frac{R_2}{R_1} + 1 \end{align}
 It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2.</description>
@@ -24,23 +115,23 @@ It would be nice to adjust the gain of this amplifier. This can be done achieved
     
     <item>
       <title>FPGA I2C Wishbone Interface and Testing </title>
-      <link>https://furrah.github.io/i2c-wishbone-interface-fpga/</link>
+      <link>https://mybrainhertz.co.uk/i2c-wishbone-interface-fpga/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
       
-      <guid>https://furrah.github.io/i2c-wishbone-interface-fpga/</guid>
-      <description>Requirements  Lua 5.14+ (recommended 5.15) (https://github.com/rjpcomputing/luaforwindows/releases/tag/v5.1.5-52) wbgen2 https://www.ohwr.org/project/wishbone-gen MCP2221A USB2.0 to I2C/UART Protocol Converter with GPIO  Any USB to I2C device will work.   Creating an I2C wishbone interface for FPGA The wishbone interface acts as a bridge between the FPGA and external signals containing a master and a slave. In this example the FPGA will be acting as an I2C slave with two registers;
+      <guid>https://mybrainhertz.co.uk/i2c-wishbone-interface-fpga/</guid>
+      <description>Requirements  Lua 5.14+ (recommended 5.15) (https://github.com/rjpcomputing/luaforwindows/releases/tag/v5.1.5-52) wbgen2 https://www.ohwr.org/project/wishbone-gen MCP2221A USB2.0 to I2C/UART Protocol Converter with GPIO Any USB to I2C device will work.  Creating an I2C wishbone interface for FPGA The wishbone interface acts as a bridge between the FPGA and external signals containing a master and a slave. In this example the FPGA will be acting as an I2C slave with two registers;
  1 read/write 1 read only.</description>
     </item>
     
     <item>
       <title>Comparison of Integrated Noise Spectrum of JFET and BJT input Operational Amplifiers</title>
-      <link>https://furrah.github.io/integrated-noise-spectrum/</link>
+      <link>https://mybrainhertz.co.uk/integrated-noise-spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
       
-      <guid>https://furrah.github.io/integrated-noise-spectrum/</guid>
-      <description>Reference material: https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf
+      <guid>https://mybrainhertz.co.uk/integrated-noise-spectrum/</guid>
+      <description>Reference material: Texas Instruments - Op Amp Technical Overview
 When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.
-Figure1 - CMOS, BJT, and JFET flicker noise</description>
+*Figure1 - CMOS, BJT, and JFET flicker noise*</description>
     </item>
     
   </channel>

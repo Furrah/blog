@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ADC on Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/tags/adc/</link>
+    <description>Recent content in ADC on Well lets take a look at it, Mr Gumby!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Nov 2019 23:54:08 +0000</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/tags/adc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Voltage Monitoring</title>
+      <link>https://mybrainhertz.co.uk/voltage-monitring/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/voltage-monitring/</guid>
+      <description>The ADA4096 operational amplifier comes in a dual and quad package. Its inputs are protected by overvoltage protection diodes making it a perfect candidate for monitoring voltages, especially when power to the IC could be lost.
+ADA4096 Datasheet
+The LTC2990 is a Quad I2C voltage, current, and temperature monitor. When used in conjunction with the ADA4096 it makes a simple monitoring interface through I2C.
+LTC2990 Datasheet
+The LTC2990 supply voltages are between 3.</description>
+    </item>
+    
+  </channel>
+</rss>

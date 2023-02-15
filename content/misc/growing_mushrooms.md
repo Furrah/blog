@@ -62,7 +62,7 @@ A couple of days later.
 
 # Harvest
 
-Three weeks have passed and it's time for harvest. All in all I managed to grow 620g of Oyster mushrooms in the first flush. The mushrooms should have been harvested a couple of days before but I was working away and wasn't able to monitor their growth. Hopefully the second flush gives at least 60% of the first harvest.
+Three weeks have passed and it's time for harvest (2nd December). All in all I managed to grow 620g of Oyster mushrooms in the first flush. The mushrooms should have been harvested a couple of days before but I was working away and wasn't able to monitor their growth. Hopefully the second flush gives at least 60% of the first harvest.
 
 <div class="container">
   <div class="row">
@@ -80,3 +80,25 @@ Three weeks have passed and it's time for harvest. All in all I managed to grow 
 </div>
 
 <p align="center"> <img src="/misc/images/growing_mushrooms/IMG_9553.jpeg" alt="drawing" width="600px"/></p>
+
+# Round 2
+
+Alrighty then, It's been waaay more than 3 weeks. It's now 23rd of January. Some 7 weeks later and I finally have a second flush of mushrooms. Now, the weather has been cold, a couple of weeks below -5C, which isn't good for growth. Grey oyster mushrooms like to climates between 10-20C... So, no wonder it's taken so long. The yeild was pretty terrible too. I was hoping for a third of the first flush but ended up with 132g.
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <p align="center"> 
+    <img src="/misc/images/growing_mushrooms/IMG_9883.jpeg" alt="drawing" width="400px"/>
+  </p>
+    </div>
+  <div class="col">
+     <p align="center"> 
+    <img src="/misc/images/growing_mushrooms/IMG_9889.jpeg" alt="drawing" width="400px"/>
+  </p>
+  </div>
+</div>
+</div>
+
+

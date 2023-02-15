@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Greenhouse on Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/greenhouse/</link>
+    <description>Recent content in Greenhouse on Well lets take a look at it, Mr Gumby!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jun 2022 15:49:20 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/greenhouse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Heating</title>
+      <link>https://mybrainhertz.co.uk/greenhouse/heating/</link>
+      <pubDate>Tue, 07 Jun 2022 15:49:20 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/greenhouse/heating/</guid>
+      <description>Can I heat the greenhouse? My first idea was to see if it is possible to maintain a 5 degree C temperature gradient between the inside and outside of the greenhouse. I wondered how much power I would need to do this. Below is a calculation to do just that but getting the constants right is pretty tricky and ambiguous at best.
+The calculation is based upon this tutorial and these websites give a good idea of what the constants for the windows might be.</description>
+    </item>
+    
+    <item>
+      <title>Build</title>
+      <link>https://mybrainhertz.co.uk/greenhouse/build/</link>
+      <pubDate>Mon, 06 Jun 2022 22:09:55 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/greenhouse/build/</guid>
+      <description>Let The Build Commence The date is the 5th of February 2022 and It&amp;rsquo;s cold. It&amp;rsquo;s really cold. Luckily for me my friend Will offered to help with the build. We had 48 hours to do so before getting back to work in Oxford on the Monday! So please excuse the messy wiring, we really didn&amp;rsquo;t have much time or daylight!
+The Greenhouse! The greenhouse is actually a conservatory tacked onto the side of the &amp;ldquo;old house&amp;rdquo; as we call it which is a 4x4m building that my grandparents lived in for many years before building their house across the road.</description>
+    </item>
+    
+    <item>
+      <title>The beginning</title>
+      <link>https://mybrainhertz.co.uk/greenhouse/greenhouse/</link>
+      <pubDate>Sun, 24 Apr 2022 22:02:52 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/greenhouse/greenhouse/</guid>
+      <description>Introduction Back in 2013 I&amp;rsquo;d have just completed my 3rd year at university and was pretty interested in grow cells for vertical farming and wanted to build an automated greenhouse for myself. After my degree I even had a PHD setup on this topic! Alas i decided to venture into the big bad world. Anyway, I was hyped to built my own automated greenhouse! I dug a trench from the house to the greenhouse and laid armoured cable.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>level shifting on Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/tags/level-shifting/</link>
+    <description>Recent content in level shifting on Well lets take a look at it, Mr Gumby!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Dec 2019 11:23:58 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/tags/level-shifting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using the AD5627 DAC</title>
+      <link>https://mybrainhertz.co.uk/using-the-ad8627-dac/</link>
+      <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/using-the-ad8627-dac/</guid>
+      <description>Introduction The AD5627RBRMZ (Datasheet) is part of a series of 12/14/16 bit nano DACs with an I2C interface. The DAC we are interested in is the 12 bit AD5627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V.
+Design The DAC requires a high I2C level to be 0.8 * Vcc, which is 4V if we are interested in using the full capability of the DAC. In this design the I2C is operating on a 3.</description>
+    </item>
+    
+  </channel>
+</rss>

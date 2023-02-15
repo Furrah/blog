@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>single-ended on Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/tags/single-ended/</link>
+    <description>Recent content in single-ended on Well lets take a look at it, Mr Gumby!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Nov 2019 12:59:24 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/tags/single-ended/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>USB Design Guide</title>
+      <link>https://mybrainhertz.co.uk/usb-design/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/usb-design/</guid>
+      <description>Key features  USB connector ESD protection Differential microstrip design for USB  USB Connector For this particular design I have chosen a USB-B female connector from Mouser.
+  Mouser # Manufacturer # Manufacturer    571-292304-1 292304-1  TE Connectivity    The USB connector datasheet can be found here.
+ESD Protection The PRTR5V0U4Y is designed to protect Input/Output (I/O) ports that are sensitive to capacitive load, such as USB 2.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,14 +1,125 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>An Attempt to Organise my Mind</title>
-    <link>https://furrah.github.io/misc/</link>
-    <description>Recent content on An Attempt to Organise my Mind</description>
+    <title>Miscellaneous on Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/misc/</link>
+    <description>Recent content in Miscellaneous on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 10 Dec 2022 17:10:22 +0000</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Growing Oyster Mushrooms</title>
+      <link>https://mybrainhertz.co.uk/growing_mushrooms/</link>
+      <pubDate>Sat, 10 Dec 2022 17:10:22 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/growing_mushrooms/</guid>
+      <description>Why? I&amp;rsquo;ve been wanting to grow mushrooms for a good while now and have finally got round to giving a go after my friend Gaetan gave me a massive bag of douglas fir shavings. After a bit of reading it seems the easiest mushroom to grow with a high chance of success is the Oyster mushroom!
+Required Items Buckets I bought 2x 25L buckets with lids for £13.69 each. Traditionally mushrooms are grown in bags but I wanted to be as environmentally conscious as possible and reuse my growth container.</description>
+    </item>
     
-	<atom:link href="https://furrah.github.io/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mushroom Map</title>
+      <link>https://mybrainhertz.co.uk/mushmap/</link>
+      <pubDate>Sat, 26 Nov 2022 16:50:40 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/mushmap/</guid>
+      <description>#map { height: 800px; }  function readFile(file) { var f = new XMLHttpRequest(); f.open(&#34;GET&#34;, file, false); f.onreadystatechange = function() { if(f.readyState === 4 &amp;&amp; f.status == 200) // 4 == DONE { var res= f.responseText; valueCallBack(res) } } f.send(null); } readFile(&#39;/docs/mushroom_data.txt&#39;); function valueCallBack(res){ var map = L.map(&#39;map&#39;).setView([51.71851, -1.25758], 15); L.tileLayer(&#39;https://tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, { maxZoom: 22, // was 19 attribution: &#39;&amp;copy; OpenStreetMap&#39; }).addTo(map); res = (res.split(&#34;\n&#34;)); for (let i = 1; i &#34;</description>
+    </item>
     
+    <item>
+      <title>Growing Avocados</title>
+      <link>https://mybrainhertz.co.uk/growing_avocado/</link>
+      <pubDate>Fri, 25 Nov 2022 12:45:45 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/growing_avocado/</guid>
+      <description>Introduction I&amp;rsquo;ve just got back from the Isle of Skye in Scotland and have bought back 20 Avocado seeds left over from a weeks worth of communal meals. I&amp;rsquo;ve just moved to Oxford, although I am currently staying with my friend Adam in Abingdon and have decided to propagate the seeds in his apartment. Thanks Adam.
+14th September 2021 Tooth pick up the seeds and suspend in water. There is a better method for this which is suspending the seed from the top and not tripoding like I have done.</description>
+    </item>
+    
+    <item>
+      <title>Fungi</title>
+      <link>https://mybrainhertz.co.uk/fungi/</link>
+      <pubDate>Thu, 24 Nov 2022 08:29:45 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/fungi/</guid>
+      <description>Introduction An attempt at identifying fungi. There&amp;rsquo;s a strong chance I am 99% wrong.
+Stinkhorn - Close to Greenham Common Nature Reserve - Berkshire Out walking with my friend Will searching for one of the last blooming orchids in the UK - Autumn Lady Tresses. We didn&amp;rsquo;t find any unfortunately but we did find these!     Chicken of the woods - Bagley Wood - Oxfordshire Apparently as the name suggests it tastes of chicken&amp;hellip; or at least is a good replacement for chicken!</description>
+    </item>
+    
+    <item>
+      <title>A Simple Python Bounds Checker using Decorators</title>
+      <link>https://mybrainhertz.co.uk/python_decorator_bounds/</link>
+      <pubDate>Mon, 17 Oct 2022 20:55:56 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/python_decorator_bounds/</guid>
+      <description>A bounds checker you say? Every now and again you might need a bounds checker. I find that when you do, you need it a lot! I thought there must be a simple way to minimise bloated code. Fear no more as Python decorators are here to save the day!
+def bounds_checker(lower, upper): def wrap(func): def wrapped_f(*args): val = args[0] if val &amp;gt; upper: val = upper print(f&amp;#34;Set value is too high.</description>
+    </item>
+    
+    <item>
+      <title>PT RTD Calculator</title>
+      <link>https://mybrainhertz.co.uk/pt1000/</link>
+      <pubDate>Thu, 21 Jul 2022 09:05:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/pt1000/</guid>
+      <description>label{ display: inline-block; float: left; clear: left; width: 100px; text-align: right; } input { display: inline-block; float: left; }   Tmin: Tmax: Vcc: R0 @ 0&amp;degC: R1: R2: R3: R4: --        
+ // Need to be careful using this function, the last number is the stop value. function makeArr(startValue, stopValue, cardinality) { var arr = []; var step = (stopValue - startValue) / (cardinality - 1); for (var i = 0; i params.</description>
+    </item>
+    
+    <item>
+      <title>NTC Calculator</title>
+      <link>https://mybrainhertz.co.uk/ntc/</link>
+      <pubDate>Mon, 18 Jul 2022 14:29:23 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ntc/</guid>
+      <description>label{ display: inline-block; float: left; clear: left; width: 100px; text-align: right; } input { display: inline-block; float: left; }   B: R2: R25: Vcc:        
+ function makeArr(startValue, stopValue, cardinality) { var arr = []; var step = (stopValue - startValue) / (cardinality - 1); for (var i = 0; i Equations  Characterise the NTC thermistor using the Beta method. $$r_{\infty} = R_{25} \cdot exp \left(\frac{-B}{T_{25}}\right)$$</description>
+    </item>
+    
+    <item>
+      <title>Butternut Squash are pretty groovy</title>
+      <link>https://mybrainhertz.co.uk/squash/</link>
+      <pubDate>Wed, 01 Sep 2021 11:41:52 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/squash/</guid>
+      <description>Just before I left Lincolnshire for another new chapter of life I took a few photos of the butternut squash plants my dad and I had planted out earlier in the season. Lesson number one would be to grow these plants up trellis&#39; as they spread out everywhere and climb up anything they can. Whilst we have 3 or 4 very developed fruits on the plant I was drawn to the little baby growing up towards the fence.</description>
+    </item>
+    
+    <item>
+      <title>Python script for CMake Framework</title>
+      <link>https://mybrainhertz.co.uk/cmake_framework/</link>
+      <pubDate>Sun, 17 Jan 2021 16:49:22 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/cmake_framework/</guid>
+      <description>Outline  Generate file structure for program architecture. Generate generic CMakeLists.txt file for program compilation. Generate shell files to run CMake and execute program.  File Structure The file structure should be
+Project_name |--src |--|--CMakeLists.txt |--build |--|--build.sh |--run |--|--run.sh Python Script #!/usr/local/bin/python3 import os, sys, subprocess import argparse parser = argparse.ArgumentParser() parser.add_argument(&amp;#39;-p&amp;#39;, action=&amp;#39;store&amp;#39;, dest=&amp;#39;project_name&amp;#39;, help=&amp;#39;Name of project&amp;#39;) results = parser.parse_args() if not os.path.exists(&amp;#34;./build&amp;#34;): os.makedirs(&amp;#34;build&amp;#34;) if not os.path.exists(&amp;#34;./run&amp;#34;): os.makedirs(&amp;#34;run&amp;#34;) if not os.</description>
+    </item>
+    
+    <item>
+      <title>Film development</title>
+      <link>https://mybrainhertz.co.uk/film_development/</link>
+      <pubDate>Sat, 16 Jan 2021 16:14:20 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/film_development/</guid>
+      <description>Film Development A little tutorial for sam :p
+For developing Ilford HP5 with D-76 developer the Massive dev chart must be consulted!
+select the film and developer from the drop down menus.
+I like to use 1:1 dilution ratio so for one roll of 35mm HP5 film at ISO 400 the development time is 13 minutes.
+mix 150ml of water with 150ml of D76 solution and ensure the temperature is 20 degrees ± 0.</description>
+    </item>
+    
+    <item>
+      <title>Kalman Filter RLC</title>
+      <link>https://mybrainhertz.co.uk/kalman-filter-rlc/</link>
+      <pubDate>Mon, 01 Jun 2020 12:04:32 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/kalman-filter-rlc/</guid>
+      <description>code.has-jax { -webkit-font-smoothing: antialiased; background: inherit !important; border: none !important; font-size: 100%; }  The RLC circuit above can be expressed by the following equation
+ $$ \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_L}{LC} + \frac{I}{LC} $$ The equation can be expressed as two first order differential equations using the following method.
+$$ x_{1} = I_{L} $$
+$$ x_{2} = \dot{I}_{L}$$
+ so  $$ \dot{x}_{2} = \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_{L}}{LC} + \frac{I}{LC} $$  and</description>
+    </item>
     
   </channel>
 </rss>

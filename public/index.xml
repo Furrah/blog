@@ -1,81 +1,679 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>An Attempt to Organise my Mind</title>
-    <link>https://furrah.github.io/</link>
-    <description>Recent content on An Attempt to Organise my Mind</description>
+    <title>Well lets take a look at it, Mr Gumby!</title>
+    <link>https://mybrainhertz.co.uk/</link>
+    <description>Recent content on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2019 19:21:08 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 13 Feb 2023 08:30:57 +0000</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Babaganoush</title>
+      <link>https://mybrainhertz.co.uk/babaganoush/</link>
+      <pubDate>Mon, 13 Feb 2023 08:30:57 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/babaganoush/</guid>
+      <description>Ingredients  1kg Aubergine criss crossed 2-3 cloves of garlic finely chopped 2 tablespoons of lemon juice 3 tablespoons of tahini 2 tablespoons extra-virgin olive oil 10-20g chopped fresh flat-leaf parsley ¾ teaspoon salt, to taste ¼ teaspoon ground cumin Pinch of smoked paprika Pomegranate molasses  Method  Pre heat oven to 190C Criss-cross the aubergines, cover in olive oil, and put in the oven for 40 minutes. Once cooked, drain of water using a colander and smush about with a fork until its pasty.</description>
+    </item>
     
-	<atom:link href="https://furrah.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Growing Oyster Mushrooms</title>
+      <link>https://mybrainhertz.co.uk/growing_mushrooms/</link>
+      <pubDate>Sat, 10 Dec 2022 17:10:22 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/growing_mushrooms/</guid>
+      <description>Why? I&amp;rsquo;ve been wanting to grow mushrooms for a good while now and have finally got round to giving a go after my friend Gaetan gave me a massive bag of douglas fir shavings. After a bit of reading it seems the easiest mushroom to grow with a high chance of success is the Oyster mushroom!
+Required Items Buckets I bought 2x 25L buckets with lids for £13.69 each. Traditionally mushrooms are grown in bags but I wanted to be as environmentally conscious as possible and reuse my growth container.</description>
+    </item>
     
+    <item>
+      <title>Mushroom Map</title>
+      <link>https://mybrainhertz.co.uk/mushmap/</link>
+      <pubDate>Sat, 26 Nov 2022 16:50:40 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/mushmap/</guid>
+      <description>#map { height: 800px; }  function readFile(file) { var f = new XMLHttpRequest(); f.open(&#34;GET&#34;, file, false); f.onreadystatechange = function() { if(f.readyState === 4 &amp;&amp; f.status == 200) // 4 == DONE { var res= f.responseText; valueCallBack(res) } } f.send(null); } readFile(&#39;/docs/mushroom_data.txt&#39;); function valueCallBack(res){ var map = L.map(&#39;map&#39;).setView([51.71851, -1.25758], 15); L.tileLayer(&#39;https://tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, { maxZoom: 22, // was 19 attribution: &#39;&amp;copy; OpenStreetMap&#39; }).addTo(map); res = (res.split(&#34;\n&#34;)); for (let i = 1; i &#34;</description>
+    </item>
+    
+    <item>
+      <title>Growing Avocados</title>
+      <link>https://mybrainhertz.co.uk/growing_avocado/</link>
+      <pubDate>Fri, 25 Nov 2022 12:45:45 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/growing_avocado/</guid>
+      <description>Introduction I&amp;rsquo;ve just got back from the Isle of Skye in Scotland and have bought back 20 Avocado seeds left over from a weeks worth of communal meals. I&amp;rsquo;ve just moved to Oxford, although I am currently staying with my friend Adam in Abingdon and have decided to propagate the seeds in his apartment. Thanks Adam.
+14th September 2021 Tooth pick up the seeds and suspend in water. There is a better method for this which is suspending the seed from the top and not tripoding like I have done.</description>
+    </item>
+    
+    <item>
+      <title>Fungi</title>
+      <link>https://mybrainhertz.co.uk/fungi/</link>
+      <pubDate>Thu, 24 Nov 2022 08:29:45 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/fungi/</guid>
+      <description>Introduction An attempt at identifying fungi. There&amp;rsquo;s a strong chance I am 99% wrong.
+Stinkhorn - Close to Greenham Common Nature Reserve - Berkshire Out walking with my friend Will searching for one of the last blooming orchids in the UK - Autumn Lady Tresses. We didn&amp;rsquo;t find any unfortunately but we did find these!     Chicken of the woods - Bagley Wood - Oxfordshire Apparently as the name suggests it tastes of chicken&amp;hellip; or at least is a good replacement for chicken!</description>
+    </item>
+    
+    <item>
+      <title>A Simple Python Bounds Checker using Decorators</title>
+      <link>https://mybrainhertz.co.uk/python_decorator_bounds/</link>
+      <pubDate>Mon, 17 Oct 2022 20:55:56 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/python_decorator_bounds/</guid>
+      <description>A bounds checker you say? Every now and again you might need a bounds checker. I find that when you do, you need it a lot! I thought there must be a simple way to minimise bloated code. Fear no more as Python decorators are here to save the day!
+def bounds_checker(lower, upper): def wrap(func): def wrapped_f(*args): val = args[0] if val &amp;gt; upper: val = upper print(f&amp;#34;Set value is too high.</description>
+    </item>
+    
+    <item>
+      <title>Joe&#39;s Birthday Foraging Frenzy</title>
+      <link>https://mybrainhertz.co.uk/foraging/</link>
+      <pubDate>Sun, 11 Sep 2022 17:05:46 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/foraging/</guid>
+      <description>For my 30th birthday my friends bought me a day out with the foraging fanatic Fergus Drennan and what a day it was! It ran from 08:30 until 22:00 and was rammed full of quirky tastings, information overloads, and fruitful foraging. The Park The Park  -- After meeting at the train station we all piled into three cars and headed down to the park. Fergus sat us down in a circle beside a pond full of mace reed and started removing numerous berries on their branches from his backpack.</description>
+    </item>
+    
+    <item>
+      <title>PT RTD Calculator</title>
+      <link>https://mybrainhertz.co.uk/pt1000/</link>
+      <pubDate>Thu, 21 Jul 2022 09:05:09 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/pt1000/</guid>
+      <description>label{ display: inline-block; float: left; clear: left; width: 100px; text-align: right; } input { display: inline-block; float: left; }   Tmin: Tmax: Vcc: R0 @ 0&amp;degC: R1: R2: R3: R4: --        
+ // Need to be careful using this function, the last number is the stop value. function makeArr(startValue, stopValue, cardinality) { var arr = []; var step = (stopValue - startValue) / (cardinality - 1); for (var i = 0; i params.</description>
+    </item>
+    
+    <item>
+      <title>NTC Calculator</title>
+      <link>https://mybrainhertz.co.uk/ntc/</link>
+      <pubDate>Mon, 18 Jul 2022 14:29:23 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ntc/</guid>
+      <description>label{ display: inline-block; float: left; clear: left; width: 100px; text-align: right; } input { display: inline-block; float: left; }   B: R2: R25: Vcc:        
+ function makeArr(startValue, stopValue, cardinality) { var arr = []; var step = (stopValue - startValue) / (cardinality - 1); for (var i = 0; i Equations  Characterise the NTC thermistor using the Beta method. $$r_{\infty} = R_{25} \cdot exp \left(\frac{-B}{T_{25}}\right)$$</description>
+    </item>
+    
+    <item>
+      <title>Heating</title>
+      <link>https://mybrainhertz.co.uk/greenhouse/heating/</link>
+      <pubDate>Tue, 07 Jun 2022 15:49:20 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/greenhouse/heating/</guid>
+      <description>Can I heat the greenhouse? My first idea was to see if it is possible to maintain a 5 degree C temperature gradient between the inside and outside of the greenhouse. I wondered how much power I would need to do this. Below is a calculation to do just that but getting the constants right is pretty tricky and ambiguous at best.
+The calculation is based upon this tutorial and these websites give a good idea of what the constants for the windows might be.</description>
+    </item>
+    
+    <item>
+      <title>Build</title>
+      <link>https://mybrainhertz.co.uk/greenhouse/build/</link>
+      <pubDate>Mon, 06 Jun 2022 22:09:55 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/greenhouse/build/</guid>
+      <description>Let The Build Commence The date is the 5th of February 2022 and It&amp;rsquo;s cold. It&amp;rsquo;s really cold. Luckily for me my friend Will offered to help with the build. We had 48 hours to do so before getting back to work in Oxford on the Monday! So please excuse the messy wiring, we really didn&amp;rsquo;t have much time or daylight!
+The Greenhouse! The greenhouse is actually a conservatory tacked onto the side of the &amp;ldquo;old house&amp;rdquo; as we call it which is a 4x4m building that my grandparents lived in for many years before building their house across the road.</description>
+    </item>
+    
+    <item>
+      <title>Tofu With Garlic Sauce</title>
+      <link>https://mybrainhertz.co.uk/tofu-with-garlic-sauce/</link>
+      <pubDate>Thu, 26 May 2022 20:49:35 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tofu-with-garlic-sauce/</guid>
+      <description>Ingredients For the tofu
+ 600 g medium-firm tofu 2 tablespoon corn flour 2 tablespoon cooking oil  For the sauce
+ 1 tablespoon cooking oil 1 teaspoon minced ginger 1 tablespoon minced garlic 2 fresh chilli, finely chopped ½ tablespoon Sichuan chilli bean paste 1 ½ tablespoon Shaoxing rice wine 1 ½ tablespoon black rice vinegar 1 tablespoon sugar 3 tablespoon water 1 tablespoon corn flour 1 stalk spring onion, finely chopped Sesame seeds  Method Tofu</description>
+    </item>
+    
+    <item>
+      <title>The beginning</title>
+      <link>https://mybrainhertz.co.uk/greenhouse/greenhouse/</link>
+      <pubDate>Sun, 24 Apr 2022 22:02:52 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/greenhouse/greenhouse/</guid>
+      <description>Introduction Back in 2013 I&amp;rsquo;d have just completed my 3rd year at university and was pretty interested in grow cells for vertical farming and wanted to build an automated greenhouse for myself. After my degree I even had a PHD setup on this topic! Alas i decided to venture into the big bad world. Anyway, I was hyped to built my own automated greenhouse! I dug a trench from the house to the greenhouse and laid armoured cable.</description>
+    </item>
+    
+    <item>
+      <title>DS18B20 Temperature Sensor PCB</title>
+      <link>https://mybrainhertz.co.uk/ds18b20_temp_sensor_pcb/</link>
+      <pubDate>Sat, 23 Apr 2022 21:07:32 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ds18b20_temp_sensor_pcb/</guid>
+      <description>Introduction In 2013 I discovered the DS18B20 digital thermometer IC made by Maxim Integrated. It&amp;rsquo;s a great little IC that has provides a 12 bit temperature measurement and interfaces over the 1-Wire bus allowing multiple sensors to be daisy chained! Back then I used veraboard and some terrible soldering to create the strings of sensors used in my greenhouse. Well its now 2022 and I&amp;rsquo;m back to thinking about greenhouses.</description>
+    </item>
+    
+    <item>
+      <title>FTDI4222 Project Setup for Windows</title>
+      <link>https://mybrainhertz.co.uk/ftdi4222_setup_windows/</link>
+      <pubDate>Fri, 03 Dec 2021 10:54:15 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ftdi4222_setup_windows/</guid>
+      <description>Setup Software required
+ MinGW compiler - gcc.exe - Version 6.3.0-1 MinGW make system - mingw32-make CMake - Version 3.22  Download the relevent drivers for the IC
+D2XX Drivers: FTD2XX
+FT4222H Driver: FT4222H
+This link may not work if the driver has been updated. If this is the case then the link can be found at FTDI4222 Windows Library
+Install the D2xx driver from the downloaded installer.
+FTDI4222 Library Folder</description>
+    </item>
+    
+    <item>
+      <title>Benj&#39;s Essential Sausage Casserole</title>
+      <link>https://mybrainhertz.co.uk/sausage-casserole/</link>
+      <pubDate>Sat, 02 Oct 2021 16:39:16 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/sausage-casserole/</guid>
+      <description>Benj&amp;rsquo;s essential sausage casserole with a few add-ons and maybe some things i&amp;rsquo;ve forgotten.
+Ingredients  6 Herby Bangers - Tesco own brand veggie sausage. They&amp;rsquo;re bangin&#39; bangers 400g tin Butter beans 300ml water 100ml Red wine or more&amp;hellip; OR a red wine stock pot! - my new favourite thing. Veg Stock pot 3 handfuls of Kale 400g tin of chopped tomato Sprig of Thyme 1 Onion - chopped lengthways 200g mushrooms 1 tsp chilli powder 3 cloves of garlic  To Serve</description>
+    </item>
+    
+    <item>
+      <title>Dal Box</title>
+      <link>https://mybrainhertz.co.uk/dal-box/</link>
+      <pubDate>Mon, 20 Sep 2021 22:40:46 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/dal-box/</guid>
+      <description>This is inspired by the Helm Ston Cafe in Brighton which is bloody brilliant and you should all go buy his food.
+Ingredients  2 tbsp rape seed oil 1 large white onion or 5 shallots - chopped fine 1.5 inch of ginger - chopped fine 2 cloves of garlic - chopped fine 1-2 red chilli&amp;rsquo;s 1 tsp black mustard seeds (optional) 1 tsp ground cumin 1 tsp ground coriander 0.</description>
+    </item>
+    
+    <item>
+      <title>Panang Curry Paste</title>
+      <link>https://mybrainhertz.co.uk/panang-curry-paste/</link>
+      <pubDate>Wed, 01 Sep 2021 13:27:45 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/panang-curry-paste/</guid>
+      <description>I&amp;rsquo;ve made this a fair few times! It&amp;rsquo;s definitely one of my go to pastes! Recipe comes from here
+Ingredients Spices
+ 1 cinnamon stick 2 star anise 10 cardamom shells removed - or substitute with regular cardamom pods 10 whole cloves 2 tbsp coriander seeds 1 tbsp black peppercorns 2 tbsp cumin seeds  Other Ingredients
+ 3 stems lemongrass finely sliced - or substitute with 3 tbsp jarred/sliced lemongrass 2.</description>
+    </item>
+    
+    <item>
+      <title>Butternut Squash are pretty groovy</title>
+      <link>https://mybrainhertz.co.uk/squash/</link>
+      <pubDate>Wed, 01 Sep 2021 11:41:52 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/squash/</guid>
+      <description>Just before I left Lincolnshire for another new chapter of life I took a few photos of the butternut squash plants my dad and I had planted out earlier in the season. Lesson number one would be to grow these plants up trellis&#39; as they spread out everywhere and climb up anything they can. Whilst we have 3 or 4 very developed fruits on the plant I was drawn to the little baby growing up towards the fence.</description>
+    </item>
+    
+    <item>
+      <title>Red Onion Soup</title>
+      <link>https://mybrainhertz.co.uk/red_onion_soup/</link>
+      <pubDate>Sat, 21 Aug 2021 13:24:36 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/red_onion_soup/</guid>
+      <description>One of my Grandmas recipes for red onion soup I found whilst rummaging around her stack of recipes she has in her kitchen. This is one of the few that didn&amp;rsquo;t involve copious amounts of meat! I found this particular recipe quite the riddle.
+Ingredients  2 oz butter 2lb red onion thinly sliced 1 tbsp veg oil 1 tsp salt ½ tsp brown sugar 1½ oz plain flour 3 pints brown stock ½ pint stout or brown ale  Method  Gently cook onions in butter and oil in a large pan for about 15 minutes.</description>
+    </item>
+    
+    <item>
+      <title>Green Tomato Chutney</title>
+      <link>https://mybrainhertz.co.uk/green_tomato_chutney/</link>
+      <pubDate>Sat, 21 Aug 2021 13:00:58 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/green_tomato_chutney/</guid>
+      <description>This is a recipe from my grandmas sister Ruby.
+Ingredients  1kg green tomatoes 500g white onion 500g apples 25g salt 8oz raisons 4oz sultanas 1 litre malt vinegar 350g demera sugar  Method  Slice or mince tomatoes, apples, onions Add raisins, salt, vinegar Simmer for 90 minutes Add sugar Cook until thick  </description>
+    </item>
+    
+    <item>
+      <title>Tomato Soup</title>
+      <link>https://mybrainhertz.co.uk/tomato-soup/</link>
+      <pubDate>Thu, 19 Aug 2021 21:04:33 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/tomato-soup/</guid>
+      <description>Ingredients Roasted tomatoes:
+ 1kg tomatoes, cut in half if using plum or into 5mm strips if not 6 cloves garlic, peeled 3 tablespoons olive oil Freshly ground salt and pepper  Caramelized onions:
+ ½ tablespoon olive oil 2 yellow onions, thinly sliced  Additions to the soup:
+ 10g basil leaves ½ teaspoon dried oregano 200-500ml cups water or vegetarian broth, depending on how thick you want the soup Freshly ground salt and pepper, to taste  Method  Preheat oven to 200C Roast tomato&amp;rsquo;s with garlic and olive oil for 40 mins.</description>
+    </item>
+    
+    <item>
+      <title>Beetroot Dip</title>
+      <link>https://mybrainhertz.co.uk/beetroot-dip/</link>
+      <pubDate>Wed, 24 Mar 2021 20:24:00 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/beetroot-dip/</guid>
+      <description>Ingredients  2 large beetroot - cooked 1/2 tsp cumin 1/2 tsp ground coriander 3 cloves of garlic Pinch of salt 300ml greek yogurt 1/2 lemon juiced  Method  Put it in a blender and blend it!  Comments All the above ingredients are a rough estimation. Add bits at a time and enjoy the ride.
+Pictures </description>
+    </item>
+    
+    <item>
+      <title>Kale Salad</title>
+      <link>https://mybrainhertz.co.uk/kale-salad/</link>
+      <pubDate>Tue, 23 Mar 2021 08:01:54 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/kale-salad/</guid>
+      <description>Ingredients  2 sweet potatoes cut into 2cm cubes 400g (1 can) chick peas 1 tsp ground cumin 1 tsp ground paprika 200g of kale chilli flakes olive oil 20g chopped parsley  Dressing
+ 150g cashews 2 garlic cloves (roasted) 6 tbsp of almond milk 2 tsp dijon mustard 1 lemon - juiced pinch of salt  Optional
+ Flaked almonds - toasted  Method  Preheat oven to 190 Celsius Mix together sweet potato, chick peas, cumin, and paprika in a bowl with a pinch of salt and olive oil.</description>
+    </item>
+    
+    <item>
+      <title>Mapo Tofu</title>
+      <link>https://mybrainhertz.co.uk/mapo-tofu/</link>
+      <pubDate>Tue, 16 Mar 2021 16:57:34 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/mapo-tofu/</guid>
+      <description>This is a sort of botch together of many recipes.
+ Authentic mapo tofu   Vegetarian mapo tofu 
+ Mapo eggplant 
+  Ingredients  1 aubergine, cut into inch size chunks 400g silken tofu cut into 2cm cubes 250-350g mushrooms blended into coarse particulates 1 tablespoon peanut oil (or vegetable oil) 2 teaspoons Sichuan peppercorns 1 1/2 to 2 tablespoons doubanjiang 4-6 spring onions, sliced with some green part reserved for garnish 2 cloves garlic, minced 1” (2.</description>
+    </item>
+    
+    <item>
+      <title>Sichuan Style Aubergine</title>
+      <link>https://mybrainhertz.co.uk/sichuan-style-aubergine/</link>
+      <pubDate>Fri, 12 Feb 2021 15:32:15 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/sichuan-style-aubergine/</guid>
+      <description>Ingredients  3 long Chinese aubergines (about 600g) or small green type - I prefer the small green as they are crunchy! Sea salt 2 Tbsp vegetable oil 1 tsp Sichuan peppercorns, coarsely crushed - substitute with crushed coriander seeds, crushed pepper corns and a small amount of grated lemon 1 green chillis, thinly sliced 2 Tbsp doubanjiang 4 garlic cloves, finely chopped 2.5cm knob of ginger, grated 1 spring onion, thinly sliced Handful of coriander leaves, roughly chopped (optional) Steamed jasmine rice, to serve  Yu xiang sauce</description>
+    </item>
+    
+    <item>
+      <title>Gorgonzola Pasta</title>
+      <link>https://mybrainhertz.co.uk/gorgonzola-pasta/</link>
+      <pubDate>Thu, 28 Jan 2021 21:38:43 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/gorgonzola-pasta/</guid>
+      <description>Sam would describe this recipe as &amp;lsquo;real indulgent&amp;rsquo;. Thanks Sam :)
+Ingredients  4 shallots - finely chopped 400g tin of chopped tomatoes 1/2 tsp chilli flakes 200ml single cream 250g of Gorgonzola - roughly chopped 2 cloves of garlic - finely chopped 20g basil - finely chopped  Method  Add a good glug of olive oil to a pan on medium heat and add the shallots. After one minute add the chilli flakes and garlic.</description>
+    </item>
+    
+    <item>
+      <title>African Peanut Stew</title>
+      <link>https://mybrainhertz.co.uk/african-peanut-stew/</link>
+      <pubDate>Tue, 19 Jan 2021 21:26:43 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/african-peanut-stew/</guid>
+      <description>Stew Ingredients  1-2 tbsp peanut oil 500g sweet potato - peeled and diced 1 x 400g tin of black-eyed peas, drained and rinsed / or black beans 1 x green chilli 3 tbsp tomato puree 1 x 400g tin of chopped tomatoes 500ml vegetable stock 125g smooth peanut butter 200g spinach 1 tbsp lemon juice Handful of corriander 2 spring onions  Paste Ingredients  2 onions - roughly chopped 5 garlic cloves - roughly chopped 2 inch piece of ginger - roughly chopped 1 tsp paprika 2 tsp ground coriander 1 tsp ground turmeric 2 tsp cumin 1 tsp ground fenugreek 1 green chilli  Method  Blitz paste ingredients Add oil to pan and saute paste for 10 mins on a low/medium heat Add sweet potato, black eyed pas/beans, 1/2 green chilli, and tomato puree.</description>
+    </item>
+    
+    <item>
+      <title>Python script for CMake Framework</title>
+      <link>https://mybrainhertz.co.uk/cmake_framework/</link>
+      <pubDate>Sun, 17 Jan 2021 16:49:22 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/cmake_framework/</guid>
+      <description>Outline  Generate file structure for program architecture. Generate generic CMakeLists.txt file for program compilation. Generate shell files to run CMake and execute program.  File Structure The file structure should be
+Project_name |--src |--|--CMakeLists.txt |--build |--|--build.sh |--run |--|--run.sh Python Script #!/usr/local/bin/python3 import os, sys, subprocess import argparse parser = argparse.ArgumentParser() parser.add_argument(&amp;#39;-p&amp;#39;, action=&amp;#39;store&amp;#39;, dest=&amp;#39;project_name&amp;#39;, help=&amp;#39;Name of project&amp;#39;) results = parser.parse_args() if not os.path.exists(&amp;#34;./build&amp;#34;): os.makedirs(&amp;#34;build&amp;#34;) if not os.path.exists(&amp;#34;./run&amp;#34;): os.makedirs(&amp;#34;run&amp;#34;) if not os.</description>
+    </item>
+    
+    <item>
+      <title>Film development</title>
+      <link>https://mybrainhertz.co.uk/film_development/</link>
+      <pubDate>Sat, 16 Jan 2021 16:14:20 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/film_development/</guid>
+      <description>Film Development A little tutorial for sam :p
+For developing Ilford HP5 with D-76 developer the Massive dev chart must be consulted!
+select the film and developer from the drop down menus.
+I like to use 1:1 dilution ratio so for one roll of 35mm HP5 film at ISO 400 the development time is 13 minutes.
+mix 150ml of water with 150ml of D76 solution and ensure the temperature is 20 degrees ± 0.</description>
+    </item>
+    
+    <item>
+      <title>Lentil Ragu</title>
+      <link>https://mybrainhertz.co.uk/lentil-ragu/</link>
+      <pubDate>Mon, 02 Nov 2020 20:50:18 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/lentil-ragu/</guid>
+      <description>An easy meal with minimal effort that gets better with age!
+Ingredients puy lentil and mushroom ragu (serves 8-10)
+ 2 tablespoons olive oil 2 carrots, finely chopped 2 onions, finely chopped 300g chestnut mushrooms, finely chopped 4 cloves garlic, finely chopped 250g puy lentils 200ml red wine 2 tablespoon tomato puree 2x 400g tin of chopped tomatoes 1 litre vegetable stock 3 bay leaf 1 teaspoon dried oregano salt &amp;amp; pepper 20g chopped basil  Method  Fry onions and carrot in olive oil on a low/medium heat until onions become translucent (5-8 mins) Add the garlic and mushrooms until cooked through (5 mins) Add lentils, red wine, and tomato puree.</description>
+    </item>
+    
+    <item>
+      <title>Spicy Beetroot Sandwich Filler</title>
+      <link>https://mybrainhertz.co.uk/beetroot-sandwich/</link>
+      <pubDate>Mon, 26 Oct 2020 17:19:17 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/beetroot-sandwich/</guid>
+      <description>This sandwich filler comes from Lous friends mum. Its a belter!
+Ingrediants  2 grated boiled beetroot or 200g of shredded beetroot 100g Philadelphia cream cheese 1 Green chili Pepper and salt to taste 50g Grated cheddar  Method  add everything to a blender and coarsely blend  Picture </description>
+    </item>
+    
+    <item>
+      <title>Banana Bread</title>
+      <link>https://mybrainhertz.co.uk/banana-bread/</link>
+      <pubDate>Sat, 24 Oct 2020 21:22:27 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/banana-bread/</guid>
+      <description>This recipe comes from my friend Tom who adapted the BBC Goodfoods recipe. For my take I don&amp;rsquo;t add chocolate to it because chocolate belongs in chocolate bars. Link to Tom&amp;rsquo;s website Here!
+Ingredients  125g margarine (or butter) 125g sugar (half white, half brown) 2 small eggs, beaten 125g flour (farine bise) 1 tsp baking powder 2 ripe bananas Handful walnuts Handful dark chocolate chunks  Method  Heat the oven to 190C.</description>
+    </item>
+    
+    <item>
+      <title>Roasted Tomato</title>
+      <link>https://mybrainhertz.co.uk/roasted-tomato/</link>
+      <pubDate>Sat, 24 Oct 2020 20:49:56 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/roasted-tomato/</guid>
+      <description>A quick recipe from my house mate Lou. A great afternoon snack!
+Ingredients  1 Beef tomato or tomato of your choice cut into 2-3cm chunks A few sprigs of thyme 3 Cloves of garlic - whole Olive oil Balsamic vinegar  Method  Preheat oven to 180 C Add tomato, thyme and garlic into oven tray and cover in oil Season with salt and pepper Roast for 20- 30 minutes Drizzle balsamic vinegar and remove thyme.</description>
+    </item>
+    
+    <item>
+      <title>Leek and Mushroom Pie</title>
+      <link>https://mybrainhertz.co.uk/leek-and-mushroom-pie/</link>
+      <pubDate>Mon, 14 Sep 2020 22:59:08 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/leek-and-mushroom-pie/</guid>
+      <description>Recipe taken from : Easy Peasy Foodie
+Ingredients  25 g butter 2 small leeks sliced 150 g chestnut mushrooms thinly sliced 200 g Quorn chicken pieces (or 400g leftover roast chicken or 2 small chicken breasts) 1 tablespoon plain flour 1 vegetable stock cube (or 1 chicken stock cube) 300 ml boiling water 300 ml crème fraîche 1 tablespoon thyme leaves Salt and pepper 500 g block puff pastry A small amount of milk 4 large Potato&amp;rsquo;s  Method  Pre-heat the oven to 220C / 200C fan / gas mark 7 / 425F.</description>
+    </item>
+    
+    <item>
+      <title>Zurich</title>
+      <link>https://mybrainhertz.co.uk/zurich/</link>
+      <pubDate>Thu, 30 Jul 2020 23:51:49 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/zurich/</guid>
+      <description>function writeImage ( path ) { var text = &#34; &#34; document.write(text) }  Oskar&amp;rsquo;s final interview! Did he get it? at the point of writing this, we still don&amp;rsquo;t know! What we did know is that Oskar had decided he was taking Jamie and I to Zurich. I&amp;rsquo;m still not sure how it all came about but three boys in a hole went on tour!
+We arrived in Zurich (Joe and Jamie) and found Oskar after some major confusion over how big Zurich train station was.</description>
+    </item>
+    
+    <item>
+      <title>Goan Fish Curry</title>
+      <link>https://mybrainhertz.co.uk/goan-fish-curry/</link>
+      <pubDate>Wed, 29 Jul 2020 22:27:13 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/goan-fish-curry/</guid>
+      <description>Recipe taken from Sanjeev Kapoor - Goan fish curry
+Ingredients  Pomfret cut into darnes2 medium Oil 1 tablespoon Green chillies slit2 Onion finely chopped1 large Salt to taste Tamarind soaked and pulp removed1 lemon size Malt vinegar 2 teaspoons Steamed Basmati rice for serving Fresh coriander leaf for garnishing  For paste
+ Dried red chillies 6 Cumin seeds 2 teaspoons Garlic 15 cloves Ginger roughly chopped 2 inch piece Coriander seeds 2 tablespoons Coconut scraped 1/2 cup  Method   To prepare paste, coarsely grind together dried red chillies, cumin seeds, garlic cloves, ginger, coriander seeds and coconut along with ¼ cup water.</description>
+    </item>
+    
+    <item>
+      <title>Baked Sweet Potatoes</title>
+      <link>https://mybrainhertz.co.uk/baked-sweet-potatoes/</link>
+      <pubDate>Thu, 16 Jul 2020 23:14:24 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/baked-sweet-potatoes/</guid>
+      <description>Ingredients  4 medium (~1/3 lb each) sweet potatoes 1 15-ounce can chickpeas (rinsed and drained) 1/2 Tbsp olive oil 1/2 tsp each cumin, coriander, cinnamon, smoked (or regular) paprika 1 pinch sea salt or lemon juice (optional)  Garlic Herb Sauce  1/4 cup hummus (or tahini) 1/2 medium lemon, juiced (1/2 lemon yields ~1 Tbsp juice) 3 cloves garlic, minced (3 cloves yield ~1 1/2 Tbsp or 9 g) Water or unsweetened almond milk (to thin) Sea salt to taste (optional)  Toppings  1/4 cup cherry tomatoes (diced) 1/4 cup chopped parsley (minced) 2 Tbsp lemon juice Chili garlic sauce  Instructions  Preheat oven to 400 degrees F (204 C) and line a large baking sheet with foil.</description>
+    </item>
+    
+    <item>
+      <title>Avoriaz</title>
+      <link>https://mybrainhertz.co.uk/avoriaz/</link>
+      <pubDate>Mon, 13 Jul 2020 18:22:00 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/avoriaz/</guid>
+      <description>function writeImage ( path ) { var text = &#34; &#34; document.write(text) }  June 2020. We all went on a little summer trip to Avoriaz. Or somewhere close? Heres a picture of the &amp;lsquo;Super best friends&amp;rsquo; as Branko would say and obviously theres always one person to have their eyes closed and in this instance, it was Jamie. Maybe oskar too with his blind man glasses on.
+writeImage(&#34;/photography/images/Avoriaz/DSC_1025.jpg&#34;); Very close to the cabin was a lovely little lake with a bbq area.</description>
+    </item>
+    
+    <item>
+      <title>Kalman Filter RLC</title>
+      <link>https://mybrainhertz.co.uk/kalman-filter-rlc/</link>
+      <pubDate>Mon, 01 Jun 2020 12:04:32 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/kalman-filter-rlc/</guid>
+      <description>code.has-jax { -webkit-font-smoothing: antialiased; background: inherit !important; border: none !important; font-size: 100%; }  The RLC circuit above can be expressed by the following equation
+ $$ \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_L}{LC} + \frac{I}{LC} $$ The equation can be expressed as two first order differential equations using the following method.
+$$ x_{1} = I_{L} $$
+$$ x_{2} = \dot{I}_{L}$$
+ so  $$ \dot{x}_{2} = \ddot{I}_{L} = -\frac{\dot{I}_{L}}{RC} -\frac{I_{L}}{LC} + \frac{I}{LC} $$  and</description>
+    </item>
+    
+    <item>
+      <title>Interfacing with FTDIs FT4222H USB 2.0 to Quad SPI / I2C Bridge IC</title>
+      <link>https://mybrainhertz.co.uk/ftdi-4222-setup/</link>
+      <pubDate>Sat, 23 May 2020 17:20:32 +0200</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/ftdi-4222-setup/</guid>
+      <description>A tutorial for interfacing with FTDIs FT4222H USB 2.0 to Quad SPI / I2C Bridge IC on macOS
+Setup Download the relevent drivers for the IC
+D2XX Drivers: FTD2XX
+FT4222H Driver: FT4222H
+ Open D2XX1.4.16.dmg and copy the D2XX folder to your desktop Inside we are interested in 3 files:   ftd2xx.h WinTypes.h libftd2xx.1.14.16.dylib  Open a terminal and navigate to the D2XX folder on your desktop Move .h files to /usr/local/include  mv ftd2xx.</description>
+    </item>
+    
+    <item>
+      <title>Mushroom Butter Masala</title>
+      <link>https://mybrainhertz.co.uk/mushroom-butter-masala/</link>
+      <pubDate>Sat, 18 Apr 2020 19:21:36 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/mushroom-butter-masala/</guid>
+      <description>Recipe based on recipe from: Sharm Passions - Mushroom butter masala
+Ingredients  450g sliced mushrooms 50g butter 2 tsp cumin seeds 2 heaped tsp ginger garlic paste (6 cloves of garlic 3 inches cubed of ginger) 2 medium sized white onion chopped finely 4 tsp kashmiri chilli powder (if you dont have use 3 parts chilli powder 1 part paprika) 2 tsp garam masala powder 150ml fresh single cream salt to taste 8 medium sized tomatoes chopped roughly (640g) 20 cashews a pinch kasoori methi (or 1 tsp of maple syrup) coriander leaves chopped just to garnish  Method  Blend tomato and cashews into a paste and set aside Melt butter on a low/medium head and add the cumin seeds until they start popping Add Onion and cover pan.</description>
+    </item>
+    
+    <item>
+      <title>Beetroot Risotto</title>
+      <link>https://mybrainhertz.co.uk/beetroot-riossotto/</link>
+      <pubDate>Tue, 31 Mar 2020 09:32:01 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/beetroot-riossotto/</guid>
+      <description>Recipe taken from : BBC Good Food
+Ingredients  500g fresh beetroot 2 tbsp olive oil knob of butter 1 onion, finely chopped 1 garlic clove, finely chopped 250g risotto rice 150ml white wine 700ml hot vegetable stock handful grated parmesan (or vegetarian alternative) 4 tbsp soured cream handful chopped dill  Method   Heat oven to 180C/fan 160C/gas 4. Peel and trim the beetroots (use kitchen gloves if you don’t want your hands to get stained) and cut into large wedges.</description>
+    </item>
+    
+    <item>
+      <title>One Pot Mexican Quinoa</title>
+      <link>https://mybrainhertz.co.uk/one-pot-mexican-quinoa/</link>
+      <pubDate>Tue, 31 Mar 2020 09:15:37 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/one-pot-mexican-quinoa/</guid>
+      <description>Recipe taken from: Damn Delicious
+Ingredients  1 tablespoon olive oil 2 cloves garlic, minced 1 jalapeno, minced 1 cup quinoa 1 cup vegetable broth 1 (15-ounce) can black beans, drained and rinsed 1 (14.5 oz) can fire-roasted diced tomatoes 1 cup corn kernels, frozen, canned or roasted 1 teaspoon chili powder 1/2 teaspoon cumin Kosher salt and freshly ground black pepper, to taste 1 avocado, halved, seeded, peeled and diced Juice of 1 lime 2 tablespoons chopped fresh cilantro leaves  Method  Heat olive oil in a large skillet over medium high heat.</description>
+    </item>
+    
+    <item>
+      <title>Palak Paneer</title>
+      <link>https://mybrainhertz.co.uk/palak-paneer/</link>
+      <pubDate>Fri, 27 Mar 2020 20:17:27 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/palak-paneer/</guid>
+      <description>This recipe comes from SKH Handicrafts from Sam&amp;rsquo;s trip to India in November 2019.
+Ingredients  2 red onions finely chopped 2 large tomatoes roughly chopped 1 green chilli finely chopped 500g spinach 1 tbsp of garlic and ginger paste 1/2 tsp salt 1/2 tsp tumeric 1 tsp red chilli powder 1 tsp garam masala 350g paneer chopped into 2cm^3 cubes  Method  Wash the spinach and put to the side Fry onion, chilli and tomato in oil Add garlic and ginger paste Add 1/2 tsp of salt and tumeric Once cooked through, blend into a fine paste, add water if needed Wilt spinach in boiling water for 2 minute and blend into a paste Mix the two pastes together and heat in a pan on medium heat Add the chilli powder and garam masala Add salt to taste Add paneer and simmer for 5 minutes  Pictures </description>
+    </item>
+    
+    <item>
+      <title>Rules and Permissions for USB Blaster Setup in Linux Virtual Machine</title>
+      <link>https://mybrainhertz.co.uk/usb-blaster-linux-quartus2-virtual-machine/</link>
+      <pubDate>Sun, 22 Mar 2020 20:14:00 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/usb-blaster-linux-quartus2-virtual-machine/</guid>
+      <description>SOURCE: https://stackoverflow.com/questions/18704913/unable-to-lock-chain-insufficient-port-permissions
+If when jtagconfig is ran
+1) USB-Blaster varient [2-1] unable to lock chain(Insufficient port permissions) is returned and Quartus cant program your FPGA. The following steps should fix this problem. An amazing resource on setting up Quartus and other Altera related design software is Altera Design Software 
+Before a USB Blaster can be used its jtag rules and permissions must be configured.
+First kill jtagd.
+sudo killall -9 jtagd If jtagconfig is ran whilst jtagd is already running then jtagconfig will have no effect.</description>
+    </item>
+    
+    <item>
+      <title>Paneer Butter Masala (Paneer Makhani)</title>
+      <link>https://mybrainhertz.co.uk/paneer-butter-masala-paneer-makhani/</link>
+      <pubDate>Thu, 16 Jan 2020 20:48:00 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/paneer-butter-masala-paneer-makhani/</guid>
+      <description>This is one of my favourites so far! Doesn&amp;rsquo;t take too long to make and tastes brilliant!
+Recipe taken from Cook with Manali! - Paneer Butter Masala
+Ingredients  2 teaspoons oil, 10 ml, divided, I used avocado oil, use any flavorless oil 1 bay leaf 1/2 inch cinnamon stick 3-4 cloves 6-7 large garlic cloves, 25 grams, roughly chopped 1.5 inch ginger, 15 grams, roughly chopped 1 large white onion, 180 grams, roughly chopped 3-4 large tomatoes, 460 grams, roughly chopped 10-15 whole cashews, raw 1 cup water, 8 oz 2 tablespoons unsalted butter 1/2 teaspoon red chili powder 1/2 teaspoon kashmiri red chili powder 1/2 teaspoon garam masala, + 1/4 teaspoon, if needed 1/4 teaspoon cardamom powder 1 teaspoon sugar 3/4 teaspoon salt, or to taste 1/2 tablespoon tomato paste, optional 3-4 tablespoons cream, 45-60 ml 250 grams paneer, cut into cubes 2 teaspoons crushed kasuri methi, dried fenugreek leaves chopped cilantro, to garnish  Method   Heat 1 teaspoon of oil in a pan on medium heat.</description>
+    </item>
+    
+    <item>
+      <title>Dal</title>
+      <link>https://mybrainhertz.co.uk/dal/</link>
+      <pubDate>Sat, 14 Dec 2019 20:54:50 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/dal/</guid>
+      <description>Recipe from my friend Abass.
+Ingredients  165g split yellow dal 4 / 6 small Tomatoes - halved 2 cloves Garlic - finely chopped 1 inch Ginger - finely chopped 1 tspn Garam Masala 1 tspn Kashmiri Chilli 1 tspn Curry Powder 1 tspn Salted butter 450ml Water  Method   Melt butter on a low/medium heat and add garlic and ginger for two minutes
+  Add spices and mix for 30 seconds</description>
+    </item>
+    
+    <item>
+      <title>Kadai Paneer</title>
+      <link>https://mybrainhertz.co.uk/kadai-paneer/</link>
+      <pubDate>Sat, 14 Dec 2019 18:24:36 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/kadai-paneer/</guid>
+      <description>Recipe taken from Cook with Manali - Kadai Paneer
+Ingredients Kadai Masala
+ 2 tablespoons coriander seeds 2 dried red chilies 4 green cardamom 1 teaspoon fennel seeds 3 cloves  Kadai Paneer
+ 1 tablespoon butter, unsalted 1 tablespoon oil, 15 ml, I used avocado oil 1 medium red onion, 150 grams, finely chopped 1 green chili, sliced 2 teaspoons ginger garlic paste 3-4 medium tomatoes, 450 grams, finely chopped 1 tablespoon tomato paste, optional 1/4 teaspoon garam masala 3/4 teaspoon kashmiri red chili powder 1 inch ginger, julienned, divided 1/2 cup water, 4 oz/120 ml 2 tablespoons heavy cream, 30 ml 3/4 teaspoon salt, or to taste 1 teaspoon sugar 1 large green bell pepper (capsicum), cut into 1-inch pieces 225 grams paneer, cubed, if using store-bought paneer soak it in warm water for 20-25 minutes before using 1 teaspoon kasuri methi, dried fenugreek leaves cilantro, to garnish  Method Make the Kadai Masala</description>
+    </item>
+    
+    <item>
+      <title>Using the AD5627 DAC</title>
+      <link>https://mybrainhertz.co.uk/using-the-ad8627-dac/</link>
+      <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/using-the-ad8627-dac/</guid>
+      <description>Introduction The AD5627RBRMZ (Datasheet) is part of a series of 12/14/16 bit nano DACs with an I2C interface. The DAC we are interested in is the 12 bit AD5627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V.
+Design The DAC requires a high I2C level to be 0.8 * Vcc, which is 4V if we are interested in using the full capability of the DAC. In this design the I2C is operating on a 3.</description>
+    </item>
+    
+    <item>
+      <title>Gobi Manchurian</title>
+      <link>https://mybrainhertz.co.uk/gobi-manchurian/</link>
+      <pubDate>Sun, 08 Dec 2019 10:58:59 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/gobi-manchurian/</guid>
+      <description>Recipe taken from Cooking with Manali - Gobi Manchurian
+Ingredients For the Sauce
+ 1 tablespoon avocado oil, or any oil of choice 1 tablespoon toasted sesame oil 1 tablespoon grated garlic 1 tablespoon grated ginger 1-2 green chilies, chopped 2 stalks celery, chopped 1 small red onion, chopped 1 medium green pepper, chopped 2-3 stalks scallions , chopped 2 tablespoons soy sauce, I used 1 tablespoon regular and 1 tablespoon dark soy sauce 2 tablespoons tomato ketchup 1 tablespoon rice vinegar 1 teaspoon sriracha or any hot sauce, adjust to taste 3/4 teaspoon sugar 1/8 teaspoon white pepper powder salt, to taste, if needed  For the Cauliflower Florets</description>
+    </item>
+    
+    <item>
+      <title>Onion Bhaji</title>
+      <link>https://mybrainhertz.co.uk/onion-bhaji/</link>
+      <pubDate>Sat, 07 Dec 2019 13:10:05 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/onion-bhaji/</guid>
+      <description>Recipe taken from Good to Know - Onion Bhaji
+Ingredients  6 level tbsp plain flour 1 level tsp turmeric 1 level tsp ground cumin 1 level tsp garam masala Salt and freshly ground black pepper 2 med onions, peeled and sliced Raita (minty yogurt), to serve, optional Deep-frying pan, with oil  Method   Heat the oil in the deep-frying pan to 190°C/375°F/Gas Mark 5.
+  Mix the flour, spices and salt together in a bowl and add 3-4 tbsp water, to make a stiff batter.</description>
+    </item>
+    
+    <item>
+      <title>Dal Makhani</title>
+      <link>https://mybrainhertz.co.uk/dal-makhani/</link>
+      <pubDate>Sat, 07 Dec 2019 12:44:23 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/dal-makhani/</guid>
+      <description>Recipe taken from Cook With Manali - Dal Makhani
+Ingredients To Pressure Cook
+ 3/4 cup urad dal sabut (whole black lentil), 165 grams 1/4 cup rajma (red kidney beans), 60 grams 1 teaspoon salt 3.5 cups water , 28 oz  Masala for the Dal.
+ 1 tablespoon ghee 3 tablespoons butter, divided, use amul butter (salted) if possible 1 medium white onion, 115 grams, finely grated using a food processor 2 teaspoons ginger garlic paste, use fresh paste if possible 1/2 cup tomato puree, use store bought tomato puree 1/2 teaspoon kashmiri red chili powder 1/4 teaspoon garam masala 1/2 teaspoon salt, or to taste 1.</description>
+    </item>
+    
+    <item>
+      <title>USB Design Guide</title>
+      <link>https://mybrainhertz.co.uk/usb-design/</link>
+      <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/usb-design/</guid>
+      <description>Key features  USB connector ESD protection Differential microstrip design for USB  USB Connector For this particular design I have chosen a USB-B female connector from Mouser.
+  Mouser # Manufacturer # Manufacturer    571-292304-1 292304-1  TE Connectivity    The USB connector datasheet can be found here.
+ESD Protection The PRTR5V0U4Y is designed to protect Input/Output (I/O) ports that are sensitive to capacitive load, such as USB 2.</description>
+    </item>
+    
+    <item>
+      <title>Voltage Monitoring</title>
+      <link>https://mybrainhertz.co.uk/voltage-monitring/</link>
+      <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/voltage-monitring/</guid>
+      <description>The ADA4096 operational amplifier comes in a dual and quad package. Its inputs are protected by overvoltage protection diodes making it a perfect candidate for monitoring voltages, especially when power to the IC could be lost.
+ADA4096 Datasheet
+The LTC2990 is a Quad I2C voltage, current, and temperature monitor. When used in conjunction with the ADA4096 it makes a simple monitoring interface through I2C.
+LTC2990 Datasheet
+The LTC2990 supply voltages are between 3.</description>
+    </item>
+    
+    <item>
+      <title>XOR Logic used as a Buffer or Inverter</title>
+      <link>https://mybrainhertz.co.uk/xor-buffer-inverter/</link>
+      <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/xor-buffer-inverter/</guid>
+      <description>XOR gates can be used to form inverters or buffers when a single input is tied to Vdd or Ground. In the figure below, U1 is setup as an inverter, and U2 is setup as a buffer.
+The SN74LVC2G86 (Datasheet) is a dual package XOR that can operate at voltages up to 5.5V and deliver up to 50mA of continuous current. Other notable features include a propagation delay between 1.4 and 4.</description>
+    </item>
+    
+    <item>
+      <title>Fish Curry but with Aubergine!</title>
+      <link>https://mybrainhertz.co.uk/fish-curry-aubergine/</link>
+      <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
+      
+      <guid>https://mybrainhertz.co.uk/fish-curry-aubergine/</guid>
+      <description>Recipe taken from: Telegraph - Rick Stein - Fish Curry
+Ingredients  2 tbsp vegetable oil 1 tbsp yellow mustard seeds 1 large onion, finely chopped 3 garlic cloves, crushed 30 fresh curry leaves (from ethnic shops) 2 tsp Kashmiri chilli powder 1/2tsp hot chilli powder (see above) 2 tsp ground coriander 2 tsp turmeric 14oz/400g can chopped tomatoes 3 1/2floz/100ml tamarind water (see below) 2 green chillies, each sliced lengthways into 6 pieces, with seeds (leave these out if you are chilli-sensitive) 1 teaspoon salt lb 9oz/700g snapper fillets, or other white fish, cut into 5cm chunks or 2 aubergines to make it veggie.</description>
+    </item>
     
     <item>
       <title>Andhra Spiced Egg Curry</title>
-      <link>https://furrah.github.io/andhra-spiced-egg-curry/</link>
+      <link>https://mybrainhertz.co.uk/andhra-spiced-egg-curry/</link>
       <pubDate>Mon, 18 Nov 2019 19:21:08 +0100</pubDate>
       
-      <guid>https://furrah.github.io/andhra-spiced-egg-curry/</guid>
-      <description> Ingredients  3 eggs boiled, peeled and halved 2 vegetable oil 1 tsp mustard seeds 1 medium onion finely chopped (or 5-7 small shallots thinly sliced) 1 small cinnamon stick halved 2 green chillies slit lengthwise 2 tomatoes roughly chopped 1” piece ginger thinly sliced ½ tsp turmeric powder 1 tsp kashmiri chilli powder (or mild chilli powder) 1 tsp coriander powder 1 tsp tamarind concentrate 100mls water 50mls coconut milk 8-10 curry leaves Salt to taste  </description>
+      <guid>https://mybrainhertz.co.uk/andhra-spiced-egg-curry/</guid>
+      <description>Recipe taken from: Mauni Kagowardhan - Andhra Spiced Egg Curry
+Ingredients  3 eggs boiled, peeled and halved 2 vegetable oil 1 tsp mustard seeds 1 medium onion finely chopped (or 5-7 small shallots thinly sliced) 1 small cinnamon stick halved 2 green chillies slit lengthwise 2 tomatoes roughly chopped 1” piece ginger thinly sliced ½ tsp turmeric powder 1 tsp kashmiri chilli powder (or mild chilli powder) 1 tsp coriander powder 1 tsp tamarind concentrate 100mls water 50mls coconut milk 8-10 curry leaves Salt to taste  Method   Heat the oil in a heavy bottom sauce pan.</description>
     </item>
     
     <item>
       <title>Sri Lankan Coconut Lentil Curry (Parippu Curry)</title>
-      <link>https://furrah.github.io/sri-lanken-curry/</link>
+      <link>https://mybrainhertz.co.uk/sri-lanken-curry/</link>
       <pubDate>Fri, 08 Nov 2019 19:48:15 +0100</pubDate>
       
-      <guid>https://furrah.github.io/sri-lanken-curry/</guid>
-      <description>Recipe taken from: http://thebellephant.com/recipes/sri-lankan-coconut-lentil-curry/
+      <guid>https://mybrainhertz.co.uk/sri-lanken-curry/</guid>
+      <description>Recipe taken from: The Bellephant - Sri Lankan Coconut Lentil Curry
 Ingredients  450g red split lentils 1 litre water 1 tbsp ground cumin 2 tsp turmeric 250ml coconut cream 2tbsp coconut oil 2 onions, sliced 4-6 cloves garlic, minced 3 green chillies, finely chopped 2 tsp mustard seeds 2 tsp cumin seeds 2 tsp fennel seeds Salt to taste To serve: fresh coriander  Method  Wash and drain the lentils a few times (until the water isn&amp;rsquo;t cloudy from the starch).</description>
     </item>
     
     <item>
       <title>Egg Bhuna</title>
-      <link>https://furrah.github.io/egg-bhuna/</link>
+      <link>https://mybrainhertz.co.uk/egg-bhuna/</link>
       <pubDate>Mon, 04 Nov 2019 21:42:02 +0100</pubDate>
       
-      <guid>https://furrah.github.io/egg-bhuna/</guid>
-      <description>Recipe taken from: http://fatimacooks.net/recipe/anda-bhuna/
+      <guid>https://mybrainhertz.co.uk/egg-bhuna/</guid>
+      <description>Recipe taken from: Fatima Cooks - Anda Bhuna
 Ingredients Serves 2
  1 medium onion, sliced 4 cloves garlic, minced small piece ginger, minced 2 medium tomatoes, sliced 4 hard boiled eggs salt, to taste 0.75 tsp red chilli powder 0.75 tsp cumin powder 0.75 tsp coriander powder 0.5 tsp turmeric powder  Method  In a pan, heat your oil and add the onions, garlic and ginger. Saute till golden, but ensure that the onions do not burn Add the tomatoes, all the spices and a splash of water.</description>
     </item>
     
     <item>
       <title>Tabbouleh</title>
-      <link>https://furrah.github.io/tabbouleh/</link>
+      <link>https://mybrainhertz.co.uk/tabbouleh/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
       
-      <guid>https://furrah.github.io/tabbouleh/</guid>
-      <description>Recipe taken from https://www.bbcgoodfood.com/recipe/halloumi-broccoli-tabbouleh-honey-harissa-dressing
-Ingredients  140g couscous 300g broccoli florets 6 spring onions , finely sliced 150g cherry tomato, quartered large bunch parsley, finely chopped small bunch mint, finely chopped juice 2 lemons, zest of ½ lemon 2½ tbsp extra virgin olive oil 1½ tbsp harissa or sriracha 1 tbsp clear honey 2 x 250g packs halloumi cheese, cut into 1cm-thick slices 25g toasted flaked almond or fresh.  Method  Put the couscous into a bowl and cover with boiling water.</description>
+      <guid>https://mybrainhertz.co.uk/tabbouleh/</guid>
+      <description>Recipe taken from BBC Good Food - Tabbouleh with Halloumi and Broccoli.
+Ingredients  140g couscous 300g broccoli florets 6 spring onions , finely sliced 150g cherry tomato, quartered large bunch parsley, finely chopped small bunch mint, finely chopped juice 2 lemons, zest of ½ lemon 2½ tbsp extra virgin olive oil 1½ tbsp harissa or sriracha 1 tbsp clear honey 2 x 250g packs halloumi cheese, cut into 1cm-thick slices 25g fresh almonds.</description>
     </item>
     
     <item>
       <title>Morocco - The Atlas Mountains</title>
-      <link>https://furrah.github.io/morroco/</link>
+      <link>https://mybrainhertz.co.uk/morroco/</link>
       <pubDate>Sun, 03 Nov 2019 15:21:48 +0100</pubDate>
       
-      <guid>https://furrah.github.io/morroco/</guid>
+      <guid>https://mybrainhertz.co.uk/morroco/</guid>
       <description>In August 2018 my friends and I visited the Atlas mountains of Morocco and walked up Mount Toubkal. Despite my camera having a horrendous light leak I managed to get a few photos of that walk.
 We had envisioned a hike though the Atlas mountains off the typical tourist route, following the Berber trails. It became apparent after the first day of ascent that we weren&amp;rsquo;t equipped for this route. I remember feeling the exposure of the desert mountains, not being able to hide from the sun and slipping down constantly.</description>
     </item>
     
     <item>
       <title>Flapjack</title>
-      <link>https://furrah.github.io/flapjack/</link>
+      <link>https://mybrainhertz.co.uk/flapjack/</link>
       <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
       
-      <guid>https://furrah.github.io/flapjack/</guid>
+      <guid>https://mybrainhertz.co.uk/flapjack/</guid>
       <description>Ingredients  250g porridge oats 125g butter 125g brown sugar 3 tbsp golden syrup 50g walnuts 25g almonds  Method  Preheat oven to 180°C On a low heat add buter, sugar, and golden syrup to a pan. Heat until sugar has lost granularity Add porridge oats, walnuts, almonds, whatever else you want to add. Line a 20x20cm baking tray and pour oat mixture in. Place in oven for 20 mins or until golden brown.</description>
     </item>
     
     <item>
       <title>Precision Op Amp Gain Adjustment with DACs</title>
-      <link>https://furrah.github.io/op-amp-gain-adjustment-dac/</link>
+      <link>https://mybrainhertz.co.uk/op-amp-gain-adjustment-dac/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
       
-      <guid>https://furrah.github.io/op-amp-gain-adjustment-dac/</guid>
+      <guid>https://mybrainhertz.co.uk/op-amp-gain-adjustment-dac/</guid>
       <description>Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;
 \begin{align} Gain = \frac{R_2}{R_1} + 1 \end{align}
 It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2.</description>
@@ -83,106 +681,107 @@ It would be nice to adjust the gain of this amplifier. This can be done achieved
     
     <item>
       <title>Chinese Egg Plant With Garlic Sauce</title>
-      <link>https://furrah.github.io/chinese-egg-plant-garlic-sauce/</link>
+      <link>https://mybrainhertz.co.uk/chinese-egg-plant-garlic-sauce/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
       
-      <guid>https://furrah.github.io/chinese-egg-plant-garlic-sauce/</guid>
-      <description>Recipe taken from: http://allrecipes.com.au/recipe/10769/chinese-eggplant-with-garlic-soy-sauce.aspx
+      <guid>https://mybrainhertz.co.uk/chinese-egg-plant-garlic-sauce/</guid>
+      <description>Recipe taken from: All Recipes - Chinese Eggplant with Garlic Soy Sauce
 Ingredients Serves: 6
- 3 tablespoons vegetable oil 4 Chinese eggplants, halved lengthways, then cut into 2cm slices 1 cup (250ml) water 1 tablespoon crushed dried red chilli flakes 3 garlic cloves 1 tablespoon white sugar 1 teaspoon cornflour 2 tablespoons soy sauce 2 tablespoons oyster sauce  Method Preparation:10min Cook:15min Ready in:25min
- Heat the oil in a wok or frypan over high heat. Add the eggplant and stir the eggplant until soft, about 4 minutes.</description>
+ 3 tablespoons vegetable oil 4 Chinese eggplants, halved lengthways, then cut into 2cm slices 1 cup (250ml) water 1 tablespoon crushed dried red chilli flakes 3 garlic cloves 1 tablespoon white sugar 1 teaspoon cornflour 2 tablespoons soy sauce 2 tablespoons oyster sauce (or vegetarian alternative!)  Method Preparation:10min Cook:15min Ready in:25min
+ Heat the oil in a wok or frypan over high heat.</description>
     </item>
     
     <item>
       <title>Murgh Makhani Butter Tofu 2</title>
-      <link>https://furrah.github.io/murgh-makhani-butter-tofu-2/</link>
+      <link>https://mybrainhertz.co.uk/murgh-makhani-butter-tofu-2/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
       
-      <guid>https://furrah.github.io/murgh-makhani-butter-tofu-2/</guid>
-      <description>Recipe taken from : https://www.youtube.com/watch?v=a03U45jFxOI
+      <guid>https://mybrainhertz.co.uk/murgh-makhani-butter-tofu-2/</guid>
+      <description>Recipe taken from : &amp;lt;a href=https://www.youtube.com/watch?v=a03U45jFxOI target=&amp;quot;_blank&amp;quot;&amp;gt;Youtube - Get Curried - Butter Chicken
 Ingredients For the chicken
  300 gms Chicken breast boneless 1 tbsp Ginger garlic paste 1 tbsp Red chilli powder Salt to taste Oil to pan fry  For the gravy
- 500 gms roughly slit tomatoes 100 gms roughly cut onions 1 tbsp garlic paste 50 gms cashew 1 tsp kasoori methi 1&amp;frasl;2 tsp garam masala 4 tbsp sugar 2 tbsp kashmiri chilli powder 5 tbsp butter 3 tbsp cream 2 tbsp malt vinegar / 1.</description>
+ 500 gms roughly slit tomatoes 100 gms roughly cut onions 1 tbsp garlic paste 50 gms cashew 1 tsp kasoori methi 1/2 tsp garam masala 4 tbsp sugar 2 tbsp kashmiri chilli powder 5 tbsp butter 3 tbsp cream 2 tbsp malt vinegar / 1.</description>
     </item>
     
     <item>
       <title>Murgh Makhani Butter Tofu</title>
-      <link>https://furrah.github.io/murgh-makhani-butter-tofu/</link>
+      <link>https://mybrainhertz.co.uk/murgh-makhani-butter-tofu/</link>
       <pubDate>Mon, 28 Oct 2019 19:04:15 +0100</pubDate>
       
-      <guid>https://furrah.github.io/murgh-makhani-butter-tofu/</guid>
-      <description>Recipe taken from https://www.youtube.com/watch?v=Ba0Lsa5vdM4
+      <guid>https://mybrainhertz.co.uk/murgh-makhani-butter-tofu/</guid>
+      <description>Recipe taken from: Youtube - Videojug - Murgh Makhni
 Its for chicken so lets adapt for tofu&amp;hellip;
 Ingredients For the chicken/tofu  500g chicken/tofu 50g garlic and ginger paste 0.5 tsp salt 65ml natural yogurt 0.5 tsp kashmiri chilli powder 0.5 tbsp vegetable oil 0.5 tsp garam masala powder  Sauce  40ml vegetable oil 5 cardamon pods 5 cloves 4 bay leaves 6 green chillies 15g root ginger finely chopped 750g of fresh tomatoes 0.</description>
     </item>
     
     <item>
       <title>Falafel</title>
-      <link>https://furrah.github.io/fallfel/</link>
+      <link>https://mybrainhertz.co.uk/fallfel/</link>
       <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
       
-      <guid>https://furrah.github.io/fallfel/</guid>
-      <description>Ingredients  1 (15-ounce) can chickpeas, rinsed and drained 1 cup fresh parsley leaves, tightly-packed 1 cup fresh cilantro leaves, tightly-packed 1&amp;frasl;2 cup diced red or yellow onion 1&amp;frasl;3 cup flour (such as all-purpose, white whole wheat, chickpea, or a 1:1 gluten-free flour) 1 tablespoon fresh lemon juice 1 1&amp;frasl;2 teaspoons baking powder 1 1&amp;frasl;2 teaspoons ground cumin 1 teaspoon fine sea salt 1&amp;frasl;2 teaspoon black pepper 6 small garlic cloves, peeled and roughly chopped 4–6 tablespoons high-heat oil (such as avocado oil, grapeseed oil or vegetable oil) for serving: pita bread, chopped lettuce, sliced red onions, sliced tomatoes, tzatziki sauce, tahini sauce and/or hummus  Method  Roughly purée your ingredients.</description>
+      <guid>https://mybrainhertz.co.uk/fallfel/</guid>
+      <description>Recipe taken from:
+Recipe taken from: Gimme Some Oven - Falafel
+Ingredients  1 (15-ounce) can chickpeas, rinsed and drained 1 cup fresh parsley leaves, tightly-packed 1 cup fresh cilantro leaves, tightly-packed 1/2 cup diced red or yellow onion 1/3 cup flour (such as all-purpose, white whole wheat, chickpea, or a 1:1 gluten-free flour) 1 tablespoon fresh lemon juice 1 1/2 teaspoons baking powder 1 1/2 teaspoons ground cumin 1 teaspoon fine sea salt 1/2 teaspoon black pepper 6 small garlic cloves, peeled and roughly chopped 4–6 tablespoons high-heat oil (such as avocado oil, grapeseed oil or vegetable oil) for serving: pita bread, chopped lettuce, sliced red onions, sliced tomatoes, tzatziki sauce, tahini sauce and/or hummus  Method  Roughly purée your ingredients.</description>
     </item>
     
     <item>
       <title>Lancaster</title>
-      <link>https://furrah.github.io/lancaster-bowland-forest/</link>
+      <link>https://mybrainhertz.co.uk/lancaster-bowland-forest/</link>
       <pubDate>Sun, 27 Oct 2019 22:04:40 +0100</pubDate>
       
-      <guid>https://furrah.github.io/lancaster-bowland-forest/</guid>
-      <description>This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film. 
-Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not.</description>
+      <guid>https://mybrainhertz.co.uk/lancaster-bowland-forest/</guid>
+      <description>This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film. Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not.</description>
     </item>
     
     <item>
       <title>FPGA I2C Wishbone Interface and Testing </title>
-      <link>https://furrah.github.io/i2c-wishbone-interface-fpga/</link>
+      <link>https://mybrainhertz.co.uk/i2c-wishbone-interface-fpga/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
       
-      <guid>https://furrah.github.io/i2c-wishbone-interface-fpga/</guid>
-      <description>Requirements  Lua 5.14+ (recommended 5.15) (https://github.com/rjpcomputing/luaforwindows/releases/tag/v5.1.5-52) wbgen2 https://www.ohwr.org/project/wishbone-gen MCP2221A USB2.0 to I2C/UART Protocol Converter with GPIO  Any USB to I2C device will work.   Creating an I2C wishbone interface for FPGA The wishbone interface acts as a bridge between the FPGA and external signals containing a master and a slave. In this example the FPGA will be acting as an I2C slave with two registers;
+      <guid>https://mybrainhertz.co.uk/i2c-wishbone-interface-fpga/</guid>
+      <description>Requirements  Lua 5.14+ (recommended 5.15) (https://github.com/rjpcomputing/luaforwindows/releases/tag/v5.1.5-52) wbgen2 https://www.ohwr.org/project/wishbone-gen MCP2221A USB2.0 to I2C/UART Protocol Converter with GPIO Any USB to I2C device will work.  Creating an I2C wishbone interface for FPGA The wishbone interface acts as a bridge between the FPGA and external signals containing a master and a slave. In this example the FPGA will be acting as an I2C slave with two registers;
  1 read/write 1 read only.</description>
     </item>
     
     <item>
       <title>Comparison of Integrated Noise Spectrum of JFET and BJT input Operational Amplifiers</title>
-      <link>https://furrah.github.io/integrated-noise-spectrum/</link>
+      <link>https://mybrainhertz.co.uk/integrated-noise-spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
       
-      <guid>https://furrah.github.io/integrated-noise-spectrum/</guid>
-      <description>Reference material: https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf
+      <guid>https://mybrainhertz.co.uk/integrated-noise-spectrum/</guid>
+      <description>Reference material: Texas Instruments - Op Amp Technical Overview
 When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.
-Figure1 - CMOS, BJT, and JFET flicker noise</description>
+*Figure1 - CMOS, BJT, and JFET flicker noise*</description>
     </item>
     
     <item>
       <title>Rogan Josh</title>
-      <link>https://furrah.github.io/rogan-josh/</link>
+      <link>https://mybrainhertz.co.uk/rogan-josh/</link>
       <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
       
-      <guid>https://furrah.github.io/rogan-josh/</guid>
-      <description>Recipe taken from : https://www.you.co.uk/rogan-bosh-recipe/
+      <guid>https://mybrainhertz.co.uk/rogan-josh/</guid>
+      <description>Recipe taken from : You - Rogon bosh
 Ingredients  4 garlic cloves 4cm piece fresh ginger 3 fresh red chillies 1 tbsp tomato purée 60ml water 1 large aubergine 3 tbsp vegetable oil 4 green cardamom pods 1 onion 6 black peppercorns 1 bay leaf 1½cm cinnamon stick 1 tsp sugar 1 tsp ground cumin 2 tsp ground coriander 100g coconut yoghurt large pinch of garam masala handful coriander, to serve handful desiccated coconut flakes, to serve salt  Method  Peel the garlic and ginger and put them into the liquidiser.</description>
     </item>
     
     <item>
       <title>Creamy Coconut Lentil Curry</title>
-      <link>https://furrah.github.io/creamy-coconut-lentil-curry/</link>
+      <link>https://mybrainhertz.co.uk/creamy-coconut-lentil-curry/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
       
-      <guid>https://furrah.github.io/creamy-coconut-lentil-curry/</guid>
-      <description>Recipe taken from : https://www.theendlessmeal.com/creamy-coconut-lentil-curry/
+      <guid>https://mybrainhertz.co.uk/creamy-coconut-lentil-curry/</guid>
+      <description>Recipe taken from : The Endless Meal - Creamy Coconut Lentil Curry
 Ingredients  2 tablespoons coconut oil 1 tablespoon each: cumin seeds and coriander seeds 1 head of garlic, chopped (10–12 cloves) 1 28-ounce can of crushed tomatoes 2 tablespoons ginger, chopped 1 tablespoon turmeric 2 teaspoons sea salt 1 cup dried brown lentils 1–2 teaspoons cayenne powder, optional 1 15-ounce can coconut milk A few handfuls of cherry tomatoes 1 cup chopped cilantro  Method  Heat the coconut oil in a large pot or skillet over medium-high heat.</description>
     </item>
     
     <item>
       <title>Indian Butter Tofu</title>
-      <link>https://furrah.github.io/butter-tofu/</link>
+      <link>https://mybrainhertz.co.uk/butter-tofu/</link>
       <pubDate>Sun, 27 Oct 2019 13:31:50 +0100</pubDate>
       
-      <guid>https://furrah.github.io/butter-tofu/</guid>
-      <description>Recipe taken from : https://www.feastingathome.com/indian-butter-chicken-or-cauliflower/
+      <guid>https://mybrainhertz.co.uk/butter-tofu/</guid>
+      <description>Recipe taken from : Feasting at Home - Indian Butter Chicken or Cauliflower
 Ingredients  1 mug of rice / 2 mugs of water - serves 3 400g of natural tofu 1 tablespoon of garam masala 2 tablespoons ghee (or coconut or olive oil) 1 onion, finely diced 1 cinnamon stick serano chilies ( or sub 1 jalapeno) split in half lengthwise, ( leave tops in tact) 4 fat garlic cloves- finely minced 1 tablespoon ginger finely minced ( or use paste) ½ teaspoon fennel seeds ( optional) ½ teaspoon cumin seeds ( optional) ½ teaspoon mustard seeds ( optional) 1 can diced tomatoes or tomato puree ( or sub 2 medium tomatoes, diced with their juices) 200ml water or stock 1 tablespoon garam masala spice ( see notes) 2 teaspoons dried fenugreek leaves (optional, but elevates the dish substantially) 1 teaspoon chili powder 1 teaspoon paprika ( do NOT use smoked paprika, if you don’t have regular, just leave it out!</description>
     </item>
     

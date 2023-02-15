@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.89.4" />
+  
+  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  
+  
+  <title>DS18B20 Temperature Sensor PCB</title>
+  <style>
+.container {
+  max-width: 900px;
+}
+#nav a {
+  font-weight: bold;
+  color: inherit;
+
+}
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+#home-jumbotron {
+  background-color: inherit;
+}
+.font-125 {
+  font-size: 125%;
+}
+
+ 
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+ 
+
+
+a {
+  color: #007bff;
+ }  
+
+
+
+
+
+td, th {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+.card-img-top{
+   
+   
+   
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.card{
+  border-radius: 10px;
+
+}
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+
+
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-177014444-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  <body>
+    
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+        
+    <div class="container">
+      <main id="main">
+      
+<h1>DS18B20 Temperature Sensor PCB</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2022-04-23">Apr 23, 2022</time>
+
+<br><br>
+<h2 id="introduction">Introduction</h2>
+<p>In 2013 I discovered the DS18B20 digital thermometer IC made by Maxim Integrated. It&rsquo;s a great little IC that has provides a 12 bit temperature measurement and interfaces over the 1-Wire bus allowing multiple sensors to be daisy chained! Back then I used veraboard and some terrible soldering to create the strings of sensors used in my greenhouse. Well its now 2022 and I&rsquo;m back to thinking about greenhouses.</p>
+<h2 id="pcb-design">PCB Design</h2>
+<p>The design is about as simple as it comes. I&rsquo;ve used 3x1 terminal blocks for the cable interface which could have been connectorised but I don&rsquo;t really ever plan on unplugging them.
+Each board has a space for the pullup resistor which is required when using external power. The mounting hole size is 3mm.</p>
+<p align="center"> 
+<img src="/electronics/images/temp_sensor_module.png" alt="drawing" width="500">
+</p>
+<p align="center"> 
+<img src="/electronics/images/IMG_6522.jpg" alt="drawing" width="300">
+</p>
+<h2 id="raspberry-pi">Raspberry Pi</h2>
+<p><strong>Enable 1-Wire interface</strong></p>
+<ol>
+<li><code> sudo rasbpi-config</code></li>
+<li>select interface options</li>
+<li>select I7 1-Wire and enable</li>
+</ol>
+<p><strong>Wiring</strong></p>
+<div>
+  <table class="w3-table-all w3-card-4" table style="width:30%" align="center">
+<thead>
+  <tr>
+    <th>PCB Pin </th>
+    <th>Pi Pin</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>vcc</td>
+    <td>01</td>
+  </tr>
+  <tr>
+    <td>data</td>
+    <td>05</td>
+  </tr>
+  <tr>
+    <td>gnd</td>
+    <td>06</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<br>
+<p>pi pins 01 and 02 are closest to SD card.</p>
+<p align="center"> 
+<img src="/electronics/images/RasPiB-GPIO_lightbox.png" alt="drawing" width="300">
+</p>
+<p><strong>Testing</strong></p>
+<p>navigate to <code>cd /sys/bus/w1/devices</code></p>
+<p>I have 5 board daisy chained listed below</p>
+<pre tabindex="0"><code>28-301fbe0164ff  28-84ccbd0164ff  28-dfd5bd0164ff
+28-4779be0164ff  28-c671b90164ff  w1_bus_master1
+</code></pre><p>navigate to a sensors directory e.g. &ldquo;28-301fbe0164ff&rdquo;</p>
+<p><code>cat w1_slave</code></p>
+<p>returns</p>
+<pre tabindex="0"><code>56 01 55 00 7f ff 0c 10 46 : crc=46 YES
+56 01 55 00 7f ff 0c 10 46 t=21375
+</code></pre><p>where <code>t=21375</code> is the temperature in Celsius multiplied by 1000 so the temperature is 21.375 ± 0.5 degrees C.</p>
+
+
+
+
+
+      </main>
+
+    </div>
+    
+<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>   
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>   
+  </body>
+</html>
