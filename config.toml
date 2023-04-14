@@ -8,6 +8,7 @@ pygmentsStyle = 'friendly' #required for lexer to work
 
 googleAnalytics = "UA-177014444-1"
 
+disqusShortname = 'www-mybrainhertz-co-uk'
 
 [markup]
 [markup.goldmark.renderer]
