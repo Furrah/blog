@@ -6,13 +6,33 @@
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
 </div>
 
+
+
 	{{ range first 10 .Site.RegularPages.ByPublishDate.Reverse  }}
+
 		<p>
-		  <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
+<!--  		<div id="home-page" class="card mx-auto" style="width: 25rem">
+    		<a href="{{ .RelPermalink }}">
+      		<div class="card-body text-center">
+        		<a href="{{ .RelPermalink }}">
+          		<h5 class="card-title">{{ .Title }}</h5>
+        		</a>
+        		{{ partial "date-and-tags.html" . }}
+      		</div>
+    		</a>
+  		</div> -->
+
+		   <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
 		  <br>
 		  {{ partial "date-and-tags.html" . }}
+		  <!-- <hr class="small"> -->
+ 
+	</p>
 
-		</p>
 	{{ end }}
 </div>
+
+
 {{ end }}
+
+

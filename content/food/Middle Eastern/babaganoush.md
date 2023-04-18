@@ -3,7 +3,7 @@ title: "Babaganoush"
 date: 2023-02-13T08:30:57Z
 tags: []
 draft: false
-image: "/food/images/IMG_9550.jpeg"
+image: "/food/images/IMG_9950.jpeg"
 ---
 
 

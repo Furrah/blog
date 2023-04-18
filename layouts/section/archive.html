@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ $pages := .Site.RegularPages }}
+  {{ $groups := $pages.GroupByDate "2006" "asc" }}
+  {{ range $groups }}
+    {{ $year := .Key }}
+    <h2>{{ $year }}</h2>
+    <ul>
+      {{ range .Pages }}
+        {{ $date := dateFormat "2006-01-02" .Date }}
+        {{ $month := slice $date 5 }}
+        {{ $monthPages := slice }}
+        {{ range $pages }}
+          {{ if and (eq (dateFormat "2006-01" .Date) $date) (eq .Date.Year $year) }}
+            {{ $monthPages = $monthPages | append . }}
+          {{ end }}
+        {{ end }}
+         <li>{{ $date }} <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <ul>
+        </ul>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

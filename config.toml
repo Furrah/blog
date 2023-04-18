@@ -66,6 +66,14 @@ unsafe = true
     url = "/tags/"
     weight = 7
 
+  [[menu.main]]
+  identifier = "archive"
+  name = "Archive"
+  pre="archive"
+  url = "/archive/"
+  weight = 8
+
+
 [taxonomies]
   tag = "tags"
 
