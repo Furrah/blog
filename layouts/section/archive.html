@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ $pages := .Site.RegularPages }}
-  {{ $groups := $pages.GroupByDate "2006" "asc" }}
+  {{ $groups := $pages.GroupByDate "2006" "dsc" }}
   {{ range $groups }}
     {{ $year := .Key }}
     <h2>{{ $year }}</h2>
