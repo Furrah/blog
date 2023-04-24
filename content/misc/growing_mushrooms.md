@@ -41,6 +41,42 @@ In order for the mycelium to grow and not be out competed by bacteria, the subst
 I bought 1kg from <a href="https://www.amazon.co.uk/gp/product/B01N3NT5YC/" target="_blank">here </a> for £11.95
 
 
+<p align="center">
+<table class="table mx-auto" style="width: 50%;" >
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Cost (£)</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Bucket</td>
+      <td>13.69</td>
+      <td><a href="https://www.amazon.co.uk/gp/product/B00ECVX1NQ/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1" target="_blank">Link</a></td>
+    </tr>
+    <tr>
+      <td scope="row">Spawn</td>
+      <td>8.47</td>
+      <td><a href="https://urban-farm-it.com/product/m2191-pleurotus-ostreatus-spawn-1l-bag/" target="_blank">Link </a></td>
+    </tr>
+    <tr>
+      <td scope="row">Substrate</td>
+      <td>?</td>
+      <td> - </td>
+    </tr>
+    <tr>
+      <td scope="row">Calcium Hydroxide</td>
+      <td>11.95</td>
+      <td><a href="https://www.amazon.co.uk/gp/product/B01N3NT5YC/" target="_blank">Link </a></td>
+    </tr>
+  </tbody>
+</table>
+</p>
+
+
+
 # Preparing the buckets
 I added 50g of calcium hydroxide to roughly 30L of water, mixed it in and then added the wood shavings until thick. I left it in the shed for 24 hours and then drained for an hour. The mulch is ready when the wood shavings are mostly dry but still slightly damp. The aim is to avoid rotting but still have moisture for the spawn to grow in.
 
@@ -102,3 +138,23 @@ Alrighty then, It's been waaay more than 3 weeks. It's now 23rd of January. Some
 </div>
 
 
+# Round 3 
+There was a 3rd flush but unfortunately I didn't take any photos. From what I remember it was in the realm of 50g. 
+
+# The End
+For my first attempt, I was hoping for a higher yield per flush, but in hindsight it was very cold in the shed during this time. In preparation for the next attempt I threw the remains into the compost heap and had a look at the cross section of the mycelial block. I was surprised to see how little of the sawdust was impregnated with mycelium. I wonder if the substrate was too dense or the ratio of spawn to substrate was wrong.
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <p align="center"> 
+    <img src="/misc/images/growing_mushrooms/IMG_0303.jpeg" alt="drawing" width="400px"/>
+  </p>
+    </div>
+  <div class="col">
+     <p align="center"> 
+    <img src="/misc/images/growing_mushrooms/IMG_0305.jpeg" alt="drawing" width="400px"/>
+  </p>
+  </div>
+</div>
+</div>

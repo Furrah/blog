@@ -30,31 +30,32 @@ Each board has a space for the pullup resistor which is required when using exte
 
 **Wiring**
 
-<div>
-  <table class="w3-table-all w3-card-4" table style="width:30%" align="center">
-<thead>
-  <tr>
-    <th>PCB Pin </th>
-    <th>Pi Pin</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>vcc</td>
-    <td>01</td>
-  </tr>
-  <tr>
-    <td>data</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>gnd</td>
-    <td>06</td>
-  </tr>
-</tbody>
+
+<p align="center">
+<table class="table mx-auto" style="width: 50%;" >
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">PCB Pin</th>
+      <th scope="col">Pi Pin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Vcc</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td scope="row">Data</td>
+      <td>05</td>
+    </tr>
+    <tr>
+      <td scope="row">Gnd</td>
+      <td>06</td>
+    </tr>
+
+  </tbody>
 </table>
-</div>
-<br>
+</p>
 
 pi pins 01 and 02 are closest to SD card.
 <p align="center"> 

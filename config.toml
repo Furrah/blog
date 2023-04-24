@@ -60,11 +60,11 @@ unsafe = true
     url = "/Greenhouse/"
     weight = 6
 
-  [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
-    weight = 7
+#  [[menu.main]]
+#    name = "Tags"
+#    pre = "tag"
+#    url = "/tags/"
+#    weight = 7
 
   [[menu.main]]
   identifier = "archive"
