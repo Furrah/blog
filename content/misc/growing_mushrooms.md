@@ -119,7 +119,7 @@ Three weeks have passed and it's time for harvest (2nd December). All in all I m
 
 # Round 2
 
-Alrighty then, It's been waaay more than 3 weeks. It's now 23rd of January. Some 7 weeks later and I finally have a second flush of mushrooms. Now, the weather has been cold, a couple of weeks below -5C, which isn't good for growth. Grey oyster mushrooms like to climates between 10-20C... So, no wonder it's taken so long. The yeild was pretty terrible too. I was hoping for a third of the first flush but ended up with 132g.
+Alrighty then, It's been waaay more than 3 weeks. It's now 23rd of January. Some 7 weeks later and I finally have a second flush of mushrooms. Now, the weather has been cold, a couple of weeks below -5C, which isn't good for growth. Grey oyster mushrooms like to climates between 10-20C... So, no wonder it's taken so long. The yield was pretty terrible too. I was hoping for a third of the first flush but ended up with 132g.
 
 
 <div class="container">
