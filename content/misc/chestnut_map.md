@@ -48,7 +48,7 @@ draft: false
 
                 // Update marker position
                 marker.setLatLng(pos);
-                map.setView(pos);
+                map.panTo(pos);
             }, function() {
                 // Handle errors, e.g., user denied location access
                 console.error('Error: The Geolocation service failed.');
