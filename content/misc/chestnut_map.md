@@ -95,7 +95,7 @@ draft: false
                 // Add a marker for the user's current position
                 marker = L.marker(pos, { icon: redIcon }).addTo(map).bindPopup("You are here");
 
-                setInterval(updateMarker, 10000);
+                setInterval(updateMarker, 1000);
             }, function() {
                 // Handle errors, e.g., user denied location access
                 alert('Error: The Geolocation service failed.');
