@@ -18,6 +18,70 @@ draft: false
 
 
 <script>
+    var map;
+
+    function readFile(file) {
+        var f = new XMLHttpRequest();
+        f.open("GET", file, false);
+        f.onreadystatechange = function() {
+            if (f.readyState === 4 && f.status == 200) {
+                var res = f.responseText;
+                valueCallBack(res);
+            }
+        };
+        f.send(null);
+    }
+
+    readFile('/docs/mushroom_data.txt');
+
+    function valueCallBack(res){
+        map = L.map('map').setView([51.71851, -1.25758], 15);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 22,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        res = res.split("\n");
+
+        for (let i = 1; i < res.length -1; i++) {
+            let fungi = res[i].split(',');
+
+            let marker = L.marker([fungi[3], fungi[4]])
+                .addTo(map)
+                .bindPopup("<h3>" + fungi[0] + "</h3>", {minWidth: 300 });
+
+            let imageUrl = '/' + fungi[1];
+
+            marker.on('mouseover', (function (marker, imageUrl, mushroomName) {
+                return function (e) {
+                    loadAndShowImage(marker, imageUrl, mushroomName);
+                    this.openPopup();
+                };
+            })(marker, imageUrl, fungi[0])); // fungi[0] contains the name of the mushroom
+
+
+            marker.on('mouseout', function (e) {
+                this.closePopup();
+            });
+
+            marker.options.imageUrl = imageUrl; // Store image URL in marker options
+        }
+        L.control.scale().addTo(map);
+    }
+
+    function loadAndShowImage(marker, imageUrl, mushroomName) {
+        var img = new Image();
+        img.src = imageUrl;
+        img.onload = function() {
+            var popupContent = '<div style="pointer-events: auto;"><h3>' + mushroomName + '</h3><img src="' + imageUrl + '" /></div>';
+            marker.getPopup().setContent(popupContent);
+            marker.getPopup().update(); // Explicitly update popup content
+        };
+    }
+</script>
+
+<!-- <script>
     var marker; // Declare marker globally
     var map;    // Declare map globally
 
@@ -121,4 +185,4 @@ draft: false
             alert('Error: Your browser doesn\'t support geolocation.');
         }
     }
-</script>
+</script> -->
