@@ -19,6 +19,7 @@ draft: false
 
 <script>
     var map;
+    var marker;
 
     function readFile(file) {
         var f = new XMLHttpRequest();
@@ -33,6 +34,29 @@ draft: false
     }
 
     readFile('/docs/mushroom_data.txt');
+
+    function updateMarker() {
+        // Get current location
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                // Update marker position
+                marker.setLatLng(pos);
+                // map.panTo(pos);
+            }, function() {
+                // Handle errors, e.g., user denied location access
+                console.error('Error: The Geolocation service failed.');
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            console.error('Error: Your browser doesn\'t support geolocation.');
+        }
+    }
+
 
     function valueCallBack(res){
         map = L.map('map').setView([51.71851, -1.25758], 15);
