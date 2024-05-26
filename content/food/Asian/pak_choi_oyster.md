@@ -6,7 +6,7 @@ draft: false
 image: /food/images/pak_choi/IMG_4866.jpeg
 ---
 
-The outcome of this is not what it should look like but it still tastes great 
+The outcome of this is not what it should look like but it tasted great so who cares! 
 
 # Ingredients 
 
@@ -28,12 +28,14 @@ The outcome of this is not what it should look like but it still tastes great
 # A Lil Story 
 
 Sam had just started her job at CERN in Switzerland and I had just finished building the Bluehouse. 
-I desperately wanted to be able to grow something before living between Oxford, Wales, and Geneva. 
-pak choi takes around 40 days to grow from seed to full maturity and it was still early spring time (late march) 
-so hopefully the pak choi wouldn't bolt (It did). Still, I managed to grow some! I had left it growing for too long 
-and had been very busy all weekend getting my wedding suit and hanging out with as many of my friends in Oxford as possible. 
-It got to 9pm on the Sunday and It was really now or never that I cooked the pak choi up. I desperately wanted to grow and eat something from the Bluehouse 
-so I made this. Now, it did not go to plan, it came out very watery but it tasted great and only took about 10 mins to make. 
+I desperately wanted to grow something before living between Oxford, Wales, and Geneva as it would become impossible to do so after (It did). 
+
+Pak choi takes around 40 days to grow from seed to full maturity and it was still early spring time (late march) 
+so hopefully the pak choi wouldn't bolt (It did). In that time I did manage to grow some with the occasional help of friends dropping in to water them whilst I was away, though I had left it growing for too long and it had bolted.
+
+
+In early May I came back to Oxford for the weekend but had been very busy getting my wedding suit and hanging out with as many of my friends as possible. 
+It got to 9pm on the Sunday and It was really now or never that I cooked the pak choi up. Now, it did not go to plan, it came out very watery but it tasted great and only took about 10 mins to make. I will make this again and pay more attention to what im doing. 
 
 
 <p align="center"> 
