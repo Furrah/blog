@@ -46,4 +46,3 @@ It got to 9pm on the Sunday and It was really now or never that I cooked the pak
 <p align="center"> 
 <img src="/food/images/pak_choi/IMG_4742.jpeg" alt="drawing" width="600"/>
 </p>
-<br>
