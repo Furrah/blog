@@ -3,7 +3,7 @@ title: "Elderflower Cordial"
 date: 2024-05-27T10:51:11+02:00
 tags: []
 draft: false
-image: "/food/images/IMG_2311-2.jpg"
+image: "/food/images/elderflower_cordial/IMG_4840.jpeg"
 ---
 
 # Ingredients 
