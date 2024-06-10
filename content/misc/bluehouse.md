@@ -90,15 +90,16 @@ Throughout the build many friends came to help. Here is Shuvay losing his mind a
 </div>
 </div>
 
-After a whole day of painting the greenhouse would forever be known as the Bluehouse.
+After a whole day of painting the greenhouse, it would forever be known as the Bluehouse.
 
 <p align="center"> 
 <img src="/misc/images/bluehouse/IMG_0884.jpeg" alt="drawing" width="600" loading="lazy"/>
 </p>
 
 ### The Lift
-From May to mid-July the Bluehouse was left to sit at the back of the garden and what quickly became evident was that the sun did not exist in the spot I had placed it in. This place got nothing. To the point where the sun would creep up to the front of the Bluehouse but never quite enter it.. The Bluehouse needed to be moved to the front of the garden where there was lots of sun. After several failed attempts of organising friends to help lift, the Bluehouse was transported to its new home sitting atop some wooden sleepers. Here is James celebrating our accomplishment.
+From May to mid-July, the Bluehouse sat at the back of the garden, and it quickly became evident that the sun did not reach the spot where I had placed it. This area received no sunlight at all... The sun would approach the front of the Bluehouse but never quite enter it. It was clear the Bluehouse needed to be moved to the front of the garden, where there was plenty of sun.
 
+After several failed attempts to organise friends to help lift it, the Bluehouse was finally transported to its new home atop some wooden sleepers. Here is James celebrating our accomplishment.
 <p align="center"> 
 <img src="/misc/images/bluehouse/IMG_1547.jpeg" alt="drawing" width="600" loading="lazy"/>
 </p>
