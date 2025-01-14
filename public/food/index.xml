@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Food on Well lets take a look at it, Mr Gumby!</title>
-    <link>https://mybrainhertz.co.uk/food/</link>
+    <link>http://localhost:63700/food/</link>
     <description>Recent content in Food on Well lets take a look at it, Mr Gumby!</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Feb 2023 08:30:57 +0000</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/food/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:63700/food/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

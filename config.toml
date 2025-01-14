@@ -2,13 +2,16 @@ baseURL = "https://mybrainhertz.co.uk/"
 languageCode = "en-us"
 title = "Well lets take a look at it, Mr Gumby!"
 
+disqusShortname = "www-mybrainhertz-co-uk"
 pygmentsCodefences = true
 pygmentsUseClasses = false
 pygmentsStyle = 'friendly' #required for lexer to work
 
 # googleAnalytics = "UA-177014444-1"
 googleAnalytics = "G-8PKWFQVGKH"
-disqusShortname = 'www-mybrainhertz-co-uk'
+
+
+
 
 [markup]
 [markup.goldmark.renderer]
@@ -82,5 +85,7 @@ unsafe = true
 [params]
   dateFormat = "Jan 2, 2006"
   homeText = "J. Spencer"
+  test = "This is a test"
+  disqusShortname = "www-mybrainhertz-co-uk"
 
 

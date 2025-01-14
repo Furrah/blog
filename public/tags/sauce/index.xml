@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sauce on Well lets take a look at it, Mr Gumby!</title>
-    <link>https://mybrainhertz.co.uk/tags/sauce/</link>
-    <description>Recent content in sauce on Well lets take a look at it, Mr Gumby!</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Sauce on Well lets take a look at it, Mr Gumby!</title>
+    <link>http://localhost:63700/tags/sauce/</link>
+    <description>Recent content in Sauce on Well lets take a look at it, Mr Gumby!</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Oct 2019 19:45:27 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/tags/sauce/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Oct 2019 19:45:27 +0100</lastBuildDate>
+    <atom:link href="http://localhost:63700/tags/sauce/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chinese Egg Plant With Garlic Sauce</title>
-      <link>https://mybrainhertz.co.uk/chinese-egg-plant-garlic-sauce/</link>
+      <link>http://localhost:63700/chinese-egg-plant-garlic-sauce/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/chinese-egg-plant-garlic-sauce/</guid>
-      <description>Recipe taken from: All Recipes - Chinese Eggplant with Garlic Soy Sauce
-Ingredients Serves: 6
- 3 tablespoons vegetable oil 4 Chinese eggplants, halved lengthways, then cut into 2cm slices 1 cup (250ml) water 1 tablespoon crushed dried red chilli flakes 3 garlic cloves 1 tablespoon white sugar 1 teaspoon cornflour 2 tablespoons soy sauce 2 tablespoons oyster sauce (or vegetarian alternative!)  Method Preparation:10min Cook:15min Ready in:25min
- Heat the oil in a wok or frypan over high heat.</description>
+      <guid>http://localhost:63700/chinese-egg-plant-garlic-sauce/</guid>
+      <description>&lt;p&gt;Recipe taken from:&#xA;&lt;a href=http://allrecipes.com.au/recipe/10769/chinese-eggplant-with-garlic-soy-sauce.aspx target=&#34;_blank&#34;&gt;All Recipes - Chinese Eggplant with Garlic Soy Sauce&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingredients&#34;&gt;Ingredients&lt;/h2&gt;&#xA;&lt;p&gt;Serves: 6&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;3 tablespoons vegetable oil&lt;/li&gt;&#xA;&lt;li&gt;4 Chinese eggplants, halved lengthways, then cut into 2cm slices&lt;/li&gt;&#xA;&lt;li&gt;1 cup (250ml) water&lt;/li&gt;&#xA;&lt;li&gt;1 tablespoon crushed dried red chilli flakes&lt;/li&gt;&#xA;&lt;li&gt;3 garlic cloves&lt;/li&gt;&#xA;&lt;li&gt;1 tablespoon white sugar&lt;/li&gt;&#xA;&lt;li&gt;1 teaspoon cornflour&lt;/li&gt;&#xA;&lt;li&gt;2 tablespoons soy sauce&lt;/li&gt;&#xA;&lt;li&gt;2 tablespoons oyster sauce (or vegetarian alternative!)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;&#xA;&lt;p&gt;Preparation:10min &lt;br&gt;&#xA;Cook:15min   &lt;br&gt;&#xA;Ready in:25min&lt;br&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Heat the oil in a wok or frypan over high heat. Add the eggplant and stir the eggplant until soft, about 4 minutes.&lt;/li&gt;&#xA;&lt;li&gt;Stir in the water, dried chilli flakes and garlic. Cover and simmer until all the water is absorbed. Meanwhile, mix sugar, cornflour, soy sauce and oyster sauce together in a bowl until sugar and cornflour have dissolved. Stir sauce into the eggplant, making sure to evenly coat the eggplant. Cook until the sauce has thickened.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:63700/food/images/IMG_1646.jpg&#34; alt=&#34;drawing&#34; width=&#34;600&#34;/&gt;&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

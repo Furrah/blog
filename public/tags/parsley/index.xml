@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>parsley on Well lets take a look at it, Mr Gumby!</title>
-    <link>https://mybrainhertz.co.uk/tags/parsley/</link>
-    <description>Recent content in parsley on Well lets take a look at it, Mr Gumby!</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Parsley on Well lets take a look at it, Mr Gumby!</title>
+    <link>http://localhost:63700/tags/parsley/</link>
+    <description>Recent content in Parsley on Well lets take a look at it, Mr Gumby!</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2019 21:57:18 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/tags/parsley/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Nov 2019 21:57:18 +0100</lastBuildDate>
+    <atom:link href="http://localhost:63700/tags/parsley/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tabbouleh</title>
-      <link>https://mybrainhertz.co.uk/tabbouleh/</link>
+      <link>http://localhost:63700/tabbouleh/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tabbouleh/</guid>
-      <description>Recipe taken from BBC Good Food - Tabbouleh with Halloumi and Broccoli.
-Ingredients  140g couscous 300g broccoli florets 6 spring onions , finely sliced 150g cherry tomato, quartered large bunch parsley, finely chopped small bunch mint, finely chopped juice 2 lemons, zest of ½ lemon 2½ tbsp extra virgin olive oil 1½ tbsp harissa or sriracha 1 tbsp clear honey 2 x 250g packs halloumi cheese, cut into 1cm-thick slices 25g fresh almonds.</description>
+      <guid>http://localhost:63700/tabbouleh/</guid>
+      <description>&lt;p&gt;Recipe taken from&#xA;&lt;a href=&#34;https://www.bbcgoodfood.com/recipe/halloumi-broccoli-tabbouleh-honey-harissa-dressing&#34; target=&#34;_blank&#34;&gt;BBC Good Food - Tabbouleh with Halloumi and Broccoli.&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingredients&#34;&gt;Ingredients&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;140g couscous&lt;/li&gt;&#xA;&lt;li&gt;300g broccoli florets&lt;/li&gt;&#xA;&lt;li&gt;6 spring onions , finely sliced&lt;/li&gt;&#xA;&lt;li&gt;150g cherry tomato, quartered&lt;/li&gt;&#xA;&lt;li&gt;large bunch parsley, finely chopped&lt;/li&gt;&#xA;&lt;li&gt;small bunch mint, finely chopped&lt;/li&gt;&#xA;&lt;li&gt;juice 2 lemons, zest of ½ lemon&lt;/li&gt;&#xA;&lt;li&gt;2½ tbsp extra virgin olive oil&lt;/li&gt;&#xA;&lt;li&gt;1½ tbsp harissa or sriracha&lt;/li&gt;&#xA;&lt;li&gt;1 tbsp clear honey&lt;/li&gt;&#xA;&lt;li&gt;2 x 250g packs halloumi cheese, cut into 1cm-thick slices&lt;/li&gt;&#xA;&lt;li&gt;25g fresh almonds.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Put the couscous into a bowl and cover with boiling water. Cover with cling film and set aside for 5 mins.&lt;/li&gt;&#xA;&lt;li&gt;Blanch the broccoli for 2 mins, then drain well. Cut it into small pieces or blitz it in a food processor.&lt;/li&gt;&#xA;&lt;li&gt;Fork the broccoli, spring onions, tomatoes, herbs, lemon zest, the juice of 1½ lemons and 2 tbsp oil through the couscous. Season and mix well.&lt;/li&gt;&#xA;&lt;li&gt;To make the dressing, combine the harissa, honey, remaining lemon juice and oil, and some seasoning.&lt;/li&gt;&#xA;&lt;li&gt;Heat a non-stick frying pan and cook the halloumi for 1-2 mins on each side until golden. Divide the couscous between the plates, top with the halloumi slices and dressing, then scatter over the almonds (sometimes i like to toast the almonds for a couple of minutes in pan).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;comments&#34;&gt;Comments&lt;/h2&gt;&#xA;&lt;p&gt;I always make this racipe with srirasha sauce. For the sauce I use a ratio of 2:2:1 of lemon,sriracha,honey. Taste and change for desired flavour. I also find fresh almonds are better than toasted.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

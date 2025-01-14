@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63700&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="generator" content="Hugo 0.89.4" />
+  <meta name="generator" content="Hugo 0.139.3">
   
-  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:63700/css/bootstrap.min.css">
   
   
   <title>Kalman Filter RLC</title>
   <style>
 .container {
-  max-width: 900px;
+  max-width: 910px;
 }
 #nav a {
   font-weight: bold;
@@ -50,19 +50,37 @@ img {
 
  
 
+#home-page a {
+  color: #282829;
+}
 
 a {
   color: #007bff;
+ 
  }  
 
 
+ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
 
 
 
-td, th {
-    border: 1px solid grey;
-    padding: 10px;
-}
+
 
 @media (min-width: 34em) {
     .card-columns {
@@ -107,7 +125,8 @@ code {
 }
 .card{
   border-radius: 10px;
-
+ 
+ 
 }
 
  
@@ -140,8 +159,19 @@ div.highlight {
 }
 
 
+body {
 
+  background-color: #FFFFFF ;
+}
 
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
 
 
 </style>
@@ -181,18 +211,20 @@ div.highlight {
 
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-177014444-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
@@ -230,7 +262,7 @@ if (!doNotTrack) {
    
     
     
-    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
   
 
 
@@ -403,127 +435,145 @@ $$
 <p>The implementation is made in a jupyter notebook which can be downloaded here.
 For ease of viewing I have pasted the code segments here - <a href="/docs/kalman_RLC.ipynb">Kalman RLC Notebook</a></p>
 <h4 id="requirements">Requirements</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">%</span>matplotlib qt
-<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">numpy</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">np</span>
-<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">matplotlib.pyplot</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">plt</span>
-<span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">numpy.linalg</span> <span style="color:#007020;font-weight:bold">import</span> inv
-<span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">copy</span>
-</code></pre></div><h4 id="transition-model">Transition Model</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#666">%</span>matplotlib qt
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">numpy</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">np</span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">matplotlib.pyplot</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">plt</span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">numpy.linalg</span> <span style="color:#007020;font-weight:bold">import</span> inv
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">copy</span>
+</span></span></code></pre></div><h4 id="transition-model">Transition Model</h4>
 <div>
 $$
 \hat{X}_k = F_k X_{k-1} + B_{k} U_{k}
 $$
 </div>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prediction</span>(Il,Ildot,I,t):
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prediction</span>(Il,Ildot,I,t):
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+</span></span><span style="display:flex;"><span>    C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
+</span></span><span style="display:flex;"><span>    R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, t],
+</span></span><span style="display:flex;"><span>                  [<span style="color:#666">-</span>t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), <span style="color:#40a070">1</span> <span style="color:#666">-</span> (t<span style="color:#666">/</span>(R<span style="color:#666">*</span>C))]])
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    X <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[Il],
+</span></span><span style="display:flex;"><span>                 [Ildot]])
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    B <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>],
+</span></span><span style="display:flex;"><span>                  [t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C)]])
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    U <span style="color:#666">=</span> I
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    X_prediction <span style="color:#666">=</span> A<span style="color:#666">.</span>dot(X) <span style="color:#666">+</span> B<span style="color:#666">.</span>dot(U)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">return</span> X_prediction
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#time </span>
+</span></span><span style="display:flex;"><span>T <span style="color:#666">=</span> <span style="color:#40a070">0.14</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#666">=</span> np<span style="color:#666">.</span>linspace(<span style="color:#40a070">0</span>,T,<span style="color:#40a070">100e3</span><span style="color:#666">*</span>T)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#initialise inductor current and its derivertive</span>
+</span></span><span style="display:flex;"><span>Il_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
+</span></span><span style="display:flex;"><span>Ildot_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#cicuit component definitions</span>
+</span></span><span style="display:flex;"><span>L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+</span></span><span style="display:flex;"><span>C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
+</span></span><span style="display:flex;"><span>R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#create input signal </span>
+</span></span><span style="display:flex;"><span>wr <span style="color:#666">=</span> <span style="color:#40a070">1</span><span style="color:#666">/</span>np<span style="color:#666">.</span>sqrt(L<span style="color:#666">*</span>C)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>I_true <span style="color:#666">=</span> <span style="color:#40a070">25e-6</span> <span style="color:#666">*</span> np<span style="color:#666">.</span>sin(wr <span style="color:#666">*</span> t)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#time step</span>
+</span></span><span style="display:flex;"><span>dt <span style="color:#666">=</span> t[<span style="color:#40a070">1</span>] <span style="color:#666">-</span> t[<span style="color:#40a070">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#create True data </span>
+</span></span><span style="display:flex;"><span>I <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros((<span style="color:#40a070">2</span>,<span style="color:#007020">len</span>(t)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>,<span style="color:#007020">len</span>(t)):
+</span></span><span style="display:flex;"><span>    a <span style="color:#666">=</span>  prediction(I[<span style="color:#40a070">0</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I[<span style="color:#40a070">1</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I_true[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)<span style="color:#666">.</span>T
+</span></span><span style="display:flex;"><span>    I[:,i] <span style="color:#666">=</span> a
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Il_true <span style="color:#666">=</span> I[<span style="color:#40a070">0</span>]
+</span></span><span style="display:flex;"><span>Ildot_true <span style="color:#666">=</span> I[<span style="color:#40a070">1</span>]
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>V_true <span style="color:#666">=</span> L<span style="color:#666">*</span>Ildot_true
+</span></span><span style="display:flex;"><span>noise <span style="color:#666">=</span> np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal(loc<span style="color:#666">=</span><span style="color:#40a070">0</span>, scale<span style="color:#666">=</span><span style="color:#40a070">0.5</span>, size<span style="color:#666">=</span><span style="color:#007020">len</span>(t))
+</span></span><span style="display:flex;"><span>V_meas <span style="color:#666">=</span> V_true <span style="color:#666">+</span> noise
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#state transition model </span>
+</span></span><span style="display:flex;"><span>A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, dt],
+</span></span><span style="display:flex;"><span>              [<span style="color:#666">-</span>dt<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), (<span style="color:#40a070">1</span> <span style="color:#666">-</span> (dt<span style="color:#666">/</span>(R<span style="color:#666">*</span>C)))]],dtype<span style="color:#666">=</span><span style="color:#4070a0">&#39;float&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#process noise(model noise)</span>
+</span></span><span style="display:flex;"><span>Q <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4e-9</span>, <span style="color:#40a070">0</span>],
+</span></span><span style="display:flex;"><span>              [<span style="color:#40a070">0</span>, <span style="color:#40a070">4e-9</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#measurement noise</span>
+</span></span><span style="display:flex;"><span>R <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#Initial Predicted (a priori) estimate</span>
+</span></span><span style="display:flex;"><span>P<span style="color:#666">=</span>Q
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#store values for plotting</span>
+</span></span><span style="display:flex;"><span>Il_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
+</span></span><span style="display:flex;"><span>Ildot_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#initial values</span>
+</span></span><span style="display:flex;"><span>Il_a[<span style="color:#40a070">0</span>]    <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span>Ildot_a[<span style="color:#40a070">0</span>] <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#set the input matrix to be the true input</span>
+</span></span><span style="display:flex;"><span>I_a <span style="color:#666">=</span> I_true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># for i in range(1,len(t)):</span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#007020">len</span>(t)):
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#prediction</span>
+</span></span><span style="display:flex;"><span>    X_hat <span style="color:#666">=</span> prediction(Il_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], Ildot_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], I_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#predicted estimate covariance</span>
+</span></span><span style="display:flex;"><span>    P_hat <span style="color:#666">=</span> np<span style="color:#666">.</span>diag(np<span style="color:#666">.</span>diag(A<span style="color:#666">.</span>dot(P)<span style="color:#666">.</span>dot(A<span style="color:#666">.</span>T))) <span style="color:#666">+</span> Q
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#observation matrix v(t) = Ldi/dt</span>
+</span></span><span style="display:flex;"><span>    H <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>,L]])
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#innovation covariance</span>
+</span></span><span style="display:flex;"><span>    S <span style="color:#666">=</span> H<span style="color:#666">.</span>dot(P_hat)<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T) <span style="color:#666">+</span> R
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic"># Kalman Gain</span>
+</span></span><span style="display:flex;"><span>    K <span style="color:#666">=</span> P_hat<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T)<span style="color:#666">.</span>dot(inv(S))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#measurement - prediction </span>
+</span></span><span style="display:flex;"><span>    y <span style="color:#666">=</span> V_meas[i] <span style="color:#666">-</span> H<span style="color:#666">.</span>dot(X_hat)   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#updated state estimate</span>
+</span></span><span style="display:flex;"><span>    X <span style="color:#666">=</span> X_hat <span style="color:#666">+</span> K<span style="color:#666">.</span>dot(y)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#Updated (a posteriori) estimate covariance</span>
+</span></span><span style="display:flex;"><span>    P <span style="color:#666">=</span> (np<span style="color:#666">.</span>identity(<span style="color:#40a070">2</span>) <span style="color:#666">-</span> K<span style="color:#666">.</span>dot(H))<span style="color:#666">.</span>dot(P_hat)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#update values</span>
+</span></span><span style="display:flex;"><span>    Il_a[i]    <span style="color:#666">=</span> X[<span style="color:#40a070">0</span>]
+</span></span><span style="display:flex;"><span>    Ildot_a[i] <span style="color:#666">=</span> X[<span style="color:#40a070">1</span>]
+</span></span></code></pre></div>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
     
-    L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
-    C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
-    R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
     
-    A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, t],
-                  [<span style="color:#666">-</span>t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), <span style="color:#40a070">1</span> <span style="color:#666">-</span> (t<span style="color:#666">/</span>(R<span style="color:#666">*</span>C))]])
-    
-    X <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[Il],
-                 [Ildot]])
-    
-    B <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>],
-                  [t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C)]])
-    
-    U <span style="color:#666">=</span> I
-    
-    X_prediction <span style="color:#666">=</span> A<span style="color:#666">.</span>dot(X) <span style="color:#666">+</span> B<span style="color:#666">.</span>dot(U)
+    if (window.location.hostname == "localhost")
+        return;
 
-    
-    <span style="color:#007020;font-weight:bold">return</span> X_prediction
-
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#60a0b0;font-style:italic">#time </span>
-T <span style="color:#666">=</span> <span style="color:#40a070">0.14</span>
-t <span style="color:#666">=</span> np<span style="color:#666">.</span>linspace(<span style="color:#40a070">0</span>,T,<span style="color:#40a070">100e3</span><span style="color:#666">*</span>T)
-
-<span style="color:#60a0b0;font-style:italic">#initialise inductor current and its derivertive</span>
-Il_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
-Ildot_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
-
-<span style="color:#60a0b0;font-style:italic">#cicuit component definitions</span>
-L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
-C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
-R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
-<span style="color:#60a0b0;font-style:italic">#create input signal </span>
-wr <span style="color:#666">=</span> <span style="color:#40a070">1</span><span style="color:#666">/</span>np<span style="color:#666">.</span>sqrt(L<span style="color:#666">*</span>C)
-
-I_true <span style="color:#666">=</span> <span style="color:#40a070">25e-6</span> <span style="color:#666">*</span> np<span style="color:#666">.</span>sin(wr <span style="color:#666">*</span> t)
-
-<span style="color:#60a0b0;font-style:italic">#time step</span>
-dt <span style="color:#666">=</span> t[<span style="color:#40a070">1</span>] <span style="color:#666">-</span> t[<span style="color:#40a070">0</span>]
-
-<span style="color:#60a0b0;font-style:italic">#create True data </span>
-I <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros((<span style="color:#40a070">2</span>,<span style="color:#007020">len</span>(t)))
-
-<span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>,<span style="color:#007020">len</span>(t)):
-    a <span style="color:#666">=</span>  prediction(I[<span style="color:#40a070">0</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I[<span style="color:#40a070">1</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I_true[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)<span style="color:#666">.</span>T
-    I[:,i] <span style="color:#666">=</span> a
-
-Il_true <span style="color:#666">=</span> I[<span style="color:#40a070">0</span>]
-Ildot_true <span style="color:#666">=</span> I[<span style="color:#40a070">1</span>]
-    
-V_true <span style="color:#666">=</span> L<span style="color:#666">*</span>Ildot_true
-noise <span style="color:#666">=</span> np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal(loc<span style="color:#666">=</span><span style="color:#40a070">0</span>, scale<span style="color:#666">=</span><span style="color:#40a070">0.5</span>, size<span style="color:#666">=</span><span style="color:#007020">len</span>(t))
-V_meas <span style="color:#666">=</span> V_true <span style="color:#666">+</span> noise
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#60a0b0;font-style:italic">#state transition model </span>
-A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, dt],
-              [<span style="color:#666">-</span>dt<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), (<span style="color:#40a070">1</span> <span style="color:#666">-</span> (dt<span style="color:#666">/</span>(R<span style="color:#666">*</span>C)))]],dtype<span style="color:#666">=</span><span style="color:#4070a0">&#39;float&#39;</span>)
-
-<span style="color:#60a0b0;font-style:italic">#process noise(model noise)</span>
-Q <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4e-9</span>, <span style="color:#40a070">0</span>],
-              [<span style="color:#40a070">0</span>, <span style="color:#40a070">4e-9</span>]])
-
-<span style="color:#60a0b0;font-style:italic">#measurement noise</span>
-R <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4</span>]])
-
-<span style="color:#60a0b0;font-style:italic">#Initial Predicted (a priori) estimate</span>
-P<span style="color:#666">=</span>Q
-<span style="color:#60a0b0;font-style:italic">#store values for plotting</span>
-Il_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
-Ildot_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
-
-<span style="color:#60a0b0;font-style:italic">#initial values</span>
-Il_a[<span style="color:#40a070">0</span>]    <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-Ildot_a[<span style="color:#40a070">0</span>] <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-
-<span style="color:#60a0b0;font-style:italic">#set the input matrix to be the true input</span>
-I_a <span style="color:#666">=</span> I_true
-
-<span style="color:#60a0b0;font-style:italic"># for i in range(1,len(t)):</span>
-<span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#007020">len</span>(t)):
-    <span style="color:#60a0b0;font-style:italic">#prediction</span>
-    X_hat <span style="color:#666">=</span> prediction(Il_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], Ildot_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], I_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)
-
-    <span style="color:#60a0b0;font-style:italic">#predicted estimate covariance</span>
-    P_hat <span style="color:#666">=</span> np<span style="color:#666">.</span>diag(np<span style="color:#666">.</span>diag(A<span style="color:#666">.</span>dot(P)<span style="color:#666">.</span>dot(A<span style="color:#666">.</span>T))) <span style="color:#666">+</span> Q
-
-    <span style="color:#60a0b0;font-style:italic">#observation matrix v(t) = Ldi/dt</span>
-    H <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>,L]])
-    
-    <span style="color:#60a0b0;font-style:italic">#innovation covariance</span>
-    S <span style="color:#666">=</span> H<span style="color:#666">.</span>dot(P_hat)<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T) <span style="color:#666">+</span> R
-    
-    <span style="color:#60a0b0;font-style:italic"># Kalman Gain</span>
-    K <span style="color:#666">=</span> P_hat<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T)<span style="color:#666">.</span>dot(inv(S))
-
-    <span style="color:#60a0b0;font-style:italic">#measurement - prediction </span>
-    y <span style="color:#666">=</span> V_meas[i] <span style="color:#666">-</span> H<span style="color:#666">.</span>dot(X_hat)   
-
-    <span style="color:#60a0b0;font-style:italic">#updated state estimate</span>
-    X <span style="color:#666">=</span> X_hat <span style="color:#666">+</span> K<span style="color:#666">.</span>dot(y)
-    
-    <span style="color:#60a0b0;font-style:italic">#Updated (a posteriori) estimate covariance</span>
-    P <span style="color:#666">=</span> (np<span style="color:#666">.</span>identity(<span style="color:#40a070">2</span>) <span style="color:#666">-</span> K<span style="color:#666">.</span>dot(H))<span style="color:#666">.</span>dot(P_hat)
-    
-    <span style="color:#60a0b0;font-style:italic">#update values</span>
-    Il_a[i]    <span style="color:#666">=</span> X[<span style="color:#40a070">0</span>]
-    Ildot_a[i] <span style="color:#666">=</span> X[<span style="color:#40a070">1</span>]
-</code></pre></div>
-
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 
@@ -531,7 +581,7 @@ I_a <span style="color:#666">=</span> I_true
 
     </div>
     
-<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script src="http://localhost:63700/js/feather.min.js"></script>
 <script>
   feather.replace()
 </script>   

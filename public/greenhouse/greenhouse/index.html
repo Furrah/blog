@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63700&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="generator" content="Hugo 0.89.4" />
+  <meta name="generator" content="Hugo 0.139.3">
   
-  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:63700/css/bootstrap.min.css">
   
   
   <title>The beginning</title>
   <style>
 .container {
-  max-width: 900px;
+  max-width: 910px;
 }
 #nav a {
   font-weight: bold;
@@ -50,19 +50,37 @@ img {
 
  
 
+#home-page a {
+  color: #282829;
+}
 
 a {
   color: #007bff;
+ 
  }  
 
 
+ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
 
 
 
-td, th {
-    border: 1px solid grey;
-    padding: 10px;
-}
+
 
 @media (min-width: 34em) {
     .card-columns {
@@ -107,7 +125,8 @@ code {
 }
 .card{
   border-radius: 10px;
-
+ 
+ 
 }
 
  
@@ -140,8 +159,19 @@ div.highlight {
 }
 
 
+body {
 
+  background-color: #FFFFFF ;
+}
 
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
 
 
 </style>
@@ -181,18 +211,20 @@ div.highlight {
 
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-177014444-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
@@ -230,7 +262,7 @@ if (!doNotTrack) {
    
     
     
-    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
   
 
 
@@ -303,18 +335,18 @@ It&rsquo;s a good start and I can obviously add more batteries should it be requ
 </ul>
 <p>In the manual for the charge controller the maximum PV Array power is 1560W, however, it can only output 1kW. This means in summer the system will be saturated but in the winter it will allow it to get a little extra boost when the dark days come rolling in.</p>
 <p>On page 7 of the manual found <a href="https://www.epever.com/upload/cert/file/1811/Tracer-AN-SMS-EL-V1.0.pdf">here</a> it says</p>
-<pre tabindex="0"><code>&quot;Multiple same models of controllers can be installed in parallel on the same battery bank 
-to achieve higher charging current. Each controller must have its own solar module(s)&quot;
+<pre tabindex="0"><code>&#34;Multiple same models of controllers can be installed in parallel on the same battery bank 
+to achieve higher charging current. Each controller must have its own solar module(s)&#34;
 </code></pre><p>I emailed Epever to make sure this could be done as I was dubious.</p>
 <p><strong>Me</strong></p>
-<pre tabindex="0"><code>&quot;Please could you confirm that multiple Tracer AN 4210 modules can be connected in parallel to the same 
+<pre tabindex="0"><code>&#34;Please could you confirm that multiple Tracer AN 4210 modules can be connected in parallel to the same 
 battery system. Are there any additional electronics that should be considered when installing?
 Thanks,
-Joe&quot;
+Joe&#34;
 </code></pre><p><strong>Epever</strong></p>
-<pre tabindex="0"><code>&quot;Hi Joe Spencer,
+<pre tabindex="0"><code>&#34;Hi Joe Spencer,
 
-Generally, we don't recommend to parallel connect multiple controllers. 
+Generally, we don&#39;t recommend to parallel connect multiple controllers. 
 Because of they have detective deviation,maybe affect each other when battery is almost charge full, 
 such as one more, one little. It is not good for your battery bank.
 
@@ -324,7 +356,7 @@ Thanks in advance and have a wonderful day!
 
 Best Regards
 Bianca Chen
-EPEVER Support&quot;
+EPEVER Support&#34;
 </code></pre><p>Damn.</p>
 <h2 id="basic-design">Basic Design</h2>
 <p>All the essential ingredients have been selected. They now need to be wired together in the safest way possible.</p>
@@ -358,12 +390,31 @@ battery not greater than 150 mm
 
 
 
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 
       </main>
 
     </div>
     
-<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script src="http://localhost:63700/js/feather.min.js"></script>
 <script>
   feather.replace()
 </script>   

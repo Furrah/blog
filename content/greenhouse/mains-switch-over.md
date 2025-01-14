@@ -9,9 +9,13 @@ draft: false
 
 My dad has a large fish pond and would like to use the solar system to run the pumps, which require 150W of power. Can the solar system run the pumps 24/7?
 
-The capacity of the batteries is 170Ah at 24V which would provide 4kWh of energy if drained. However, in practice, the state of charge should never drop below 20%, leaving us with 3.26kWh of usable energy.
+# Battery Capacity Overview
 
-This would run the pumps for 3.26kWh/150W = 21.76 hours. 
+The battery system has a capacity of 170Ah at 24V, equating to 4kWh of total stored energy. In practice, the battery state of charge (SoC) should not drop below 20% to maintain battery health, resulting in 3.26kWh of usable energy.
+
+This would run the pumps for approximately: <nr>
+
+**3.26kWh/150W = 21.76 hours** 
 
 To edge on the side of caution I will also assume that the real capacity is less than this as the batteries are 4 years old now. A safety factor of 0.85 would result in 18.5 hours of continuous pump use.
 
@@ -31,15 +35,15 @@ For simplicity and ease of maintenance I would like to try and avoid any form of
 
 **Fail Safe**
 
-If the solar system is off, the default state of the interface relay connects the pumps to the house mains and keep the pumps running. 
+If the solar system is off, the default state of the interface relay connects the pumps to the house mains and keeps the pumps running. 
 
 **Normal Operation**
 
-when the solar system is on, the Victron battery protect unit measures the battery voltage and enables the 24V system if the system voltage is above a programmable threshold value.
+When the solar system is on, the Victron battery protect unit measures the battery voltage and enables the 24V system if the system voltage is above a programmable threshold value.
 
 The alarm output of the battery protect unit in this scenario is low which results in the time delay relay staying in its normally connected state. This in turn enables the interface relay connecting the inverter to the pumps. 
 
-Should the system voltage go below the threshold value the time delay relay is triggered for 24 hours and the pumps are connected to mains power. Hopefully this is enough time for the batteries to recharged by the solar system. 
+Should the system voltage go below the threshold value the time delay relay is triggered for 24 hours and the pumps are connected to mains power. Hopefully this is enough time for the batteries to be recharged by the solar system. 
 
 
 # Components
@@ -69,7 +73,7 @@ The relay must be able to cope with the switching current of the pumps which dra
 <div class="container">
   <div class="row">
     <div class="col">
-      The <a href="https://www.geya.net/product/single-function-time-relay-grt8-b1/" target="_blank">GRT8-B1</a> is a 24V time delay relay which can be configured to delay up to 10 days with a reset function.
+      The <a href="https://www.geya.net/product/single-function-time-relay-grt8-b1/" target="_blank">GRT8-B1</a> is a 24V time delay relay that can be configured to delay up to 10 days with a reset function.
     </div>
     <div class="col">
       <p align="center">
@@ -101,7 +105,7 @@ The relay must be able to cope with the switching current of the pumps which dra
 <div class="container">
   <div class="row">
     <div class="col">
-     	The Victron Battery Protect automatically disconnects loads when the system voltage drops below a programmable threshold. At 20% state of charge, the 12V170FS battery has a cell voltage of 2.00V, which translates to a total system voltage of 24V. This corresponds to Program 8 in the datasheet which will disconnect at 24V and reconnect once the system voltage rises to 26V. I’ve included a time delay relay because the MPPT charge controller from the solar system applies a daily boost voltage to the battery, which could falsely indicate that the battery is fully charged.
+     	The Victron Battery Protect automatically disconnects loads when the system voltage drops below a programmable threshold. At 20% state of charge, the 12V170FS battery has a cell voltage of 2.00V that results in a total system voltage of 24V. This corresponds to Program 8 in the datasheet which will disconnect at 24V and reconnect once the system voltage rises to 26V. I’ve included a time delay relay because the MPPT charge controller from the solar system applies a daily boost voltage to the battery, which could falsely indicate that the battery is fully charged.
     </div>
     <div class="col">
 		<p align="center"> 
@@ -122,8 +126,6 @@ The relay must be able to cope with the switching current of the pumps which dra
 | Phoenix Pure Sine Wave Inverter - 24V 375VA   | Inverter          | Victron         | 12V Planet   | 107.14     |
 | Smart Battery Protect 12/24V - 65A            | Battery Protect   | Victron         | 12V Planet   | 46.18      |
 |                                               |                   |                 |              | **181.77** |
-
-
 
 
 

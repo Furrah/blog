@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63700&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="generator" content="Hugo 0.89.4" />
+  <meta name="generator" content="Hugo 0.139.3">
   
-  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:63700/css/bootstrap.min.css">
   
   
   <title>FPGA I2C Wishbone Interface and Testing </title>
   <style>
 .container {
-  max-width: 900px;
+  max-width: 910px;
 }
 #nav a {
   font-weight: bold;
@@ -50,19 +50,37 @@ img {
 
  
 
+#home-page a {
+  color: #282829;
+}
 
 a {
   color: #007bff;
+ 
  }  
 
 
+ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
 
 
 
-td, th {
-    border: 1px solid grey;
-    padding: 10px;
-}
+
 
 @media (min-width: 34em) {
     .card-columns {
@@ -107,7 +125,8 @@ code {
 }
 .card{
   border-radius: 10px;
-
+ 
+ 
 }
 
  
@@ -140,8 +159,19 @@ div.highlight {
 }
 
 
+body {
 
+  background-color: #FFFFFF ;
+}
 
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
 
 
 </style>
@@ -181,18 +211,20 @@ div.highlight {
 
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-177014444-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
@@ -230,7 +262,7 @@ if (!doNotTrack) {
    
     
     
-    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
   
 
 
@@ -251,22 +283,22 @@ if (!doNotTrack) {
   <i data-feather="tag"></i>
   
   
-  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/fpga">FPGA</a>
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:63700/tags/fpga">FPGA</a>
   
   
-  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/i2c">I2C</a>
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:63700/tags/i2c">I2C</a>
   
   
-  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/wishbone">wishbone</a>
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:63700/tags/wishbone">wishbone</a>
   
   
-  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/interface">interface</a>
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:63700/tags/interface">interface</a>
   
   
-  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/verilog">verilog</a>
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:63700/tags/verilog">verilog</a>
   
   
-  <a class="btn btn-sm btn-outline-dark tag-btn" href="https://mybrainhertz.co.uk/tags/vhdl">VHDL</a>
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:63700/tags/vhdl">VHDL</a>
   
 
 <br><br>
@@ -293,148 +325,167 @@ if (!doNotTrack) {
 <li>one to be read only by the I2C master</li>
 </ul>
 <p>Save as I2C_Slave.wb</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-systemverilog" data-lang="systemverilog">
-peripheral {
-	name <span style="color:#666">=</span><span style="color:#4070a0">&#34;I2C_Slave&#34;</span>; 
-	prefix<span style="color:#666">=</span><span style="color:#4070a0">&#34;i2cslave&#34;</span>; 
-	hdl_entity<span style="color:#666">=</span><span style="color:#4070a0">&#34;I2C_Slave&#34;</span>; <span style="color:#60a0b0;font-style:italic">// generally make the hdl entity the same as the name  and save the file with name + .wb
-</span><span style="color:#60a0b0;font-style:italic"></span>	
-<span style="color:#60a0b0;font-style:italic">// register for read/writing.
-</span><span style="color:#60a0b0;font-style:italic"></span>	<span style="color:#007020;font-weight:bold">reg</span> {
-		prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_rw&#34;</span>;
-		name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_rw&#34;</span>;
-		decription <span style="color:#666">=</span> <span style="color:#4070a0">&#34;A read/write test register&#34;</span>;
-		
-		field {
-			name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
-			prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
-			<span style="color:#007020;font-weight:bold">type</span> <span style="color:#666">=</span> SLV; <span style="color:#60a0b0;font-style:italic">// std_logic_vector
-</span><span style="color:#60a0b0;font-style:italic"></span>			size <span style="color:#666">=</span> <span style="color:#40a070">32</span>; <span style="color:#60a0b0;font-style:italic">// always a 32 bit register 
-</span><span style="color:#60a0b0;font-style:italic"></span>			access_bus <span style="color:#666">=</span> READ_WRITE; <span style="color:#60a0b0;font-style:italic">// master can read and write from this register 
-</span><span style="color:#60a0b0;font-style:italic"></span>			access_dev <span style="color:#666">=</span> READ_ONLY; <span style="color:#60a0b0;font-style:italic">// FPGA can only read from this register 
-</span><span style="color:#60a0b0;font-style:italic"></span>		};
-	};
-
-
-<span style="color:#60a0b0;font-style:italic">// register for read only 
-</span><span style="color:#60a0b0;font-style:italic"></span>	<span style="color:#007020;font-weight:bold">reg</span> {
-		prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_ro&#34;</span>;
-		name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_ro&#34;</span>;
-		decription <span style="color:#666">=</span> <span style="color:#4070a0">&#34;A read test register&#34;</span>;
-		
-		field {
-			name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
-			prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
-			<span style="color:#007020;font-weight:bold">type</span> <span style="color:#666">=</span> SLV;
-			size <span style="color:#666">=</span> <span style="color:#40a070">32</span>;
-			access_bus <span style="color:#666">=</span> READ_ONLY;
-			access_dev <span style="color:#666">=</span> WRITE_ONLY;
-		};
-	};
-};
-</code></pre></div><h4 id="generate-i2c_slavevhd-file-using-wbgen2">Generate I2C_Slave.vhd file using wbgen2</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lua wbgen2 -V I2C_Slave.vhd -D I2C_Slave.html I2C_Slave.wb
-</code></pre></div><p>This can be made easier using a .bat file. example below. @pause stops the application exiting - useful for compiler errors.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat">lua C:\Users\jospence\Downloads\wishbone-gen\wbgen2 -V I2C_Slave.vhd -D I2C_Slave.html I2C_Slave.wb
-@<span style="color:#007020;font-weight:bold">pause</span>
-</code></pre></div><h4 id="add-i2c_slavevhd-to-project">Add I2C_Slave.vhd to project</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>peripheral {
+</span></span><span style="display:flex;"><span>	name <span style="color:#666">=</span><span style="color:#4070a0">&#34;I2C_Slave&#34;</span>; 
+</span></span><span style="display:flex;"><span>	prefix<span style="color:#666">=</span><span style="color:#4070a0">&#34;i2cslave&#34;</span>; 
+</span></span><span style="display:flex;"><span>	hdl_entity<span style="color:#666">=</span><span style="color:#4070a0">&#34;I2C_Slave&#34;</span>; <span style="color:#60a0b0;font-style:italic">// generally make the hdl entity the same as the name  and save the file with name + .wb
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>	
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">// register for read/writing.
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>	<span style="color:#007020;font-weight:bold">reg</span> {
+</span></span><span style="display:flex;"><span>		prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_rw&#34;</span>;
+</span></span><span style="display:flex;"><span>		name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_rw&#34;</span>;
+</span></span><span style="display:flex;"><span>		decription <span style="color:#666">=</span> <span style="color:#4070a0">&#34;A read/write test register&#34;</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		field {
+</span></span><span style="display:flex;"><span>			name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
+</span></span><span style="display:flex;"><span>			prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#007020;font-weight:bold">type</span> <span style="color:#666">=</span> SLV; <span style="color:#60a0b0;font-style:italic">// std_logic_vector
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>			size <span style="color:#666">=</span> <span style="color:#40a070">32</span>; <span style="color:#60a0b0;font-style:italic">// always a 32 bit register 
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>			access_bus <span style="color:#666">=</span> READ_WRITE; <span style="color:#60a0b0;font-style:italic">// master can read and write from this register 
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>			access_dev <span style="color:#666">=</span> READ_ONLY; <span style="color:#60a0b0;font-style:italic">// FPGA can only read from this register 
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>		};
+</span></span><span style="display:flex;"><span>	};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">// register for read only 
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>	<span style="color:#007020;font-weight:bold">reg</span> {
+</span></span><span style="display:flex;"><span>		prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_ro&#34;</span>;
+</span></span><span style="display:flex;"><span>		name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;test_ro&#34;</span>;
+</span></span><span style="display:flex;"><span>		decription <span style="color:#666">=</span> <span style="color:#4070a0">&#34;A read test register&#34;</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		field {
+</span></span><span style="display:flex;"><span>			name <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
+</span></span><span style="display:flex;"><span>			prefix <span style="color:#666">=</span> <span style="color:#4070a0">&#34;val&#34;</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#007020;font-weight:bold">type</span> <span style="color:#666">=</span> SLV;
+</span></span><span style="display:flex;"><span>			size <span style="color:#666">=</span> <span style="color:#40a070">32</span>;
+</span></span><span style="display:flex;"><span>			access_bus <span style="color:#666">=</span> READ_ONLY;
+</span></span><span style="display:flex;"><span>			access_dev <span style="color:#666">=</span> WRITE_ONLY;
+</span></span><span style="display:flex;"><span>		};
+</span></span><span style="display:flex;"><span>	};
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h4 id="generate-i2c_slavevhd-file-using-wbgen2">Generate I2C_Slave.vhd file using wbgen2</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lua wbgen2 -V I2C_Slave.vhd -D I2C_Slave.html I2C_Slave.wb
+</span></span></code></pre></div><p>This can be made easier using a .bat file. example below. @pause stops the application exiting - useful for compiler errors.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>lua C:\Users\jospence\Downloads\wishbone-gen\wbgen2 -V I2C_Slave.vhd -D I2C_Slave.html I2C_Slave.wb
+</span></span><span style="display:flex;"><span>@<span style="color:#007020;font-weight:bold">pause</span>
+</span></span></code></pre></div><h4 id="add-i2c_slavevhd-to-project">Add I2C_Slave.vhd to project</h4>
 <p>doesn&rsquo;t matter if you are using VHDL or Verilog.</p>
 <h4 id="add-wb_i2c_bridgevhd-to-project-from-general-core-modules">Add wb_i2c_bridge.vhd to project from general core modules</h4>
 <p>(<a href="https://ohwr.org/project/general-cores">https://ohwr.org/project/general-cores</a>)
 NOTE there will be many more files required - all of which are found in general cores and will be flagged by the compiler</p>
 <h4 id="connect-ports-to-the-wb_i2c_bridge">Connect ports to the wb_i2c_bridge</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-systemverilog" data-lang="systemverilog"><span style="color:#007020;font-weight:bold">wire</span>        wb_stb;
-<span style="color:#007020;font-weight:bold">wire</span>        wb_cyc;
-<span style="color:#007020;font-weight:bold">wire</span>  [<span style="color:#40a070">3</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_sel_b4;
-<span style="color:#007020;font-weight:bold">wire</span>        wb_we;
-<span style="color:#007020;font-weight:bold">wire</span> [<span style="color:#40a070">31</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_dat_i_b32;
-<span style="color:#007020;font-weight:bold">wire</span> [<span style="color:#40a070">31</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_dat_o_b32;
-<span style="color:#007020;font-weight:bold">wire</span> [<span style="color:#40a070">31</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_adr_b32;
-<span style="color:#007020;font-weight:bold">wire</span>        wb_ack;
-<span style="color:#007020;font-weight:bold">wire</span>        wb_rty;
-<span style="color:#007020;font-weight:bold">wire</span>        wb_err;
-
-<span style="color:#007020;font-weight:bold">wire</span>        Scl_o, Scl_en_o;
-<span style="color:#007020;font-weight:bold">wire</span>        Sda_o, Sda_en_o;
-
-<span style="color:#007020;font-weight:bold">assign</span> Scl_io <span style="color:#666">=</span> (Scl_en_o) <span style="color:#666">?</span> Scl_o <span style="color:#666">:</span> <span style="color:#40a070">1</span>&#39;bZ; <span style="color:#60a0b0;font-style:italic">// when I2C not enabled make pins high impedance 
-</span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#007020;font-weight:bold">assign</span> Sda_io <span style="color:#666">=</span> (Sda_en_o) <span style="color:#666">?</span> Sda_o <span style="color:#666">:</span> <span style="color:#40a070">1</span>&#39;bZ; <span style="color:#60a0b0;font-style:italic">// when I2C not enabled make pins high impedance 
-</span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-systemverilog" data-lang="systemverilog"><span style="color:#60a0b0;font-style:italic">// # is how parameters are passe din verilog - .g_fsm_wdt(480000) this is the watchdog time out. 
-</span><span style="color:#60a0b0;font-style:italic"></span>wb_i2c_bridge #(.g_fsm_wdt(<span style="color:#40a070">480000</span>)) i_wb_i2c_bridge (
-    .clk_i      (Clk_ik), <span style="color:#60a0b0;font-style:italic">// system clock - external crystal  
-</span><span style="color:#60a0b0;font-style:italic"></span>    .rst_n_i    (<span style="color:#666">!</span>Reset_r), <span style="color:#60a0b0;font-style:italic">// system reset 
-</span><span style="color:#60a0b0;font-style:italic"></span>
-    .scl_i      (Scl_io), 
-    .scl_o      (Scl_o),
-    .scl_en_o   (Scl_en_o),
-    .sda_i      (Sda_io),
-    .sda_o      (Sda_o),
-    .sda_en_o   (Sda_en_o),
-
-    .i2c_addr_i (<span style="color:#40a070">7</span><span style="color:#40a070">&#39;b1000000</span>), <span style="color:#60a0b0;font-style:italic">// address of I2C device hex value 0x40
-</span><span style="color:#60a0b0;font-style:italic"></span>
-    .tip_o      (),
-    .err_p_o    (),
-    .wdto_p_o   (),
-
-    .wbm_stb_o  (wb_stb),
-    .wbm_cyc_o  (wb_cyc),
-    .wbm_sel_o  (wb_sel_b4),
-    .wbm_we_o   (wb_we),
-    .wbm_dat_i  (wb_dat_o_b32), <span style="color:#60a0b0;font-style:italic">// Notice wb_dat_o_b32 is given to wbm_dat_i and wb_dat_i_b32 given to wbm_dat_o.
-</span><span style="color:#60a0b0;font-style:italic"></span>    .wbm_dat_o  (wb_dat_i_b32),
-    .wbm_adr_o  (wb_adr_b32),
-    .wbm_ack_i  (wb_ack),
-    .wbm_rty_i  (wb_rty),
-    .wbm_err_i  (wb_err)
-);
-</code></pre></div><h4 id="connect-ports-to-i2c_slave">Connect ports to I2C_Slave</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-systemverilog" data-lang="systemverilog">I2C_Slave i_I2C_Slave (
-    .rst_n_i    (<span style="color:#666">!</span>Reset_r),
-    .clk_sys_i  (Clk_ik),
-    .wb_adr_i   (wb_adr_b32),
-    .wb_dat_i   (wb_dat_i_b32),
-    .wb_dat_o   (wb_dat_o_b32),
-    .wb_cyc_i   (wb_cyc),
-    .wb_sel_i   (wb_sel_b4),
-    .wb_stb_i   (wb_stb),
-    .wb_we_i    (wb_we),
-    .wb_ack_o   (wb_ack),
-    .wb_err_o   (wb_err),
-    .wb_rty_o   (wb_rty),
-    .wb_stall_o (),
-    .i2cslave_test_rw_val_o(TestReg_b32),   <span style="color:#60a0b0;font-style:italic">// addr=0x00
-</span><span style="color:#60a0b0;font-style:italic"></span>    .i2cslave_test_ro_val_i(<span style="color:#40a070">32&#39;hDEADBEEF</span>)   <span style="color:#60a0b0;font-style:italic">// addr=0x01
-</span><span style="color:#60a0b0;font-style:italic"></span>);
-</code></pre></div><h1 id="testing">Testing</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        wb_stb;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        wb_cyc;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>  [<span style="color:#40a070">3</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_sel_b4;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        wb_we;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span> [<span style="color:#40a070">31</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_dat_i_b32;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span> [<span style="color:#40a070">31</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_dat_o_b32;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span> [<span style="color:#40a070">31</span><span style="color:#666">:</span><span style="color:#40a070">0</span>] wb_adr_b32;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        wb_ack;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        wb_rty;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        wb_err;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        Scl_o, Scl_en_o;
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">wire</span>        Sda_o, Sda_en_o;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">assign</span> Scl_io <span style="color:#666">=</span> (Scl_en_o) <span style="color:#666">?</span> Scl_o <span style="color:#666">:</span> <span style="color:#40a070">1</span>&#39;bZ; <span style="color:#60a0b0;font-style:italic">// when I2C not enabled make pins high impedance 
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#007020;font-weight:bold">assign</span> Sda_io <span style="color:#666">=</span> (Sda_en_o) <span style="color:#666">?</span> Sda_o <span style="color:#666">:</span> <span style="color:#40a070">1</span>&#39;bZ; <span style="color:#60a0b0;font-style:italic">// when I2C not enabled make pins high impedance 
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">// # is how parameters are passe din verilog - .g_fsm_wdt(480000) this is the watchdog time out. 
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>wb_i2c_bridge #(.g_fsm_wdt(<span style="color:#40a070">480000</span>)) i_wb_i2c_bridge (
+</span></span><span style="display:flex;"><span>    .clk_i      (Clk_ik), <span style="color:#60a0b0;font-style:italic">// system clock - external crystal  
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>    .rst_n_i    (<span style="color:#666">!</span>Reset_r), <span style="color:#60a0b0;font-style:italic">// system reset 
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    .scl_i      (Scl_io), 
+</span></span><span style="display:flex;"><span>    .scl_o      (Scl_o),
+</span></span><span style="display:flex;"><span>    .scl_en_o   (Scl_en_o),
+</span></span><span style="display:flex;"><span>    .sda_i      (Sda_io),
+</span></span><span style="display:flex;"><span>    .sda_o      (Sda_o),
+</span></span><span style="display:flex;"><span>    .sda_en_o   (Sda_en_o),
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    .i2c_addr_i (<span style="color:#40a070">7</span><span style="color:#40a070">&#39;b1000000</span>), <span style="color:#60a0b0;font-style:italic">// address of I2C device hex value 0x40
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    .tip_o      (),
+</span></span><span style="display:flex;"><span>    .err_p_o    (),
+</span></span><span style="display:flex;"><span>    .wdto_p_o   (),
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    .wbm_stb_o  (wb_stb),
+</span></span><span style="display:flex;"><span>    .wbm_cyc_o  (wb_cyc),
+</span></span><span style="display:flex;"><span>    .wbm_sel_o  (wb_sel_b4),
+</span></span><span style="display:flex;"><span>    .wbm_we_o   (wb_we),
+</span></span><span style="display:flex;"><span>    .wbm_dat_i  (wb_dat_o_b32), <span style="color:#60a0b0;font-style:italic">// Notice wb_dat_o_b32 is given to wbm_dat_i and wb_dat_i_b32 given to wbm_dat_o.
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>    .wbm_dat_o  (wb_dat_i_b32),
+</span></span><span style="display:flex;"><span>    .wbm_adr_o  (wb_adr_b32),
+</span></span><span style="display:flex;"><span>    .wbm_ack_i  (wb_ack),
+</span></span><span style="display:flex;"><span>    .wbm_rty_i  (wb_rty),
+</span></span><span style="display:flex;"><span>    .wbm_err_i  (wb_err)
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><h4 id="connect-ports-to-i2c_slave">Connect ports to I2C_Slave</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemverilog" data-lang="systemverilog"><span style="display:flex;"><span>I2C_Slave i_I2C_Slave (
+</span></span><span style="display:flex;"><span>    .rst_n_i    (<span style="color:#666">!</span>Reset_r),
+</span></span><span style="display:flex;"><span>    .clk_sys_i  (Clk_ik),
+</span></span><span style="display:flex;"><span>    .wb_adr_i   (wb_adr_b32),
+</span></span><span style="display:flex;"><span>    .wb_dat_i   (wb_dat_i_b32),
+</span></span><span style="display:flex;"><span>    .wb_dat_o   (wb_dat_o_b32),
+</span></span><span style="display:flex;"><span>    .wb_cyc_i   (wb_cyc),
+</span></span><span style="display:flex;"><span>    .wb_sel_i   (wb_sel_b4),
+</span></span><span style="display:flex;"><span>    .wb_stb_i   (wb_stb),
+</span></span><span style="display:flex;"><span>    .wb_we_i    (wb_we),
+</span></span><span style="display:flex;"><span>    .wb_ack_o   (wb_ack),
+</span></span><span style="display:flex;"><span>    .wb_err_o   (wb_err),
+</span></span><span style="display:flex;"><span>    .wb_rty_o   (wb_rty),
+</span></span><span style="display:flex;"><span>    .wb_stall_o (),
+</span></span><span style="display:flex;"><span>    .i2cslave_test_rw_val_o(TestReg_b32),   <span style="color:#60a0b0;font-style:italic">// addr=0x00
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>    .i2cslave_test_ro_val_i(<span style="color:#40a070">32&#39;hDEADBEEF</span>)   <span style="color:#60a0b0;font-style:italic">// addr=0x01
+</span></span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"></span>);
+</span></span></code></pre></div><h1 id="testing">Testing</h1>
 <p>To communicate with the FPGA we will be using the MCP2221A chip which conveniently has a python library built for it and can be installed with pip.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install PyMCP2221A
-</code></pre></div><p><strong>one of the  nuances with the wishbone interface is that the registers require 16-bit addresses, opposed to other chips requiring 8-bit register addresses.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install PyMCP2221A
+</span></span></code></pre></div><p><strong>one of the  nuances with the wishbone interface is that the registers require 16-bit addresses, opposed to other chips requiring 8-bit register addresses.</strong></p>
 <p>Python script.
 First lets initialise our device and create a couple of functions for reading and writing to our I2C slave. The pyMCP22221A library recommends creating the object, resetting and then creating it again. I don&rsquo;t know why.</p>
 <p>Second, remember that the address of our FPGA is at 0x40 which can be found in wb_i2c_bridge.v</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-<span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">Read_I2C</span>(device,addr,register,num_bytes):
-	device<span style="color:#666">.</span>I2C_Write_No_Stop(addr, [<span style="color:#40a070">0x00</span>, register])
-	read <span style="color:#666">=</span> <span style="color:#007020">list</span>(device<span style="color:#666">.</span>I2C_Read_Repeated(addr, num_bytes))
-	read<span style="color:#666">.</span>reverse() <span style="color:#60a0b0;font-style:italic">#endian reversal</span>
-	<span style="color:#007020;font-weight:bold">return</span> read
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">Read_I2C</span>(device,addr,register,num_bytes):
+</span></span><span style="display:flex;"><span>	device<span style="color:#666">.</span>I2C_Write_No_Stop(addr, [<span style="color:#40a070">0x00</span>, register])
+</span></span><span style="display:flex;"><span>	read <span style="color:#666">=</span> <span style="color:#007020">list</span>(device<span style="color:#666">.</span>I2C_Read_Repeated(addr, num_bytes))
+</span></span><span style="display:flex;"><span>	read<span style="color:#666">.</span>reverse() <span style="color:#60a0b0;font-style:italic">#endian reversal</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#007020;font-weight:bold">return</span> read
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">Write_FPGA</span>(device,addr,register,data):
+</span></span><span style="display:flex;"><span>	device<span style="color:#666">.</span>I2C_Write(addr, ([<span style="color:#40a070">0x00</span>, register] <span style="color:#666">+</span> data )) <span style="color:#60a0b0;font-style:italic">#first element in array - compensation for 16 bit address</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mcp2221 <span style="color:#666">=</span> PyMCP2221A<span style="color:#666">.</span>PyMCP2221A()
+</span></span><span style="display:flex;"><span>mcp2221<span style="color:#666">.</span>Reset()
+</span></span><span style="display:flex;"><span>mcp2221 <span style="color:#666">=</span> PyMCP2221A<span style="color:#666">.</span>PyMCP2221A()
+</span></span><span style="display:flex;"><span>mcp2221<span style="color:#666">.</span>I2C_Init()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Write_FPGA(device <span style="color:#666">=</span> mcp2221, addr <span style="color:#666">=</span> <span style="color:#40a070">0x40</span>, register <span style="color:#666">=</span> <span style="color:#40a070">0x00</span>, data <span style="color:#666">=</span> [<span style="color:#40a070">0xFF</span>, <span style="color:#40a070">0xFF</span>, <span style="color:#40a070">0xFF</span>, <span style="color:#40a070">0xFF</span>])
+</span></span><span style="display:flex;"><span><span style="color:#007020">print</span>(Read_I2C(device <span style="color:#666">=</span> mcp2221, addr <span style="color:#666">=</span> <span style="color:#40a070">0x40</span>, register <span style="color:#666">=</span> <span style="color:#40a070">0x00</span>, <span style="color:#40a070">4</span>))
+</span></span></code></pre></div><p>The result of this should be - [0xFF, 0xFF, 0xFF, 0xFF]</p>
 
-<span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">Write_FPGA</span>(device,addr,register,data):
-	device<span style="color:#666">.</span>I2C_Write(addr, ([<span style="color:#40a070">0x00</span>, register] <span style="color:#666">+</span> data )) <span style="color:#60a0b0;font-style:italic">#first element in array - compensation for 16 bit address</span>
 
 
-mcp2221 <span style="color:#666">=</span> PyMCP2221A<span style="color:#666">.</span>PyMCP2221A()
-mcp2221<span style="color:#666">.</span>Reset()
-mcp2221 <span style="color:#666">=</span> PyMCP2221A<span style="color:#666">.</span>PyMCP2221A()
-mcp2221<span style="color:#666">.</span>I2C_Init()
 
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-Write_FPGA(device <span style="color:#666">=</span> mcp2221, addr <span style="color:#666">=</span> <span style="color:#40a070">0x40</span>, register <span style="color:#666">=</span> <span style="color:#40a070">0x00</span>, data <span style="color:#666">=</span> [<span style="color:#40a070">0xFF</span>, <span style="color:#40a070">0xFF</span>, <span style="color:#40a070">0xFF</span>, <span style="color:#40a070">0xFF</span>])
-<span style="color:#007020">print</span>(Read_I2C(device <span style="color:#666">=</span> mcp2221, addr <span style="color:#666">=</span> <span style="color:#40a070">0x40</span>, register <span style="color:#666">=</span> <span style="color:#40a070">0x00</span>, <span style="color:#40a070">4</span>))
-</code></pre></div><p>The result of this should be - [0xFF, 0xFF, 0xFF, 0xFF]</p>
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
 
-
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 
@@ -442,7 +493,7 @@ Write_FPGA(device <span style="color:#666">=</span> mcp2221, addr <span style="c
 
     </div>
     
-<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script src="http://localhost:63700/js/feather.min.js"></script>
 <script>
   feather.replace()
 </script>   

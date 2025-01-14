@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63700&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="generator" content="Hugo 0.89.4" />
+  <meta name="generator" content="Hugo 0.139.3">
   
-  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:63700/css/bootstrap.min.css">
   
   
   <title>Interfacing with FTDIs FT4222H USB 2.0 to Quad SPI / I2C Bridge IC</title>
   <style>
 .container {
-  max-width: 900px;
+  max-width: 910px;
 }
 #nav a {
   font-weight: bold;
@@ -50,19 +50,37 @@ img {
 
  
 
+#home-page a {
+  color: #282829;
+}
 
 a {
   color: #007bff;
+ 
  }  
 
 
+ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
 
 
 
-td, th {
-    border: 1px solid grey;
-    padding: 10px;
-}
+
 
 @media (min-width: 34em) {
     .card-columns {
@@ -107,7 +125,8 @@ code {
 }
 .card{
   border-radius: 10px;
-
+ 
+ 
 }
 
  
@@ -140,8 +159,19 @@ div.highlight {
 }
 
 
+body {
 
+  background-color: #FFFFFF ;
+}
 
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
 
 
 </style>
@@ -181,18 +211,20 @@ div.highlight {
 
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-177014444-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
@@ -230,7 +262,7 @@ if (!doNotTrack) {
    
     
     
-    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
   
 
 
@@ -266,86 +298,105 @@ if (!doNotTrack) {
 <li>Open a terminal and navigate to the D2XX folder on your desktop</li>
 <li>Move .h files to /usr/local/include</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv ftd2xx.h WinTypes.h /usr/local/include 
-</code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv ftd2xx.h WinTypes.h /usr/local/include 
+</span></span></code></pre></div><ol start="5">
 <li>Move &lsquo;.dylib&rsquo; file to /usr/local/lib</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv libftd2xx.1.14.16.dylib /usr/local/lib 
-</code></pre></div><ol start="6">
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv libftd2xx.1.14.16.dylib /usr/local/lib 
+</span></span></code></pre></div><ol start="6">
 <li>Create second folder on Desktop and copy contents of libft4222.1.4.4.14.dmg to it</li>
 <li>move <code>libft4222.1.4.4.14.dylib</code> to /usr/local/lib</li>
 <li>move files <code>libboost_system.dylib</code> and <code>libboost_thread-mt.dylib</code> located in boost_libs to /usr/local/lib</li>
 <li>move <code>libft4222.h</code> to /usr/local/include</li>
 <li>Create symbolic links for <code>libft4222.1.4.4.14.dylib</code> and <code>libftd2xx.1.4.16.dylib</code></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo ln -s /usr/local/lib/libft4222.1.4.4.14.dylib /usr/local/lib/libft4222.dylib
-sudo ln -s /usr/local/lib/libftd2xx.1.4.16.dylib /usr/local/lib/libftd2xx.dylib
-</code></pre></div><h4 id="notes-on-installing">Notes on installing</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ln -s /usr/local/lib/libft4222.1.4.4.14.dylib /usr/local/lib/libft4222.dylib
+</span></span><span style="display:flex;"><span>sudo ln -s /usr/local/lib/libftd2xx.1.4.16.dylib /usr/local/lib/libftd2xx.dylib
+</span></span></code></pre></div><h4 id="notes-on-installing">Notes on installing</h4>
 <p>If using a device with standard FTDI vendor and product identifiers, install D2xxHelper to prevent mac OS from claiming the device as a serial port (locking out D2XX programs). This will prevent the device being used with the VCP driver as a standard COM port. D2xxHelper can be found here : <a href=https://www.ftdichip.com/Drivers/D2XX/MacOSX/D2xxHelper_v2.0.0.pkg target="_blank">D2xxHelper</a></p>
 <h2 id="testing">Testing</h2>
 <h4 id="1-find-chip-version">1. Find chip version</h4>
 <p>Inside libft4222.1.4.4.14.dmg is a folder called examples with a .c file called <code>get-version.c</code>.
 using the following command</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cc get-version.c -lft4222 -lftd2xx  -Wl,-L/usr/local/lib -o version.out
-</code></pre></div><p>If compilation has gone well and all libraries have been found <code>version.out</code> will have been made.
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cc get-version.c -lft4222 -lftd2xx  -Wl,-L/usr/local/lib -o version.out
+</span></span></code></pre></div><p>If compilation has gone well and all libraries have been found <code>version.out</code> will have been made.
 execute using</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./version.out
-</code></pre></div><p>This should return something similar to this</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Device 0: <span style="color:#4070a0">&#39;FT4222 A&#39;</span>
-  Chip version: 42220400, LibFT4222 version: <span style="color:#40a070">01040409</span>
-</code></pre></div><h3 id="2-accessing-eeprom">2. Accessing EEPROM</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./version.out
+</span></span></code></pre></div><p>This should return something similar to this</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Device 0: <span style="color:#4070a0">&#39;FT4222 A&#39;</span>
+</span></span><span style="display:flex;"><span>  Chip version: 42220400, LibFT4222 version: <span style="color:#40a070">01040409</span>
+</span></span></code></pre></div><h3 id="2-accessing-eeprom">2. Accessing EEPROM</h3>
 <p>Create a folder in the root directory of D2XX called <code>build</code> and move <code>libftd2xx.a</code> into it.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir build
-mv libftd2xx.a build
-</code></pre></div><p>now navigate to the folder <code>Samples</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir build
+</span></span><span style="display:flex;"><span>mv libftd2xx.a build
+</span></span></code></pre></div><p>now navigate to the folder <code>Samples</code></p>
 <p>Inside the D2XX folder navigate to the folder samples and execute <code>make</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make
-</code></pre></div><p>once this has complete navigate to D2XX/Samples/EEPROM/read and exectute read</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./read
-</code></pre></div><p>This should return something similar to this</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#bb60d5">Signature1</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-<span style="color:#bb60d5">Signature2</span> <span style="color:#666">=</span> -1
-<span style="color:#bb60d5">Version</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-<span style="color:#bb60d5">VendorId</span> <span style="color:#666">=</span> 0x0403
-<span style="color:#bb60d5">ProductId</span> <span style="color:#666">=</span> 0x601C
-<span style="color:#bb60d5">Manufacturer</span> <span style="color:#666">=</span> FTDI
-<span style="color:#bb60d5">ManufacturerId</span> <span style="color:#666">=</span>
-<span style="color:#bb60d5">Description</span> <span style="color:#666">=</span> FT4222
-<span style="color:#bb60d5">SerialNumber</span> <span style="color:#666">=</span>
-<span style="color:#bb60d5">MaxPower</span> <span style="color:#666">=</span> <span style="color:#40a070">100</span>
-<span style="color:#bb60d5">PnP</span> <span style="color:#666">=</span> <span style="color:#40a070">1</span>
-<span style="color:#bb60d5">SelfPowered</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-<span style="color:#bb60d5">RemoteWakeup</span> <span style="color:#666">=</span> <span style="color:#40a070">1</span>
-Returning <span style="color:#40a070">0</span>
-</code></pre></div><h3 id="3-using-cmake">3. Using Cmake</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make
+</span></span></code></pre></div><p>once this has complete navigate to D2XX/Samples/EEPROM/read and exectute read</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./read
+</span></span></code></pre></div><p>This should return something similar to this</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bb60d5">Signature1</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Signature2</span> <span style="color:#666">=</span> -1
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Version</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">VendorId</span> <span style="color:#666">=</span> 0x0403
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">ProductId</span> <span style="color:#666">=</span> 0x601C
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Manufacturer</span> <span style="color:#666">=</span> FTDI
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">ManufacturerId</span> <span style="color:#666">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Description</span> <span style="color:#666">=</span> FT4222
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SerialNumber</span> <span style="color:#666">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">MaxPower</span> <span style="color:#666">=</span> <span style="color:#40a070">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">PnP</span> <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SelfPowered</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#bb60d5">RemoteWakeup</span> <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span>Returning <span style="color:#40a070">0</span>
+</span></span></code></pre></div><h3 id="3-using-cmake">3. Using Cmake</h3>
 <p>Navigate to the examples folder as before containing <code>get-version.c</code><br>
 Create a directory called <code>build</code></p>
 <p>create a text file called <code>CMakeLists.txt</code></p>
 <p>Inside add the following</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">cmake_minimum_required(VERSION 3.17.2)
-
-project (FT4222H_test)
-
-set ( PROJECT_LINK_LIBS libft4222.dylib libftd2xx.dylib )
-link_directories ( ~/work/CERN/FTDI/example/build /usr/local/lib)
-
-include_directories ( /usr/local/include )
-
-add_executable( FT4222H_Version get-version.c ) 
-target_link_libraries( FT4222H_Version ${PROJECT_LINK_LIBS} )
-</code></pre></div><p>This tells the compiler where to find our files and links them to the project.<br>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>cmake_minimum_required(VERSION 3.17.2)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>project (FT4222H_test)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>set ( PROJECT_LINK_LIBS libft4222.dylib libftd2xx.dylib )
+</span></span><span style="display:flex;"><span>link_directories ( ~/work/CERN/FTDI/example/build /usr/local/lib)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>include_directories ( /usr/local/include )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>add_executable( FT4222H_Version get-version.c ) 
+</span></span><span style="display:flex;"><span>target_link_libraries( FT4222H_Version ${PROJECT_LINK_LIBS} )
+</span></span></code></pre></div><p>This tells the compiler where to find our files and links them to the project.<br>
 Inside link directories replace the first directory with the location of your build folder.
 Navigate to the build folder and run</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake ..
-make
-</code></pre></div><p>The file <code>FT4222H_Version</code> should now be built.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cmake ..
+</span></span><span style="display:flex;"><span>make
+</span></span></code></pre></div><p>The file <code>FT4222H_Version</code> should now be built.</p>
 <p>execute with</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./FT4222H_Version
-</code></pre></div><p>Again, the following should be returned</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Device 0: <span style="color:#4070a0">&#39;FT4222 A&#39;</span>
-  Chip version: 42220400, LibFT4222 version: <span style="color:#40a070">01040409</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./FT4222H_Version
+</span></span></code></pre></div><p>Again, the following should be returned</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Device 0: <span style="color:#4070a0">&#39;FT4222 A&#39;</span>
+</span></span><span style="display:flex;"><span>  Chip version: 42220400, LibFT4222 version: <span style="color:#40a070">01040409</span>
+</span></span></code></pre></div>
 
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 
@@ -353,7 +404,7 @@ make
 
     </div>
     
-<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script src="http://localhost:63700/js/feather.min.js"></script>
 <script>
   feather.replace()
 </script>   

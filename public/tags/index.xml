@@ -2,658 +2,515 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Well lets take a look at it, Mr Gumby!</title>
-    <link>https://mybrainhertz.co.uk/tags/</link>
+    <link>http://localhost:63700/tags/</link>
     <description>Recent content in Tags on Well lets take a look at it, Mr Gumby!</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Dec 2019 11:23:58 +0100</lastBuildDate><atom:link href="https://mybrainhertz.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Dec 2019 11:23:58 +0100</lastBuildDate>
+    <atom:link href="http://localhost:63700/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AD5627</title>
-      <link>https://mybrainhertz.co.uk/tags/ad5627/</link>
+      <link>http://localhost:63700/tags/ad5627/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/ad5627/</guid>
+      <guid>http://localhost:63700/tags/ad5627/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DAC</title>
-      <link>https://mybrainhertz.co.uk/tags/dac/</link>
+      <link>http://localhost:63700/tags/dac/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/dac/</guid>
+      <guid>http://localhost:63700/tags/dac/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>level shifting</title>
-      <link>https://mybrainhertz.co.uk/tags/level-shifting/</link>
+      <title>Level Shifting</title>
+      <link>http://localhost:63700/tags/level-shifting/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/level-shifting/</guid>
+      <guid>http://localhost:63700/tags/level-shifting/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>design</title>
-      <link>https://mybrainhertz.co.uk/tags/design/</link>
+      <title>Design</title>
+      <link>http://localhost:63700/tags/design/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/design/</guid>
+      <guid>http://localhost:63700/tags/design/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>differential</title>
-      <link>https://mybrainhertz.co.uk/tags/differential/</link>
+      <title>Differential</title>
+      <link>http://localhost:63700/tags/differential/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/differential/</guid>
+      <guid>http://localhost:63700/tags/differential/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ESD</title>
-      <link>https://mybrainhertz.co.uk/tags/esd/</link>
+      <link>http://localhost:63700/tags/esd/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/esd/</guid>
+      <guid>http://localhost:63700/tags/esd/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>guide</title>
-      <link>https://mybrainhertz.co.uk/tags/guide/</link>
+      <title>Guide</title>
+      <link>http://localhost:63700/tags/guide/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/guide/</guid>
+      <guid>http://localhost:63700/tags/guide/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>microstrip</title>
-      <link>https://mybrainhertz.co.uk/tags/microstrip/</link>
+      <title>Microstrip</title>
+      <link>http://localhost:63700/tags/microstrip/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/microstrip/</guid>
+      <guid>http://localhost:63700/tags/microstrip/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>single-ended</title>
-      <link>https://mybrainhertz.co.uk/tags/single-ended/</link>
+      <title>Single-Ended</title>
+      <link>http://localhost:63700/tags/single-ended/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/single-ended/</guid>
+      <guid>http://localhost:63700/tags/single-ended/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>USB</title>
-      <link>https://mybrainhertz.co.uk/tags/usb/</link>
+      <link>http://localhost:63700/tags/usb/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/usb/</guid>
+      <guid>http://localhost:63700/tags/usb/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ADA4096</title>
-      <link>https://mybrainhertz.co.uk/tags/ada4096/</link>
+      <link>http://localhost:63700/tags/ada4096/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/ada4096/</guid>
+      <guid>http://localhost:63700/tags/ada4096/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ADC</title>
-      <link>https://mybrainhertz.co.uk/tags/adc/</link>
+      <link>http://localhost:63700/tags/adc/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/adc/</guid>
+      <guid>http://localhost:63700/tags/adc/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>LTC2990</title>
-      <link>https://mybrainhertz.co.uk/tags/ltc2990/</link>
+      <link>http://localhost:63700/tags/ltc2990/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/ltc2990/</guid>
+      <guid>http://localhost:63700/tags/ltc2990/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>monitoring</title>
-      <link>https://mybrainhertz.co.uk/tags/monitoring/</link>
+      <title>Monitoring</title>
+      <link>http://localhost:63700/tags/monitoring/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/monitoring/</guid>
+      <guid>http://localhost:63700/tags/monitoring/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>op amps</title>
-      <link>https://mybrainhertz.co.uk/tags/op-amps/</link>
+      <title>Op Amps</title>
+      <link>http://localhost:63700/tags/op-amps/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/op-amps/</guid>
+      <guid>http://localhost:63700/tags/op-amps/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>power</title>
-      <link>https://mybrainhertz.co.uk/tags/power/</link>
+      <title>Power</title>
+      <link>http://localhost:63700/tags/power/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/power/</guid>
+      <guid>http://localhost:63700/tags/power/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>supply</title>
-      <link>https://mybrainhertz.co.uk/tags/supply/</link>
+      <title>Supply</title>
+      <link>http://localhost:63700/tags/supply/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/supply/</guid>
+      <guid>http://localhost:63700/tags/supply/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Buffer</title>
-      <link>https://mybrainhertz.co.uk/tags/buffer/</link>
+      <link>http://localhost:63700/tags/buffer/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/buffer/</guid>
+      <guid>http://localhost:63700/tags/buffer/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Gates</title>
-      <link>https://mybrainhertz.co.uk/tags/gates/</link>
+      <link>http://localhost:63700/tags/gates/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/gates/</guid>
+      <guid>http://localhost:63700/tags/gates/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Inverter</title>
-      <link>https://mybrainhertz.co.uk/tags/inverter/</link>
+      <link>http://localhost:63700/tags/inverter/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/inverter/</guid>
+      <guid>http://localhost:63700/tags/inverter/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Logic</title>
-      <link>https://mybrainhertz.co.uk/tags/logic/</link>
+      <link>http://localhost:63700/tags/logic/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/logic/</guid>
+      <guid>http://localhost:63700/tags/logic/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>XOR</title>
-      <link>https://mybrainhertz.co.uk/tags/xor/</link>
+      <link>http://localhost:63700/tags/xor/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/xor/</guid>
+      <guid>http://localhost:63700/tags/xor/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>aubergine</title>
-      <link>https://mybrainhertz.co.uk/tags/aubergine/</link>
+      <title>Aubergine</title>
+      <link>http://localhost:63700/tags/aubergine/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/aubergine/</guid>
+      <guid>http://localhost:63700/tags/aubergine/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>curry</title>
-      <link>https://mybrainhertz.co.uk/tags/curry/</link>
+      <title>Curry</title>
+      <link>http://localhost:63700/tags/curry/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/curry/</guid>
+      <guid>http://localhost:63700/tags/curry/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Indian</title>
-      <link>https://mybrainhertz.co.uk/tags/indian/</link>
+      <link>http://localhost:63700/tags/indian/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/indian/</guid>
+      <guid>http://localhost:63700/tags/indian/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tamarind</title>
-      <link>https://mybrainhertz.co.uk/tags/tamarind/</link>
+      <title>Tamarind</title>
+      <link>http://localhost:63700/tags/tamarind/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/tamarind/</guid>
+      <guid>http://localhost:63700/tags/tamarind/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tomato</title>
-      <link>https://mybrainhertz.co.uk/tags/tomato/</link>
+      <title>Tomato</title>
+      <link>http://localhost:63700/tags/tomato/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/tomato/</guid>
+      <guid>http://localhost:63700/tags/tomato/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>eggs</title>
-      <link>https://mybrainhertz.co.uk/tags/eggs/</link>
+      <title>Eggs</title>
+      <link>http://localhost:63700/tags/eggs/</link>
       <pubDate>Mon, 18 Nov 2019 19:21:08 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/eggs/</guid>
+      <guid>http://localhost:63700/tags/eggs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bhuna</title>
-      <link>https://mybrainhertz.co.uk/tags/bhuna/</link>
+      <title>Bhuna</title>
+      <link>http://localhost:63700/tags/bhuna/</link>
       <pubDate>Mon, 04 Nov 2019 21:42:02 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/bhuna/</guid>
+      <guid>http://localhost:63700/tags/bhuna/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>egg</title>
-      <link>https://mybrainhertz.co.uk/tags/egg/</link>
+      <title>Egg</title>
+      <link>http://localhost:63700/tags/egg/</link>
       <pubDate>Mon, 04 Nov 2019 21:42:02 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/egg/</guid>
+      <guid>http://localhost:63700/tags/egg/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>broccoli</title>
-      <link>https://mybrainhertz.co.uk/tags/broccoli/</link>
+      <title>Broccoli</title>
+      <link>http://localhost:63700/tags/broccoli/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/broccoli/</guid>
+      <guid>http://localhost:63700/tags/broccoli/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cous cous</title>
-      <link>https://mybrainhertz.co.uk/tags/cous-cous/</link>
+      <title>Cous Cous</title>
+      <link>http://localhost:63700/tags/cous-cous/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/cous-cous/</guid>
+      <guid>http://localhost:63700/tags/cous-cous/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>halloumi</title>
-      <link>https://mybrainhertz.co.uk/tags/halloumi/</link>
+      <title>Halloumi</title>
+      <link>http://localhost:63700/tags/halloumi/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/halloumi/</guid>
+      <guid>http://localhost:63700/tags/halloumi/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>middle east</title>
-      <link>https://mybrainhertz.co.uk/tags/middle-east/</link>
+      <title>Middle East</title>
+      <link>http://localhost:63700/tags/middle-east/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/middle-east/</guid>
+      <guid>http://localhost:63700/tags/middle-east/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>parsley</title>
-      <link>https://mybrainhertz.co.uk/tags/parsley/</link>
+      <title>Parsley</title>
+      <link>http://localhost:63700/tags/parsley/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/parsley/</guid>
+      <guid>http://localhost:63700/tags/parsley/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>baking</title>
-      <link>https://mybrainhertz.co.uk/tags/baking/</link>
+      <title>Baking</title>
+      <link>http://localhost:63700/tags/baking/</link>
       <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/baking/</guid>
+      <guid>http://localhost:63700/tags/baking/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>flapjack</title>
-      <link>https://mybrainhertz.co.uk/tags/flapjack/</link>
+      <title>Flapjack</title>
+      <link>http://localhost:63700/tags/flapjack/</link>
       <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/flapjack/</guid>
+      <guid>http://localhost:63700/tags/flapjack/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>adjustment</title>
-      <link>https://mybrainhertz.co.uk/tags/adjustment/</link>
+      <title>Adjustment</title>
+      <link>http://localhost:63700/tags/adjustment/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/adjustment/</guid>
+      <guid>http://localhost:63700/tags/adjustment/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>amplifier</title>
-      <link>https://mybrainhertz.co.uk/tags/amplifier/</link>
+      <title>Amplifier</title>
+      <link>http://localhost:63700/tags/amplifier/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/amplifier/</guid>
+      <guid>http://localhost:63700/tags/amplifier/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>basics</title>
-      <link>https://mybrainhertz.co.uk/tags/basics/</link>
+      <title>Basics</title>
+      <link>http://localhost:63700/tags/basics/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/basics/</guid>
+      <guid>http://localhost:63700/tags/basics/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>gain</title>
-      <link>https://mybrainhertz.co.uk/tags/gain/</link>
+      <title>Gain</title>
+      <link>http://localhost:63700/tags/gain/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/gain/</guid>
+      <guid>http://localhost:63700/tags/gain/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>op amp</title>
-      <link>https://mybrainhertz.co.uk/tags/op-amp/</link>
+      <title>Op Amp</title>
+      <link>http://localhost:63700/tags/op-amp/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/op-amp/</guid>
+      <guid>http://localhost:63700/tags/op-amp/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>operational</title>
-      <link>https://mybrainhertz.co.uk/tags/operational/</link>
+      <title>Operational</title>
+      <link>http://localhost:63700/tags/operational/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/operational/</guid>
+      <guid>http://localhost:63700/tags/operational/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>chinese</title>
-      <link>https://mybrainhertz.co.uk/tags/chinese/</link>
+      <title>Chinese</title>
+      <link>http://localhost:63700/tags/chinese/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/chinese/</guid>
+      <guid>http://localhost:63700/tags/chinese/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>garlic</title>
-      <link>https://mybrainhertz.co.uk/tags/garlic/</link>
+      <title>Garlic</title>
+      <link>http://localhost:63700/tags/garlic/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/garlic/</guid>
+      <guid>http://localhost:63700/tags/garlic/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sauce</title>
-      <link>https://mybrainhertz.co.uk/tags/sauce/</link>
+      <title>Sauce</title>
+      <link>http://localhost:63700/tags/sauce/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/sauce/</guid>
+      <guid>http://localhost:63700/tags/sauce/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>butter</title>
-      <link>https://mybrainhertz.co.uk/tags/butter/</link>
+      <title>Butter</title>
+      <link>http://localhost:63700/tags/butter/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/butter/</guid>
+      <guid>http://localhost:63700/tags/butter/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>food</title>
-      <link>https://mybrainhertz.co.uk/tags/food/</link>
+      <title>Food</title>
+      <link>http://localhost:63700/tags/food/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/food/</guid>
+      <guid>http://localhost:63700/tags/food/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>makhani</title>
-      <link>https://mybrainhertz.co.uk/tags/makhani/</link>
+      <title>Makhani</title>
+      <link>http://localhost:63700/tags/makhani/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/makhani/</guid>
+      <guid>http://localhost:63700/tags/makhani/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>murgh</title>
-      <link>https://mybrainhertz.co.uk/tags/murgh/</link>
+      <title>Murgh</title>
+      <link>http://localhost:63700/tags/murgh/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/murgh/</guid>
+      <guid>http://localhost:63700/tags/murgh/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tofu</title>
-      <link>https://mybrainhertz.co.uk/tags/tofu/</link>
+      <title>Tofu</title>
+      <link>http://localhost:63700/tags/tofu/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/tofu/</guid>
+      <guid>http://localhost:63700/tags/tofu/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>falafel</title>
-      <link>https://mybrainhertz.co.uk/tags/falafel/</link>
+      <title>Falafel</title>
+      <link>http://localhost:63700/tags/falafel/</link>
       <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/falafel/</guid>
+      <guid>http://localhost:63700/tags/falafel/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wraps</title>
-      <link>https://mybrainhertz.co.uk/tags/wraps/</link>
+      <title>Wraps</title>
+      <link>http://localhost:63700/tags/wraps/</link>
       <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/wraps/</guid>
+      <guid>http://localhost:63700/tags/wraps/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>FPGA</title>
-      <link>https://mybrainhertz.co.uk/tags/fpga/</link>
+      <link>http://localhost:63700/tags/fpga/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/fpga/</guid>
+      <guid>http://localhost:63700/tags/fpga/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>I2C</title>
-      <link>https://mybrainhertz.co.uk/tags/i2c/</link>
+      <link>http://localhost:63700/tags/i2c/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/i2c/</guid>
+      <guid>http://localhost:63700/tags/i2c/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>interface</title>
-      <link>https://mybrainhertz.co.uk/tags/interface/</link>
+      <title>Interface</title>
+      <link>http://localhost:63700/tags/interface/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/interface/</guid>
+      <guid>http://localhost:63700/tags/interface/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>verilog</title>
-      <link>https://mybrainhertz.co.uk/tags/verilog/</link>
+      <title>Verilog</title>
+      <link>http://localhost:63700/tags/verilog/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/verilog/</guid>
+      <guid>http://localhost:63700/tags/verilog/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>VHDL</title>
-      <link>https://mybrainhertz.co.uk/tags/vhdl/</link>
+      <link>http://localhost:63700/tags/vhdl/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/vhdl/</guid>
+      <guid>http://localhost:63700/tags/vhdl/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wishbone</title>
-      <link>https://mybrainhertz.co.uk/tags/wishbone/</link>
+      <title>Wishbone</title>
+      <link>http://localhost:63700/tags/wishbone/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/wishbone/</guid>
+      <guid>http://localhost:63700/tags/wishbone/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>BJT</title>
-      <link>https://mybrainhertz.co.uk/tags/bjt/</link>
+      <link>http://localhost:63700/tags/bjt/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/bjt/</guid>
+      <guid>http://localhost:63700/tags/bjt/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DC</title>
-      <link>https://mybrainhertz.co.uk/tags/dc/</link>
+      <link>http://localhost:63700/tags/dc/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/dc/</guid>
+      <guid>http://localhost:63700/tags/dc/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>integrated</title>
-      <link>https://mybrainhertz.co.uk/tags/integrated/</link>
+      <title>Integrated</title>
+      <link>http://localhost:63700/tags/integrated/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/integrated/</guid>
+      <guid>http://localhost:63700/tags/integrated/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>JFET</title>
-      <link>https://mybrainhertz.co.uk/tags/jfet/</link>
+      <link>http://localhost:63700/tags/jfet/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/jfet/</guid>
+      <guid>http://localhost:63700/tags/jfet/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>noise</title>
-      <link>https://mybrainhertz.co.uk/tags/noise/</link>
+      <title>Noise</title>
+      <link>http://localhost:63700/tags/noise/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/noise/</guid>
+      <guid>http://localhost:63700/tags/noise/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>OPA227</title>
-      <link>https://mybrainhertz.co.uk/tags/opa227/</link>
+      <link>http://localhost:63700/tags/opa227/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/opa227/</guid>
+      <guid>http://localhost:63700/tags/opa227/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>opamps</title>
-      <link>https://mybrainhertz.co.uk/tags/opamps/</link>
+      <title>Opamps</title>
+      <link>http://localhost:63700/tags/opamps/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/opamps/</guid>
+      <guid>http://localhost:63700/tags/opamps/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>spectrum</title>
-      <link>https://mybrainhertz.co.uk/tags/spectrum/</link>
+      <title>Spectrum</title>
+      <link>http://localhost:63700/tags/spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/spectrum/</guid>
+      <guid>http://localhost:63700/tags/spectrum/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>josh</title>
-      <link>https://mybrainhertz.co.uk/tags/josh/</link>
+      <title>Josh</title>
+      <link>http://localhost:63700/tags/josh/</link>
       <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/josh/</guid>
+      <guid>http://localhost:63700/tags/josh/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>rogan</title>
-      <link>https://mybrainhertz.co.uk/tags/rogan/</link>
+      <title>Rogan</title>
+      <link>http://localhost:63700/tags/rogan/</link>
       <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/rogan/</guid>
+      <guid>http://localhost:63700/tags/rogan/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>coconut</title>
-      <link>https://mybrainhertz.co.uk/tags/coconut/</link>
+      <title>Coconut</title>
+      <link>http://localhost:63700/tags/coconut/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/coconut/</guid>
+      <guid>http://localhost:63700/tags/coconut/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>creamy</title>
-      <link>https://mybrainhertz.co.uk/tags/creamy/</link>
+      <title>Creamy</title>
+      <link>http://localhost:63700/tags/creamy/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/creamy/</guid>
+      <guid>http://localhost:63700/tags/creamy/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>lentil</title>
-      <link>https://mybrainhertz.co.uk/tags/lentil/</link>
+      <title>Lentil</title>
+      <link>http://localhost:63700/tags/lentil/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
-      
-      <guid>https://mybrainhertz.co.uk/tags/lentil/</guid>
+      <guid>http://localhost:63700/tags/lentil/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

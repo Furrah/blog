@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63700&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:63700/css/bootstrap.min.css">
+  
+  
+  <title>Mains Switch Over</title>
+  <style>
+.container {
+  max-width: 910px;
+}
+#nav a {
+  font-weight: bold;
+  color: inherit;
+
+}
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+#home-jumbotron {
+  background-color: inherit;
+}
+.font-125 {
+  font-size: 125%;
+}
+
+ 
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+ 
+
+#home-page a {
+  color: #282829;
+}
+
+a {
+  color: #007bff;
+ 
+ }  
+
+
+ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+
+
+
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+.card-img-top{
+   
+   
+   
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.card{
+  border-radius: 10px;
+ 
+ 
+}
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+body {
+
+  background-color: #FFFFFF ;
+}
+
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  <body>
+    
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+        
+    <div class="container">
+      <main id="main">
+      
+<h1>Mains Switch Over</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2024-09-15">Sep 15, 2024</time>
+
+<br><br>
+<h1 id="introduction">Introduction</h1>
+<p>My dad has a large fish pond and would like to use the solar system to run the pumps, which require 150W of power. Can the solar system run the pumps 24/7?</p>
+<h1 id="battery-capacity-overview">Battery Capacity Overview</h1>
+<p>The battery system has a capacity of 170Ah at 24V, equating to 4kWh of total stored energy. In practice, the battery state of charge (SoC) should not drop below 20% to maintain battery health, resulting in 3.26kWh of usable energy.</p>
+<p>This would run the pumps for approximately: <nr></p>
+<p><strong>3.26kWh/150W = 21.76 hours</strong></p>
+<p>To edge on the side of caution I will also assume that the real capacity is less than this as the batteries are 4 years old now. A safety factor of 0.85 would result in 18.5 hours of continuous pump use.</p>
+<p>My hope is that during the day the batteries will be charged up and the system will be able to run the pumps throughout the night.</p>
+<p>If the state of charge falls below 20%, the system should cut off to protect the batteries, but the pumps must continue to operate. To achieve this, an interface is required to switch the power supply from solar to mains when necessary.</p>
+<h1 id="high-level-outline">High Level Outline</h1>
+<p>For simplicity and ease of maintenance I would like to try and avoid any form of software. This should be achievable with the design below.</p>
+<p align="center"> 
+<img src="/greenhouse/images/mains_switchover/HLD.png" alt="drawing" width="800"/>
+</p>
+<p><strong>Fail Safe</strong></p>
+<p>If the solar system is off, the default state of the interface relay connects the pumps to the house mains and keeps the pumps running.</p>
+<p><strong>Normal Operation</strong></p>
+<p>When the solar system is on, the Victron battery protect unit measures the battery voltage and enables the 24V system if the system voltage is above a programmable threshold value.</p>
+<p>The alarm output of the battery protect unit in this scenario is low which results in the time delay relay staying in its normally connected state. This in turn enables the interface relay connecting the inverter to the pumps.</p>
+<p>Should the system voltage go below the threshold value the time delay relay is triggered for 24 hours and the pumps are connected to mains power. Hopefully this is enough time for the batteries to be recharged by the solar system.</p>
+<h1 id="components">Components</h1>
+<p><strong>Interface Relay</strong></p>
+<p>The relay must be able to cope with the switching current of the pumps which draw 0.65A (150W/230VAC). The <a href="https://uk.rs-online.com/web/p/electromechanical-interface-relays/1750529?gb=s">Phoenix Contact RIF-2-RSC-LDP-24DC/4X21 Series Interface Relay, DIN Rail Mount, 24V dc Coil, 4PDT, 4-Pole</a> has a switching current of 1A at 230VAC and a maximum continuous draw of 6A.</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <p align="center"> 
+		<img src="/greenhouse/images/mains_switchover/change_over_relay.png" alt="drawing" width="300px"/>
+	</p>
+    </div>
+  <div class="col">
+     <p align="center"> 
+		<img src="/greenhouse/images/mains_switchover/interface_relay_wiring.png" alt="drawing" width="300px"/>
+	</p>
+  </div>
+</div>
+</div>
+<p><strong>Time Delay Relay</strong></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      The <a href="https://www.geya.net/product/single-function-time-relay-grt8-b1/" target="_blank">GRT8-B1</a> is a 24V time delay relay that can be configured to delay up to 10 days with a reset function.
+    </div>
+    <div class="col">
+      <p align="center">
+        <img src="/greenhouse/images/mains_switchover/time_delay_Relay.jpg" alt="Time Delay Relay" width="300"/>
+      </p>
+    </div>
+  </div>
+</div>
+<p><strong>Victron Inverter</strong></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      The pumps require 150W of power so I have chosen the <a href="https://www.12voltplanet.co.uk/victron-energy-phoenix-pure-sine-wave-inverter-24v-375va-vedirect-enabled.html?srsltid=AfmBOoqnb53QjVgjuPILJef0MEc9qZr6HiRMyV2cSwMxgBe4dQrV1NCN" target="_blank">Victron 24V 375VA Inverter</a> despite there being a 250VA version available to better future proof the design.
+    </div>
+    <div class="col">
+		<p align="center"> 
+		<img src="/greenhouse/images/mains_switchover/victron_inverter_375va.jpg" alt="drawing" width="500"/>
+		</p>
+    </div>
+  </div>
+</div>
+<p><strong>Battery Protect</strong></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+     	The Victron Battery Protect automatically disconnects loads when the system voltage drops below a programmable threshold. At 20% state of charge, the 12V170FS battery has a cell voltage of 2.00V that results in a total system voltage of 24V. This corresponds to Program 8 in the datasheet which will disconnect at 24V and reconnect once the system voltage rises to 26V. I’ve included a time delay relay because the MPPT charge controller from the solar system applies a daily boost voltage to the battery, which could falsely indicate that the battery is fully charged.
+    </div>
+    <div class="col">
+		<p align="center"> 
+		<img src="/greenhouse/images/mains_switchover/batteryprotect-12-24v-65a.jpg" alt="drawing" width="500"/>
+		</p>
+    </div>
+  </div>
+</div>
+<h1 id="bom">BOM</h1>
+<table>
+  <thead>
+      <tr>
+          <th>Part Number</th>
+          <th>Description</th>
+          <th>Manufacturer</th>
+          <th>Supplier</th>
+          <th>Cost (£)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2903320</td>
+          <td>Interface Relay</td>
+          <td>Phoenix Contact</td>
+          <td>RS</td>
+          <td>13.26</td>
+      </tr>
+      <tr>
+          <td>GRT8-B1</td>
+          <td>Time Delay Relay</td>
+          <td>Geya</td>
+          <td>Amazon</td>
+          <td>15.19</td>
+      </tr>
+      <tr>
+          <td>Phoenix Pure Sine Wave Inverter - 24V 375VA</td>
+          <td>Inverter</td>
+          <td>Victron</td>
+          <td>12V Planet</td>
+          <td>107.14</td>
+      </tr>
+      <tr>
+          <td>Smart Battery Protect 12/24V - 65A</td>
+          <td>Battery Protect</td>
+          <td>Victron</td>
+          <td>12V Planet</td>
+          <td>46.18</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><strong>181.77</strong></td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="wiring-diagram">Wiring Diagram</h1>
+<p align="center"> 
+<img src="/greenhouse/images/mains_switchover/SLD.png" alt="drawing" width="900"/>
+</p>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </main>
+
+    </div>
+    
+<script src="http://localhost:63700/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>   
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>   
+  </body>
+</html>

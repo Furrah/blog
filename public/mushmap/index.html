@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63700&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="generator" content="Hugo 0.89.4" />
+  <meta name="generator" content="Hugo 0.139.3">
   
-  <link rel="stylesheet" href="https://mybrainhertz.co.uk/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:63700/css/bootstrap.min.css">
   
   
   <title>Mushroom Map</title>
   <style>
 .container {
-  max-width: 900px;
+  max-width: 910px;
 }
 #nav a {
   font-weight: bold;
@@ -50,19 +50,37 @@ img {
 
  
 
+#home-page a {
+  color: #282829;
+}
 
 a {
   color: #007bff;
+ 
  }  
 
 
+ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
 
 
 
-td, th {
-    border: 1px solid grey;
-    padding: 10px;
-}
+
 
 @media (min-width: 34em) {
     .card-columns {
@@ -107,7 +125,8 @@ code {
 }
 .card{
   border-radius: 10px;
-
+ 
+ 
 }
 
  
@@ -140,8 +159,19 @@ div.highlight {
 }
 
 
+body {
 
+  background-color: #FFFFFF ;
+}
 
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
 
 
 </style>
@@ -181,18 +211,20 @@ div.highlight {
 
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-177014444-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
@@ -230,7 +262,7 @@ if (!doNotTrack) {
    
     
     
-    <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
   
 
 
@@ -257,56 +289,177 @@ if (!doNotTrack) {
 <div id="map"></div>
 <style> #map { height: 800px; }</style>
 <script>
+    var map;
+    var marker;
 
+    function readFile(file) {
+        var f = new XMLHttpRequest();
+        f.open("GET", file, false);
+        f.onreadystatechange = function() {
+            if (f.readyState === 4 && f.status == 200) {
+                var res = f.responseText;
+                valueCallBack(res);
+            }
+        };
+        f.send(null);
+    }
 
-function readFile(file)
-{
-    var f = new XMLHttpRequest();
-    f.open("GET", file, false);
-    f.onreadystatechange = function()
-    {
-        if(f.readyState === 4 && f.status == 200) // 4 == DONE
-        {
-            var res= f.responseText;
-            valueCallBack(res)   
+    readFile('/docs/mushroom_data.txt');
+
+    function updateMarker() {
+        // Get current location
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                // Update marker position
+                marker.setLatLng(pos);
+                // map.panTo(pos);
+            }, function() {
+                // Handle errors, e.g., user denied location access
+                console.error('Error: The Geolocation service failed.');
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            console.error('Error: Your browser doesn\'t support geolocation.');
         }
     }
-    f.send(null);
-}
-
-readFile('/docs/mushroom_data.txt');
-
-function valueCallBack(res){
 
 
-	var map = L.map('map').setView([51.71851, -1.25758], 15);
+    function valueCallBack(res){
+        map = L.map('map').setView([51.71851, -1.25758], 15);
 
-	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 22, // was 19 
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	}).addTo(map);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 22,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
 
-	res = (res.split("\n"));
+        res = res.split("\n");
 
-	for (let i = 1; i < res.length -1; i++) {
-		var fungi = res[i].split(',');
+        for (let i = 1; i < res.length -1; i++) {
+            let fungi = res[i].split(',');
 
-		// var markerB = L.marker([fungi[3], fungi[4]], {title: "This is a title"})
-        var marker = L.marker([fungi[3], fungi[4]])
-			.addTo(map)
-			.bindPopup("<H3>" +fungi[0] + "</><img src=" + '/' + fungi[1] + "/>",{minWidth: 300})
-			.on('mouseover', function (e) {this.openPopup()})
-			.on('mouseout', function (e) {this.closePopup()});
-	}
-    L.control.scale().addTo(map);
+            let marker = L.marker([fungi[3], fungi[4]])
+                .addTo(map)
+                .bindPopup("<h3>" + fungi[0] + "</h3>", {minWidth: 300 });
 
-}
+            let imageUrl = '/' + fungi[1];
 
-
-</script><blockquote>
-</blockquote>
+            marker.on('mouseover', (function (marker, imageUrl, mushroomName) {
+                return function (e) {
+                    loadAndShowImage(marker, imageUrl, mushroomName);
+                    this.openPopup();
+                };
+            })(marker, imageUrl, fungi[0])); // fungi[0] contains the name of the mushroom
 
 
+            marker.on('mouseout', function (e) {
+                this.closePopup();
+            });
+
+            marker.options.imageUrl = imageUrl; // Store image URL in marker options
+        }
+        L.control.scale().addTo(map);
+    }
+
+    function loadAndShowImage(marker, imageUrl, mushroomName) {
+        var img = new Image();
+        img.src = imageUrl;
+        img.onload = function() {
+            var popupContent = '<div style="pointer-events: auto;"><h4>' + mushroomName + '</h4><img src="' + imageUrl + '" /></div>';
+            marker.getPopup().setContent(popupContent);
+            marker.getPopup().update(); // Explicitly update popup content
+        };
+    }
+</script>
+<!-- remember to comment this out if other version is preferred. -->
+<!-- This version of the script creates a panel below where the image of the mushroom is displayed. -->
+<!-- <div id="image-panel"></div> 
+
+<script>
+    var map;
+    var imagePanel = document.getElementById('image-panel');
+
+    function readFile(file) {
+        var f = new XMLHttpRequest();
+        f.open("GET", file, false);
+        f.onreadystatechange = function() {
+            if (f.readyState === 4 && f.status == 200) {
+                var res = f.responseText;
+                valueCallBack(res);
+            }
+        };
+        f.send(null);
+    }
+
+    readFile('/docs/mushroom_data.txt');
+
+    function valueCallBack(res){
+        map = L.map('map').setView([51.71851, -1.25758], 15);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 22,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        res = res.split("\n");
+
+        for (let i = 1; i < res.length -1; i++) {
+            let fungi = res[i].split(',');
+
+            let marker = L.marker([fungi[3], fungi[4]])
+                .addTo(map)
+                .bindPopup("<h3>" + fungi[0] + "</h3>", {minWidth: 300 });
+
+            let imageUrl = '/' + fungi[1];
+
+            marker.on('click', function (e) {
+                showImageInPanel(fungi[0], imageUrl); // Display image in panel on marker click
+            });
+
+            marker.options.imageUrl = imageUrl; // Store image URL in marker options
+        }
+        L.control.scale().addTo(map);
+    }
+
+    function showImageInPanel(mushroomName, imageUrl) {
+        var img = new Image();
+        img.src = imageUrl;
+        img.onload = function() {
+            var imageElement = document.createElement('img');
+            imageElement.src = imageUrl;
+            imageElement.style.width = '30%';
+            imagePanel.innerHTML = ''; // Clear previous content
+            imagePanel.appendChild(imageElement); // Add image to panel
+            var heading = document.createElement('h3');
+            heading.textContent = mushroomName;
+            imagePanel.insertBefore(heading, imagePanel.firstChild); // Add mushroom name above the image
+        };
+    }
+</script> -->
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 
@@ -314,7 +467,7 @@ function valueCallBack(res){
 
     </div>
     
-<script src="https://mybrainhertz.co.uk/js/feather.min.js"></script>
+<script src="http://localhost:63700/js/feather.min.js"></script>
 <script>
   feather.replace()
 </script>   

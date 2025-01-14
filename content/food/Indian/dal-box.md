@@ -23,7 +23,7 @@ This is inspired by the Helm Ston Cafe in Brighton which is bloody brilliant and
 * 0.5 tsp of turmeric - don't go crazy with it! 
 * 2 tsp medium curry powder
 * 2 tsp tomato paste 
-* 100g red lentils 
+* 150g red lentils 
 * 1 400g can coconut milk 
 * 2 vine tomato - chopped (optional)
 
@@ -33,7 +33,7 @@ This is inspired by the Helm Ston Cafe in Brighton which is bloody brilliant and
 1. Fry onion in oil until golden - 8 mins 
 2. Add ginger, garlic, chilli - 2 mins 
 3. Add spices, tomato paste, lentils - 1 min 
-4. Add coconut milk, 600ml water, tomato. Bring to boil and then reduce to simmer - 20-30 mins. Add more water if needed.
+4. Add coconut milk, 400ml water, tomato. Bring to boil and then reduce to simmer - 20-30 mins. Add more water if needed.
 
 ## To serve 
 

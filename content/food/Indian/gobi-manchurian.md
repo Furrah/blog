@@ -78,7 +78,6 @@ If you want to make Gobi Manchurian with gravy: add 1 cup water to the sauce. af
 
 Add the cornstarch slurry to the gravy and stir. Let it simmer for a minute or two, the gravy will thicken. Add florets and serve.
 
-## Picture
 <p align="center"> 
 <img src="/food/images/IMG_1123-2.jpg" alt="drawing" width="80%"/>
 </p>
