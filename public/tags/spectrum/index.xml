@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spectrum on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:64271/tags/spectrum/</link>
+    <link>http://localhost:1313/tags/spectrum/</link>
     <description>Recent content in Spectrum on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Oct 2019 19:04:09 +0100</lastBuildDate>
-    <atom:link href="http://localhost:64271/tags/spectrum/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/spectrum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comparison of Integrated Noise Spectrum of JFET and BJT input Operational Amplifiers</title>
-      <link>http://localhost:64271/integrated-noise-spectrum/</link>
+      <link>http://localhost:1313/integrated-noise-spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/integrated-noise-spectrum/</guid>
-      <description>&lt;p&gt;Reference material: &lt;a href=https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf target=&#34;_blank&#34;&gt;Texas Instruments - Op Amp Technical Overview&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:64271/electronics/images/JFET-vs-BJT-flicker-noise.png&#34; alt=&#34;Noise&#34;&gt;&lt;/p&gt;&#xA;&lt;p style=&#34;text-align: center;&#34;&gt; *Figure1 - CMOS, BJT, and JFET flicker noise*&lt;/p&gt;</description>
+      <guid>http://localhost:1313/integrated-noise-spectrum/</guid>
+      <description>&lt;p&gt;Reference material: &lt;a href=https://training.ti.com/sites/default/files/docs/Op%20Amp%20Tech%20Overview_0.pdf target=&#34;_blank&#34;&gt;Texas Instruments - Op Amp Technical Overview&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;When developing precision DC systems BJT transistors are the way to go. Be careful when selecting an op amp based on its datasheet noise characteristics. At DC we are interested in the 1/f noise, which as the name suggests increases as we approach DC. an example is shown below comparing the JFET input OPA827 and the BJT input OPA227.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/electronics/images/JFET-vs-BJT-flicker-noise.png&#34; alt=&#34;Noise&#34;&gt;&lt;/p&gt;&#xA;&lt;p style=&#34;text-align: center;&#34;&gt; *Figure1 - CMOS, BJT, and JFET flicker noise*&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

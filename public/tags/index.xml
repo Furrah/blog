@@ -2,514 +2,514 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:64271/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Dec 2019 11:23:58 +0100</lastBuildDate>
-    <atom:link href="http://localhost:64271/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AD5627</title>
-      <link>http://localhost:64271/tags/ad5627/</link>
+      <link>http://localhost:1313/tags/ad5627/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      <guid>http://localhost:64271/tags/ad5627/</guid>
+      <guid>http://localhost:1313/tags/ad5627/</guid>
       <description></description>
     </item>
     <item>
       <title>DAC</title>
-      <link>http://localhost:64271/tags/dac/</link>
+      <link>http://localhost:1313/tags/dac/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      <guid>http://localhost:64271/tags/dac/</guid>
+      <guid>http://localhost:1313/tags/dac/</guid>
       <description></description>
     </item>
     <item>
       <title>Level Shifting</title>
-      <link>http://localhost:64271/tags/level-shifting/</link>
+      <link>http://localhost:1313/tags/level-shifting/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      <guid>http://localhost:64271/tags/level-shifting/</guid>
+      <guid>http://localhost:1313/tags/level-shifting/</guid>
       <description></description>
     </item>
     <item>
       <title>Design</title>
-      <link>http://localhost:64271/tags/design/</link>
+      <link>http://localhost:1313/tags/design/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      <guid>http://localhost:64271/tags/design/</guid>
+      <guid>http://localhost:1313/tags/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Differential</title>
-      <link>http://localhost:64271/tags/differential/</link>
+      <link>http://localhost:1313/tags/differential/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      <guid>http://localhost:64271/tags/differential/</guid>
+      <guid>http://localhost:1313/tags/differential/</guid>
       <description></description>
     </item>
     <item>
       <title>ESD</title>
-      <link>http://localhost:64271/tags/esd/</link>
+      <link>http://localhost:1313/tags/esd/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      <guid>http://localhost:64271/tags/esd/</guid>
+      <guid>http://localhost:1313/tags/esd/</guid>
       <description></description>
     </item>
     <item>
       <title>Guide</title>
-      <link>http://localhost:64271/tags/guide/</link>
+      <link>http://localhost:1313/tags/guide/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      <guid>http://localhost:64271/tags/guide/</guid>
+      <guid>http://localhost:1313/tags/guide/</guid>
       <description></description>
     </item>
     <item>
       <title>Microstrip</title>
-      <link>http://localhost:64271/tags/microstrip/</link>
+      <link>http://localhost:1313/tags/microstrip/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      <guid>http://localhost:64271/tags/microstrip/</guid>
+      <guid>http://localhost:1313/tags/microstrip/</guid>
       <description></description>
     </item>
     <item>
       <title>Single-Ended</title>
-      <link>http://localhost:64271/tags/single-ended/</link>
+      <link>http://localhost:1313/tags/single-ended/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      <guid>http://localhost:64271/tags/single-ended/</guid>
+      <guid>http://localhost:1313/tags/single-ended/</guid>
       <description></description>
     </item>
     <item>
       <title>USB</title>
-      <link>http://localhost:64271/tags/usb/</link>
+      <link>http://localhost:1313/tags/usb/</link>
       <pubDate>Sat, 30 Nov 2019 12:59:24 +0100</pubDate>
-      <guid>http://localhost:64271/tags/usb/</guid>
+      <guid>http://localhost:1313/tags/usb/</guid>
       <description></description>
     </item>
     <item>
       <title>ADA4096</title>
-      <link>http://localhost:64271/tags/ada4096/</link>
+      <link>http://localhost:1313/tags/ada4096/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/tags/ada4096/</guid>
+      <guid>http://localhost:1313/tags/ada4096/</guid>
       <description></description>
     </item>
     <item>
       <title>ADC</title>
-      <link>http://localhost:64271/tags/adc/</link>
+      <link>http://localhost:1313/tags/adc/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/tags/adc/</guid>
+      <guid>http://localhost:1313/tags/adc/</guid>
       <description></description>
     </item>
     <item>
       <title>LTC2990</title>
-      <link>http://localhost:64271/tags/ltc2990/</link>
+      <link>http://localhost:1313/tags/ltc2990/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/tags/ltc2990/</guid>
+      <guid>http://localhost:1313/tags/ltc2990/</guid>
       <description></description>
     </item>
     <item>
       <title>Monitoring</title>
-      <link>http://localhost:64271/tags/monitoring/</link>
+      <link>http://localhost:1313/tags/monitoring/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/tags/monitoring/</guid>
+      <guid>http://localhost:1313/tags/monitoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Op Amps</title>
-      <link>http://localhost:64271/tags/op-amps/</link>
+      <link>http://localhost:1313/tags/op-amps/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/tags/op-amps/</guid>
+      <guid>http://localhost:1313/tags/op-amps/</guid>
       <description></description>
     </item>
     <item>
       <title>Power</title>
-      <link>http://localhost:64271/tags/power/</link>
+      <link>http://localhost:1313/tags/power/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/tags/power/</guid>
+      <guid>http://localhost:1313/tags/power/</guid>
       <description></description>
     </item>
     <item>
       <title>Supply</title>
-      <link>http://localhost:64271/tags/supply/</link>
+      <link>http://localhost:1313/tags/supply/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/tags/supply/</guid>
+      <guid>http://localhost:1313/tags/supply/</guid>
       <description></description>
     </item>
     <item>
       <title>Buffer</title>
-      <link>http://localhost:64271/tags/buffer/</link>
+      <link>http://localhost:1313/tags/buffer/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      <guid>http://localhost:64271/tags/buffer/</guid>
+      <guid>http://localhost:1313/tags/buffer/</guid>
       <description></description>
     </item>
     <item>
       <title>Gates</title>
-      <link>http://localhost:64271/tags/gates/</link>
+      <link>http://localhost:1313/tags/gates/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      <guid>http://localhost:64271/tags/gates/</guid>
+      <guid>http://localhost:1313/tags/gates/</guid>
       <description></description>
     </item>
     <item>
       <title>Inverter</title>
-      <link>http://localhost:64271/tags/inverter/</link>
+      <link>http://localhost:1313/tags/inverter/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      <guid>http://localhost:64271/tags/inverter/</guid>
+      <guid>http://localhost:1313/tags/inverter/</guid>
       <description></description>
     </item>
     <item>
       <title>Logic</title>
-      <link>http://localhost:64271/tags/logic/</link>
+      <link>http://localhost:1313/tags/logic/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      <guid>http://localhost:64271/tags/logic/</guid>
+      <guid>http://localhost:1313/tags/logic/</guid>
       <description></description>
     </item>
     <item>
       <title>XOR</title>
-      <link>http://localhost:64271/tags/xor/</link>
+      <link>http://localhost:1313/tags/xor/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      <guid>http://localhost:64271/tags/xor/</guid>
+      <guid>http://localhost:1313/tags/xor/</guid>
       <description></description>
     </item>
     <item>
       <title>Aubergine</title>
-      <link>http://localhost:64271/tags/aubergine/</link>
+      <link>http://localhost:1313/tags/aubergine/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      <guid>http://localhost:64271/tags/aubergine/</guid>
+      <guid>http://localhost:1313/tags/aubergine/</guid>
       <description></description>
     </item>
     <item>
       <title>Curry</title>
-      <link>http://localhost:64271/tags/curry/</link>
+      <link>http://localhost:1313/tags/curry/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      <guid>http://localhost:64271/tags/curry/</guid>
+      <guid>http://localhost:1313/tags/curry/</guid>
       <description></description>
     </item>
     <item>
       <title>Indian</title>
-      <link>http://localhost:64271/tags/indian/</link>
+      <link>http://localhost:1313/tags/indian/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      <guid>http://localhost:64271/tags/indian/</guid>
+      <guid>http://localhost:1313/tags/indian/</guid>
       <description></description>
     </item>
     <item>
       <title>Tamarind</title>
-      <link>http://localhost:64271/tags/tamarind/</link>
+      <link>http://localhost:1313/tags/tamarind/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      <guid>http://localhost:64271/tags/tamarind/</guid>
+      <guid>http://localhost:1313/tags/tamarind/</guid>
       <description></description>
     </item>
     <item>
       <title>Tomato</title>
-      <link>http://localhost:64271/tags/tomato/</link>
+      <link>http://localhost:1313/tags/tomato/</link>
       <pubDate>Tue, 19 Nov 2019 00:05:54 +0100</pubDate>
-      <guid>http://localhost:64271/tags/tomato/</guid>
+      <guid>http://localhost:1313/tags/tomato/</guid>
       <description></description>
     </item>
     <item>
       <title>Eggs</title>
-      <link>http://localhost:64271/tags/eggs/</link>
+      <link>http://localhost:1313/tags/eggs/</link>
       <pubDate>Mon, 18 Nov 2019 19:21:08 +0100</pubDate>
-      <guid>http://localhost:64271/tags/eggs/</guid>
+      <guid>http://localhost:1313/tags/eggs/</guid>
       <description></description>
     </item>
     <item>
       <title>Bhuna</title>
-      <link>http://localhost:64271/tags/bhuna/</link>
+      <link>http://localhost:1313/tags/bhuna/</link>
       <pubDate>Mon, 04 Nov 2019 21:42:02 +0100</pubDate>
-      <guid>http://localhost:64271/tags/bhuna/</guid>
+      <guid>http://localhost:1313/tags/bhuna/</guid>
       <description></description>
     </item>
     <item>
       <title>Egg</title>
-      <link>http://localhost:64271/tags/egg/</link>
+      <link>http://localhost:1313/tags/egg/</link>
       <pubDate>Mon, 04 Nov 2019 21:42:02 +0100</pubDate>
-      <guid>http://localhost:64271/tags/egg/</guid>
+      <guid>http://localhost:1313/tags/egg/</guid>
       <description></description>
     </item>
     <item>
       <title>Broccoli</title>
-      <link>http://localhost:64271/tags/broccoli/</link>
+      <link>http://localhost:1313/tags/broccoli/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      <guid>http://localhost:64271/tags/broccoli/</guid>
+      <guid>http://localhost:1313/tags/broccoli/</guid>
       <description></description>
     </item>
     <item>
       <title>Cous Cous</title>
-      <link>http://localhost:64271/tags/cous-cous/</link>
+      <link>http://localhost:1313/tags/cous-cous/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      <guid>http://localhost:64271/tags/cous-cous/</guid>
+      <guid>http://localhost:1313/tags/cous-cous/</guid>
       <description></description>
     </item>
     <item>
       <title>Halloumi</title>
-      <link>http://localhost:64271/tags/halloumi/</link>
+      <link>http://localhost:1313/tags/halloumi/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      <guid>http://localhost:64271/tags/halloumi/</guid>
+      <guid>http://localhost:1313/tags/halloumi/</guid>
       <description></description>
     </item>
     <item>
       <title>Middle East</title>
-      <link>http://localhost:64271/tags/middle-east/</link>
+      <link>http://localhost:1313/tags/middle-east/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      <guid>http://localhost:64271/tags/middle-east/</guid>
+      <guid>http://localhost:1313/tags/middle-east/</guid>
       <description></description>
     </item>
     <item>
       <title>Parsley</title>
-      <link>http://localhost:64271/tags/parsley/</link>
+      <link>http://localhost:1313/tags/parsley/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:18 +0100</pubDate>
-      <guid>http://localhost:64271/tags/parsley/</guid>
+      <guid>http://localhost:1313/tags/parsley/</guid>
       <description></description>
     </item>
     <item>
       <title>Baking</title>
-      <link>http://localhost:64271/tags/baking/</link>
+      <link>http://localhost:1313/tags/baking/</link>
       <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
-      <guid>http://localhost:64271/tags/baking/</guid>
+      <guid>http://localhost:1313/tags/baking/</guid>
       <description></description>
     </item>
     <item>
       <title>Flapjack</title>
-      <link>http://localhost:64271/tags/flapjack/</link>
+      <link>http://localhost:1313/tags/flapjack/</link>
       <pubDate>Sun, 03 Nov 2019 14:09:17 +0100</pubDate>
-      <guid>http://localhost:64271/tags/flapjack/</guid>
+      <guid>http://localhost:1313/tags/flapjack/</guid>
       <description></description>
     </item>
     <item>
       <title>Adjustment</title>
-      <link>http://localhost:64271/tags/adjustment/</link>
+      <link>http://localhost:1313/tags/adjustment/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/tags/adjustment/</guid>
+      <guid>http://localhost:1313/tags/adjustment/</guid>
       <description></description>
     </item>
     <item>
       <title>Amplifier</title>
-      <link>http://localhost:64271/tags/amplifier/</link>
+      <link>http://localhost:1313/tags/amplifier/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/tags/amplifier/</guid>
+      <guid>http://localhost:1313/tags/amplifier/</guid>
       <description></description>
     </item>
     <item>
       <title>Basics</title>
-      <link>http://localhost:64271/tags/basics/</link>
+      <link>http://localhost:1313/tags/basics/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/tags/basics/</guid>
+      <guid>http://localhost:1313/tags/basics/</guid>
       <description></description>
     </item>
     <item>
       <title>Gain</title>
-      <link>http://localhost:64271/tags/gain/</link>
+      <link>http://localhost:1313/tags/gain/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/tags/gain/</guid>
+      <guid>http://localhost:1313/tags/gain/</guid>
       <description></description>
     </item>
     <item>
       <title>Op Amp</title>
-      <link>http://localhost:64271/tags/op-amp/</link>
+      <link>http://localhost:1313/tags/op-amp/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/tags/op-amp/</guid>
+      <guid>http://localhost:1313/tags/op-amp/</guid>
       <description></description>
     </item>
     <item>
       <title>Operational</title>
-      <link>http://localhost:64271/tags/operational/</link>
+      <link>http://localhost:1313/tags/operational/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/tags/operational/</guid>
+      <guid>http://localhost:1313/tags/operational/</guid>
       <description></description>
     </item>
     <item>
       <title>Chinese</title>
-      <link>http://localhost:64271/tags/chinese/</link>
+      <link>http://localhost:1313/tags/chinese/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      <guid>http://localhost:64271/tags/chinese/</guid>
+      <guid>http://localhost:1313/tags/chinese/</guid>
       <description></description>
     </item>
     <item>
       <title>Garlic</title>
-      <link>http://localhost:64271/tags/garlic/</link>
+      <link>http://localhost:1313/tags/garlic/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      <guid>http://localhost:64271/tags/garlic/</guid>
+      <guid>http://localhost:1313/tags/garlic/</guid>
       <description></description>
     </item>
     <item>
       <title>Sauce</title>
-      <link>http://localhost:64271/tags/sauce/</link>
+      <link>http://localhost:1313/tags/sauce/</link>
       <pubDate>Mon, 28 Oct 2019 19:45:27 +0100</pubDate>
-      <guid>http://localhost:64271/tags/sauce/</guid>
+      <guid>http://localhost:1313/tags/sauce/</guid>
       <description></description>
     </item>
     <item>
       <title>Butter</title>
-      <link>http://localhost:64271/tags/butter/</link>
+      <link>http://localhost:1313/tags/butter/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      <guid>http://localhost:64271/tags/butter/</guid>
+      <guid>http://localhost:1313/tags/butter/</guid>
       <description></description>
     </item>
     <item>
       <title>Food</title>
-      <link>http://localhost:64271/tags/food/</link>
+      <link>http://localhost:1313/tags/food/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      <guid>http://localhost:64271/tags/food/</guid>
+      <guid>http://localhost:1313/tags/food/</guid>
       <description></description>
     </item>
     <item>
       <title>Makhani</title>
-      <link>http://localhost:64271/tags/makhani/</link>
+      <link>http://localhost:1313/tags/makhani/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      <guid>http://localhost:64271/tags/makhani/</guid>
+      <guid>http://localhost:1313/tags/makhani/</guid>
       <description></description>
     </item>
     <item>
       <title>Murgh</title>
-      <link>http://localhost:64271/tags/murgh/</link>
+      <link>http://localhost:1313/tags/murgh/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      <guid>http://localhost:64271/tags/murgh/</guid>
+      <guid>http://localhost:1313/tags/murgh/</guid>
       <description></description>
     </item>
     <item>
       <title>Tofu</title>
-      <link>http://localhost:64271/tags/tofu/</link>
+      <link>http://localhost:1313/tags/tofu/</link>
       <pubDate>Mon, 28 Oct 2019 19:28:56 +0100</pubDate>
-      <guid>http://localhost:64271/tags/tofu/</guid>
+      <guid>http://localhost:1313/tags/tofu/</guid>
       <description></description>
     </item>
     <item>
       <title>Falafel</title>
-      <link>http://localhost:64271/tags/falafel/</link>
+      <link>http://localhost:1313/tags/falafel/</link>
       <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
-      <guid>http://localhost:64271/tags/falafel/</guid>
+      <guid>http://localhost:1313/tags/falafel/</guid>
       <description></description>
     </item>
     <item>
       <title>Wraps</title>
-      <link>http://localhost:64271/tags/wraps/</link>
+      <link>http://localhost:1313/tags/wraps/</link>
       <pubDate>Sun, 27 Oct 2019 23:00:57 +0100</pubDate>
-      <guid>http://localhost:64271/tags/wraps/</guid>
+      <guid>http://localhost:1313/tags/wraps/</guid>
       <description></description>
     </item>
     <item>
       <title>FPGA</title>
-      <link>http://localhost:64271/tags/fpga/</link>
+      <link>http://localhost:1313/tags/fpga/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      <guid>http://localhost:64271/tags/fpga/</guid>
+      <guid>http://localhost:1313/tags/fpga/</guid>
       <description></description>
     </item>
     <item>
       <title>I2C</title>
-      <link>http://localhost:64271/tags/i2c/</link>
+      <link>http://localhost:1313/tags/i2c/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      <guid>http://localhost:64271/tags/i2c/</guid>
+      <guid>http://localhost:1313/tags/i2c/</guid>
       <description></description>
     </item>
     <item>
       <title>Interface</title>
-      <link>http://localhost:64271/tags/interface/</link>
+      <link>http://localhost:1313/tags/interface/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      <guid>http://localhost:64271/tags/interface/</guid>
+      <guid>http://localhost:1313/tags/interface/</guid>
       <description></description>
     </item>
     <item>
       <title>Verilog</title>
-      <link>http://localhost:64271/tags/verilog/</link>
+      <link>http://localhost:1313/tags/verilog/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      <guid>http://localhost:64271/tags/verilog/</guid>
+      <guid>http://localhost:1313/tags/verilog/</guid>
       <description></description>
     </item>
     <item>
       <title>VHDL</title>
-      <link>http://localhost:64271/tags/vhdl/</link>
+      <link>http://localhost:1313/tags/vhdl/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      <guid>http://localhost:64271/tags/vhdl/</guid>
+      <guid>http://localhost:1313/tags/vhdl/</guid>
       <description></description>
     </item>
     <item>
       <title>Wishbone</title>
-      <link>http://localhost:64271/tags/wishbone/</link>
+      <link>http://localhost:1313/tags/wishbone/</link>
       <pubDate>Sun, 27 Oct 2019 20:04:40 +0100</pubDate>
-      <guid>http://localhost:64271/tags/wishbone/</guid>
+      <guid>http://localhost:1313/tags/wishbone/</guid>
       <description></description>
     </item>
     <item>
       <title>BJT</title>
-      <link>http://localhost:64271/tags/bjt/</link>
+      <link>http://localhost:1313/tags/bjt/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/bjt/</guid>
+      <guid>http://localhost:1313/tags/bjt/</guid>
       <description></description>
     </item>
     <item>
       <title>DC</title>
-      <link>http://localhost:64271/tags/dc/</link>
+      <link>http://localhost:1313/tags/dc/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/dc/</guid>
+      <guid>http://localhost:1313/tags/dc/</guid>
       <description></description>
     </item>
     <item>
       <title>Integrated</title>
-      <link>http://localhost:64271/tags/integrated/</link>
+      <link>http://localhost:1313/tags/integrated/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/integrated/</guid>
+      <guid>http://localhost:1313/tags/integrated/</guid>
       <description></description>
     </item>
     <item>
       <title>JFET</title>
-      <link>http://localhost:64271/tags/jfet/</link>
+      <link>http://localhost:1313/tags/jfet/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/jfet/</guid>
+      <guid>http://localhost:1313/tags/jfet/</guid>
       <description></description>
     </item>
     <item>
       <title>Noise</title>
-      <link>http://localhost:64271/tags/noise/</link>
+      <link>http://localhost:1313/tags/noise/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/noise/</guid>
+      <guid>http://localhost:1313/tags/noise/</guid>
       <description></description>
     </item>
     <item>
       <title>OPA227</title>
-      <link>http://localhost:64271/tags/opa227/</link>
+      <link>http://localhost:1313/tags/opa227/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/opa227/</guid>
+      <guid>http://localhost:1313/tags/opa227/</guid>
       <description></description>
     </item>
     <item>
       <title>Opamps</title>
-      <link>http://localhost:64271/tags/opamps/</link>
+      <link>http://localhost:1313/tags/opamps/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/opamps/</guid>
+      <guid>http://localhost:1313/tags/opamps/</guid>
       <description></description>
     </item>
     <item>
       <title>Spectrum</title>
-      <link>http://localhost:64271/tags/spectrum/</link>
+      <link>http://localhost:1313/tags/spectrum/</link>
       <pubDate>Sun, 27 Oct 2019 19:04:09 +0100</pubDate>
-      <guid>http://localhost:64271/tags/spectrum/</guid>
+      <guid>http://localhost:1313/tags/spectrum/</guid>
       <description></description>
     </item>
     <item>
       <title>Josh</title>
-      <link>http://localhost:64271/tags/josh/</link>
+      <link>http://localhost:1313/tags/josh/</link>
       <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
-      <guid>http://localhost:64271/tags/josh/</guid>
+      <guid>http://localhost:1313/tags/josh/</guid>
       <description></description>
     </item>
     <item>
       <title>Rogan</title>
-      <link>http://localhost:64271/tags/rogan/</link>
+      <link>http://localhost:1313/tags/rogan/</link>
       <pubDate>Sun, 27 Oct 2019 16:15:25 +0100</pubDate>
-      <guid>http://localhost:64271/tags/rogan/</guid>
+      <guid>http://localhost:1313/tags/rogan/</guid>
       <description></description>
     </item>
     <item>
       <title>Coconut</title>
-      <link>http://localhost:64271/tags/coconut/</link>
+      <link>http://localhost:1313/tags/coconut/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
-      <guid>http://localhost:64271/tags/coconut/</guid>
+      <guid>http://localhost:1313/tags/coconut/</guid>
       <description></description>
     </item>
     <item>
       <title>Creamy</title>
-      <link>http://localhost:64271/tags/creamy/</link>
+      <link>http://localhost:1313/tags/creamy/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
-      <guid>http://localhost:64271/tags/creamy/</guid>
+      <guid>http://localhost:1313/tags/creamy/</guid>
       <description></description>
     </item>
     <item>
       <title>Lentil</title>
-      <link>http://localhost:64271/tags/lentil/</link>
+      <link>http://localhost:1313/tags/lentil/</link>
       <pubDate>Sun, 27 Oct 2019 15:08:04 +0100</pubDate>
-      <guid>http://localhost:64271/tags/lentil/</guid>
+      <guid>http://localhost:1313/tags/lentil/</guid>
       <description></description>
     </item>
   </channel>

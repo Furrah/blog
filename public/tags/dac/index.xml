@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DAC on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:64271/tags/dac/</link>
+    <link>http://localhost:1313/tags/dac/</link>
     <description>Recent content in DAC on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Dec 2019 11:23:58 +0100</lastBuildDate>
-    <atom:link href="http://localhost:64271/tags/dac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using the AD5627 DAC</title>
-      <link>http://localhost:64271/using-the-ad8627-dac/</link>
+      <link>http://localhost:1313/using-the-ad8627-dac/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      <guid>http://localhost:64271/using-the-ad8627-dac/</guid>
+      <guid>http://localhost:1313/using-the-ad8627-dac/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The&#xA;&lt;a href=https://www.analog.com/media/en/technical-documentation/data-sheets/AD5627R_5647R_5667R_5627_5667.pdf target=&#34;_blank&#34;&gt;AD5627RBRMZ (Datasheet)&lt;/a&gt; is part of a series of 12/14/16 bit nano DACs with an I2C interface.&#xA;The DAC we are interested in is the 12 bit AD5627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V.&lt;/p&gt;&#xA;&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;&#xA;&lt;p&gt;The DAC requires a high I2C level to be 0.8 * Vcc, which is 4V if we are interested in using the full capability of the DAC. In this design the I2C is operating on a 3.3 Volt bus, therefore, a bidirectional I2C level shiter is required.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Precision Op Amp Gain Adjustment with DACs</title>
-      <link>http://localhost:64271/op-amp-gain-adjustment-dac/</link>
+      <link>http://localhost:1313/op-amp-gain-adjustment-dac/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/op-amp-gain-adjustment-dac/</guid>
-      <description>&lt;p&gt;Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;Gain = \frac{R_2}{R_1} + 1&#xA;\end{align}&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:64271/electronics/images/op-amp-non-inv.png&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2. Digital potentiometers are even an option for remote control of the gain. Potentiometers though, give only a coarse adjustment.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/op-amp-gain-adjustment-dac/</guid>
+      <description>&lt;p&gt;Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;Gain = \frac{R_2}{R_1} + 1&#xA;\end{align}&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:1313/electronics/images/op-amp-non-inv.png&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2. Digital potentiometers are even an option for remote control of the gain. Potentiometers though, give only a coarse adjustment.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

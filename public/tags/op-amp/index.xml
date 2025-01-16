@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Op Amp on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:64271/tags/op-amp/</link>
+    <link>http://localhost:1313/tags/op-amp/</link>
     <description>Recent content in Op Amp on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Oct 2019 22:24:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:64271/tags/op-amp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/op-amp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Precision Op Amp Gain Adjustment with DACs</title>
-      <link>http://localhost:64271/op-amp-gain-adjustment-dac/</link>
+      <link>http://localhost:1313/op-amp-gain-adjustment-dac/</link>
       <pubDate>Wed, 30 Oct 2019 22:24:10 +0100</pubDate>
-      <guid>http://localhost:64271/op-amp-gain-adjustment-dac/</guid>
-      <description>&lt;p&gt;Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;Gain = \frac{R_2}{R_1} + 1&#xA;\end{align}&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:64271/electronics/images/op-amp-non-inv.png&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2. Digital potentiometers are even an option for remote control of the gain. Potentiometers though, give only a coarse adjustment.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/op-amp-gain-adjustment-dac/</guid>
+      <description>&lt;p&gt;Basic non-inverting operational amplifier design involves a feedback resistor and a gain resistor. These are shown in the figure below as R2 as the feedback resistor and R1 as the gain resistor. The formula for calculating the gain is;&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;Gain = \frac{R_2}{R_1} + 1&#xA;\end{align}&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:1313/electronics/images/op-amp-non-inv.png&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;It would be nice to adjust the gain of this amplifier. This can be done achieved easily with a potentiometer in place of R1 or R2. Digital potentiometers are even an option for remote control of the gain. Potentiometers though, give only a coarse adjustment.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

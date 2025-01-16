@@ -6,7 +6,7 @@ draft: false
 image: "/food/images/american_beans/IMG_7095.jpeg"
 ---
 
-I don't know if these beans are American but this recipe comes from an American man who may or may not have been a cowboy. He called this recipe his cowboy breakfast! 
+I don't know if these beans are American but this recipe comes from an American man who may or may not have been a cowboy. He called this recipe his cowboy breakfast! Sam and I met him in Pembrokeshire  on our minimoon after getting married! 
 
 This is a super quick meal that goes great on toast with a lil bit of hot sauce. Also goes great with scrambled egg. 
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LTC2990 on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:64271/tags/ltc2990/</link>
+    <link>http://localhost:1313/tags/ltc2990/</link>
     <description>Recent content in LTC2990 on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Nov 2019 23:54:08 +0000</lastBuildDate>
-    <atom:link href="http://localhost:64271/tags/ltc2990/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ltc2990/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Voltage Monitoring</title>
-      <link>http://localhost:64271/voltage-monitring/</link>
+      <link>http://localhost:1313/voltage-monitring/</link>
       <pubDate>Fri, 22 Nov 2019 23:54:08 +0000</pubDate>
-      <guid>http://localhost:64271/voltage-monitring/</guid>
+      <guid>http://localhost:1313/voltage-monitring/</guid>
       <description>&lt;p&gt;The ADA4096 operational amplifier comes in a dual and quad package. Its inputs are protected by overvoltage protection diodes making it a perfect candidate for monitoring voltages, especially when power to the IC could be lost.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4096-2_4096-4.pdf target=&#34;_blank&#34;&gt;ADA4096 Datasheet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The LTC2990 is a Quad I2C voltage, current, and temperature monitor. When used in conjunction with the ADA4096 it makes a simple monitoring interface through I2C.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=https://www.analog.com/media/en/technical-documentation/data-sheets/LTC2990.pdf target=&#34;_blank&#34;&gt;LTC2990 Datasheet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The LTC2990 supply voltages are between 3.3V and 5V so each voltage to be monitored should fall within the range of the chosen supply voltage. The figure below shows a simple circuit to monitor positive and negative voltages. Filtering, although not necessary, adds some stability to the measured voltages. A recommended capacitor is 100nF.&lt;/p&gt;</description>
     </item>
   </channel>

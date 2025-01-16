@@ -6,8 +6,15 @@
     <description>Recent content in Asian on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jan 2025 21:55:50 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 22:06:49 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/food/asian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ramen</title>
+      <link>http://localhost:1313/ramen/</link>
+      <pubDate>Tue, 14 Jan 2025 22:06:49 +0100</pubDate>
+      <guid>http://localhost:1313/ramen/</guid>
+      <description>&lt;p&gt;Sam made ramen the other day and it was bang bang! Here is the recipe she followed/made up. This is just for the soup so add whatever toppings you want&lt;/p&gt;&#xA;&lt;p&gt;In this one we had: Raddish, Tofu, Carrot, Boiled egg, and Spring onion&lt;/p&gt;&#xA;&lt;p&gt;Serves 2&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingredients&#34;&gt;Ingredients&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2 cloves garlic&lt;/li&gt;&#xA;&lt;li&gt;½ tsp ginger (grated)&lt;/li&gt;&#xA;&lt;li&gt;1 shallot&lt;/li&gt;&#xA;&lt;li&gt;1 Tbsp toasted white sesame seeds (and then grounded - except we didnt grind&amp;hellip;)&lt;/li&gt;&#xA;&lt;li&gt;1 Tbsp toasted sesame oil&lt;/li&gt;&#xA;&lt;li&gt;8 rehydrated shiitake mushrooms chopped in slices&lt;/li&gt;&#xA;&lt;li&gt;1 tsp doubanjiang (spicy chili bean paste) (use the non-spicy or spicy type or gluten-free doubanjiang)&lt;/li&gt;&#xA;&lt;li&gt;3 Tbsp miso (most types will work except Saikyo and Hatcho; each type will create a slightly different broth flavor)&lt;/li&gt;&#xA;&lt;li&gt;1 Tbsp sugar&lt;/li&gt;&#xA;&lt;li&gt;1 Tbsp sake or Shaoxing Wine&lt;/li&gt;&#xA;&lt;li&gt;4 cups veg broth/shiitake water. Note: make up 4 cups of liquid total&lt;/li&gt;&#xA;&lt;li&gt;1 tsp salt (to taste)&lt;/li&gt;&#xA;&lt;li&gt;¼ tsp white pepper powder&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For the Ramen Noodles&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Bao Bun</title>
       <link>http://localhost:1313/bao-bun/</link>
