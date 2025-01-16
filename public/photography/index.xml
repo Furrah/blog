@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photography on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:63700/photography/</link>
+    <link>http://localhost:64271/photography/</link>
     <description>Recent content in Photography on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Sep 2022 17:05:46 +0100</lastBuildDate>
-    <atom:link href="http://localhost:63700/photography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64271/photography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Joe&#39;s Birthday Foraging Frenzy</title>
-      <link>http://localhost:63700/foraging/</link>
+      <link>http://localhost:64271/foraging/</link>
       <pubDate>Sun, 11 Sep 2022 17:05:46 +0100</pubDate>
-      <guid>http://localhost:63700/foraging/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt; &#xA;  &lt;img src=&#34;http://localhost:63700/photography/images/Foraging/IMG_8259.jpg&#34; alt=&#34;drawing&#34; width=&#34;1000&#34;/&gt;&#xA;&lt;/p&gt;&#xA;&lt;!-- ## Introduction --&gt;&#xA;&lt;p&gt;For my 30th birthday my friends bought me a day out with the foraging fanatic Fergus Drennan and what a day it was!&#xA;It ran from 08:30 until 22:00 and was rammed full of quirky tastings, information overloads, and fruitful foraging. &lt;!-- feast on facts --&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-park&#34;&gt;The Park&lt;/h2&gt;&#xA;&lt;!-- &lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;      &lt;h3&gt;The Park &lt;/h3&gt; --&gt;&#xA;&lt;p&gt;After meeting at the train station we all piled into three cars and headed down to the park. Fergus sat us down in a circle beside a pond full of mace reed and started removing numerous berries on their branches from his backpack. The question was simple, edible or not? This quickly revealed that we were all very much amateurs but it did bring the hype which grew all day long! Fergus then gave us each a mace reed head and explained that the whole plant was edible throughout the different seasons. In spring, the new shoots can be harvested and taste like leek and if you really want to, the tuber can be cooked and the starch extracted, which is basically potato. Fergus was building up to tell us a story of how he once tried to see how many mace reed heads would be required to fill a duvet, which turned out to be 350, however, this wasn&amp;rsquo;t the story. He had filled the duvet and had been using it for a while when one night the duvet became alive. It turns out that the The mace is a popular nesting spot for a certain moth so, after a couple of nights the eggs hatched and thousands upon thousands of small moth larvae started crawling out of the duvet. CAN YOU IMAGINE THIS?!?!?&lt;/p&gt;</description>
+      <guid>http://localhost:64271/foraging/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt; &#xA;  &lt;img src=&#34;http://localhost:64271/photography/images/Foraging/IMG_8259.jpg&#34; alt=&#34;drawing&#34; width=&#34;1000&#34;/&gt;&#xA;&lt;/p&gt;&#xA;&lt;!-- ## Introduction --&gt;&#xA;&lt;p&gt;For my 30th birthday my friends bought me a day out with the foraging fanatic Fergus Drennan and what a day it was!&#xA;It ran from 08:30 until 22:00 and was rammed full of quirky tastings, information overloads, and fruitful foraging. &lt;!-- feast on facts --&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-park&#34;&gt;The Park&lt;/h2&gt;&#xA;&lt;!-- &lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;      &lt;h3&gt;The Park &lt;/h3&gt; --&gt;&#xA;&lt;p&gt;After meeting at the train station we all piled into three cars and headed down to the park. Fergus sat us down in a circle beside a pond full of mace reed and started removing numerous berries on their branches from his backpack. The question was simple, edible or not? This quickly revealed that we were all very much amateurs but it did bring the hype which grew all day long! Fergus then gave us each a mace reed head and explained that the whole plant was edible throughout the different seasons. In spring, the new shoots can be harvested and taste like leek and if you really want to, the tuber can be cooked and the starch extracted, which is basically potato. Fergus was building up to tell us a story of how he once tried to see how many mace reed heads would be required to fill a duvet, which turned out to be 350, however, this wasn&amp;rsquo;t the story. He had filled the duvet and had been using it for a while when one night the duvet became alive. It turns out that the The mace is a popular nesting spot for a certain moth so, after a couple of nights the eggs hatched and thousands upon thousands of small moth larvae started crawling out of the duvet. CAN YOU IMAGINE THIS?!?!?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zurich</title>
-      <link>http://localhost:63700/zurich/</link>
+      <link>http://localhost:64271/zurich/</link>
       <pubDate>Thu, 30 Jul 2020 23:51:49 +0100</pubDate>
-      <guid>http://localhost:63700/zurich/</guid>
+      <guid>http://localhost:64271/zurich/</guid>
       <description>&lt;script&gt;&#xA;function writeImage ( path ) { &#xA;var text = &#34;&lt;p align=\&#34;center\&#34;&gt; &lt;a href=\&#34;&#34;&#xA;text += path&#xA;text += &#34;\&#34;target=\&#34;_blank\&#34;&gt; &lt;img src=&#34;&#xA;text += path&#xA;text += &#34; alt=\&#34;drawing\&#34;/&gt; &lt;/a&gt; &lt;/p&gt; &lt;br&gt;&#34;&#xA;&#xA;document.write(text)&#xA;&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;Oskar&amp;rsquo;s final interview! Did he get it? at the point of writing this, we still don&amp;rsquo;t know! What we did know is that Oskar had decided he was taking Jamie and I to Zurich. I&amp;rsquo;m still not sure how it all came about but three boys in a hole went on tour!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Avoriaz</title>
-      <link>http://localhost:63700/avoriaz/</link>
+      <link>http://localhost:64271/avoriaz/</link>
       <pubDate>Mon, 13 Jul 2020 18:22:00 +0200</pubDate>
-      <guid>http://localhost:63700/avoriaz/</guid>
+      <guid>http://localhost:64271/avoriaz/</guid>
       <description>&lt;script&gt;&#xA;function writeImage ( path ) { &#xA;var text = &#34;&lt;p align=\&#34;center\&#34;&gt; &lt;a href=\&#34;&#34;&#xA;text += path&#xA;text += &#34;\&#34;target=\&#34;_blank\&#34;&gt; &lt;img src=&#34;&#xA;text += path&#xA;text += &#34; alt=\&#34;drawing\&#34;/&gt; &lt;/a&gt; &lt;/p&gt; &lt;br&gt;&#34;&#xA;&#xA;document.write(text)&#xA;&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;June 2020. We all went on a little summer trip to Avoriaz. Or somewhere close? Heres a picture of the &amp;lsquo;Super best friends&amp;rsquo; as Branko would say and obviously theres always one person to have their eyes closed and in this instance, it was Jamie. Maybe oskar too with his blind man glasses on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Morocco - The Atlas Mountains</title>
-      <link>http://localhost:63700/morroco/</link>
+      <link>http://localhost:64271/morroco/</link>
       <pubDate>Sun, 03 Nov 2019 15:21:48 +0100</pubDate>
-      <guid>http://localhost:63700/morroco/</guid>
+      <guid>http://localhost:64271/morroco/</guid>
       <description>&lt;p&gt;In August 2018 my friends and I visited the Atlas mountains of Morocco and walked up Mount Toubkal. Despite my camera having a horrendous light leak I managed to get a few photos of that walk.&lt;/p&gt;&#xA;&lt;p&gt;We had envisioned a hike though the Atlas mountains off the typical tourist route, following the Berber trails. It became apparent after the first day of ascent that we weren&amp;rsquo;t equipped for this route. I remember feeling the exposure of the desert mountains, not being able to hide from the sun and slipping down constantly. The scree was so loose it made it very difficult to climb. So, after reaching the top we decided it was unsafe to press on any further and opted to go back to base camp.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lancaster</title>
-      <link>http://localhost:63700/lancaster-bowland-forest/</link>
+      <link>http://localhost:64271/lancaster-bowland-forest/</link>
       <pubDate>Sun, 27 Oct 2019 22:04:40 +0100</pubDate>
-      <guid>http://localhost:63700/lancaster-bowland-forest/</guid>
-      <description>&lt;p&gt;This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film.&#xA;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:63700/photography/images/Film/Lancaster10004-2.jpg&#34; alt=&#34;Lancaster&#34;&gt;&lt;/p&gt;&#xA;&lt;br&gt;&#xA;Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not. We are idiots.&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:63700/photography/images/Film/JOEIR027.jpg&#34; alt=&#34;Giggleswick&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:64271/lancaster-bowland-forest/</guid>
+      <description>&lt;p&gt;This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film.&#xA;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:64271/photography/images/Film/Lancaster10004-2.jpg&#34; alt=&#34;Lancaster&#34;&gt;&lt;/p&gt;&#xA;&lt;br&gt;&#xA;Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not. We are idiots.&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:64271/photography/images/Film/JOEIR027.jpg&#34; alt=&#34;Giggleswick&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

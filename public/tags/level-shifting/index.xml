@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Level Shifting on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:63700/tags/level-shifting/</link>
+    <link>http://localhost:64271/tags/level-shifting/</link>
     <description>Recent content in Level Shifting on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Dec 2019 11:23:58 +0100</lastBuildDate>
-    <atom:link href="http://localhost:63700/tags/level-shifting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64271/tags/level-shifting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using the AD5627 DAC</title>
-      <link>http://localhost:63700/using-the-ad8627-dac/</link>
+      <link>http://localhost:64271/using-the-ad8627-dac/</link>
       <pubDate>Sun, 08 Dec 2019 11:23:58 +0100</pubDate>
-      <guid>http://localhost:63700/using-the-ad8627-dac/</guid>
+      <guid>http://localhost:64271/using-the-ad8627-dac/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The&#xA;&lt;a href=https://www.analog.com/media/en/technical-documentation/data-sheets/AD5627R_5647R_5667R_5627_5667.pdf target=&#34;_blank&#34;&gt;AD5627RBRMZ (Datasheet)&lt;/a&gt; is part of a series of 12/14/16 bit nano DACs with an I2C interface.&#xA;The DAC we are interested in is the 12 bit AD5627RBRMZ which has a 5ppm/˚C internal reference and can operate upto 5V.&lt;/p&gt;&#xA;&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;&#xA;&lt;p&gt;The DAC requires a high I2C level to be 0.8 * Vcc, which is 4V if we are interested in using the full capability of the DAC. In this design the I2C is operating on a 3.3 Volt bus, therefore, a bidirectional I2C level shiter is required.&lt;/p&gt;</description>
     </item>
   </channel>

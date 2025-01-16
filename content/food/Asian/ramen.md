@@ -1,0 +1,44 @@
+---
+title: "Ramen"
+date: 2025-01-14T22:06:49+01:00
+tags: []
+draft: true
+image: "/food/images/Raman/IMG_7026.jpeg"
+---
+
+
+Sam made ramen the other day and it was bang bang! Here is the recipe she followed/made up. 
+
+Serves 2
+
+## Ingredients 
+
+
+* 2 cloves garlic
+* ½ tsp ginger (grated)
+* 1 shallot
+* 1 Tbsp toasted white sesame seeds
+* 1 Tbsp toasted sesame oil
+* 300g Tofu
+* 1 tsp doubanjiang (spicy chili bean paste) (use the non-spicy or spicy type or gluten-free doubanjiang)
+* 3 Tbsp miso (most types will work except Saikyo and Hatcho; each type will create a slightly different broth flavor)
+* 1 Tbsp sugar
+* 1 Tbsp sake or Shaoxing Wine
+* 4 cups veg broth
+* 1 tsp salt (to taste)
+* ¼ tsp white pepper powder
+
+
+For the Ramen Noodles
+* 2 servings fresh ramen noodles (10–12 oz (283–340 g) fresh noodles or 6.3 oz (180 g) dry ramen noodles; for gluten-free, use GF ramen noodles)
+
+## Method 
+
+
+
+
+
+<p align="center"> 
+<img src="/food/images/Raman/IMG_7026.jpeg" alt="drawing" width="600"/>
+</p>
+<br>

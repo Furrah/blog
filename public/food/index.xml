@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Food on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:63700/food/</link>
+    <link>http://localhost:1313/food/</link>
     <description>Recent content in Food on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:63700/food/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/food/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

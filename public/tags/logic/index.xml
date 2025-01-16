@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logic on Well lets take a look at it, Mr Gumby!</title>
-    <link>http://localhost:63700/tags/logic/</link>
+    <link>http://localhost:64271/tags/logic/</link>
     <description>Recent content in Logic on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Nov 2019 23:02:47 +0000</lastBuildDate>
-    <atom:link href="http://localhost:63700/tags/logic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64271/tags/logic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>XOR Logic used as a Buffer or Inverter</title>
-      <link>http://localhost:63700/xor-buffer-inverter/</link>
+      <link>http://localhost:64271/xor-buffer-inverter/</link>
       <pubDate>Fri, 22 Nov 2019 23:02:47 +0000</pubDate>
-      <guid>http://localhost:63700/xor-buffer-inverter/</guid>
-      <description>&lt;p&gt;XOR gates can be used to form inverters or buffers when a single input is tied to Vdd or Ground. In the figure below, U1 is setup as an inverter, and U2 is setup as a buffer.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:63700/electronics/images/XOR buffer inverter.png&#34; alt=&#34;drawing&#34; width=&#34;300&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;The&#xA;&lt;a href=https://www.ti.com/lit/ds/symlink/sn74lvc2g86.pdf target=&#34;_blank&#34;&gt;SN74LVC2G86 (Datasheet)&lt;/a&gt;&#xA;is a dual package XOR that can operate at voltages up to 5.5V and deliver up to 50mA of continuous current. Other notable features include a propagation delay between 1.4 and 4.2nS.&lt;/p&gt;</description>
+      <guid>http://localhost:64271/xor-buffer-inverter/</guid>
+      <description>&lt;p&gt;XOR gates can be used to form inverters or buffers when a single input is tied to Vdd or Ground. In the figure below, U1 is setup as an inverter, and U2 is setup as a buffer.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:64271/electronics/images/XOR buffer inverter.png&#34; alt=&#34;drawing&#34; width=&#34;300&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;The&#xA;&lt;a href=https://www.ti.com/lit/ds/symlink/sn74lvc2g86.pdf target=&#34;_blank&#34;&gt;SN74LVC2G86 (Datasheet)&lt;/a&gt;&#xA;is a dual package XOR that can operate at voltages up to 5.5V and deliver up to 50mA of continuous current. Other notable features include a propagation delay between 1.4 and 4.2nS.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
