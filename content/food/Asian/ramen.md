@@ -37,8 +37,7 @@ For the Ramen Noodles
 ## Method 
 
 1. rehydrate shiitake mushrooms and set aside for 30mins. were gonna need the liquid later!
-
-2. Heat sesame oil in a pan and add gigner, garlic, and shallot
+2. Heat sesame oil in a pan and add ginger, garlic, and shallot
 3. Add chopped shiitake mushroom and cook for a minute 
 4. Add 1tsp doubanjiang and 3 tbsp of miso and mix 
 5. Add ground sesame seeds and 1 tbsp sugar 
@@ -51,6 +50,7 @@ For the Ramen Noodles
 Now prepare your noodles and all your toppings! ENJOY! 
 
 
+Thanks for the comment Luna, you're right, ginger is much easier to find than gigner.
 
 <p align="center"> 
 <img src="/food/images/Raman/IMG_7026.jpeg" alt="drawing" width="600"/>
