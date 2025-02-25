@@ -3,7 +3,7 @@ title: "Bibimbap"
 date: 2025-02-03T21:57:20Z
 tags: []
 draft: false
-image: "/food/images/egg_soup/IMG_7133.jpeg"
+image: "/food/images/bibimbap/IMG_7133.jpeg"
 ---
 
 ## Ingredients

@@ -17,14 +17,28 @@
 .container {
   max-width: 910px;
 }
-#nav a {
-  font-weight: bold;
-  color: inherit;
 
-}
 #nav-border {
   border-bottom: 1px solid #212529;
 }
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#nav a{
+  font-weight: bold;
+  color: inherit;
+}
+
+
+
+
+
+
 #main {
   margin-top: 1em;
   margin-bottom: 4em;
@@ -35,8 +49,6 @@
 .font-125 {
   font-size: 125%;
 }
-
- 
 
 
 .tag-btn {
@@ -52,19 +64,27 @@ img {
 
 }
 
- 
 
-#home-page a {
-  color: #282829;
+
+ 
+a {
+  color: #333;  
+  font-size: 1rem;  
+  font-weight: bold;  
+  text-decoration: none;  
+  transition: color 0.3s, text-decoration 0.3s;  
 }
 
-a {
-  color: #007bff;
  
- }  
+a:hover {
+  color: #0070f3;  
+  text-decoration: underline;  
+}
 
 
- 
+
+
+
 
 table {
     width: 100%;
@@ -119,19 +139,73 @@ code {
 
 
 
-.card-img-top{
-   
-   
-   
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 
-}
-.card{
-  border-radius: 10px;
+
  
- 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+ 
+.card:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;  
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+ 
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;  
+}
+
+ 
+.card-img-top {
+  position: relative;
+}
+
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;  
+}
+
+
 
  
 button.copybtn {
@@ -166,7 +240,16 @@ div.highlight {
 body {
 
   background-color: #FFFFFF ;
+  font-family: 'Gesit Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
+
+h1 {
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 800;
+}
+
 
 .small {
   max-width: 400px;
@@ -176,6 +259,10 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   
 }
+
+
+
+
 
 
 </style>
@@ -292,222 +379,253 @@ body {
   
 
 
-  <div class="card">
-    <a href="/corn-and-egg-drop-soup/">
-      <img  class="card-img-top" src="/food/images/egg_soup/IMG_7220.jpeg">
+<div class="card">
+  <a href="/corn-and-egg-drop-soup/">
+    
+    
+      <img class="card-img-top" src="/food/images/egg_soup/IMG_7220.jpeg">
+    
 
-      <div class="card-body text-center">
-        <a href="/corn-and-egg-drop-soup/">
-          <h5 class="card-title">Corn and Egg Drop Soup</h5>
-        </a>
+    <div class="card-body text-center">
+      <a href="/corn-and-egg-drop-soup/">
+        <h5 class="card-title">Corn and Egg Drop Soup</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2025-02-13">Feb 13, 2025</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/bibimbap/">
-      <img  class="card-img-top" src="/food/images/egg_soup/IMG_7133.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/bibimbap/">
-          <h5 class="card-title">Bibimbap</h5>
-        </a>
+
+<div class="card">
+  <a href="/bibimbap/">
+    
+    
+      <img class="card-img-top" src="/food/images/bibimbap/IMG_7133.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/bibimbap/">
+        <h5 class="card-title">Bibimbap</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2025-02-03">Feb 3, 2025</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/thai-green-paste/">
-      <img  class="card-img-top" src="">
 
-      <div class="card-body text-center">
-        <a href="/thai-green-paste/">
-          <h5 class="card-title">Thai Green Paste</h5>
-        </a>
+
+<div class="card">
+  <a href="/thai-green-paste/">
+    
+    
+
+    <div class="card-body text-center">
+      <a href="/thai-green-paste/">
+        <h5 class="card-title">Thai Green Paste</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2025-01-23">Jan 23, 2025</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/ramen/">
-      <img  class="card-img-top" src="/food/images/Raman/IMG_7026.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/ramen/">
-          <h5 class="card-title">Ramen</h5>
-        </a>
+
+<div class="card">
+  <a href="/ramen/">
+    
+    
+      <img class="card-img-top" src="/food/images/Raman/IMG_7026.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/ramen/">
+        <h5 class="card-title">Ramen</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2025-01-14">Jan 14, 2025</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/bao-bun/">
-      <img  class="card-img-top" src="/food/images/Baobun/IMG_7056.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/bao-bun/">
-          <h5 class="card-title">Bao Bun</h5>
-        </a>
+
+<div class="card">
+  <a href="/bao-bun/">
+    
+    
+      <img class="card-img-top" src="/food/images/Baobun/IMG_7056.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/bao-bun/">
+        <h5 class="card-title">Bao Bun</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2025-01-13">Jan 13, 2025</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/pak_choi_oyster/">
-      <img  class="card-img-top" src="/food/images/pak_choi/IMG_4866.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/pak_choi_oyster/">
-          <h5 class="card-title">Pak Choi &amp; Oyster Sauce</h5>
-        </a>
+
+<div class="card">
+  <a href="/pak_choi_oyster/">
+    
+    
+      <img class="card-img-top" src="/food/images/pak_choi/IMG_4866.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/pak_choi_oyster/">
+        <h5 class="card-title">Pak Choi &amp; Oyster Sauce</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2024-05-26">May 26, 2024</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/tofu-with-garlic-sauce/">
-      <img  class="card-img-top" src="/food/images/IMG_6950.jpg">
 
-      <div class="card-body text-center">
-        <a href="/tofu-with-garlic-sauce/">
-          <h5 class="card-title">Tofu With Garlic Sauce</h5>
-        </a>
+
+<div class="card">
+  <a href="/tofu-with-garlic-sauce/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_6950.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/tofu-with-garlic-sauce/">
+        <h5 class="card-title">Tofu With Garlic Sauce</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2022-05-26">May 26, 2022</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/panang-curry-paste/">
-      <img  class="card-img-top" src="/food/images/panang/IMG_0914.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/panang-curry-paste/">
-          <h5 class="card-title">Panang Curry Paste</h5>
-        </a>
+
+<div class="card">
+  <a href="/panang-curry-paste/">
+    
+    
+      <img class="card-img-top" src="/food/images/panang/IMG_0914.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/panang-curry-paste/">
+        <h5 class="card-title">Panang Curry Paste</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-09-01">Sep 1, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/mapo-tofu/">
-      <img  class="card-img-top" src="/food/images/IMG_2757-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/mapo-tofu/">
-          <h5 class="card-title">Mapo Tofu</h5>
-        </a>
+
+<div class="card">
+  <a href="/mapo-tofu/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2757-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/mapo-tofu/">
+        <h5 class="card-title">Mapo Tofu</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-03-16">Mar 16, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/sichuan-style-aubergine/">
-      <img  class="card-img-top" src="/food/images/IMG_2514-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/sichuan-style-aubergine/">
-          <h5 class="card-title">Sichuan Style Aubergine</h5>
-        </a>
+
+<div class="card">
+  <a href="/sichuan-style-aubergine/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2514-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/sichuan-style-aubergine/">
+        <h5 class="card-title">Sichuan Style Aubergine</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-02-12">Feb 12, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/chinese-egg-plant-garlic-sauce/">
-      <img  class="card-img-top" src="/food/images/IMG_1646.jpg">
 
-      <div class="card-body text-center">
-        <a href="/chinese-egg-plant-garlic-sauce/">
-          <h5 class="card-title">Chinese Egg Plant With Garlic Sauce</h5>
-        </a>
+
+<div class="card">
+  <a href="/chinese-egg-plant-garlic-sauce/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1646.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/chinese-egg-plant-garlic-sauce/">
+        <h5 class="card-title">Chinese Egg Plant With Garlic Sauce</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-10-28">Oct 28, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
+  </a>
+</div>
 
 
 </div>
