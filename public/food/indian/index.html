@@ -17,14 +17,28 @@
 .container {
   max-width: 910px;
 }
-#nav a {
-  font-weight: bold;
-  color: inherit;
 
-}
 #nav-border {
   border-bottom: 1px solid #212529;
 }
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#nav a{
+  font-weight: bold;
+  color: inherit;
+}
+
+
+
+
+
+
 #main {
   margin-top: 1em;
   margin-bottom: 4em;
@@ -35,8 +49,6 @@
 .font-125 {
   font-size: 125%;
 }
-
- 
 
 
 .tag-btn {
@@ -52,7 +64,7 @@ img {
 
 }
 
- 
+
 
 #home-page a {
   color: #282829;
@@ -60,11 +72,12 @@ img {
 
 a {
   color: #007bff;
- 
- }  
+
+ } 
 
 
- 
+
+
 
 table {
     width: 100%;
@@ -119,19 +132,74 @@ code {
 
 
 
-.card-img-top{
-   
-   
-   
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+ 
 
-}
-.card{
-  border-radius: 10px;
+
  
- 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+ 
+.card:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;  
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+ 
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;  
+}
+
+ 
+.card-img-top {
+  position: relative;
+}
+
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;  
+}
+
+
 
  
 button.copybtn {
@@ -166,7 +234,16 @@ div.highlight {
 body {
 
   background-color: #FFFFFF ;
+  font-family: 'Gesit Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
+
+h1 {
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 800;
+}
+
 
 .small {
   max-width: 400px;
@@ -176,6 +253,10 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   
 }
+
+
+
+
 
 
 </style>
@@ -292,402 +373,456 @@ body {
   
 
 
-  <div class="card">
-    <a href="/paneer/">
-      <img  class="card-img-top" src="/food/images/Paneer/IMG_4996.jpeg">
+<div class="card">
+  <a href="/paneer/">
+    
+    
+      <img class="card-img-top" src="/food/images/Paneer/IMG_4996.jpeg">
+    
 
-      <div class="card-body text-center">
-        <a href="/paneer/">
-          <h5 class="card-title">Paneer</h5>
-        </a>
+    <div class="card-body text-center">
+      <a href="/paneer/">
+        <h5 class="card-title">Paneer</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2024-06-10">Jun 10, 2024</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/dal-box/">
-      <img  class="card-img-top" src="/food/images/dal-box/IMG_4887.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/dal-box/">
-          <h5 class="card-title">Dal Box</h5>
-        </a>
+
+<div class="card">
+  <a href="/dal-box/">
+    
+    
+      <img class="card-img-top" src="/food/images/dal-box/IMG_4887.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/dal-box/">
+        <h5 class="card-title">Dal Box</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-09-20">Sep 20, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/goan-fish-curry/">
-      <img  class="card-img-top" src="/food/images/IMG_0762.jpg">
 
-      <div class="card-body text-center">
-        <a href="/goan-fish-curry/">
-          <h5 class="card-title">Goan Fish Curry</h5>
-        </a>
+
+<div class="card">
+  <a href="/goan-fish-curry/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_0762.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/goan-fish-curry/">
+        <h5 class="card-title">Goan Fish Curry</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-07-29">Jul 29, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/mushroom-butter-masala/">
-      <img  class="card-img-top" src="/food/images/IMG_2072-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/mushroom-butter-masala/">
-          <h5 class="card-title">Mushroom Butter Masala</h5>
-        </a>
+
+<div class="card">
+  <a href="/mushroom-butter-masala/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2072-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/mushroom-butter-masala/">
+        <h5 class="card-title">Mushroom Butter Masala</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-04-18">Apr 18, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/palak-paneer/">
-      <img  class="card-img-top" src="/food/images/IMG_1890-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/palak-paneer/">
-          <h5 class="card-title">Palak Paneer</h5>
-        </a>
+
+<div class="card">
+  <a href="/palak-paneer/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1890-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/palak-paneer/">
+        <h5 class="card-title">Palak Paneer</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-03-27">Mar 27, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/paneer-butter-masala-paneer-makhani/">
-      <img  class="card-img-top" src="/food/images/IMG_1929-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/paneer-butter-masala-paneer-makhani/">
-          <h5 class="card-title">Paneer Butter Masala (Paneer Makhani)</h5>
-        </a>
+
+<div class="card">
+  <a href="/paneer-butter-masala-paneer-makhani/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1929-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/paneer-butter-masala-paneer-makhani/">
+        <h5 class="card-title">Paneer Butter Masala (Paneer Makhani)</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-01-16">Jan 16, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/dal/">
-      <img  class="card-img-top" src="/food/images/IMG_1207.jpg">
 
-      <div class="card-body text-center">
-        <a href="/dal/">
-          <h5 class="card-title">Dal</h5>
-        </a>
+
+<div class="card">
+  <a href="/dal/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1207.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/dal/">
+        <h5 class="card-title">Dal</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-12-14">Dec 14, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/kadai-paneer/">
-      <img  class="card-img-top" src="/food/images/IMG_1202-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/kadai-paneer/">
-          <h5 class="card-title">Kadai Paneer</h5>
-        </a>
+
+<div class="card">
+  <a href="/kadai-paneer/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1202-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/kadai-paneer/">
+        <h5 class="card-title">Kadai Paneer</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-12-14">Dec 14, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/gobi-manchurian/">
-      <img  class="card-img-top" src="/food/images/IMG_1123-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/gobi-manchurian/">
-          <h5 class="card-title">Gobi Manchurian</h5>
-        </a>
+
+<div class="card">
+  <a href="/gobi-manchurian/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1123-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/gobi-manchurian/">
+        <h5 class="card-title">Gobi Manchurian</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-12-08">Dec 8, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/onion-bhaji/">
-      <img  class="card-img-top" src="">
 
-      <div class="card-body text-center">
-        <a href="/onion-bhaji/">
-          <h5 class="card-title">Onion Bhaji</h5>
-        </a>
+
+<div class="card">
+  <a href="/onion-bhaji/">
+    
+    
+
+    <div class="card-body text-center">
+      <a href="/onion-bhaji/">
+        <h5 class="card-title">Onion Bhaji</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-12-07">Dec 7, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/dal-makhani/">
-      <img  class="card-img-top" src="/food/images/IMG_1087-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/dal-makhani/">
-          <h5 class="card-title">Dal Makhani</h5>
-        </a>
+
+<div class="card">
+  <a href="/dal-makhani/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1087-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/dal-makhani/">
+        <h5 class="card-title">Dal Makhani</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-12-07">Dec 7, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/fish-curry-aubergine/">
-      <img  class="card-img-top" src="/food/images/IMG_1044-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/fish-curry-aubergine/">
-          <h5 class="card-title">Fish Curry but with Aubergine!</h5>
-        </a>
+
+<div class="card">
+  <a href="/fish-curry-aubergine/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1044-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/fish-curry-aubergine/">
+        <h5 class="card-title">Fish Curry but with Aubergine!</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-11-19">Nov 19, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/andhra-spiced-egg-curry/">
-      <img  class="card-img-top" src="/food/images/IMG_0978.jpg">
 
-      <div class="card-body text-center">
-        <a href="/andhra-spiced-egg-curry/">
-          <h5 class="card-title">Andhra Spiced Egg Curry</h5>
-        </a>
+
+<div class="card">
+  <a href="/andhra-spiced-egg-curry/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_0978.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/andhra-spiced-egg-curry/">
+        <h5 class="card-title">Andhra Spiced Egg Curry</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-11-18">Nov 18, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/sri-lanken-curry/">
-      <img  class="card-img-top" src="">
 
-      <div class="card-body text-center">
-        <a href="/sri-lanken-curry/">
-          <h5 class="card-title">Sri Lankan Coconut Lentil Curry (Parippu Curry)</h5>
-        </a>
+
+<div class="card">
+  <a href="/sri-lanken-curry/">
+    
+    
+
+    <div class="card-body text-center">
+      <a href="/sri-lanken-curry/">
+        <h5 class="card-title">Sri Lankan Coconut Lentil Curry (Parippu Curry)</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-11-08">Nov 8, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/egg-bhuna/">
-      <img  class="card-img-top" src="/food/images/IMG_0885-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/egg-bhuna/">
-          <h5 class="card-title">Egg Bhuna</h5>
-        </a>
+
+<div class="card">
+  <a href="/egg-bhuna/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_0885-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/egg-bhuna/">
+        <h5 class="card-title">Egg Bhuna</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-11-04">Nov 4, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/murgh-makhani-butter-tofu-2/">
-      <img  class="card-img-top" src="">
 
-      <div class="card-body text-center">
-        <a href="/murgh-makhani-butter-tofu-2/">
-          <h5 class="card-title">Murgh Makhani Butter Tofu 2</h5>
-        </a>
+
+<div class="card">
+  <a href="/murgh-makhani-butter-tofu-2/">
+    
+    
+
+    <div class="card-body text-center">
+      <a href="/murgh-makhani-butter-tofu-2/">
+        <h5 class="card-title">Murgh Makhani Butter Tofu 2</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-10-28">Oct 28, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/murgh-makhani-butter-tofu/">
-      <img  class="card-img-top" src="/food/images/20191102_210224-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/murgh-makhani-butter-tofu/">
-          <h5 class="card-title">Murgh Makhani Butter Tofu</h5>
-        </a>
+
+<div class="card">
+  <a href="/murgh-makhani-butter-tofu/">
+    
+    
+      <img class="card-img-top" src="/food/images/20191102_210224-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/murgh-makhani-butter-tofu/">
+        <h5 class="card-title">Murgh Makhani Butter Tofu</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-10-28">Oct 28, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/rogan-josh/">
-      <img  class="card-img-top" src="/food/images/rogan-and-dhal-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/rogan-josh/">
-          <h5 class="card-title">Rogan Josh</h5>
-        </a>
+
+<div class="card">
+  <a href="/rogan-josh/">
+    
+    
+      <img class="card-img-top" src="/food/images/rogan-and-dhal-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/rogan-josh/">
+        <h5 class="card-title">Rogan Josh</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-10-27">Oct 27, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/creamy-coconut-lentil-curry/">
-      <img  class="card-img-top" src="/food/images/IMG_0736%20copy.jpg">
 
-      <div class="card-body text-center">
-        <a href="/creamy-coconut-lentil-curry/">
-          <h5 class="card-title">Creamy Coconut Lentil Curry</h5>
-        </a>
+
+<div class="card">
+  <a href="/creamy-coconut-lentil-curry/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_0736%20copy.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/creamy-coconut-lentil-curry/">
+        <h5 class="card-title">Creamy Coconut Lentil Curry</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-10-27">Oct 27, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/butter-tofu/">
-      <img  class="card-img-top" src="/food/images/IMG_0827-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/butter-tofu/">
-          <h5 class="card-title">Indian Butter Tofu</h5>
-        </a>
+
+<div class="card">
+  <a href="/butter-tofu/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_0827-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/butter-tofu/">
+        <h5 class="card-title">Indian Butter Tofu</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-10-27">Oct 27, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
+  </a>
+</div>
 
 
 </div>

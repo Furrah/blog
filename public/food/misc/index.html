@@ -132,19 +132,74 @@ code {
 
 
 
-.card-img-top{
-   
-   
-   
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+ 
 
-}
-.card{
-  border-radius: 10px;
+
  
- 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+ 
+.card:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;  
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+ 
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;  
+}
+
+ 
+.card-img-top {
+  position: relative;
+}
+
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;  
+}
+
+
 
  
 button.copybtn {
@@ -318,362 +373,416 @@ h1 {
   
 
 
-  <div class="card">
-    <a href="/american-beans/">
-      <img  class="card-img-top" src="/food/images/american_beans/IMG_7095.jpeg">
+<div class="card">
+  <a href="/american-beans/">
+    
+    
+      <img class="card-img-top" src="/food/images/american_beans/IMG_7095.jpeg">
+    
 
-      <div class="card-body text-center">
-        <a href="/american-beans/">
-          <h5 class="card-title">American Beans</h5>
-        </a>
+    <div class="card-body text-center">
+      <a href="/american-beans/">
+        <h5 class="card-title">American Beans</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2025-01-16">Jan 16, 2025</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/elderflower_cordial/">
-      <img  class="card-img-top" src="/food/images/elderflower_cordial/IMG_4840.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/elderflower_cordial/">
-          <h5 class="card-title">Elderflower Cordial</h5>
-        </a>
+
+<div class="card">
+  <a href="/elderflower_cordial/">
+    
+    
+      <img class="card-img-top" src="/food/images/elderflower_cordial/IMG_4840.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/elderflower_cordial/">
+        <h5 class="card-title">Elderflower Cordial</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2024-05-27">May 27, 2024</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/sausage-casserole/">
-      <img  class="card-img-top" src="/food/images/sausage_casserole/pic.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/sausage-casserole/">
-          <h5 class="card-title">Benj&#39;s Essential Sausage Casserole</h5>
-        </a>
+
+<div class="card">
+  <a href="/sausage-casserole/">
+    
+    
+      <img class="card-img-top" src="/food/images/sausage_casserole/pic.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/sausage-casserole/">
+        <h5 class="card-title">Benj&#39;s Essential Sausage Casserole</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-10-02">Oct 2, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/red_onion_soup/">
-      <img  class="card-img-top" src="/food/images/Red_Onion_Soup.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/red_onion_soup/">
-          <h5 class="card-title">Red Onion Soup</h5>
-        </a>
+
+<div class="card">
+  <a href="/red_onion_soup/">
+    
+    
+      <img class="card-img-top" src="/food/images/Red_Onion_Soup.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/red_onion_soup/">
+        <h5 class="card-title">Red Onion Soup</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-08-21">Aug 21, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/green_tomato_chutney/">
-      <img  class="card-img-top" src="/food/images/IMG_4489.jpg">
 
-      <div class="card-body text-center">
-        <a href="/green_tomato_chutney/">
-          <h5 class="card-title">Green Tomato Chutney</h5>
-        </a>
+
+<div class="card">
+  <a href="/green_tomato_chutney/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_4489.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/green_tomato_chutney/">
+        <h5 class="card-title">Green Tomato Chutney</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-08-21">Aug 21, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/tomato-soup/">
-      <img  class="card-img-top" src="/food/images/IMG_4480.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/tomato-soup/">
-          <h5 class="card-title">Tomato Soup</h5>
-        </a>
+
+<div class="card">
+  <a href="/tomato-soup/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_4480.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/tomato-soup/">
+        <h5 class="card-title">Tomato Soup</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-08-19">Aug 19, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/beetroot-dip/">
-      <img  class="card-img-top" src="/food/images/IMG_2867-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/beetroot-dip/">
-          <h5 class="card-title">Beetroot Dip</h5>
-        </a>
+
+<div class="card">
+  <a href="/beetroot-dip/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2867-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/beetroot-dip/">
+        <h5 class="card-title">Beetroot Dip</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-03-24">Mar 24, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/kale-salad/">
-      <img  class="card-img-top" src="/food/images/IMG_2830-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/kale-salad/">
-          <h5 class="card-title">Kale Salad</h5>
-        </a>
+
+<div class="card">
+  <a href="/kale-salad/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2830-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/kale-salad/">
+        <h5 class="card-title">Kale Salad</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-03-23">Mar 23, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/gorgonzola-pasta/">
-      <img  class="card-img-top" src="/food/images/IMG_2311-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/gorgonzola-pasta/">
-          <h5 class="card-title">Gorgonzola Pasta</h5>
-        </a>
+
+<div class="card">
+  <a href="/gorgonzola-pasta/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2311-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/gorgonzola-pasta/">
+        <h5 class="card-title">Gorgonzola Pasta</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-01-28">Jan 28, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/african-peanut-stew/">
-      <img  class="card-img-top" src="/food/images/IMG_2208-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/african-peanut-stew/">
-          <h5 class="card-title">African Peanut Stew</h5>
-        </a>
+
+<div class="card">
+  <a href="/african-peanut-stew/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2208-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/african-peanut-stew/">
+        <h5 class="card-title">African Peanut Stew</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2021-01-19">Jan 19, 2021</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/lentil-ragu/">
-      <img  class="card-img-top" src="/food/images/IMG_1576-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/lentil-ragu/">
-          <h5 class="card-title">Lentil Ragu</h5>
-        </a>
+
+<div class="card">
+  <a href="/lentil-ragu/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1576-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/lentil-ragu/">
+        <h5 class="card-title">Lentil Ragu</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-11-02">Nov 2, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/beetroot-sandwich/">
-      <img  class="card-img-top" src="/food/images/IMG_1522-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/beetroot-sandwich/">
-          <h5 class="card-title">Spicy Beetroot Sandwich Filler</h5>
-        </a>
+
+<div class="card">
+  <a href="/beetroot-sandwich/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1522-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/beetroot-sandwich/">
+        <h5 class="card-title">Spicy Beetroot Sandwich Filler</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-10-26">Oct 26, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/banana-bread/">
-      <img  class="card-img-top" src="/food/images/bananabread.jpeg">
 
-      <div class="card-body text-center">
-        <a href="/banana-bread/">
-          <h5 class="card-title">Banana Bread</h5>
-        </a>
+
+<div class="card">
+  <a href="/banana-bread/">
+    
+    
+      <img class="card-img-top" src="/food/images/bananabread.jpeg">
+    
+
+    <div class="card-body text-center">
+      <a href="/banana-bread/">
+        <h5 class="card-title">Banana Bread</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-10-24">Oct 24, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/roasted-tomato/">
-      <img  class="card-img-top" src="/food/images/IMG_1441-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/roasted-tomato/">
-          <h5 class="card-title">Roasted Tomato</h5>
-        </a>
+
+<div class="card">
+  <a href="/roasted-tomato/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1441-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/roasted-tomato/">
+        <h5 class="card-title">Roasted Tomato</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-10-24">Oct 24, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/leek-and-mushroom-pie/">
-      <img  class="card-img-top" src="/food/images/IMG_1130.jpg">
 
-      <div class="card-body text-center">
-        <a href="/leek-and-mushroom-pie/">
-          <h5 class="card-title">Leek and Mushroom Pie</h5>
-        </a>
+
+<div class="card">
+  <a href="/leek-and-mushroom-pie/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1130.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/leek-and-mushroom-pie/">
+        <h5 class="card-title">Leek and Mushroom Pie</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-09-14">Sep 14, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/beetroot-riossotto/">
-      <img  class="card-img-top" src="/food/images/IMG_1950-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/beetroot-riossotto/">
-          <h5 class="card-title">Beetroot Risotto</h5>
-        </a>
+
+<div class="card">
+  <a href="/beetroot-riossotto/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_1950-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/beetroot-riossotto/">
+        <h5 class="card-title">Beetroot Risotto</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-03-31">Mar 31, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/one-pot-mexican-quinoa/">
-      <img  class="card-img-top" src="/food/images/IMG_2046-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/one-pot-mexican-quinoa/">
-          <h5 class="card-title">One Pot Mexican Quinoa</h5>
-        </a>
+
+<div class="card">
+  <a href="/one-pot-mexican-quinoa/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2046-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/one-pot-mexican-quinoa/">
+        <h5 class="card-title">One Pot Mexican Quinoa</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-03-31">Mar 31, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/flapjack/">
-      <img  class="card-img-top" src="/food/images/IMG_0868-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/flapjack/">
-          <h5 class="card-title">Flapjack</h5>
-        </a>
+
+<div class="card">
+  <a href="/flapjack/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_0868-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/flapjack/">
+        <h5 class="card-title">Flapjack</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2019-11-03">Nov 3, 2019</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
+  </a>
+</div>
 
 
 </div>

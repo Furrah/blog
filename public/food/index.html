@@ -132,19 +132,74 @@ code {
 
 
 
-.card-img-top{
-   
-   
-   
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+ 
 
-}
-.card{
-  border-radius: 10px;
+
  
- 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+ 
+.card:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;  
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+ 
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;  
+}
+
+ 
+.card-img-top {
+  position: relative;
+}
+
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;  
+}
+
+
 
  
 button.copybtn {
@@ -318,82 +373,94 @@ h1 {
   
 
 
-  <div class="card">
-    <a href="/food/indian/">
-      <img  class="card-img-top" src="/food/images/rogan-and-dhal-2.jpg">
+<div class="card">
+  <a href="/food/indian/">
+    
+    
+      <img class="card-img-top" src="/food/images/rogan-and-dhal-2.jpg">
+    
 
-      <div class="card-body text-center">
-        <a href="/food/indian/">
-          <h5 class="card-title">Indian</h5>
-        </a>
+    <div class="card-body text-center">
+      <a href="/food/indian/">
+        <h5 class="card-title">Indian</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-06-23">Jun 23, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/food/middle-eastern/">
-      <img  class="card-img-top" src="/food/images/IMG_8221-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/food/middle-eastern/">
-          <h5 class="card-title">Middle Eastern</h5>
-        </a>
+
+<div class="card">
+  <a href="/food/middle-eastern/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_8221-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/food/middle-eastern/">
+        <h5 class="card-title">Middle Eastern</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-06-23">Jun 23, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/food/misc/">
-      <img  class="card-img-top" src="/food/images/IMG_2311-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/food/misc/">
-          <h5 class="card-title">Miscellaneous</h5>
-        </a>
+
+<div class="card">
+  <a href="/food/misc/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2311-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/food/misc/">
+        <h5 class="card-title">Miscellaneous</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-06-23">Jun 23, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
-
-
+  </a>
+</div>
 
 
-  <div class="card">
-    <a href="/food/asian/">
-      <img  class="card-img-top" src="/food/images/IMG_2514-2.jpg">
 
-      <div class="card-body text-center">
-        <a href="/food/asian/">
-          <h5 class="card-title">Asian</h5>
-        </a>
+
+<div class="card">
+  <a href="/food/asian/">
+    
+    
+      <img class="card-img-top" src="/food/images/IMG_2514-2.jpg">
+    
+
+    <div class="card-body text-center">
+      <a href="/food/asian/">
+        <h5 class="card-title">Asian</h5>
+      </a>
       
-        
+      
 
 <i data-feather="calendar"></i> <time datetime="2020-06-23">Jun 23, 2020</time>
-      </div>
+    </div>
 
-    </a>
-  </div>
+  </a>
+</div>
 
 
 </div>
