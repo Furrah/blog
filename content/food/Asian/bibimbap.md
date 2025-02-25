@@ -6,7 +6,7 @@ draft: false
 image: "/food/images/bibimbap/IMG_7133.jpeg"
 ---
 
-## Ingredients
+# Ingredients
 
 **Gochujang sauce**
 
