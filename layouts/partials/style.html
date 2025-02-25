@@ -2,14 +2,28 @@
 .container {
   max-width: {{ .Site.Params.containerMaxWidth | default "910px" | safeCSS }};
 }
-#nav a {
-  font-weight: bold;
-  color: inherit;
 
-}
 #nav-border {
   border-bottom: 1px solid #212529;
 }
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#nav a{
+  font-weight: bold;
+  color: inherit;
+}
+
+
+
+
+
+
 #main {
   margin-top: 1em;
   margin-bottom: 4em;
@@ -20,10 +34,6 @@
 .font-125 {
   font-size: 125%;
 }
-
-/*body {
-.font-family: Montserrat;
-}*/
 
 
 .tag-btn {
@@ -39,7 +49,7 @@ img {
 
 }
 
-/*<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">*/
+
 
 #home-page a {
   color: #282829;
@@ -47,14 +57,12 @@ img {
 
 a {
   color: #007bff;
-/*    color: #282829;*/
- } /* CSS link color */
+
+ } 
 
 
-/*td, th {
-    border: 1px solid grey;
-    padding: 10px;
-}*/
+
+
 
 table {
     width: 100%;
@@ -156,7 +164,16 @@ div.highlight {
 body {
 
   background-color: #FFFFFF ;
+  font-family: 'Gesit Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
+
+h1 {
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 800;
+}
+
 
 .small {
   max-width: 400px;
@@ -166,6 +183,10 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   
 }
+
+
+
+
 
 
 </style>
