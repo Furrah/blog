@@ -51,14 +51,21 @@ img {
 
 
 
-#home-page a {
-  color: #282829;
+/* Style hyperlinks to match card title */
+a {
+  color: #333; /* Same color as card title */
+  font-size: 1rem; /* Match card title size */
+  font-weight: bold; /* Match card title weight */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
 }
 
-a {
-  color: #007bff;
+/* Hover effect for hyperlinks */
+a:hover {
+  color: #0070f3; /* Same color as card title hover */
+  text-decoration: underline; /* Add underline on hover */
+}
 
- } 
 
 
 
@@ -117,17 +124,6 @@ code {
 
 
 
-/*.card-img-top{
-
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-
-}
-.card{
-  border-radius: 10px;
-
-}
-*/
 
 
 /* General Card Styles */
