@@ -1,21 +1,23 @@
 <style>
 
-* {
-  font-family: 'Gesit Sans', sans-serif !important;
-}
+
+/* * {
+  font-family: 'Geist Sans', sans-serif !important;
+}*/
+
 
 
 body {
 
   background-color: #FFFFFF ;
-  font-family: 'Gesit Sans', sans-serif;
+  font-family: 'Geist Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
-h1 {
+h1,h2,h3 {
   font-family: "Geist Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .container {
@@ -27,7 +29,8 @@ h1 {
 }
 
 
-nav {
+#nav {
+  font-family: "Geist Sans", sans-serif;
   position: sticky;
   top: 0;
   background: white;
@@ -39,17 +42,29 @@ nav {
 }
 
 
+#nav .nav-link {
+  font-weight: 900; /* Makes text bold */
 
-
-
+}
 
 #main {
   margin-top: 1em;
   margin-bottom: 4em;
 }
+
 #home-jumbotron {
   background-color: inherit;
+  font-family: "Geist Sans", sans-serif;
 }
+
+#home-jumbotron h1 {
+  font-weight: 900; /* Adjust weight as needed */
+}
+
+#home-jumbotron p {
+  font-weight: 400; /* Default weight */
+}
+
 .font-125 {
   font-size: 125%;
 }
@@ -72,7 +87,7 @@ img {
 
 /* Style hyperlinks to match card title */
 a {
-  color: #333; /* Same color as card title */
+  color: #333 ; /* Same color as card title */
   font-size: 1rem; /* Match card title size */
   font-weight: bold; /* Match card title weight */
   text-decoration: none; /* Remove underline */
@@ -85,29 +100,6 @@ a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
 
-
-
-
-/*
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-  tr:hover {
-    background-color: #f5f5f5;
-  }
-
-
-*/
 
 
 /* General Table Styling */
