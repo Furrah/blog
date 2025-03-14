@@ -1,0 +1,527 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
+  
+  
+  <title>Persian Eggs</title>
+  <style>
+
+
+ 
+
+
+
+body {
+
+  background-color: #FFFFFF ;
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1,h2,h3 {
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 910px;
+}
+
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+
+
+#nav {
+  font-family: "Geist Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#nav a{
+  font-weight: bold;
+  color: inherit;
+}
+
+
+#nav .nav-link {
+  font-weight: 900;  
+
+}
+
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+#home-jumbotron {
+  background-color: inherit;
+  font-family: "Geist Sans", sans-serif;
+}
+
+#home-jumbotron h1 {
+  font-weight: 900;  
+}
+
+#home-jumbotron p {
+  font-weight: 400;  
+}
+
+.font-125 {
+  font-size: 125%;
+}
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+
+
+ 
+a {
+  color: #333 ;  
+  font-size: 1rem;  
+  font-weight: bold;  
+  text-decoration: none;  
+  transition: color 0.3s, text-decoration 0.3s;  
+}
+
+ 
+a:hover {
+  color: #0070f3;  
+  text-decoration: underline;  
+}
+
+
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+ 
+th {
+  background-color: #212529;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ 
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+ 
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+ 
+tr:hover {
+  background-color: #e3f2fd;
+  transition: background 0.3s;
+}
+
+ 
+@media screen and (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+
+
+ 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ 
+.card:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;  
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+ 
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;  
+}
+
+ 
+.card-img-top {
+  position: relative;
+}
+
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;  
+}
+
+
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+
+
+
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+
+
+
+
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  
+  <body>
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+
+
+
+        
+    <div class="container">
+      <main id="main">
+      
+
+<h1>Persian Eggs</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2025-03-14">Mar 14, 2025</time>
+
+        
+<br><br>
+<h2 id="ingredients">Ingredients</h2>
+<ul>
+<li>1 leek halved and chopped thinly</li>
+<li>1 onion chopped thinly</li>
+<li>2 garlic cloves finely chopped</li>
+<li>400g tin of green lentils</li>
+<li>2 tsp cumin seeds</li>
+<li>1 tsp turmeric</li>
+<li>400g chopped tomatoes</li>
+<li>100g baby leaf spinach</li>
+<li>4 eggs</li>
+<li>150g 0% fat Greek style yogurt</li>
+<li>Sea salt</li>
+<li>Freshly ground pepper</li>
+<li>200ml water + 2 tbsp</li>
+<li>Crusty bread (serving suggestion)</li>
+</ul>
+<h2 id="method">Method</h2>
+<ol>
+<li>Fry leek and onion in oil. After 5 mins add 2Tbsp of water and a good pinch of salt and pepper. Fry for another 3-4 mins.</li>
+<li>Add garlic, cumin seeds , and turmeric and cook for 1 minute</li>
+<li>Add lentils, tomatoes, and 200ml water. Simmer for 20 minutes until sauce has thickened.</li>
+<li>Add spinach and allow to wilt.</li>
+<li>Create holes in the sauce and crack eggs into them. Simmer for 5 minutes.</li>
+<li>Serve with dollop of yogurt and crusty bread</li>
+</ol>
+<p>Forgot to take a picture of it looking nice so here it is mid meal haha.</p>
+<p align="center"> 
+<img src="/food/images/persian_eggs/IMG_7406.jpeg" alt="drawing" width="600"/>
+</p>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </main>
+
+    </div>
+    
+<script src="http://localhost:1313/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>  
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>  
+  </body>
+</html>
