@@ -3,7 +3,7 @@ title: "Persian Eggs"
 date: 2025-03-14T09:43:47+01:00
 tags: []
 draft: false
-image: "/food/images/persian_eggs/IMG_7406.jpeg"
+image: "/food/images/persian_eggs/IMG_7460.jpeg"
 ---
 
 ## Ingredients
@@ -37,5 +37,5 @@ image: "/food/images/persian_eggs/IMG_7406.jpeg"
 Forgot to take a picture of it looking nice so here it is mid meal haha.
 
 <p align="center"> 
-<img src="/food/images/persian_eggs/IMG_7406.jpeg" alt="drawing" width="600"/>
+<img src="/food/images/persian_eggs/IMG_7460.jpeg" alt="drawing" width="600"/>
 </p>
