@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-14T09:43:47+01:00</lastmod>
+    <lastmod>2025-03-31T14:53:14+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/caitlins-kimchi/</loc>
+    <lastmod>2025-03-31T14:53:14+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/food/</loc>
-    <lastmod>2025-03-14T09:43:47+01:00</lastmod>
+    <lastmod>2025-03-31T14:53:14+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wild-garlic-pesto/</loc>
+    <lastmod>2025-03-31T14:35:33+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fermented-wild-garlic/</loc>
+    <lastmod>2025-03-31T14:19:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/persian_eggs/</loc>
     <lastmod>2025-03-14T09:43:47+01:00</lastmod>
