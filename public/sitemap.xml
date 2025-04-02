@@ -3,10 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-31T15:36:41+02:00</lastmod>
+    <lastmod>2025-04-01T14:49:16+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/food/</loc>
-    <lastmod>2025-03-31T15:36:41+02:00</lastmod>
+    <lastmod>2025-04-01T14:49:16+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sardine-beans/</loc>
+    <lastmod>2025-04-01T14:49:16+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/honey-mustard-salad-dressing/</loc>
+    <lastmod>2025-03-31T20:48:27+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/joes-kimchi/</loc>
     <lastmod>2025-03-31T15:36:41+02:00</lastmod>
