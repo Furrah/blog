@@ -6,6 +6,8 @@ draft: false
 image: "/food/images/peach_and_chilli_chutney/IMG_0129.jpeg"
 ---
 
+Makes around 2 jars. 
+
 ## Ingredients
 
 * 1tbsp vegetable oil 
@@ -38,11 +40,18 @@ image: "/food/images/peach_and_chilli_chutney/IMG_0129.jpeg"
 </div>
 
 
-
-
 <p align="center"> 
 <img src="/food/images/peach_and_chilli_chutney/IMG_0131.jpeg" alt="drawing" width="800"/>
 </p>
 <br>
+
+
+Sam and I grew our own chillis this year and where we now live in France there are peach trees! When the peaches fall to the floor they have about a week before they are bruised and rotten so you have to be quick to use them! The pictures in this recipe show a tripling of the recipe as we had lots of peaches to use! 
+
+<p align="center"> 
+<img src="/food/images/peach_and_chilli_chutney/IMG_0101.jpeg" alt="drawing" width="800"/>
+</p>
+<br>
+
 
 
