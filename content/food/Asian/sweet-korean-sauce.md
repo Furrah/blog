@@ -7,6 +7,7 @@ draft: false
 
 This is quite a sweet sauce but also has a bit of a kick! When making these type of sauce you can really mix and match with your ingrediants. You'll need something sweet, acidic, unami, and salty.  
 
+## Ingredients
 
 * 3 tablespoons gochujang
 * 1 tablespoon minced garlic
