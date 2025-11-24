@@ -1,5 +1,11 @@
 <head>
 
+<script>
+      // Instantly checks for saved preference and applies class to the <html> element
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    </script>
 
   <!-- Add Geist Sans font via Fontsource CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">

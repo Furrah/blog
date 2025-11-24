@@ -5,9 +5,17 @@
 const toggle = document.getElementById('dark-mode-toggle');
 const body = document.body;
 
-// Apply saved dark mode preference
-if(localStorage.getItem('dark-mode') === 'true') {
+// Set default: dark mode
+body.classList.add('dark-mode');
+
+// Apply saved preference
+const saved = localStorage.getItem('dark-mode');
+if (saved === 'true') {
   body.classList.add('dark-mode');
+  body.classList.remove('light-mode');
+} else if (saved === 'false') {
+  body.classList.remove('dark-mode');
+  body.classList.add('light-mode');
 }
 
 // Function to update the toggle icon
@@ -21,14 +29,20 @@ function updateIcon() {
   feather.replace(); // Re-render Feather icon
 }
 
-// Set initial icon correctly
+// Set initial icon
 updateIcon();
 
-// Toggle dark mode on button click
+// Toggle dark/light mode on button click
 toggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+    localStorage.setItem('dark-mode', 'false');
+  } else {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    localStorage.setItem('dark-mode', 'true');
+  }
   updateIcon();
 });
 </script>
-

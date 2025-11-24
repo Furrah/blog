@@ -4,14 +4,15 @@
    Base Typography & Body
 ---------------------------------------------------- */
 body {
-  background-color: #FFFFFF;
+  background-color: #121212; /* Dark mode default */
+  color: #e0e0e0;
   font-family: 'Geist Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 h1, h2, h3 {
-  font-family: "Geist Sans", sans-serif;
+  font-family: 'Geist Sans', sans-serif;
   font-weight: 900;
 }
 
@@ -19,24 +20,27 @@ h1, h2, h3 {
   max-width: {{ .Site.Params.containerMaxWidth | default "910px" | safeCSS }};
 }
 
-
 /* ----------------------------------------------------
-   Navigation
+   Navigation  (FIXED, NO DOUBLE BORDER)
 ---------------------------------------------------- */
+
+/* This is the ONLY border line under nav */
 #nav-border {
-  border-bottom: 1px solid #212529;
+  border-bottom: 1px solid #333; /* dark mode default */
 }
 
+/* Navbar background + text */
 #nav {
   font-family: "Geist Sans", sans-serif;
   position: sticky;
   top: 0;
-  background: white;
+  background: #121212; /* dark mode default */
+  border-bottom: none; /* prevent double-border */
 }
 
 #nav a {
   font-weight: bold;
-  color: inherit;
+  color: #eee;
 }
 
 #nav .nav-link {
@@ -49,18 +53,19 @@ h1, h2, h3 {
   height: 1em;
   vertical-align: middle;
 }
-.nav-link, #dark-mode-toggle {
-  color: var(--nav-text-color);
+
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #eee;
 }
 
-/* Light mode colors */
-:root {
-  --nav-text-color: #000;
-}
-
-/* Dark mode colors */
-body.dark-mode {
-  --nav-text-color: #fff;
+#dark-mode-toggle i {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
 }
 
 /* ----------------------------------------------------
@@ -76,44 +81,32 @@ body.dark-mode {
   font-family: "Geist Sans", sans-serif;
 }
 
-#home-jumbotron h1 {
-  font-weight: 900;
-}
+#home-jumbotron h1 { font-weight: 900; }
+#home-jumbotron p { font-weight: 400; }
 
-#home-jumbotron p {
-  font-weight: 400;
-}
+.font-125 { font-size: 125%; }
 
-.font-125 {
-  font-size: 125%;
-}
-
-img {
-  max-width: 100%;
-}
+img { max-width: 100%; }
 
 .btn {
   margin-bottom: 0.3em;
   margin-right: 0.3em;
 }
 
-
 /* ----------------------------------------------------
    Links
 ---------------------------------------------------- */
 a {
-  color: #333;
+  color: #eee;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s, text-decoration 0.3s;
 }
 
 a:hover {
-  color: #0070f3;
+  color: #d0aaff;
   text-decoration: underline;
 }
-
 
 /* ----------------------------------------------------
    Tables
@@ -123,13 +116,13 @@ table {
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  background: white;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  background: #1e1e1e;
 }
 
 th {
-  background-color: #212529;
-  color: white;
+  background-color: #333;
+  color: #fff;
   padding: 12px;
   text-align: left;
   font-weight: bold;
@@ -138,31 +131,23 @@ th {
 
 td {
   padding: 12px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #444;
 }
 
-tr:nth-child(even) {
-  background-color: #f8f8f8;
-}
-
-tr:hover {
-  background-color: #e3f2fd;
-  transition: background 0.3s;
-}
+tr:nth-child(even) { background-color: #222; }
+tr:hover { background-color: #333; }
 
 @media (max-width: 768px) {
   table { display: block; overflow-x: auto; white-space: nowrap; }
 }
 
-
 /* ----------------------------------------------------
    Code Blocks
 ---------------------------------------------------- */
 pre {
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-left: 3px solid #f36d33;
-  color: #222;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  color: #e0e0e0;
   font-family: monospace;
   font-size: 13px;
   line-height: 1.6;
@@ -170,14 +155,10 @@ pre {
   max-width: 100%;
   overflow: auto;
   padding: 1em 1.5em;
-  display: block;
   word-wrap: break-word;
 }
 
-code {
-  font-size: 14px;
-}
-
+code { font-size: 14px; }
 
 /* ----------------------------------------------------
    Card Styles (GLOBAL)
@@ -185,17 +166,16 @@ code {
 .card {
   border-radius: 12px;
   overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.7);
 }
 
-/* Global card image size */
 .card-img-top {
   width: 100%;
   height: 200px;
@@ -204,12 +184,9 @@ code {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Zoom on hover */
-.card:hover .card-img-top {
-  transform: scale(1.05);
-}
 
-/* Gradient overlay */
+.card:hover .card-img-top { transform: scale(1.02); }
+
 .card-img-top::before {
   content: "";
   position: absolute;
@@ -219,32 +196,17 @@ code {
   transition: opacity 0.3s ease-in-out;
 }
 
-.card:hover .card-img-top::before {
-  opacity: 0.8;
-}
+.card:hover .card-img-top::before { opacity: 0.8; }
 
-.card-body {
-  padding: 15px;
-  text-align: center;
-}
+.card-body { padding: 15px; text-align: center; }
+.card-title { font-size: 1.2rem; font-weight: bold; color: #fff; transition: color 0.3s; }
+.card:hover .card-title { color: #d0aaff; }
 
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.card:hover .card-title {
-  color: #0070f3;
-}
 
 
 /* ----------------------------------------------------
    TRAVEL SECTION OVERRIDES 
 ---------------------------------------------------- */
-
-/* ===== Travel page title ===== */
 .section-travel h1 {
   text-align: left;
   margin-bottom: 0.5rem;
@@ -253,56 +215,45 @@ code {
 
 .section-travel .page-subtitle {
   text-align: center;
-  color: #666;
+  color: #bbb;
   font-size: 1.05rem;
   margin-bottom: 1.5rem;
 }
 
-/* ===== Vertical list of cards ===== */
 .section-travel .travel-cards {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* space between cards */
+  gap: 2rem;
 }
 
-/* ===== Each card ===== */
 .section-travel .card {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.section-travel .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
+.section-travel .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
 
-/* ===== Anchor fills the card ===== */
 .section-travel .card > a {
   display: block;
   color: inherit;
   text-decoration: none;
 }
 
-/* ===== Card image ===== */
 .section-travel .card-img-top {
   width: 100%;
-  height: 400px;       /* tall, full-width image */
+  height: 400px;
   object-fit: cover;
   object-position: center;
   border-radius: 12px 12px 0 0;
   transition: transform 0.35s ease;
 }
 
-.section-travel .card:hover .card-img-top {
-  transform: scale(1.03);
-}
+.section-travel .card:hover .card-img-top { transform: scale(1.03); }
 
-/* Optional overlay for subtle effect */
 .section-travel .card-img-top::before {
   content: "";
   position: absolute;
@@ -311,40 +262,22 @@ code {
   pointer-events: none;
 }
 
-/* ===== Card body ===== */
-.section-travel .card-body {
-  padding: 1.2rem 1rem;
-  text-align: left;
-}
+.section-travel .card-body { padding: 1.2rem 1rem; text-align: left; }
+.section-travel .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+.section-travel time { color: #aaa; font-size: 0.95rem; }
 
-.section-travel .card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-}
-
-.section-travel time {
-  display: inline-block;
-  color: #777;
-  font-size: 0.95rem;
-}
-
-/* ===== Cards with no image ===== */
 .section-travel .card.no-image {
   min-height: 160px;
-  background: #fafafa;
-  border: 1px dashed rgba(0,0,0,0.06);
+  background: #222;
+  border: 1px dashed rgba(255,255,255,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.2rem;
 }
 
-/* ===== Small screen adjustments ===== */
-@media (max-width: 600px) {
-  .section-travel .card-img-top {
-    height: 280px; /* smaller on small screens */
-  }
+@media (max-width: 600px) { 
+  .section-travel .card-img-top { height: 280px; } 
 }
 
 /* ----------------------------------------------------
@@ -364,129 +297,77 @@ div.highlight .copybtn:hover {
   border-color: #51a7e8;
 }
 
-div.highlight {
-  position: relative;
-}
-
+div.highlight { position: relative; }
 
 /* ----------------------------------------------------
    Misc
 ---------------------------------------------------- */
-.col {
-  padding-left: 0;
-}
+.col { padding-left: 0; }
 
 .small {
   max-width: 400px;
   margin: 1rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 /* ----------------------------------------------------
-   Dark Mode
+   Light Mode
 ---------------------------------------------------- */
-
-
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-  transition: background-color 0.3s, color 0.3s;
+body.light-mode {
+  background-color: #fff;
+  color: #000;
 }
 
-/* -----------------------
-   Links
-   ----------------------- */
-body.dark-mode a {
-  color: #eee; /* link color in dark mode */
-  transition: color 0.3s;
+body.light-mode #nav-border {
+  border-bottom: 1px solid #212529; /* clean single border */
 }
 
-body.dark-mode a:hover {
-  color: #d0aaff;
+body.light-mode #nav {
+  background-color: #fff;
+  border-bottom: none; /* ensure no doubling */
 }
 
-/* -----------------------
-   Cards
-   ----------------------- */
-body.dark-mode .card {
-  background-color: #1e1e1e;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
-  transition: background-color 0.3s, box-shadow 0.3s;
+body.light-mode #nav a { color: #000; }
+body.light-mode #nav a:hover { color: #0070f3; }
+body.light-mode #dark-mode-toggle { color: #000; }
+
+body.light-mode .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-body.dark-mode .card-title {
-  color: #ffffff;
+body.light-mode .card-title { color: #333; }
+body.light-mode .card-body { color: #000; }
+
+body.light-mode table { background-color: #fff; color: #000; }
+body.light-mode th { background-color: #212529; color: #fff; }
+body.light-mode td { border-bottom: 1px solid #ddd; }
+
+body.light-mode a { color: #333; }
+body.light-mode a:hover { color: #0070f3; }
+
+/* ----------------------------------------------------
+   Smooth Transitions
+---------------------------------------------------- */
+#dark-mode-toggle i,
+#nav a,
+.card,
+.table,
+body {
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
-body.dark-mode .card-body {
-  color: #e0e0e0;
+/* ----------------------------------------------------
+   Image captions
+---------------------------------------------------- */
+.image-caption {
+  font-size: 0.9em;
+  margin-top: 0.25em;
+  color: #555; /* light mode */
 }
 
-/* -----------------------
-   Tables
-   ----------------------- */
-body.dark-mode table {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-  border-collapse: collapse;
+body.dark-mode .image-caption {
+  color: #ccc;
 }
-
-body.dark-mode th {
-  background-color: #333;
-  color: #fff;
-}
-
-body.dark-mode td {
-  border-bottom: 1px solid #444;
-}
-
-/* -----------------------
-   Navbar
-   ----------------------- */
-body.dark-mode #nav {
-  background-color: #121212;
-  border-bottom: 1px solid #333;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-body.dark-mode #nav a {
-  color: #eee; /* lighter text for links */
-  transition: color 0.3s;
-}
-
-body.dark-mode #nav a:hover {
-  color: #bbb;
-}
-
-/* -----------------------
-   Dark Mode Toggle Button
-   ----------------------- */
-#dark-mode-toggle {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #000; /* default light mode color */
-  transition: color 0.3s;
-}
-
-body.dark-mode #dark-mode-toggle {
-  color: #eee; /* light color in dark mode */
-}
-
-#dark-mode-toggle i {
-  color: inherit;        /* icon inherits button color */
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  transition: color 0.3s;
-}
-
-/* -----------------------
-   Optional Smooth Transitions for all elements
-   ----------------------- */
-body.dark-mode *, body * {
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
-}
-
 
 </style>

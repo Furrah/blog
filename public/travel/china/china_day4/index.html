@@ -2,6 +2,12 @@
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
+<script>
+      
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    </script>
 
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
@@ -20,14 +26,15 @@
 
  
 body {
-  background-color: #FFFFFF;
+  background-color: #121212;  
+  color: #e0e0e0;
   font-family: 'Geist Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 h1, h2, h3 {
-  font-family: "Geist Sans", sans-serif;
+  font-family: 'Geist Sans', sans-serif;
   font-weight: 900;
 }
 
@@ -35,28 +42,47 @@ h1, h2, h3 {
   max-width: 910px;
 }
 
-
  
 #nav-border {
-  border-bottom: 1px solid #212529;
+  border-bottom: 1px solid #333;
 }
 
 #nav {
   font-family: "Geist Sans", sans-serif;
   position: sticky;
   top: 0;
-  background: white;
+  background: #121212;  
 }
 
 #nav a {
   font-weight: bold;
-  color: inherit;
+  color: #eee;
 }
 
 #nav .nav-link {
   font-weight: 900;
 }
 
+#nav i {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #eee;
+}
+
+#dark-mode-toggle i {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
 
  
 #main {
@@ -69,42 +95,30 @@ h1, h2, h3 {
   font-family: "Geist Sans", sans-serif;
 }
 
-#home-jumbotron h1 {
-  font-weight: 900;
-}
+#home-jumbotron h1 { font-weight: 900; }
+#home-jumbotron p { font-weight: 400; }
 
-#home-jumbotron p {
-  font-weight: 400;
-}
+.font-125 { font-size: 125%; }
 
-.font-125 {
-  font-size: 125%;
-}
-
-img {
-  max-width: 100%;
-}
+img { max-width: 100%; }
 
 .btn {
   margin-bottom: 0.3em;
   margin-right: 0.3em;
 }
 
-
  
 a {
-  color: #333;
+  color: #eee;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s, text-decoration 0.3s;
 }
 
 a:hover {
-  color: #0070f3;
+  color: #d0aaff;
   text-decoration: underline;
 }
-
 
  
 table {
@@ -112,13 +126,13 @@ table {
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  background: white;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  background: #1e1e1e;
 }
 
 th {
-  background-color: #212529;
-  color: white;
+  background-color: #333;
+  color: #fff;
   padding: 12px;
   text-align: left;
   font-weight: bold;
@@ -127,29 +141,21 @@ th {
 
 td {
   padding: 12px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #444;
 }
 
-tr:nth-child(even) {
-  background-color: #f8f8f8;
-}
-
-tr:hover {
-  background-color: #e3f2fd;
-  transition: background 0.3s;
-}
+tr:nth-child(even) { background-color: #222; }
+tr:hover { background-color: #333; }
 
 @media (max-width: 768px) {
   table { display: block; overflow-x: auto; white-space: nowrap; }
 }
 
-
  
 pre {
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-left: 3px solid #f36d33;
-  color: #222;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  color: #e0e0e0;
   font-family: monospace;
   font-size: 13px;
   line-height: 1.6;
@@ -161,26 +167,22 @@ pre {
   word-wrap: break-word;
 }
 
-code {
-  font-size: 14px;
-}
-
+code { font-size: 14px; }
 
  
 .card {
   border-radius: 12px;
   overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.7);
 }
 
- 
 .card-img-top {
   width: 100%;
   height: 200px;
@@ -189,12 +191,8 @@ code {
   transition: transform 0.3s ease-in-out;
 }
 
- 
-.card:hover .card-img-top {
-  transform: scale(1.05);
-}
+.card:hover .card-img-top { transform: scale(1.05); }
 
- 
 .card-img-top::before {
   content: "";
   position: absolute;
@@ -204,28 +202,11 @@ code {
   transition: opacity 0.3s ease-in-out;
 }
 
-.card:hover .card-img-top::before {
-  opacity: 0.8;
-}
+.card:hover .card-img-top::before { opacity: 0.8; }
 
-.card-body {
-  padding: 15px;
-  text-align: center;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.card:hover .card-title {
-  color: #0070f3;
-}
-
-
- 
+.card-body { padding: 15px; text-align: center; }
+.card-title { font-size: 1.2rem; font-weight: bold; color: #fff; transition: color 0.3s; }
+.card:hover .card-title { color: #d0aaff; }
 
  
 .section-travel h1 {
@@ -236,56 +217,45 @@ code {
 
 .section-travel .page-subtitle {
   text-align: center;
-  color: #666;
+  color: #bbb;
   font-size: 1.05rem;
   margin-bottom: 1.5rem;
 }
 
- 
 .section-travel .travel-cards {
   display: flex;
   flex-direction: column;
-  gap: 2rem;  
+  gap: 2rem;
 }
 
- 
 .section-travel .card {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.section-travel .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
+.section-travel .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
 
- 
 .section-travel .card > a {
   display: block;
   color: inherit;
   text-decoration: none;
 }
 
- 
 .section-travel .card-img-top {
   width: 100%;
-  height: 400px;        
+  height: 400px;
   object-fit: cover;
   object-position: center;
   border-radius: 12px 12px 0 0;
   transition: transform 0.35s ease;
 }
 
-.section-travel .card:hover .card-img-top {
-  transform: scale(1.03);
-}
+.section-travel .card:hover .card-img-top { transform: scale(1.03); }
 
- 
 .section-travel .card-img-top::before {
   content: "";
   position: absolute;
@@ -294,41 +264,21 @@ code {
   pointer-events: none;
 }
 
- 
-.section-travel .card-body {
-  padding: 1.2rem 1rem;
-  text-align: left;
-}
+.section-travel .card-body { padding: 1.2rem 1rem; text-align: left; }
+.section-travel .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+.section-travel time { display: inline-block; color: #aaa; font-size: 0.95rem; }
 
-.section-travel .card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-}
-
-.section-travel time {
-  display: inline-block;
-  color: #777;
-  font-size: 0.95rem;
-}
-
- 
 .section-travel .card.no-image {
   min-height: 160px;
-  background: #fafafa;
-  border: 1px dashed rgba(0,0,0,0.06);
+  background: #222;
+  border: 1px dashed rgba(255,255,255,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.2rem;
 }
 
- 
-@media (max-width: 600px) {
-  .section-travel .card-img-top {
-    height: 280px;  
-  }
-}
+@media (max-width: 600px) { .section-travel .card-img-top { height: 280px; } }
 
  
 button.copybtn {
@@ -345,20 +295,58 @@ div.highlight .copybtn:hover {
   border-color: #51a7e8;
 }
 
-div.highlight {
-  position: relative;
-}
-
+div.highlight { position: relative; }
 
  
-.col {
-  padding-left: 0;
-}
+.col { padding-left: 0; }
 
 .small {
   max-width: 400px;
   margin: 1rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+ 
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.light-mode #nav { background-color: #fff; border-bottom: 1px solid #212529; }
+body.light-mode #nav a { color: #000; }
+body.light-mode #nav a:hover { color: #0070f3; }
+body.light-mode #dark-mode-toggle { color: #000; }
+
+body.light-mode .card { background-color: #fff; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+body.light-mode .card-title { color: #333; }
+body.light-mode .card-body { color: #000; }
+
+body.light-mode table { background-color: #fff; color: #000; }
+body.light-mode th { background-color: #212529; color: #fff; }
+body.light-mode td { border-bottom: 1px solid #ddd; }
+
+body.light-mode a { color: #333; }
+body.light-mode a:hover { color: #0070f3; }
+
+ 
+#dark-mode-toggle i,
+#nav a,
+.card,
+.table,
+body {
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+
+ 
+.image-caption {
+  font-size: 0.9em;
+  margin-top: 0.25em;
+  color: #555;  
+}
+
+body.dark-mode .image-caption {
+  color: #ccc;  
 }
 
 </style>
@@ -424,41 +412,46 @@ div.highlight {
 <body class="section-travel">
 
         <div id="nav-border" class="container">
-  <nav id="nav" class="nav justify-content-center">
-   
-    
-    
-    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
-   
-    
-    
-    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
-   
-    
-    
-    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
-   
-    
-    
-    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
-   
-    
-    
-    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
-   
-    
-    
-    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
-   
-    
-    
-    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
-  
+  <nav id="nav" class="nav justify-content-center align-items-center">
 
+    
+     
+      
+      
+      <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+     
+      
+      
+      <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+     
+      
+      
+      <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+     
+      
+      
+      <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+     
+      
+      
+      <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+     
+      
+      
+      <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+     
+      
+      
+      <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+    
+
+    
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
 
   </nav>
 </div>
-
  
 
         
@@ -492,8 +485,9 @@ function insertImage(path, maxWidth, caption = null) {
   const img = document.createElement("img");
   img.src = "/travel/images/china/Day4/" + path;
   img.alt = caption || "image";
-  img.style.maxWidth = maxWidth;
-  img.style.height = "auto";
+  img.style.width = "100%";      // responsive width
+  img.style.maxWidth = maxWidth;  // limit on large screens
+  img.style.height = "auto";      // keep aspect ratio
   img.loading = "lazy";
 
   link.appendChild(img);
@@ -503,9 +497,7 @@ function insertImage(path, maxWidth, caption = null) {
   if (caption) {
     const captionEl = document.createElement("div");
     captionEl.textContent = caption;
-    captionEl.style.fontSize = "0.9em";
-    captionEl.style.color = "#555";
-    captionEl.style.marginTop = "0.25em";
+    captionEl.classList.add("image-caption"); // use CSS class
     wrapper.appendChild(captionEl);
   }
 
@@ -516,7 +508,7 @@ function insertImage(path, maxWidth, caption = null) {
 </script>
 <h1 id="the-journey-of-mount-emei">The Journey of Mount Emei</h1>
 <p>Day 4 ,5,6
-Our trip up mount emei. We have been told that the river side path is closed and we should take the forest path by Terry who runs the teddy bear hotel we are staying at. Bags were prepped with all our waterproofs and we set off with a couple of bags of nuts, some bananas, 2 bags of crisps and wills favourite, brioche. The brioche fruit  loaf taste like preservative and ethanol, I don’t know why he likes them so much. We have decided to take the longest path up the mountain by going past baoguo temple and taking the first right up the mountain. The stairs begin and don’t stop for the next 3 days. The relentless never ending staircase to the golden summit. For the first 4-5 hours we experience no rain and all things are bright and beautiful. The forest delivers and will is busy taking photos of the flora. In the background you can hear the practice of martial arts. Big guttural calls followed by a chorus of guttural responses.</p>
+Our trip up mount emei. We have been told that the river side path is closed and we should take the forest path by Terry who runs the teddy bear hotel we are staying at. Bags were prepped with all our waterproofs and we set off with a couple of bags of nuts, some bananas, 2 bags of crisps and wills favourite, brioche. The brioche fruit  loaf taste like preservative and ethanol, I don’t know why he likes them so much. We have decided to take the longest path up the mountain by going past Baoguo temple and taking the first right up the mountain. The stairs begin and don’t stop for the next 3 days. The relentless never ending staircase to the golden summit. For the first 4-5 hours we experience no rain and all things are bright and beautiful. The forest delivers and Will is busy taking photos of the flora. In the distance you hear the practice of martial arts. Big guttural calls followed by a chorus of guttural responses. I wish I could see it.</p>
 <p>During this part all of whom we started the walk with begin to spread out. A father and his 7-8 year old son and a young man would become reoccurring characters on our journey. The young man is dressed in full waterproofs and a tennis esque hat. He is dripping in sweat. It’s not currently raining. At the beginning of the walk he would charge past us asking us to get out of his way before having a rest just ahead where we would pass him.</p>
 <p>The first part leads us to the tourist start at quinping (check this) pavallion as there is a bus that goes to here. we’ve probably covered around 500m of climbing and 10km already though we’ve comes back down.</p>
 <p>The tranquil nature of the walk explodes into chaos as tourists flood in. This is short lived as the almost empty pilgrimage pass continues on the other side. We continue our journey and the peace returns.</p>
@@ -557,9 +549,53 @@ At the base we both light a candle in memory of our loved ones and then proceed 
 
         
 <script src="http://localhost:1313/js/feather.min.js"></script>
+
 <script>
-  feather.replace()
-</script>  
+const toggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+
+body.classList.add('dark-mode');
+
+
+const saved = localStorage.getItem('dark-mode');
+if (saved === 'true') {
+  body.classList.add('dark-mode');
+  body.classList.remove('light-mode');
+} else if (saved === 'false') {
+  body.classList.remove('dark-mode');
+  body.classList.add('light-mode');
+}
+
+
+function updateIcon() {
+  const iconEl = toggle.querySelector('i');
+  if (body.classList.contains('dark-mode')) {
+    iconEl.setAttribute('data-feather', 'moon'); 
+  } else {
+    iconEl.setAttribute('data-feather', 'sun');  
+  }
+  feather.replace(); 
+}
+
+
+updateIcon();
+
+
+toggle.addEventListener('click', () => {
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+    localStorage.setItem('dark-mode', 'false');
+  } else {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    localStorage.setItem('dark-mode', 'true');
+  }
+  updateIcon();
+});
+</script>
+  
         <script>
   function addCopyButtonToCode(){
     var allCodeBlocksElements = $( "div.highlight pre" );

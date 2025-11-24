@@ -37,9 +37,7 @@ function insertImage(path, maxWidth, caption = null) {
   if (caption) {
     const captionEl = document.createElement("div");
     captionEl.textContent = caption;
-    captionEl.style.fontSize = "0.9em";
-    captionEl.style.color = "#555";
-    captionEl.style.marginTop = "0.25em";
+    captionEl.classList.add("image-caption"); // use CSS class
     wrapper.appendChild(captionEl);
   }
 
