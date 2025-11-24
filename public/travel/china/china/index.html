@@ -591,31 +591,43 @@ body.dark-mode *, body * {
         
 <br><br>
 <script>
-function insertImage(path, maxWidth) {
+function insertImage(path, maxWidth, caption = null) {
 
-  // Allow numbers or strings
+  // Allow numbers or strings for width
   if (typeof maxWidth === "number") {
     maxWidth = maxWidth + "px";
   }
 
-  const wrapper = document.createElement("p");
+  const wrapper = document.createElement("div");
   wrapper.style.textAlign = "center";
+  wrapper.style.margin = "1em 0";
 
   const link = document.createElement("a");
-  link.href = "/travel/images/china/Day1/" + path;  
+  link.href = "/travel/images/china/Day1/" + path;
   link.target = "_blank";
 
   const img = document.createElement("img");
-  img.src = "/travel/images/china/" + path;
-  img.alt = "image";
-  img.style.maxWidth = maxWidth;
-  img.style.height = "auto";
+  img.src = "/travel/images/china/Day1/" + path;
+  img.alt = caption || "image";
+  img.style.width = "100%";      // responsive width
+  img.style.maxWidth = maxWidth;  // limit on large screens
+  img.style.height = "auto";      // keep aspect ratio
   img.loading = "lazy";
 
   link.appendChild(img);
   wrapper.appendChild(link);
 
-  // Insert the image right after the script tag
+  // If caption provided, add it
+  if (caption) {
+    const captionEl = document.createElement("div");
+    captionEl.textContent = caption;
+    captionEl.style.fontSize = "0.9em";
+    captionEl.style.color = "#555";
+    captionEl.style.marginTop = "0.25em";
+    wrapper.appendChild(captionEl);
+  }
+
+  // Insert after the <script> tag
   const scriptTag = document.currentScript;
   scriptTag.insertAdjacentElement("afterend", wrapper);
 }

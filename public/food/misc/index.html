@@ -6,11 +6,6 @@
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
-<script>
-  if (localStorage.getItem('dark-mode') === 'true') {
-    document.documentElement.classList.add('dark-mode'); 
-  }
-</script>
 
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
@@ -391,19 +386,28 @@ div.highlight {
 
  
 
- 
+
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+ 
 body.dark-mode a {
-  color: #bb86fc;
+  color: #eee;  
+  transition: color 0.3s;
 }
 
+body.dark-mode a:hover {
+  color: #d0aaff;
+}
+
+ 
 body.dark-mode .card {
   background-color: #1e1e1e;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 body.dark-mode .card-title {
@@ -414,33 +418,64 @@ body.dark-mode .card-body {
   color: #e0e0e0;
 }
 
+ 
 body.dark-mode table {
   background-color: #1e1e1e;
   color: #e0e0e0;
+  border-collapse: collapse;
 }
 
 body.dark-mode th {
   background-color: #333;
+  color: #fff;
 }
 
 body.dark-mode td {
   border-bottom: 1px solid #444;
 }
 
-
-
+ 
 body.dark-mode #nav {
-    background-color: #121212;  
-    border-bottom: 1px solid #333;
+  background-color: #121212;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 body.dark-mode #nav a {
-    color: #eee;  
+  color: #eee;  
+  transition: color 0.3s;
 }
 
 body.dark-mode #nav a:hover {
-    color: #bbb;
+  color: #bbb;
 }
+
+ 
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;  
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: #eee;  
+}
+
+#dark-mode-toggle i {
+  color: inherit;         
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  transition: color 0.3s;
+}
+
+ 
+body.dark-mode *, body * {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
 
 </style>
 
@@ -1216,41 +1251,36 @@ body.dark-mode #nav a:hover {
 <script src="http://localhost:1313/js/feather.min.js"></script>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('dark-mode-toggle');
-  const body = document.body;
+const toggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
 
-  
-  if (localStorage.getItem('dark-mode') === 'true') {
-    body.classList.add('dark-mode');
+
+if(localStorage.getItem('dark-mode') === 'true') {
+  body.classList.add('dark-mode');
+}
+
+
+function updateIcon() {
+  const iconEl = toggle.querySelector('i');
+  if (body.classList.contains('dark-mode')) {
+    iconEl.setAttribute('data-feather', 'moon'); 
+  } else {
+    iconEl.setAttribute('data-feather', 'sun');  
   }
+  feather.replace(); 
+}
 
-  
-  function updateIcon() {
-    
-    toggle.innerHTML = '';
 
-    
-    const iconEl = document.createElement('i');
-    iconEl.setAttribute('data-feather', body.classList.contains('dark-mode') ? 'moon' : 'sun');
+updateIcon();
 
-    toggle.appendChild(iconEl);
 
-    
-    feather.replace();
-  }
-
-  
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
   updateIcon();
-
-  
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
-    updateIcon(); 
-  });
 });
 </script>
+
   
     <script>
   function addCopyButtonToCode(){

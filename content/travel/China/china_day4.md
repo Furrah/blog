@@ -24,8 +24,9 @@ function insertImage(path, maxWidth, caption = null) {
   const img = document.createElement("img");
   img.src = "/travel/images/china/Day4/" + path;
   img.alt = caption || "image";
-  img.style.maxWidth = maxWidth;
-  img.style.height = "auto";
+  img.style.width = "100%";      // responsive width
+  img.style.maxWidth = maxWidth;  // limit on large screens
+  img.style.height = "auto";      // keep aspect ratio
   img.loading = "lazy";
 
   link.appendChild(img);
@@ -46,6 +47,7 @@ function insertImage(path, maxWidth, caption = null) {
   scriptTag.insertAdjacentElement("afterend", wrapper);
 }
 </script>
+
 
 # The Journey of Mount Emei
 
