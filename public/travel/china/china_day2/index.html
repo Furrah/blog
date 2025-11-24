@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
+  
+  
+  <title>China Day 2</title>
+  <style>
+
+ 
+body {
+  background-color: #FFFFFF;
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 910px;
+}
+
+
+ 
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+
+#nav {
+  font-family: "Geist Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#nav a {
+  font-weight: bold;
+  color: inherit;
+}
+
+#nav .nav-link {
+  font-weight: 900;
+}
+
+
+ 
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+#home-jumbotron {
+  background-color: inherit;
+  font-family: "Geist Sans", sans-serif;
+}
+
+#home-jumbotron h1 {
+  font-weight: 900;
+}
+
+#home-jumbotron p {
+  font-weight: 400;
+}
+
+.font-125 {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  margin-bottom: 0.3em;
+  margin-right: 0.3em;
+}
+
+
+ 
+a {
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+th {
+  background-color: #212529;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #e3f2fd;
+  transition: background 0.3s;
+}
+
+@media (max-width: 768px) {
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+
+ 
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #222;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+code {
+  font-size: 14px;
+}
+
+
+ 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;
+}
+
+
+ 
+
+ 
+.section-travel h1 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.section-travel .page-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+ 
+.section-travel .travel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+ 
+.section-travel .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-travel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+ 
+.section-travel .card > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+ 
+.section-travel .card-img-top {
+  width: 100%;
+  height: 400px;        
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.35s ease;
+}
+
+.section-travel .card:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+ 
+.section-travel .card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+
+ 
+.section-travel .card-body {
+  padding: 1.2rem 1rem;
+  text-align: left;
+}
+
+.section-travel .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-travel time {
+  display: inline-block;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+ 
+.section-travel .card.no-image {
+  min-height: 160px;
+  background: #fafafa;
+  border: 1px dashed rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+ 
+@media (max-width: 600px) {
+  .section-travel .card-img-top {
+    height: 280px;  
+  }
+}
+
+ 
+button.copybtn {
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+div.highlight .copybtn:hover {
+  opacity: 1;
+  border-color: #51a7e8;
+}
+
+div.highlight {
+  position: relative;
+}
+
+
+ 
+.col {
+  padding-left: 0;
+}
+
+.small {
+  max-width: 400px;
+  margin: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  
+  
+<body class="section-travel">
+
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+
+        
+        <div class="container">
+          <main id="main">
+            
+
+<h1>China Day 2</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2025-11-24">Nov 24, 2025</time>
+
+        
+<br><br>
+<script>
+function insertImage(path, maxWidth, caption = null) {
+
+  // Allow numbers or strings for width
+  if (typeof maxWidth === "number") {
+    maxWidth = maxWidth + "px";
+  }
+
+  const wrapper = document.createElement("div");
+  wrapper.style.textAlign = "center";
+  wrapper.style.margin = "1em 0";
+
+  const link = document.createElement("a");
+  link.href = "/travel/images/china/Day2/" + path;
+  link.target = "_blank";
+
+  const img = document.createElement("img");
+  img.src = "/travel/images/china/Day2/" + path;
+  img.alt = caption || "image";
+  img.style.maxWidth = maxWidth;
+  img.style.height = "auto";
+  img.loading = "lazy";
+
+  link.appendChild(img);
+  wrapper.appendChild(link);
+
+  // If caption provided, add it
+  if (caption) {
+    const captionEl = document.createElement("div");
+    captionEl.textContent = caption;
+    captionEl.style.fontSize = "0.9em";
+    captionEl.style.color = "#555";
+    captionEl.style.marginTop = "0.25em";
+    wrapper.appendChild(captionEl);
+  }
+
+  // Insert after the <script> tag
+  const scriptTag = document.currentScript;
+  scriptTag.insertAdjacentElement("afterend", wrapper);
+}
+</script>
+<p>We have quite the busy agenda over the next couple of weeks and it starts immediately. We make our way to Chengdu East railway station and begin our salmon migration upstream of the oncoming commuter traffic. Thousands of people mostly dressed in a white shirt walk towards us as we and a few others attempt to get to our platform. We eventually get to our platform after a passport check. Hùzhào Hùzhào. I&rsquo;ve been looking forward to going on Chinas high speed rail but unfortunately this must be a regional line as we only hit speeds of 250 km/h (155 mph). Still, very groovy.</p>
+<script>insertImage("IMG_0234.jpeg", 800, "China Railway Highspeed - CRH")</script>
+<p>On the journey to Leshan Will spotted his first golden rain tree. A tree so famous at the garden he walks at that all must go and view it. The highlight of the garden. He cannot believe his eyes. The pride of the garden would later be spotted absolutely everywhere. From rare to common in a matter of seconds. One thing that I noticed is the number of giant apartment complexes that have been built in the middle of nowhere.</p>
+<script>insertImage("IMG_0237.jpeg", 800)</script>
+<p>The aim of the day is to go the giant Buddha park but first we had to spend a ridiculous amount of time searching for the hotel we had booked, only to find we had walked past it many times. We had even asked people if they knew where it was and they had no idea. We had even stepped inside it twice thinking it was a ceramics shop. Eventually a kind onlooker in a very fancy car took pity on us and helped us find it.
+It is beautiful. And! It&rsquo;s ten quid each a night!</p>
+<p>Ok, bags dropped and we walk to the Buddha park. Will has been here before and I&rsquo;m getting ancy to get in. We first get some lunch out the front of the park. Fried eggplant, xian tofu, and rice. foreshadowing, this is what we would eventually end up eating most meals. Every meal is accompanied by a tea which we would later find out is made from buckwheat.</p>
+<p>The moment has arrived and we enter the Buddha park. The first Buddha you encounter is 71m tall and has been carved out of the rock facing the river. Will tells me that the Buddha was constructed during the Tang dynasty to calm the confluence of the two rivers as boats often could not pass or would capsize due the fierce waters. The Buddha would tame the river with the power of chilling out. What actually happened is all the rock that was excavated for the Buddha was dumped into the river which slowed the river current down resulting in a steady passable river system. Or maybe it was the Buddha&hellip;</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+	  <script>insertImage("IMG_0280.jpeg", 300)</script>
+    </div>
+    <div class="col">
+      <script>insertImage("IMG_0394.jpeg", 500)</script>
+    </div>
+  </div>
+</div>
+<p>We spend the next 6 hours exploring this sprawling oasis of Buddha statues. An additional area owned by an external company is called the cave of Buddhas. We have to go! These Buddhas are big boys. They&rsquo;re tall. Real tall. And they&rsquo;re in caves! These statues are seriously impressive.</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <script>insertImage("IMG_0341.jpeg", 400)</script>
+    </div>
+    <div class="col">
+      <script>insertImage("IMG_0327.jpeg", 300)</script>
+    </div>
+  </div>
+</div>
+<p>During the day we kept seeing middle aged men with their top pulled half way up there body. I text my friend Alice who had lived in Chengdu for three years if she knew what was going on. That day I learned about the Beijing bikini, the ultimate fashion outfit for all the Chinese uncles.</p>
+<script>insertImage("IMG_0321.jpeg", 600, "Belly be bellyin'")</script>
+<p>As we walk around it&rsquo;s hard not be astounded by the sheer beauty of everything around you. Everything is just so exciting. I don&rsquo;t know if its the culture shock or the enjoyment of seeing ornamentation for ornamentations sake. I know I&rsquo;m currently in a touristic area but China has a feeling of grandeur. It was today I found my love for moongates.</p>
+<p>After the Buddha park we went to look for some food. The only place we could seem to find was a Sichuan hot pot place. It&rsquo;s self serve from the fridges surrounding the restaurant walls where at the end you pay by the stick. All sticks are equal. We weren&rsquo;t eating meat so after the meal the locals laughed at us and said that they had never seen anyone eat so few sticks.. Ah well. We left still quite hungry and confused and went to look for somewhere to chill by the river. I&rsquo;m not sure what the occasion was but this outdoor place was kicking off with Chinese country sounding music. What was left was a bit of a site. The food looked good too. Gutted.</p>
+<script>insertImage("IMG_0408.jpeg", 800)</script>
+<script>insertImage("IMG_0255.jpeg", 800, "The walkway to the giant Buddha park")</script>
+<script>insertImage("IMG_0297.jpeg", 800, "Everything just looks so goddamn beautiful!")</script>
+<script>insertImage("IMG_0298.jpeg", 800)</script>
+<script>insertImage("IMG_0301.jpeg", 800)</script>
+<script>insertImage("IMG_0309.jpeg", 800, "Infinite tiles for infinite time")</script>
+<script>insertImage("IMG_0315.jpeg", 800)</script>
+<script>insertImage("IMG_0319.jpeg", 800, "Moongate. I want more moongates. I want all entrances to be of the moon type.")</script>
+<script>insertImage("IMG_0363.jpeg", 800)</script>
+<script>insertImage("IMG_0366.jpeg", 800)</script>
+<script>insertImage("IMG_0375.jpeg", 800)</script>
+<script>insertImage("IMG_0387.jpeg", 800)</script>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          </main>
+        </div>
+
+        
+<script src="http://localhost:1313/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>  
+        <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>  
+  </body>
+</html>

@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
+  
+  
+  <title>Avoriaz</title>
+  <style>
+
+ 
+body {
+  background-color: #FFFFFF;
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 910px;
+}
+
+
+ 
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+
+#nav {
+  font-family: "Geist Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#nav a {
+  font-weight: bold;
+  color: inherit;
+}
+
+#nav .nav-link {
+  font-weight: 900;
+}
+
+
+ 
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+#home-jumbotron {
+  background-color: inherit;
+  font-family: "Geist Sans", sans-serif;
+}
+
+#home-jumbotron h1 {
+  font-weight: 900;
+}
+
+#home-jumbotron p {
+  font-weight: 400;
+}
+
+.font-125 {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  margin-bottom: 0.3em;
+  margin-right: 0.3em;
+}
+
+
+ 
+a {
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+th {
+  background-color: #212529;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #e3f2fd;
+  transition: background 0.3s;
+}
+
+@media (max-width: 768px) {
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+
+ 
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #222;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+code {
+  font-size: 14px;
+}
+
+
+ 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;
+}
+
+
+ 
+
+ 
+.section-travel h1 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.section-travel .page-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+ 
+.section-travel .travel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+ 
+.section-travel .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-travel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+ 
+.section-travel .card > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+ 
+.section-travel .card-img-top {
+  width: 100%;
+  height: 400px;        
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.35s ease;
+}
+
+.section-travel .card:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+ 
+.section-travel .card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+
+ 
+.section-travel .card-body {
+  padding: 1.2rem 1rem;
+  text-align: left;
+}
+
+.section-travel .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-travel time {
+  display: inline-block;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+ 
+.section-travel .card.no-image {
+  min-height: 160px;
+  background: #fafafa;
+  border: 1px dashed rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+ 
+@media (max-width: 600px) {
+  .section-travel .card-img-top {
+    height: 280px;  
+  }
+}
+
+ 
+button.copybtn {
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+div.highlight .copybtn:hover {
+  opacity: 1;
+  border-color: #51a7e8;
+}
+
+div.highlight {
+  position: relative;
+}
+
+
+ 
+.col {
+  padding-left: 0;
+}
+
+.small {
+  max-width: 400px;
+  margin: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  
+  
+<body class="section-travel">
+
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+
+        
+        <div class="container">
+          <main id="main">
+            
+
+<h1>Avoriaz</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2020-07-13">Jul 13, 2020</time>
+
+        
+<br><br>
+<script>
+function writeImage ( path ) { 
+var text = "<p align=\"center\"> <a href=\""
+text += path
+text += "\"target=\"_blank\"> <img src="
+text += path
+text += " alt=\"drawing\"/> </a> </p> <br>"
+
+document.write(text)
+
+}
+</script>
+<p>June 2020. We all went on a little summer trip to Avoriaz. Or somewhere close? Heres a picture of the &lsquo;Super best friends&rsquo; as Branko would say and obviously theres always one person to have their eyes closed and in this instance, it was Jamie. Maybe oskar too with his blind man glasses on.</p>
+<script>writeImage("/travel/images/Avoriaz/DSC_1025.jpg");</script>
+<p>Very close to the cabin was a lovely little lake with a bbq area. Here we all are chowing down on some vegan well being goodness and some flame grilled meat. Featuring Vito - Classiqe brand crisps. Oh wait, before i forget, someone bought non alcoholic beer on the first night, which is fine&hellip; but they only bought non alcoholic beer. Curses upon you. One day Jamie and I were walking around the lake searching for ice cream which we found and skimmed rocks for an hour until our shoulders hurt. When eating the ice cream jamie had stated it was the best pistachio ice cream he had ever tasted. Fast forward two day later and everyone is trying the pistachio ice cream to find that it does not taste of pistachio at all but of almonds. Everyone was upset and Jamie cried himself to sleep.</p>
+<script>writeImage("/travel/images/Avoriaz/IMG_8714.jpg");</script>
+<p>We had been speaking of downhill biking all week or as they call it in France, VTT and on the penultimate day it was the first day of the season for summer sports in the mountains. WHAT A DAY! This was my favourite day and I wished we could have done it forever, no matter how much my fingers wanted to fall off. Jamie was trying to impress Clare and fell off his bike on the noob section but unfortunately, Clare was riding quite close behind him and also came off her bike. Two weeks later I&rsquo;m writing about it and Jamie&rsquo;s leg is still blue. So here&rsquo;s a picture of us ready and raring to go. We all look pretty out of place against the mega cool dudes surrounding us, meh. The taking of this photo was a mess, the dude we had asked to take the photo had never seen a phone. Can we call them phones now without calling it a smart phone? People are still saying smart T.V. I&rsquo;ve heard them&hellip; Oh one more thing to add in to this section. I was the best, no one could catch me. Not even Oskar. I hope you remember that Oskar.</p>
+<script>writeImage("/travel/images/Avoriaz/20200627_124711.jpg");</script>
+<p>In recent times Oskar, Jamie, and I have decided to pick up the guitar (again). Oskar has been averaging 5 hours a day whilst I&rsquo;m more on the 5 minutes a day regime&hellip; I promise to be better. Here is Jamie and Oskar looking deeper than the Marianas trench. Total side trac but anyone who reads this is going to love it. I&rsquo;m sure. Two snails with opposing chirality (the direction of their snail shell) cannot mate. who knew.</p>
+<p align="center"> 
+<a href="/travel/images/Avoriaz/DSC_0960.jpg" target="_blank">
+	<img src="/travel/images/Avoriaz/DSC_0960.jpg" alt="drawing" width='600'/>
+</a>
+</p>
+<br>
+<p align="center"> 
+<a href="/photography/images/Avoriaz/DSC_0791.jpg" target="_blank">
+	<img src="/photography/images/Avoriaz/DSC_0791.jpg" alt="drawing" width='600'/>
+</a>
+</p>
+<br>
+<p>Back to the story of the super best friends, which is not in chronological order. Here Marta expresses her love for Alex whilst Alex expresses his love for nature? Germany? FPGAs? I guess we will never know  - probably FPGAs.</p>
+<p align="center"> 
+<a href="/photography/images/Avoriaz/DSC_0763.jpg" target="_blank">
+	<img src="/photography/images/Avoriaz/DSC_0763.jpg" alt="drawing" width='600'/>
+</a>
+</p>
+<br>
+<p>I entitle this photo - Man searches for wisdom, finds he is chimp. Branko convincing himself that his glasses string is cool and telling all that it is cool. I believe you Branko it is cool, and practical. During this time Kaya was whizzing his drone around. Were all eagerly awaiting Kaya&rsquo;s summer film festival extravaganza featuring lots of close calls with ski lifts. I should also give some background to this image as it was a lovely day. Kaya had taken us on a walk into mountains of Avoriaz to this lovely waterfall. The initial part of the walk was very steep and Branko had brought a chocolate bar with him which he didn&rsquo;t want to share :&rsquo;( Just after we had left the heavens opened and it rained HARD.</p>
+<script>writeImage("/photography/images/Avoriaz/DSC_0906.jpg");</script>
+<p>Jamie go stand in the waterfall and look like a British tourist. Mission complete.</p>
+<script>writeImage("/photography/images/Avoriaz/DSC_1006.jpg");</script>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          </main>
+        </div>
+
+        
+<script src="http://localhost:1313/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>  
+        <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>  
+  </body>
+</html>

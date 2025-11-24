@@ -1,21 +1,16 @@
 <style>
 
-
-/* * {
-  font-family: 'Geist Sans', sans-serif !important;
-}*/
-
-
-
+/* ----------------------------------------------------
+   Base Typography & Body
+---------------------------------------------------- */
 body {
-
-  background-color: #FFFFFF ;
+  background-color: #FFFFFF;
   font-family: 'Geist Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
   font-family: "Geist Sans", sans-serif;
   font-weight: 900;
 }
@@ -24,10 +19,13 @@ h1,h2,h3 {
   max-width: {{ .Site.Params.containerMaxWidth | default "910px" | safeCSS }};
 }
 
+
+/* ----------------------------------------------------
+   Navigation
+---------------------------------------------------- */
 #nav-border {
   border-bottom: 1px solid #212529;
 }
-
 
 #nav {
   font-family: "Geist Sans", sans-serif;
@@ -36,17 +34,19 @@ h1,h2,h3 {
   background: white;
 }
 
-#nav a{
+#nav a {
   font-weight: bold;
   color: inherit;
 }
 
-
 #nav .nav-link {
-  font-weight: 900; /* Makes text bold */
-
+  font-weight: 900;
 }
 
+
+/* ----------------------------------------------------
+   Page Layout
+---------------------------------------------------- */
 #main {
   margin-top: 1em;
   margin-bottom: 4em;
@@ -58,51 +58,47 @@ h1,h2,h3 {
 }
 
 #home-jumbotron h1 {
-  font-weight: 900; /* Adjust weight as needed */
+  font-weight: 900;
 }
 
 #home-jumbotron p {
-  font-weight: 400; /* Default weight */
+  font-weight: 400;
 }
 
 .font-125 {
   font-size: 125%;
 }
 
-
-.tag-btn {
-
-  margin-bottom: 0.3em;
-}
 img {
   max-width: 100%;
 }
+
 .btn {
   margin-bottom: 0.3em;
-  margin-right : 0.3em;
-
+  margin-right: 0.3em;
 }
 
 
-
-/* Style hyperlinks to match card title */
+/* ----------------------------------------------------
+   Links
+---------------------------------------------------- */
 a {
-  color: #333 ; /* Same color as card title */
-  font-size: 1rem; /* Match card title size */
-  font-weight: bold; /* Match card title weight */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
-/* Hover effect for hyperlinks */
 a:hover {
-  color: #0070f3; /* Same color as card title hover */
-  text-decoration: underline; /* Add underline on hover */
+  color: #0070f3;
+  text-decoration: underline;
 }
 
 
-
-/* General Table Styling */
+/* ----------------------------------------------------
+   Tables
+---------------------------------------------------- */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -112,7 +108,6 @@ table {
   background: white;
 }
 
-/* Table Header Styling */
 th {
   background-color: #212529;
   color: white;
@@ -122,119 +117,80 @@ th {
   text-transform: uppercase;
 }
 
-/* Table Row Styling */
 td {
   padding: 12px;
   border-bottom: 1px solid #ddd;
 }
 
-/* Alternating Row Colors */
 tr:nth-child(even) {
   background-color: #f8f8f8;
 }
 
-/* Hover Effect */
 tr:hover {
   background-color: #e3f2fd;
   transition: background 0.3s;
 }
 
-/* Responsive Table */
-@media screen and (max-width: 768px) {
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+@media (max-width: 768px) {
+  table { display: block; overflow-x: auto; white-space: nowrap; }
 }
 
 
-@media (min-width: 34em) {
-    .card-columns {
-        -webkit-column-count:3;
-        -moz-column-count:3;
-        column-count:3;
-    }
-}
-
+/* ----------------------------------------------------
+   Code Blocks
+---------------------------------------------------- */
 pre {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #222222;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #222;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 
 code {
-  /*background: #f4f4f4;*/
   font-size: 14px;
-  /*color: #007bff;*/
 }
 
 
-
-
-
-/* General Card Styles */
+/* ----------------------------------------------------
+   Card Styles (GLOBAL)
+---------------------------------------------------- */
 .card {
   border-radius: 12px;
   overflow: hidden;
   background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Make the card pop on hover */
 .card:hover {
-  transform: translateY(-5px); /* Moves the card up slightly */
+  transform: translateY(-5px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Image Styling */
+/* Global card image size */
 .card-img-top {
   width: 100%;
-  height: 200px; /* Adjust height */
-  object-fit: cover; /* Ensures image fills space nicely */
+  height: 200px;
+  object-fit: cover;
+  position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Subtle zoom effect on hover */
+/* Zoom on hover */
 .card:hover .card-img-top {
   transform: scale(1.05);
 }
 
-/* Card Content */
-.card-body {
-  padding: 15px;
-  text-align: center;
-}
-
-/* Card Title */
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.card:hover .card-title {
-  color: #0070f3; /* Change text color on hover */
-}
-
-/* Add a Gradient Overlay on Image */
-.card-img-top {
-  position: relative;
-}
-
+/* Gradient overlay */
 .card-img-top::before {
   content: "";
   position: absolute;
@@ -245,15 +201,137 @@ code {
 }
 
 .card:hover .card-img-top::before {
-  opacity: 0.8; /* Darkens the image slightly on hover */
+  opacity: 0.8;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;
 }
 
 
+/* ----------------------------------------------------
+   TRAVEL SECTION OVERRIDES 
+---------------------------------------------------- */
 
-/* Copy buttons */
+/* ===== Travel page title ===== */
+.section-travel h1 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.section-travel .page-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Vertical list of cards ===== */
+.section-travel .travel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space between cards */
+}
+
+/* ===== Each card ===== */
+.section-travel .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-travel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Anchor fills the card ===== */
+.section-travel .card > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Card image ===== */
+.section-travel .card-img-top {
+  width: 100%;
+  height: 400px;       /* tall, full-width image */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.35s ease;
+}
+
+.section-travel .card:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+/* Optional overlay for subtle effect */
+.section-travel .card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+
+/* ===== Card body ===== */
+.section-travel .card-body {
+  padding: 1.2rem 1rem;
+  text-align: left;
+}
+
+.section-travel .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-travel time {
+  display: inline-block;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* ===== Cards with no image ===== */
+.section-travel .card.no-image {
+  min-height: 160px;
+  background: #fafafa;
+  border: 1px dashed rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+/* ===== Small screen adjustments ===== */
+@media (max-width: 600px) {
+  .section-travel .card-img-top {
+    height: 280px; /* smaller on small screens */
+  }
+}
+
+/* ----------------------------------------------------
+   Copy Buttons
+---------------------------------------------------- */
 button.copybtn {
-  webkit-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   opacity: .15;
   padding: 2px 6px;
@@ -261,40 +339,28 @@ button.copybtn {
   right: 4px;
   top: 4px;
 }
-/*div.highlight:hover .copybtn, div.highlight .copybtn:focus {*/
-    //opacity: .3;
-/*}*/
+
 div.highlight .copybtn:hover {
-    opacity: 1;
-    border-color: #51a7e8;
+  opacity: 1;
+  border-color: #51a7e8;
 }
-div.highlight .copybtn:after {
-    opacity: 1;
-}
+
 div.highlight {
-    position: relative;
-}
-
-.col{
-  padding-left: 0px;
+  position: relative;
 }
 
 
-
-
+/* ----------------------------------------------------
+   Misc
+---------------------------------------------------- */
+.col {
+  padding-left: 0;
+}
 
 .small {
   max-width: 400px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
+  margin: 1rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  
 }
-
-
-
-
-
 
 </style>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  
+  <!-- Add section class -->
+<body class="section-{{ .Section }}">
+
+        {{ partial "nav.html" . }} 
+
+        <!-- {{partial "sidebar.html" .}} -->
+        <div class="container">
+          <main id="main">
+            {{ block "main" . }}{{ end }}
+          </main>
+        </div>
+
+        {{ partial "script.html" . }}  
+        {{ partial "copybutton.html" . }}  
+  </body>
+</html>

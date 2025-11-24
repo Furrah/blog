@@ -22,20 +22,15 @@
   <title>Archive</title>
   <style>
 
-
  
-
-
-
 body {
-
-  background-color: #FFFFFF ;
+  background-color: #FFFFFF;
   font-family: 'Geist Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
   font-family: "Geist Sans", sans-serif;
   font-weight: 900;
 }
@@ -44,10 +39,11 @@ h1,h2,h3 {
   max-width: 910px;
 }
 
+
+ 
 #nav-border {
   border-bottom: 1px solid #212529;
 }
-
 
 #nav {
   font-family: "Geist Sans", sans-serif;
@@ -56,17 +52,17 @@ h1,h2,h3 {
   background: white;
 }
 
-#nav a{
+#nav a {
   font-weight: bold;
   color: inherit;
 }
 
-
 #nav .nav-link {
-  font-weight: 900;  
-
+  font-weight: 900;
 }
 
+
+ 
 #main {
   margin-top: 1em;
   margin-bottom: 4em;
@@ -78,48 +74,40 @@ h1,h2,h3 {
 }
 
 #home-jumbotron h1 {
-  font-weight: 900;  
+  font-weight: 900;
 }
 
 #home-jumbotron p {
-  font-weight: 400;  
+  font-weight: 400;
 }
 
 .font-125 {
   font-size: 125%;
 }
 
-
-.tag-btn {
-
-  margin-bottom: 0.3em;
-}
 img {
   max-width: 100%;
 }
+
 .btn {
   margin-bottom: 0.3em;
-  margin-right : 0.3em;
-
+  margin-right: 0.3em;
 }
-
 
 
  
 a {
-  color: #333 ;  
-  font-size: 1rem;  
-  font-weight: bold;  
-  text-decoration: none;  
-  transition: color 0.3s, text-decoration 0.3s;  
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
- 
 a:hover {
-  color: #0070f3;  
-  text-decoration: underline;  
+  color: #0070f3;
+  text-decoration: underline;
 }
-
 
 
  
@@ -132,7 +120,6 @@ table {
   background: white;
 }
 
- 
 th {
   background-color: #212529;
   color: white;
@@ -142,66 +129,45 @@ th {
   text-transform: uppercase;
 }
 
- 
 td {
   padding: 12px;
   border-bottom: 1px solid #ddd;
 }
 
- 
 tr:nth-child(even) {
   background-color: #f8f8f8;
 }
 
- 
 tr:hover {
   background-color: #e3f2fd;
   transition: background 0.3s;
 }
 
+@media (max-width: 768px) {
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+
  
-@media screen and (max-width: 768px) {
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
-
-
-@media (min-width: 34em) {
-    .card-columns {
-        -webkit-column-count:3;
-        -moz-column-count:3;
-        column-count:3;
-    }
-}
-
 pre {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #222222;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #222;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 
 code {
-   
   font-size: 14px;
-   
 }
-
-
-
 
 
  
@@ -209,21 +175,21 @@ code {
   border-radius: 12px;
   overflow: hidden;
   background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
- 
 .card:hover {
-  transform: translateY(-5px);  
+  transform: translateY(-5px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
  
 .card-img-top {
   width: 100%;
-  height: 200px;  
-  object-fit: cover;  
+  height: 200px;
+  object-fit: cover;
+  position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -233,28 +199,6 @@ code {
 }
 
  
-.card-body {
-  padding: 15px;
-  text-align: center;
-}
-
- 
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.card:hover .card-title {
-  color: #0070f3;  
-}
-
- 
-.card-img-top {
-  position: relative;
-}
-
 .card-img-top::before {
   content: "";
   position: absolute;
@@ -265,15 +209,133 @@ code {
 }
 
 .card:hover .card-img-top::before {
-  opacity: 0.8;  
+  opacity: 0.8;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;
 }
 
 
+ 
+
+ 
+.section-travel h1 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.section-travel .page-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+ 
+.section-travel .travel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+ 
+.section-travel .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-travel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+ 
+.section-travel .card > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+ 
+.section-travel .card-img-top {
+  width: 100%;
+  height: 400px;        
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.35s ease;
+}
+
+.section-travel .card:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+ 
+.section-travel .card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+
+ 
+.section-travel .card-body {
+  padding: 1.2rem 1rem;
+  text-align: left;
+}
+
+.section-travel .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-travel time {
+  display: inline-block;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+ 
+.section-travel .card.no-image {
+  min-height: 160px;
+  background: #fafafa;
+  border: 1px dashed rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+ 
+@media (max-width: 600px) {
+  .section-travel .card-img-top {
+    height: 280px;  
+  }
+}
 
  
 button.copybtn {
-  webkit-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   opacity: .15;
   padding: 2px 6px;
@@ -281,43 +343,30 @@ button.copybtn {
   right: 4px;
   top: 4px;
 }
- 
-    
- 
+
 div.highlight .copybtn:hover {
-    opacity: 1;
-    border-color: #51a7e8;
+  opacity: 1;
+  border-color: #51a7e8;
 }
-div.highlight .copybtn:after {
-    opacity: 1;
-}
+
 div.highlight {
-    position: relative;
-}
-
-.col{
-  padding-left: 0px;
+  position: relative;
 }
 
 
-
-
+ 
+.col {
+  padding-left: 0;
+}
 
 .small {
   max-width: 400px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
+  margin: 1rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  
 }
 
-
-
-
-
-
 </style>
+
   <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   MathJax.Hub.Config({
@@ -393,7 +442,7 @@ div.highlight {
    
     
     
-    <a class="nav-link" href="/photography/"><i data-feather="aperture"></i> Photography</a>
+    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
    
     
     
@@ -428,6 +477,870 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2025-11-24 <a href="http://localhost:1313/travel/china/china_day4/">China Day 4</a></li>
+        <ul>
+        </ul>
+      
+        
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2025-11-24 <a href="http://localhost:1313/travel/china/china_day3/">China Day 3</a></li>
+        <ul>
+        </ul>
+      
+        
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2025-11-24 <a href="http://localhost:1313/travel/china/china_day2/">China Day 2</a></li>
+        <ul>
+        </ul>
+      
+        
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2025-11-19 <a href="http://localhost:1313/travel/china/china/">China</a></li>
+        <ul>
+        </ul>
+      
+        
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -833,6 +1746,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-09-10 <a href="http://localhost:1313/peach_chutney/">Peach &amp; Chilli Chutney</a></li>
         <ul>
         </ul>
@@ -840,6 +1761,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -1245,6 +2174,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-04-24 <a href="http://localhost:1313/greenhouse/solar_data/">Solar Data</a></li>
         <ul>
         </ul>
@@ -1252,6 +2189,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -1657,6 +2602,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-04-04 <a href="http://localhost:1313/fermented_brussels/">Fermented Brussels</a></li>
         <ul>
         </ul>
@@ -1664,6 +2617,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2069,6 +3030,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-03-31 <a href="http://localhost:1313/honey-mustard-salad-dressing/">Honey Mustard Salad Dressing</a></li>
         <ul>
         </ul>
@@ -2076,6 +3045,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2481,6 +3458,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-03-31 <a href="http://localhost:1313/caitlins-kimchi/">Caitlin&#39;s Kimchi</a></li>
         <ul>
         </ul>
@@ -2488,6 +3473,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2893,6 +3886,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-03-31 <a href="http://localhost:1313/fermented-wild-garlic/">Lacto Fermented Wild Garlic</a></li>
         <ul>
         </ul>
@@ -2900,6 +3901,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -3305,6 +4314,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-02-13 <a href="http://localhost:1313/corn-and-egg-drop-soup/">Corn and Egg Drop Soup</a></li>
         <ul>
         </ul>
@@ -3312,6 +4329,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -3717,6 +4742,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-01-23 <a href="http://localhost:1313/thai-green-paste/">Thai Green Paste</a></li>
         <ul>
         </ul>
@@ -3724,6 +4757,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -4129,6 +5170,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2025-01-14 <a href="http://localhost:1313/ramen/">Ramen</a></li>
         <ul>
         </ul>
@@ -4136,6 +5185,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -4547,6 +5604,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2024-09-15 <a href="http://localhost:1313/greenhouse/mains-switch-over/">Mains Switch Over</a></li>
         <ul>
         </ul>
@@ -4554,6 +5619,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -4959,6 +6032,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2024-05-27 <a href="http://localhost:1313/elderflower_cordial/">Elderflower Cordial</a></li>
         <ul>
         </ul>
@@ -5165,6 +6246,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2024-05-26 <a href="http://localhost:1313/pak_choi_oyster/">Pak Choi &amp; Oyster Sauce</a></li>
         <ul>
         </ul>
@@ -5172,6 +6261,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -5583,6 +6680,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2023-08-06 <a href="http://localhost:1313/chestnut_map/">Chestnut Map</a></li>
         <ul>
         </ul>
@@ -5590,6 +6695,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -6001,6 +7114,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2022-12-10 <a href="http://localhost:1313/growing_mushrooms/">Growing Oyster Mushrooms</a></li>
         <ul>
         </ul>
@@ -6008,6 +7129,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -6413,6 +7542,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2022-11-25 <a href="http://localhost:1313/growing_avocado/">Growing Avocados</a></li>
         <ul>
         </ul>
@@ -6420,6 +7557,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -6825,6 +7970,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2022-10-17 <a href="http://localhost:1313/python_decorator_bounds/">A Simple Python Bounds Checker using Decorators</a></li>
         <ul>
         </ul>
@@ -7031,13 +8184,29 @@ div.highlight {
         
           
         
-         <li>2022-09-11 <a href="http://localhost:1313/foraging/">Joe&#39;s Birthday Foraging Frenzy</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2022-09-11 <a href="http://localhost:1313/travel/foraging/">Joe&#39;s Birthday Foraging Frenzy</a></li>
         <ul>
         </ul>
       
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -7443,6 +8612,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2022-07-18 <a href="http://localhost:1313/ntc/">NTC Calculator</a></li>
         <ul>
         </ul>
@@ -7450,6 +8627,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -7855,6 +9040,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2022-06-06 <a href="http://localhost:1313/greenhouse/build/">Build</a></li>
         <ul>
         </ul>
@@ -7862,6 +9055,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -8267,6 +9468,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2022-04-24 <a href="http://localhost:1313/greenhouse/greenhouse/">The beginning</a></li>
         <ul>
         </ul>
@@ -8274,6 +9483,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -8685,6 +9902,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-12-03 <a href="http://localhost:1313/ftdi4222_setup_windows/">FTDI4222 Project Setup for Windows</a></li>
         <ul>
         </ul>
@@ -8692,6 +9917,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -9097,6 +10330,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-09-20 <a href="http://localhost:1313/dal-box/">Dal Box</a></li>
         <ul>
         </ul>
@@ -9104,6 +10345,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -9509,6 +10758,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-09-01 <a href="http://localhost:1313/squash/">Butternut Squash are pretty groovy</a></li>
         <ul>
         </ul>
@@ -9516,6 +10773,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -9921,6 +11186,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-08-21 <a href="http://localhost:1313/green_tomato_chutney/">Green Tomato Chutney</a></li>
         <ul>
         </ul>
@@ -9928,6 +11201,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -10333,6 +11614,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-03-24 <a href="http://localhost:1313/beetroot-dip/">Beetroot Dip</a></li>
         <ul>
         </ul>
@@ -10340,6 +11629,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -10745,6 +12042,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-03-16 <a href="http://localhost:1313/mapo-tofu/">Mapo Tofu</a></li>
         <ul>
         </ul>
@@ -10752,6 +12057,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -11157,6 +12470,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-01-28 <a href="http://localhost:1313/gorgonzola-pasta/">Gorgonzola Pasta</a></li>
         <ul>
         </ul>
@@ -11164,6 +12485,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -11569,6 +12898,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2021-01-17 <a href="http://localhost:1313/cmake_framework/">Python script for CMake Framework</a></li>
         <ul>
         </ul>
@@ -11576,6 +12913,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -11987,6 +13332,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-11-02 <a href="http://localhost:1313/lentil-ragu/">Lentil Ragu</a></li>
         <ul>
         </ul>
@@ -11994,6 +13347,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -12399,6 +13760,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-10-24 <a href="http://localhost:1313/banana-bread/">Banana Bread</a></li>
         <ul>
         </ul>
@@ -12406,6 +13775,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -12811,6 +14188,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-09-14 <a href="http://localhost:1313/leek-and-mushroom-pie/">Leek and Mushroom Pie</a></li>
         <ul>
         </ul>
@@ -13017,13 +14402,29 @@ div.highlight {
         
           
         
-         <li>2020-07-30 <a href="http://localhost:1313/zurich/">Zurich</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2020-07-30 <a href="http://localhost:1313/travel/zurich/">Zurich</a></li>
         <ul>
         </ul>
       
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -13429,6 +14830,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-07-16 <a href="http://localhost:1313/baked-sweet-potatoes/">Baked Sweet Potatoes</a></li>
         <ul>
         </ul>
@@ -13635,13 +15044,29 @@ div.highlight {
         
           
         
-         <li>2020-07-13 <a href="http://localhost:1313/avoriaz/">Avoriaz</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2020-07-13 <a href="http://localhost:1313/travel/avoriaz/">Avoriaz</a></li>
         <ul>
         </ul>
       
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -14047,6 +15472,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-05-23 <a href="http://localhost:1313/ftdi-4222-setup/">Interfacing with FTDIs FT4222H USB 2.0 to Quad SPI / I2C Bridge IC</a></li>
         <ul>
         </ul>
@@ -14054,6 +15487,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -14459,6 +15900,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-03-31 <a href="http://localhost:1313/beetroot-riossotto/">Beetroot Risotto</a></li>
         <ul>
         </ul>
@@ -14466,6 +15915,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -14871,6 +16328,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-03-27 <a href="http://localhost:1313/palak-paneer/">Palak Paneer</a></li>
         <ul>
         </ul>
@@ -15077,6 +16542,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2020-03-22 <a href="http://localhost:1313/usb-blaster-linux-quartus2-virtual-machine/">Rules and Permissions for USB Blaster Setup in Linux Virtual Machine</a></li>
         <ul>
         </ul>
@@ -15084,6 +16557,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -15495,6 +16976,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-12-14 <a href="http://localhost:1313/dal/">Dal</a></li>
         <ul>
         </ul>
@@ -15502,6 +16991,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -15907,6 +17404,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-12-08 <a href="http://localhost:1313/using-the-ad8627-dac/">Using the AD5627 DAC</a></li>
         <ul>
         </ul>
@@ -15914,6 +17419,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -16319,6 +17832,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-12-07 <a href="http://localhost:1313/onion-bhaji/">Onion Bhaji</a></li>
         <ul>
         </ul>
@@ -16326,6 +17847,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -16731,6 +18260,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-11-30 <a href="http://localhost:1313/usb-design/">USB Design Guide</a></li>
         <ul>
         </ul>
@@ -16738,6 +18275,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -17143,6 +18688,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-11-22 <a href="http://localhost:1313/xor-buffer-inverter/">XOR Logic used as a Buffer or Inverter</a></li>
         <ul>
         </ul>
@@ -17150,6 +18703,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -17555,6 +19116,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-11-18 <a href="http://localhost:1313/andhra-spiced-egg-curry/">Andhra Spiced Egg Curry</a></li>
         <ul>
         </ul>
@@ -17562,6 +19131,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -17967,6 +19544,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-11-04 <a href="http://localhost:1313/egg-bhuna/">Egg Bhuna</a></li>
         <ul>
         </ul>
@@ -17974,6 +19559,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -18379,13 +19972,29 @@ div.highlight {
         
           
         
-         <li>2019-11-03 <a href="http://localhost:1313/morroco/">Morocco - The Atlas Mountains</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2019-11-03 <a href="http://localhost:1313/travel/morroco/">Morocco - The Atlas Mountains</a></li>
         <ul>
         </ul>
       
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -18791,6 +20400,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-10-30 <a href="http://localhost:1313/op-amp-gain-adjustment-dac/">Precision Op Amp Gain Adjustment with DACs</a></li>
         <ul>
         </ul>
@@ -18798,6 +20415,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -19203,6 +20828,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-10-28 <a href="http://localhost:1313/murgh-makhani-butter-tofu-2/">Murgh Makhani Butter Tofu 2</a></li>
         <ul>
         </ul>
@@ -19210,6 +20843,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -19615,6 +21256,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-10-27 <a href="http://localhost:1313/fallfel/">Falafel</a></li>
         <ul>
         </ul>
@@ -19821,13 +21470,29 @@ div.highlight {
         
           
         
-         <li>2019-10-27 <a href="http://localhost:1313/lancaster-bowland-forest/">Lancaster</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+         <li>2019-10-27 <a href="http://localhost:1313/travel/lancaster---bowland-forest/">Lancaster</a></li>
         <ul>
         </ul>
       
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -20233,6 +21898,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-10-27 <a href="http://localhost:1313/integrated-noise-spectrum/">Comparison of Integrated Noise Spectrum of JFET and BJT input Operational Amplifiers</a></li>
         <ul>
         </ul>
@@ -20240,6 +21913,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -20645,6 +22326,14 @@ div.highlight {
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
          <li>2019-10-27 <a href="http://localhost:1313/creamy-coconut-lentil-curry/">Creamy Coconut Lentil Curry</a></li>
         <ul>
         </ul>
@@ -20652,6 +22341,14 @@ div.highlight {
         
         
         
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         

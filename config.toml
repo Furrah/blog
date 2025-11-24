@@ -47,9 +47,9 @@ unsafe = true
     type = "food"
     
   [[menu.main]]
-    name = "Photography"
+    name = "Travel"
     pre = "aperture"
-    url = "/photography/"
+    url = "/travel/"
     weight = 4   
 
   [[menu.main]]

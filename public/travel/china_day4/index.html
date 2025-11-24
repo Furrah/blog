@@ -1,0 +1,555 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
+  
+  
+  <title>China Day 4</title>
+  <style>
+
+
+ 
+
+
+
+body {
+
+  background-color: #FFFFFF ;
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1,h2,h3 {
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 910px;
+}
+
+#nav-border {
+  border-bottom: 1px solid #212529;
+}
+
+
+#nav {
+  font-family: "Geist Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#nav a{
+  font-weight: bold;
+  color: inherit;
+}
+
+
+#nav .nav-link {
+  font-weight: 900;  
+
+}
+
+#main {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+#home-jumbotron {
+  background-color: inherit;
+  font-family: "Geist Sans", sans-serif;
+}
+
+#home-jumbotron h1 {
+  font-weight: 900;  
+}
+
+#home-jumbotron p {
+  font-weight: 400;  
+}
+
+.font-125 {
+  font-size: 125%;
+}
+
+
+.tag-btn {
+
+  margin-bottom: 0.3em;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  margin-bottom: 0.3em;
+  margin-right : 0.3em;
+
+}
+
+
+
+ 
+a {
+  color: #333 ;  
+  font-size: 1rem;  
+  font-weight: bold;  
+  text-decoration: none;  
+  transition: color 0.3s, text-decoration 0.3s;  
+}
+
+ 
+a:hover {
+  color: #0070f3;  
+  text-decoration: underline;  
+}
+
+
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+ 
+th {
+  background-color: #212529;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ 
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+ 
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+ 
+tr:hover {
+  background-color: #e3f2fd;
+  transition: background 0.3s;
+}
+
+ 
+@media screen and (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #222222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+code {
+   
+  font-size: 14px;
+   
+}
+
+
+
+
+
+ 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ 
+.card:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.card-img-top {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;  
+  transition: transform 0.3s ease-in-out;
+}
+
+ 
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+ 
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+ 
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: #0070f3;  
+}
+
+ 
+.card-img-top {
+  position: relative;
+}
+
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top::before {
+  opacity: 0.8;  
+}
+
+
+
+ 
+button.copybtn {
+  webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: .15;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+ 
+    
+ 
+div.highlight .copybtn:hover {
+    opacity: 1;
+    border-color: #51a7e8;
+}
+div.highlight .copybtn:after {
+    opacity: 1;
+}
+div.highlight {
+    position: relative;
+}
+
+.col{
+  padding-left: 0px;
+}
+
+
+
+
+
+.small {
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+
+
+
+
+
+
+</style>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  
+  <body>
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+   
+    
+    
+    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+   
+    
+    
+    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+   
+    
+    
+    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+   
+    
+    
+    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+   
+    
+    
+    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+   
+    
+    
+    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+   
+    
+    
+    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+  
+
+
+  </nav>
+</div>
+
+ 
+
+
+
+        
+    <div class="container">
+      <main id="main">
+      
+
+<h1>China Day 4</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2025-11-24">Nov 24, 2025</time>
+
+        
+<br><br>
+<script>
+function insertImage(path, maxWidth, caption = null) {
+
+  // Allow numbers or strings for width
+  if (typeof maxWidth === "number") {
+    maxWidth = maxWidth + "px";
+  }
+
+  const wrapper = document.createElement("div");
+  wrapper.style.textAlign = "center";
+  wrapper.style.margin = "1em 0";
+
+  const link = document.createElement("a");
+  link.href = "/travel/images/china/Day4/" + path;
+  link.target = "_blank";
+
+  const img = document.createElement("img");
+  img.src = "/travel/images/china/Day4/" + path;
+  img.alt = caption || "image";
+  img.style.maxWidth = maxWidth;
+  img.style.height = "auto";
+  img.loading = "lazy";
+
+  link.appendChild(img);
+  wrapper.appendChild(link);
+
+  // If caption provided, add it
+  if (caption) {
+    const captionEl = document.createElement("div");
+    captionEl.textContent = caption;
+    captionEl.style.fontSize = "0.9em";
+    captionEl.style.color = "#555";
+    captionEl.style.marginTop = "0.25em";
+    wrapper.appendChild(captionEl);
+  }
+
+  // Insert after the <script> tag
+  const scriptTag = document.currentScript;
+  scriptTag.insertAdjacentElement("afterend", wrapper);
+}
+</script>
+<h1 id="the-journey-of-mount-emei">The Journey of Mount Emei</h1>
+<p>Day 4 ,5,6
+Our trip up mount emei. We have been told that the river side path is closed and we should take the forest path by Terry who runs the teddy bear hotel we are staying at. Bags were prepped with all our waterproofs and we set off with a couple of bags of nuts, some bananas, 2 bags of crisps and wills favourite, brioche. The brioche fruit  loaf taste like preservative and ethanol, I don’t know why he likes them so much. We have decided to take the longest path up the mountain by going past baoguo temple and taking the first right up the mountain. The stairs begin and don’t stop for the next 3 days. The relentless never ending staircase to the golden summit. For the first 4-5 hours we experience no rain and all things are bright and beautiful. The forest delivers and will is busy taking photos of the flora. In the background you can hear the practice of martial arts. Big guttural calls followed by a chorus of guttural responses.</p>
+<p>During this part all of whom we started the walk with begin to spread out. A father and his 7-8 year old son and a young man would become reoccurring characters on our journey. The young man is dressed in full waterproofs and a tennis esque hat. He is dripping in sweat. It’s not currently raining. At the beginning of the walk he would charge past us asking us to get out of his way before having a rest just ahead where we would pass him.</p>
+<p>The first part leads us to the tourist start at quinping (check this) pavallion as there is a bus that goes to here. we’ve probably covered around 500m of climbing and 10km already though we’ve comes back down.</p>
+<p>The tranquil nature of the walk explodes into chaos as tourists flood in. This is short lived as the almost empty pilgrimage pass continues on the other side. We continue our journey and the peace returns.</p>
+<p>As we ascend will stop to take pictures of every plant or tree he recognises or doesn’t and tells me about them. I take pictures of bugs and other animals. The chat never stops. We’re having a bloody great time</p>
+<p>As we leave the elephant pool temple it really starts to rain. This is around 3pm. Time to try out my raincoat that’s been in a cupboard for 10 years. It’s not very waterproof. I am wet. At around 5pm we arrive at chu temple. We meet the father and his son again who eat a giant bowl of egg fried rice.</p>
+<p>We sleep at chu temple at 1760m. It is very very basic. I turn my electric blanket  on to try and dry my clothes in between the blanket and my bottom sheet. It worked! But I woke up at 11pm absolutely baking hot. Will needed a wee in the middle of the night and decided not to go to the toilets as they were a long walk away in the rain but in the bush by the the accommodation. What we didn’t expect is that people would be hiking to the summit all the way through the night! He was noticed at least once by a walker trying to leave the entrance just standing in his boxers with a head torch on. At 3am someone with a boombox walked past blasting Chinese dance music. It must have been awful walking at that time. It’s pitch black and raining so so much. We were happy we were inside.</p>
+<p>In the morning I take a look around the temples vegetable garden and we continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us…</p>
+<p>The summit is beautiful. Both will and I are overcome with emotion, joy, relief, exhaustion, the realisation we had to go back down. We both shed a tear or 10.
+At the base we both light a candle in memory of our loved ones and then proceed climb the final steps to the golden statue. There are 1000s of tourists here as you can get a cable car up instead of climbing the infinite stairs. We spend an hour looking at the temples and just appreciating where we are. A German woman starts talking to us with a mouth full of food. She notices that we’re British and apologises for talking to hs with her mouth full as it’s rude in our country. It’s rude in everyone’s country. Stop talking to us. They were on an action packed tour of China spending very little time jn each place. For example they got a bus to the temple, spent an hour there and then were getting a bus down and onto the next place. The magic of this place was definitely I felt in the journey itself.</p>
+<p>We begin our decent down and battle our way past the tourists and the monkeys stealing everyone’s open food. One woman almost lost her tote bag as a monkey tried to free it from her. The path becomes empty again and peace is restored. We make our way to the elephant pool temple and sleep for the night. The accommodation there is really nice! They even have toilets and showers! The shower at chu temple had blood up the wall and many big insects staring you down…</p>
+<p>We wake up in the morning and will is desperate for the toilet. He leaves the room and immediately comes back and locks the door. There’s a monkey guarding the moon gate to the main path to the toilet. It’s baring its teeth and snarling at us. I pick up my bamboo walking stick and we go out together and investigate. Don’t worry will I’ve got this as I start banging my stick on the floor. This really riles the monkey and it starts approaching us. We both run back and I’ve made matters worse. We repeat this several times before the monkey finds something more interesting. Will legs it to the toilet and I go down to the dining room for breakfast. Tofu skins, a potato curry dish and some pickled greens.</p>
+<p>We spend the rest of the day hiking down to the bottom taking the gorge route down and it is beautiful. The water gleams glacial blue as butterflies dance around. Will finds a couple of 100 plants we have seen before. We walk through an avenue of hankerchief trees and will is just blown away. He must have said “I must come back in spring” at least 1000 times on the mountain. It was incredible beautiful in its pre autumnal state but the mind does wonder what the mountain looks like in full bloom!</p>
+<p>The story continues, down down down we go. Finally as we are arriving at the bus station I finally sea a green snake! Hallelujah!</p>
+<p>Approximately 10 pence later we are back in emeishan town bus station and the great pilgrimage is complete. 1 Buddhist mountain down, 3 to go.</p>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </main>
+
+    </div>
+    
+<script src="http://localhost:1313/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>  
+    <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>  
+  </body>
+</html>

@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Well lets take a look at it, Mr Gumby!</title>
+    <title>Travel on Well lets take a look at it, Mr Gumby!</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Well lets take a look at it, Mr Gumby!</description>
+    <description>Recent content in Travel on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Nov 2025 19:35:15 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 10:20:46 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>China Day 3</title>
+      <link>http://localhost:1313/travel/china/china_day3/</link>
+      <pubDate>Mon, 24 Nov 2025 10:20:46 +0100</pubDate>
+      <guid>http://localhost:1313/travel/china/china_day3/</guid>
+      <description>&lt;script&gt;&#xA;function insertImage(path, maxWidth, caption = null) {&#xA;&#xA;  // Allow numbers or strings for width&#xA;  if (typeof maxWidth === &#34;number&#34;) {&#xA;    maxWidth = maxWidth + &#34;px&#34;;&#xA;  }&#xA;&#xA;  const wrapper = document.createElement(&#34;div&#34;);&#xA;  wrapper.style.textAlign = &#34;center&#34;;&#xA;  wrapper.style.margin = &#34;1em 0&#34;;&#xA;&#xA;  const link = document.createElement(&#34;a&#34;);&#xA;  link.href = &#34;/travel/images/china/Day3/&#34; + path;&#xA;  link.target = &#34;_blank&#34;;&#xA;&#xA;  const img = document.createElement(&#34;img&#34;);&#xA;  img.src = &#34;/travel/images/china/Day3/&#34; + path;&#xA;  img.alt = caption || &#34;image&#34;;&#xA;  img.style.maxWidth = maxWidth;&#xA;  img.style.height = &#34;auto&#34;;&#xA;  img.loading = &#34;lazy&#34;;&#xA;&#xA;  link.appendChild(img);&#xA;  wrapper.appendChild(link);&#xA;&#xA;  // If caption provided, add it&#xA;  if (caption) {&#xA;    const captionEl = document.createElement(&#34;div&#34;);&#xA;    captionEl.textContent = caption;&#xA;    captionEl.style.fontSize = &#34;0.9em&#34;;&#xA;    captionEl.style.color = &#34;#555&#34;;&#xA;    captionEl.style.marginTop = &#34;0.25em&#34;;&#xA;    wrapper.appendChild(captionEl);&#xA;  }&#xA;&#xA;  // Insert after the &lt;script&gt; tag&#xA;  const scriptTag = document.currentScript;&#xA;  scriptTag.insertAdjacentElement(&#34;afterend&#34;, wrapper);&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;I wake up and have noodles for breakfast for the first time. Noodles, soy sauce vegetable stock broth and a few spring onions. It&amp;rsquo;s great. What a quick and delicious breakfast and my t shirt is now already stained with noodle slurp.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>China Day 2</title>
+      <link>http://localhost:1313/travel/china/china_day2/</link>
+      <pubDate>Mon, 24 Nov 2025 10:18:11 +0100</pubDate>
+      <guid>http://localhost:1313/travel/china/china_day2/</guid>
+      <description>&lt;script&gt;&#xA;function insertImage(path, maxWidth, caption = null) {&#xA;&#xA;  // Allow numbers or strings for width&#xA;  if (typeof maxWidth === &#34;number&#34;) {&#xA;    maxWidth = maxWidth + &#34;px&#34;;&#xA;  }&#xA;&#xA;  const wrapper = document.createElement(&#34;div&#34;);&#xA;  wrapper.style.textAlign = &#34;center&#34;;&#xA;  wrapper.style.margin = &#34;1em 0&#34;;&#xA;&#xA;  const link = document.createElement(&#34;a&#34;);&#xA;  link.href = &#34;/travel/images/china/Day2/&#34; + path;&#xA;  link.target = &#34;_blank&#34;;&#xA;&#xA;  const img = document.createElement(&#34;img&#34;);&#xA;  img.src = &#34;/travel/images/china/Day2/&#34; + path;&#xA;  img.alt = caption || &#34;image&#34;;&#xA;  img.style.maxWidth = maxWidth;&#xA;  img.style.height = &#34;auto&#34;;&#xA;  img.loading = &#34;lazy&#34;;&#xA;&#xA;  link.appendChild(img);&#xA;  wrapper.appendChild(link);&#xA;&#xA;  // If caption provided, add it&#xA;  if (caption) {&#xA;    const captionEl = document.createElement(&#34;div&#34;);&#xA;    captionEl.textContent = caption;&#xA;    captionEl.style.fontSize = &#34;0.9em&#34;;&#xA;    captionEl.style.color = &#34;#555&#34;;&#xA;    captionEl.style.marginTop = &#34;0.25em&#34;;&#xA;    wrapper.appendChild(captionEl);&#xA;  }&#xA;&#xA;  // Insert after the &lt;script&gt; tag&#xA;  const scriptTag = document.currentScript;&#xA;  scriptTag.insertAdjacentElement(&#34;afterend&#34;, wrapper);&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;We have quite the busy agenda over the next couple of weeks and it starts immediately. We make our way to Chengdu East railway station and begin our salmon migration upstream of the oncoming commuter traffic. Thousands of people mostly dressed in a white shirt walk towards us as we and a few others attempt to get to our platform. We eventually get to our platform after a passport check. Hùzhào Hùzhào. I&amp;rsquo;ve been looking forward to going on Chinas high speed rail but unfortunately this must be a regional line as we only hit speeds of 250 km/h (155 mph). Still, very groovy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>China</title>
+      <link>http://localhost:1313/travel/china/china/</link>
+      <pubDate>Wed, 19 Nov 2025 14:48:53 +0100</pubDate>
+      <guid>http://localhost:1313/travel/china/china/</guid>
+      <description>&lt;script&gt;&#xA;function insertImage(path, maxWidth) {&#xA;&#xA;  // Allow numbers or strings&#xA;  if (typeof maxWidth === &#34;number&#34;) {&#xA;    maxWidth = maxWidth + &#34;px&#34;;&#xA;  }&#xA;&#xA;  const wrapper = document.createElement(&#34;p&#34;);&#xA;  wrapper.style.textAlign = &#34;center&#34;;&#xA;&#xA;  const link = document.createElement(&#34;a&#34;);&#xA;  link.href = &#34;/travel/images/china/Day1/&#34; + path;  &#xA;  link.target = &#34;_blank&#34;;&#xA;&#xA;  const img = document.createElement(&#34;img&#34;);&#xA;  img.src = &#34;/travel/images/china/&#34; + path;&#xA;  img.alt = &#34;image&#34;;&#xA;  img.style.maxWidth = maxWidth;&#xA;  img.style.height = &#34;auto&#34;;&#xA;  img.loading = &#34;lazy&#34;;&#xA;&#xA;  link.appendChild(img);&#xA;  wrapper.appendChild(link);&#xA;&#xA;  // Insert the image right after the script tag&#xA;  const scriptTag = document.currentScript;&#xA;  scriptTag.insertAdjacentElement(&#34;afterend&#34;, wrapper);&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;In February 2025 I decided that I needed to leave my job and by July I had left. I desperately wanted to see some of the world and without action it just wasn&amp;rsquo;t going to happen. On the 23rd of February I sent a message to my friend Will Frank if he fancied a trip to western China. A week later were on a video call and the planning begins.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Squash Soup</title>
       <link>http://localhost:1313/squash-soup/</link>
@@ -227,10 +248,10 @@
     </item>
     <item>
       <title>Joe&#39;s Birthday Foraging Frenzy</title>
-      <link>http://localhost:1313/foraging/</link>
+      <link>http://localhost:1313/travel/foraging/</link>
       <pubDate>Sun, 11 Sep 2022 17:05:46 +0100</pubDate>
-      <guid>http://localhost:1313/foraging/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt; &#xA;  &lt;img src=&#34;http://localhost:1313/photography/images/Foraging/IMG_8259.jpg&#34; alt=&#34;drawing&#34; width=&#34;1000&#34;/&gt;&#xA;&lt;/p&gt;&#xA;&lt;!-- ## Introduction --&gt;&#xA;&lt;p&gt;For my 30th birthday my friends bought me a day out with the foraging fanatic Fergus Drennan and what a day it was!&#xA;It ran from 08:30 until 22:00 and was rammed full of quirky tastings, information overloads, and fruitful foraging. &lt;!-- feast on facts --&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-park&#34;&gt;The Park&lt;/h2&gt;&#xA;&lt;!-- &lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;      &lt;h3&gt;The Park &lt;/h3&gt; --&gt;&#xA;&lt;p&gt;After meeting at the train station we all piled into three cars and headed down to the park. Fergus sat us down in a circle beside a pond full of mace reed and started removing numerous berries on their branches from his backpack. The question was simple, edible or not? This quickly revealed that we were all very much amateurs but it did bring the hype which grew all day long! Fergus then gave us each a mace reed head and explained that the whole plant was edible throughout the different seasons. In spring, the new shoots can be harvested and taste like leek and if you really want to, the tuber can be cooked and the starch extracted, which is basically potato. Fergus was building up to tell us a story of how he once tried to see how many mace reed heads would be required to fill a duvet, which turned out to be 350, however, this wasn&amp;rsquo;t the story. He had filled the duvet and had been using it for a while when one night the duvet became alive. It turns out that the The mace is a popular nesting spot for a certain moth so, after a couple of nights the eggs hatched and thousands upon thousands of small moth larvae started crawling out of the duvet. CAN YOU IMAGINE THIS?!?!?&lt;/p&gt;</description>
+      <guid>http://localhost:1313/travel/foraging/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt; &#xA;  &lt;img src=&#34;http://localhost:1313/travel/images/Foraging/IMG_8259.jpg&#34; alt=&#34;drawing&#34; width=&#34;1000&#34;/&gt;&#xA;&lt;/p&gt;&#xA;&lt;!-- ## Introduction --&gt;&#xA;&lt;p&gt;For my 30th birthday my friends bought me a day out with the foraging fanatic Fergus Drennan and what a day it was!&#xA;It ran from 08:30 until 22:00 and was rammed full of quirky tastings, information overloads, and fruitful foraging. &lt;!-- feast on facts --&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-park&#34;&gt;The Park&lt;/h2&gt;&#xA;&lt;!-- &lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;      &lt;h3&gt;The Park &lt;/h3&gt; --&gt;&#xA;&lt;p&gt;After meeting at the train station we all piled into three cars and headed down to the park. Fergus sat us down in a circle beside a pond full of mace reed and started removing numerous berries on their branches from his backpack. The question was simple, edible or not? This quickly revealed that we were all very much amateurs but it did bring the hype which grew all day long! Fergus then gave us each a mace reed head and explained that the whole plant was edible throughout the different seasons. In spring, the new shoots can be harvested and taste like leek and if you really want to, the tuber can be cooked and the starch extracted, which is basically potato. Fergus was building up to tell us a story of how he once tried to see how many mace reed heads would be required to fill a duvet, which turned out to be 350, however, this wasn&amp;rsquo;t the story. He had filled the duvet and had been using it for a while when one night the duvet became alive. It turns out that the The mace is a popular nesting spot for a certain moth so, after a couple of nights the eggs hatched and thousands upon thousands of small moth larvae started crawling out of the duvet. CAN YOU IMAGINE THIS?!?!?&lt;/p&gt;</description>
     </item>
     <item>
       <title>PT RTD Calculator</title>
@@ -430,9 +451,9 @@
     </item>
     <item>
       <title>Zurich</title>
-      <link>http://localhost:1313/zurich/</link>
+      <link>http://localhost:1313/travel/zurich/</link>
       <pubDate>Thu, 30 Jul 2020 23:51:49 +0100</pubDate>
-      <guid>http://localhost:1313/zurich/</guid>
+      <guid>http://localhost:1313/travel/zurich/</guid>
       <description>&lt;script&gt;&#xA;function writeImage ( path ) { &#xA;var text = &#34;&lt;p align=\&#34;center\&#34;&gt; &lt;a href=\&#34;&#34;&#xA;text += path&#xA;text += &#34;\&#34;target=\&#34;_blank\&#34;&gt; &lt;img src=&#34;&#xA;text += path&#xA;text += &#34; alt=\&#34;drawing\&#34;/&gt; &lt;/a&gt; &lt;/p&gt; &lt;br&gt;&#34;&#xA;&#xA;document.write(text)&#xA;&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;Oskar&amp;rsquo;s final interview! Did he get it? at the point of writing this, we still don&amp;rsquo;t know! What we did know is that Oskar had decided he was taking Jamie and I to Zurich. I&amp;rsquo;m still not sure how it all came about but three boys in a hole went on tour!&lt;/p&gt;</description>
     </item>
     <item>
@@ -451,9 +472,9 @@
     </item>
     <item>
       <title>Avoriaz</title>
-      <link>http://localhost:1313/avoriaz/</link>
+      <link>http://localhost:1313/travel/avoriaz/</link>
       <pubDate>Mon, 13 Jul 2020 18:22:00 +0200</pubDate>
-      <guid>http://localhost:1313/avoriaz/</guid>
+      <guid>http://localhost:1313/travel/avoriaz/</guid>
       <description>&lt;script&gt;&#xA;function writeImage ( path ) { &#xA;var text = &#34;&lt;p align=\&#34;center\&#34;&gt; &lt;a href=\&#34;&#34;&#xA;text += path&#xA;text += &#34;\&#34;target=\&#34;_blank\&#34;&gt; &lt;img src=&#34;&#xA;text += path&#xA;text += &#34; alt=\&#34;drawing\&#34;/&gt; &lt;/a&gt; &lt;/p&gt; &lt;br&gt;&#34;&#xA;&#xA;document.write(text)&#xA;&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;June 2020. We all went on a little summer trip to Avoriaz. Or somewhere close? Heres a picture of the &amp;lsquo;Super best friends&amp;rsquo; as Branko would say and obviously theres always one person to have their eyes closed and in this instance, it was Jamie. Maybe oskar too with his blind man glasses on.&lt;/p&gt;</description>
     </item>
     <item>
@@ -612,9 +633,9 @@
     </item>
     <item>
       <title>Morocco - The Atlas Mountains</title>
-      <link>http://localhost:1313/morroco/</link>
+      <link>http://localhost:1313/travel/morroco/</link>
       <pubDate>Sun, 03 Nov 2019 15:21:48 +0100</pubDate>
-      <guid>http://localhost:1313/morroco/</guid>
+      <guid>http://localhost:1313/travel/morroco/</guid>
       <description>&lt;p&gt;In August 2018 my friends and I visited the Atlas mountains of Morocco and walked up Mount Toubkal. Despite my camera having a horrendous light leak I managed to get a few photos of that walk.&lt;/p&gt;&#xA;&lt;p&gt;We had envisioned a hike though the Atlas mountains off the typical tourist route, following the Berber trails. It became apparent after the first day of ascent that we weren&amp;rsquo;t equipped for this route. I remember feeling the exposure of the desert mountains, not being able to hide from the sun and slipping down constantly. The scree was so loose it made it very difficult to climb. So, after reaching the top we decided it was unsafe to press on any further and opted to go back to base camp.&lt;/p&gt;</description>
     </item>
     <item>
@@ -661,10 +682,10 @@
     </item>
     <item>
       <title>Lancaster</title>
-      <link>http://localhost:1313/lancaster-bowland-forest/</link>
+      <link>http://localhost:1313/travel/lancaster---bowland-forest/</link>
       <pubDate>Sun, 27 Oct 2019 22:04:40 +0100</pubDate>
-      <guid>http://localhost:1313/lancaster-bowland-forest/</guid>
-      <description>&lt;p&gt;This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film.&#xA;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/photography/images/Film/Lancaster10004-2.jpg&#34; alt=&#34;Lancaster&#34;&gt;&lt;/p&gt;&#xA;&lt;br&gt;&#xA;Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not. We are idiots.&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/photography/images/Film/JOEIR027.jpg&#34; alt=&#34;Giggleswick&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/travel/lancaster---bowland-forest/</guid>
+      <description>&lt;p&gt;This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film.&#xA;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/travel/images/Film/Lancaster10004-2.jpg&#34; alt=&#34;Lancaster&#34;&gt;&lt;/p&gt;&#xA;&lt;br&gt;&#xA;Ribblehead viaduct! This was taken on a separate trip. My friend Cristina convinced me and my friend Zane that this was infact the viaduct from Harry Potter that the Hogwarts Express crossed! It is not. We are idiots.&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/travel/images/Film/JOEIR027.jpg&#34; alt=&#34;Giggleswick&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>FPGA I2C Wishbone Interface and Testing </title>

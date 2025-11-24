@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{ partial "date-and-tags.html" . }}
+        <!-- {{partial "sidebar.html" .}} -->
+<br><br>
+{{ .Content }}
+{{ partial "disqus.html" . }}
+{{ end }}
