@@ -43,6 +43,25 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+#nav i {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+.nav-link, #dark-mode-toggle {
+  color: var(--nav-text-color);
+}
+
+/* Light mode colors */
+:root {
+  --nav-text-color: #000;
+}
+
+/* Dark mode colors */
+body.dark-mode {
+  --nav-text-color: #fff;
+}
 
 /* ----------------------------------------------------
    Page Layout
@@ -362,5 +381,112 @@ div.highlight {
   margin: 1rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* ----------------------------------------------------
+   Dark Mode
+---------------------------------------------------- */
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* -----------------------
+   Links
+   ----------------------- */
+body.dark-mode a {
+  color: #eee; /* link color in dark mode */
+  transition: color 0.3s;
+}
+
+body.dark-mode a:hover {
+  color: #d0aaff;
+}
+
+/* -----------------------
+   Cards
+   ----------------------- */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .card-title {
+  color: #ffffff;
+}
+
+body.dark-mode .card-body {
+  color: #e0e0e0;
+}
+
+/* -----------------------
+   Tables
+   ----------------------- */
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-collapse: collapse;
+}
+
+body.dark-mode th {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode td {
+  border-bottom: 1px solid #444;
+}
+
+/* -----------------------
+   Navbar
+   ----------------------- */
+body.dark-mode #nav {
+  background-color: #121212;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode #nav a {
+  color: #eee; /* lighter text for links */
+  transition: color 0.3s;
+}
+
+body.dark-mode #nav a:hover {
+  color: #bbb;
+}
+
+/* -----------------------
+   Dark Mode Toggle Button
+   ----------------------- */
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000; /* default light mode color */
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: #eee; /* light color in dark mode */
+}
+
+#dark-mode-toggle i {
+  color: inherit;        /* icon inherits button color */
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  transition: color 0.3s;
+}
+
+/* -----------------------
+   Optional Smooth Transitions for all elements
+   ----------------------- */
+body.dark-mode *, body * {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
 
 </style>

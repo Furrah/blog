@@ -1,5 +1,34 @@
 {{ $js := "js/feather.min.js" | absURL }}
 <script src="{{ $js }}"></script>
+
 <script>
-  feather.replace()
+const toggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+// Apply saved dark mode preference
+if(localStorage.getItem('dark-mode') === 'true') {
+  body.classList.add('dark-mode');
+}
+
+// Function to update the toggle icon
+function updateIcon() {
+  const iconEl = toggle.querySelector('i');
+  if (body.classList.contains('dark-mode')) {
+    iconEl.setAttribute('data-feather', 'moon'); // Dark mode: moon
+  } else {
+    iconEl.setAttribute('data-feather', 'sun');  // Light mode: sun
+  }
+  feather.replace(); // Re-render Feather icon
+}
+
+// Set initial icon correctly
+updateIcon();
+
+// Toggle dark mode on button click
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+  updateIcon();
+});
 </script>
+

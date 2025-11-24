@@ -57,6 +57,25 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+#nav i {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+.nav-link, #dark-mode-toggle {
+  color: var(--nav-text-color);
+}
+
+ 
+:root {
+  --nav-text-color: #000;
+}
+
+ 
+body.dark-mode {
+  --nav-text-color: #fff;
+}
 
  
 #main {
@@ -361,6 +380,99 @@ div.highlight {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+ 
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ 
+body.dark-mode a {
+  color: #eee;  
+  transition: color 0.3s;
+}
+
+body.dark-mode a:hover {
+  color: #d0aaff;
+}
+
+ 
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .card-title {
+  color: #ffffff;
+}
+
+body.dark-mode .card-body {
+  color: #e0e0e0;
+}
+
+ 
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-collapse: collapse;
+}
+
+body.dark-mode th {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode td {
+  border-bottom: 1px solid #444;
+}
+
+ 
+body.dark-mode #nav {
+  background-color: #121212;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode #nav a {
+  color: #eee;  
+  transition: color 0.3s;
+}
+
+body.dark-mode #nav a:hover {
+  color: #bbb;
+}
+
+ 
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;  
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: #eee;  
+}
+
+#dark-mode-toggle i {
+  color: inherit;         
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  transition: color 0.3s;
+}
+
+ 
+body.dark-mode *, body * {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+
 </style>
 
   <script type="text/javascript" async
@@ -424,41 +536,46 @@ div.highlight {
 <body class="section-travel">
 
         <div id="nav-border" class="container">
-  <nav id="nav" class="nav justify-content-center">
-   
-    
-    
-    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
-   
-    
-    
-    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
-   
-    
-    
-    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
-   
-    
-    
-    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
-   
-    
-    
-    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
-   
-    
-    
-    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
-   
-    
-    
-    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
-  
+  <nav id="nav" class="nav justify-content-center align-items-center">
 
+    
+     
+      
+      
+      <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+     
+      
+      
+      <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+     
+      
+      
+      <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+     
+      
+      
+      <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+     
+      
+      
+      <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+     
+      
+      
+      <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+     
+      
+      
+      <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+    
+
+    
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
 
   </nav>
 </div>
-
  
 
         
@@ -468,71 +585,79 @@ div.highlight {
 
 <h1>China</h1>
 
+
+  <div class="section-intro">
+    <p>In February 2025 I decided that I needed to leave my job and by July I had left. I desperately wanted to see some of the world and without action it just wasn&rsquo;t going to happen. On the 23rd of February I sent a message to my friend Will Frank if he fancied a trip to western China. A week later were on a video call and the planning begins.</p>
+<p>I had initially met Will in 2018 whilst working at CERN, the particle physics laboratory on the border of Switzerland. He had been there on a 3 month project and I had finally found a friend at the lab. I distinctively remember saying to myself &ldquo;I have found a new best friend&rdquo;. Well, he was only there for two more weeks and I wouldn&rsquo;t be seeing him again for quite sometime. A year later I am at the introductory CERN accelerator school in Romania and am pleasantly surprised to see his face again! Two weeks of intense and often confusing lectures on physics later and we have become pretty good pals! Three years later I find myself working in Oxford at the Rutherford Appleton Laboratory where Will was also working at the time. Somewhere during those years Will mentioned his trip to through Sichuan and Yunnan provinces in china and was keen to go back! Four years later we&rsquo;re going to China!</p>
+
+  </div>
+
+
 <div class="travel-cards">
 
   
-    <div class="card mb-4">
+    
 
-      
+    <div class="card mb-4">
 
       
         <a href="/travel/china/china_day3/">
       
 
-          
-            <img class="card-img-top" src="/travel/images/china/Day3/IMG_0416.jpeg" alt="China Day 3">
-          
+        
+          <img class="card-img-top" src="/travel/images/china/Day3/IMG_0416.jpeg" alt="China Day 3">
+        
 
-          <div class="card-body text-center">
-            <h5 class="card-title">China Day 3</h5>
-            
+        <div class="card-body text-center">
+          <h5 class="card-title">China Day 3</h5>
+          
 
 <i data-feather="calendar"></i> <time datetime="2025-11-24">Nov 24, 2025</time>
-          </div>
+        </div>
 
       </a>
     </div>
   
-    <div class="card mb-4">
+    
 
-      
+    <div class="card mb-4">
 
       
         <a href="/travel/china/china_day2/">
       
 
-          
-            <img class="card-img-top" src="/travel/images/china/Day2/IMG_0319.jpeg" alt="China Day 2">
-          
+        
+          <img class="card-img-top" src="/travel/images/china/Day2/IMG_0319.jpeg" alt="China Day 2">
+        
 
-          <div class="card-body text-center">
-            <h5 class="card-title">China Day 2</h5>
-            
+        <div class="card-body text-center">
+          <h5 class="card-title">China Day 2</h5>
+          
 
 <i data-feather="calendar"></i> <time datetime="2025-11-24">Nov 24, 2025</time>
-          </div>
+        </div>
 
       </a>
     </div>
   
-    <div class="card mb-4">
+    
 
-      
+    <div class="card mb-4">
 
       
         <a href="/travel/china/china/">
       
 
-          
-            <img class="card-img-top" src="/travel/images/china/Day1/IMG_0204.jpeg" alt="China">
-          
+        
+          <img class="card-img-top" src="/travel/images/china/Day1/IMG_0204.jpeg" alt="China">
+        
 
-          <div class="card-body text-center">
-            <h5 class="card-title">China</h5>
-            
+        <div class="card-body text-center">
+          <h5 class="card-title">China</h5>
+          
 
 <i data-feather="calendar"></i> <time datetime="2025-11-19">Nov 19, 2025</time>
-          </div>
+        </div>
 
       </a>
     </div>
@@ -546,9 +671,39 @@ div.highlight {
 
         
 <script src="http://localhost:1313/js/feather.min.js"></script>
+
 <script>
-  feather.replace()
-</script>  
+const toggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+
+if(localStorage.getItem('dark-mode') === 'true') {
+  body.classList.add('dark-mode');
+}
+
+
+function updateIcon() {
+  const iconEl = toggle.querySelector('i');
+  if (body.classList.contains('dark-mode')) {
+    iconEl.setAttribute('data-feather', 'moon'); 
+  } else {
+    iconEl.setAttribute('data-feather', 'sun');  
+  }
+  feather.replace(); 
+}
+
+
+updateIcon();
+
+
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+  updateIcon();
+});
+</script>
+
+  
         <script>
   function addCopyButtonToCode(){
     var allCodeBlocksElements = $( "div.highlight pre" );

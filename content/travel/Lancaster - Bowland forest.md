@@ -3,8 +3,6 @@ title: "Lancaster"
 date: 2019-10-27T22:04:40+01:00
 tags: []
 draft: false
-type: "imagePage"
-layout: "imagePageLayout"
 image: "/travel/images/Film/JOEIR027.jpg"
 ---
 This photo was taken on a walk around Bowland forest whilst I was studying at the University of Lancaster. It must be dated around 2016 and was shot on a Rolleiflex camera with Rollei IR400 Film.

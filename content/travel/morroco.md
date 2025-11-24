@@ -2,8 +2,6 @@
 title: "Morocco - The Atlas Mountains"
 date: 2019-11-03T15:21:48+01:00
 tags: []
-type: "imagePage"
-layout: "imagePageLayout"
 draft: false
 image: "/travel/images/Morroco/1-02.jpg"
 ---

@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<script>
+  if (localStorage.getItem('dark-mode') === 'true') {
+    document.documentElement.classList.add('dark-mode'); 
+  }
+</script>
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Hugo 0.139.3">
@@ -50,6 +62,25 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+#nav i {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+.nav-link, #dark-mode-toggle {
+  color: var(--nav-text-color);
+}
+
+ 
+:root {
+  --nav-text-color: #000;
+}
+
+ 
+body.dark-mode {
+  --nav-text-color: #fff;
+}
 
  
 #main {
@@ -354,6 +385,59 @@ div.highlight {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+ 
+
+ 
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .card-title {
+  color: #ffffff;
+}
+
+body.dark-mode .card-body {
+  color: #e0e0e0;
+}
+
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode th {
+  background-color: #333;
+}
+
+body.dark-mode td {
+  border-bottom: 1px solid #444;
+}
+
+
+
+body.dark-mode #nav {
+    background-color: #121212;  
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode #nav a {
+    color: #eee;  
+}
+
+body.dark-mode #nav a:hover {
+    color: #bbb;
+}
+
 </style>
 
   <script type="text/javascript" async
@@ -389,63 +473,89 @@ div.highlight {
 
 
 
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
 </head>  
 
-  <body>
-        <div id="nav-border" class="container">
-  <nav id="nav" class="nav justify-content-center">
-   
-    
-    
-    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
-   
-    
-    
-    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
-   
-    
-    
-    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
-   
-    
-    
-    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
-   
-    
-    
-    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
-   
-    
-    
-    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
-   
-    
-    
-    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
-  
 
+  
+  
+<body class="section-travel">
+
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center align-items-center">
+
+    
+     
+      
+      
+      <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+     
+      
+      
+      <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+     
+      
+      
+      <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+     
+      
+      
+      <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+     
+      
+      
+      <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+     
+      
+      
+      <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+     
+      
+      
+      <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+    
+
+    
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
 
   </nav>
 </div>
-
  
 
-    <div class="container">
-      <main id="main">
+        
+        <div class="container">
+          <main id="main">
+            
 
+<h1>Morocco - The Atlas Mountains</h1>
 
-      <h1>Morocco - The Atlas Mountains</h1>
-      
 
 <i data-feather="calendar"></i> <time datetime="2019-11-03">Nov 3, 2019</time>
 
-      <br><br>
-
-      <div class="col-lg-3"> 
         
-      </div>
-
-      <p>In August 2018 my friends and I visited the Atlas mountains of Morocco and walked up Mount Toubkal. Despite my camera having a horrendous light leak I managed to get a few photos of that walk.</p>
+<br><br>
+<p>In August 2018 my friends and I visited the Atlas mountains of Morocco and walked up Mount Toubkal. Despite my camera having a horrendous light leak I managed to get a few photos of that walk.</p>
 <p>We had envisioned a hike though the Atlas mountains off the typical tourist route, following the Berber trails. It became apparent after the first day of ascent that we weren&rsquo;t equipped for this route. I remember feeling the exposure of the desert mountains, not being able to hide from the sun and slipping down constantly. The scree was so loose it made it very difficult to climb. So, after reaching the top we decided it was unsafe to press on any further and opted to go back to base camp.</p>
 <p>Morale was down but we wanted to climb Toubkal so we set off for the small village of Imlil and set up camp for a day. After a days rest we headed for Toubkal which was a 2 day walk from Imlil.</p>
 <p><img src="/travel/images/Morroco/1-07.jpg" alt="Morocco"><br><br></p>
@@ -463,15 +573,100 @@ div.highlight {
 
 
 
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-      </main>
-
-    </div>
+(function() {
     
-<script src="http://localhost:1313/js/feather.min.js"></script>
-<script>
-  feather.replace()
-</script> 
+    
+    if (window.location.hostname == "localhost")
+        return;
 
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          </main>
+        </div>
+
+        
+<script src="http://localhost:1313/js/feather.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('dark-mode-toggle');
+  const body = document.body;
+
+  
+  if (localStorage.getItem('dark-mode') === 'true') {
+    body.classList.add('dark-mode');
+  }
+
+  
+  function updateIcon() {
+    
+    toggle.innerHTML = '';
+
+    
+    const iconEl = document.createElement('i');
+    iconEl.setAttribute('data-feather', body.classList.contains('dark-mode') ? 'moon' : 'sun');
+
+    toggle.appendChild(iconEl);
+
+    
+    feather.replace();
+  }
+
+  
+  updateIcon();
+
+  
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+    updateIcon(); 
+  });
+});
+</script>
+  
+        <script>
+  function addCopyButtonToCode(){
+    var allCodeBlocksElements = $( "div.highlight pre" );
+
+    allCodeBlocksElements.each(function(ii) {
+
+      var currentId = "codeblock" + (ii + 1);
+      $(this).attr('id', currentId);
+
+    feather.replace()
+      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
+        currentId + '"><i data-feather="copy" width="20"></i></button>';
+      $(this).after(clipButton);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+      setTimeout(function() {
+        
+        e.clearSelection();
+      }, 250);
+    });
+    clipboard.on('error', function(e) {
+      $(e.trigger).text("Can't in Safari");
+    });
+  }
+  $(document).ready(function () {
+    
+    addCopyButtonToCode();
+  });
+
+
+
+</script>  
   </body>
 </html>

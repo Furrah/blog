@@ -50,11 +50,8 @@ function insertImage(path, maxWidth, caption = null) {
 # The Journey of Mount Emei
 
 
-
-
-
 Day 4 ,5,6
-Our trip up mount emei. We have been told that the river side path is closed and we should take the forest path by Terry who runs the teddy bear hotel we are staying at. Bags were prepped with all our waterproofs and we set off with a couple of bags of nuts, some bananas, 2 bags of crisps and wills favourite, brioche. The brioche fruit  loaf taste like preservative and ethanol, I don’t know why he likes them so much. We have decided to take the longest path up the mountain by going past baoguo temple and taking the first right up the mountain. The stairs begin and don’t stop for the next 3 days. The relentless never ending staircase to the golden summit. For the first 4-5 hours we experience no rain and all things are bright and beautiful. The forest delivers and will is busy taking photos of the flora. In the background you can hear the practice of martial arts. Big guttural calls followed by a chorus of guttural responses.  
+Our trip up mount emei. We have been told that the river side path is closed and we should take the forest path by Terry who runs the teddy bear hotel we are staying at. Bags were prepped with all our waterproofs and we set off with a couple of bags of nuts, some bananas, 2 bags of crisps and wills favourite, brioche. The brioche fruit  loaf taste like preservative and ethanol, I don’t know why he likes them so much. We have decided to take the longest path up the mountain by going past Baoguo temple and taking the first right up the mountain. The stairs begin and don’t stop for the next 3 days. The relentless never ending staircase to the golden summit. For the first 4-5 hours we experience no rain and all things are bright and beautiful. The forest delivers and Will is busy taking photos of the flora. In the distance you hear the practice of martial arts. Big guttural calls followed by a chorus of guttural responses. I wish I could see it.  
 
 During this part all of whom we started the walk with begin to spread out. A father and his 7-8 year old son and a young man would become reoccurring characters on our journey. The young man is dressed in full waterproofs and a tennis esque hat. He is dripping in sweat. It’s not currently raining. At the beginning of the walk he would charge past us asking us to get out of his way before having a rest just ahead where we would pass him. 
 

@@ -1,16 +1,17 @@
 <div id="nav-border" class="container">
-  <nav id="nav" class="nav justify-content-center">
-  {{ range .Site.Menus.main }} 
-    {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
-    {{ $text := print $icon " " .Name | safeHTML }}
-    <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
-  {{ end }}
+  <nav id="nav" class="nav justify-content-center align-items-center">
 
-<!--   <nav class="navbar navbar-light bg-light">
-  	  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form> -->
+    <!-- Loop through main menu items -->
+    {{ range .Site.Menus.main }} 
+      {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+      {{ $text := print $icon " " .Name | safeHTML }}
+      <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+    {{ end }}
+
+    <!-- Light/Dark mode toggle button -->
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
+
   </nav>
 </div>
-

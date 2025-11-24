@@ -2,12 +2,18 @@
 
 <h1>{{ .Title }}</h1>
 
+{{ if .Content }}
+  <div class="section-intro">
+    {{ .Content }}
+  </div>
+{{ end }}
+
 <div class="travel-cards">
 
-  {{ range .Pages.ByPublishDate.Reverse }}
-    <div class="card mb-4">
+  {{ range .Pages }}
+    {{ $children := .Pages }}
 
-      {{ $children := .Pages }}
+    <div class="card mb-4">
 
       {{ if .IsSection }}
         {{ if eq (len $children) 1 }}
@@ -20,14 +26,14 @@
         <a href="{{ .RelPermalink }}">
       {{ end }}
 
-          {{ if .Params.image }}
-            <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}">
-          {{ end }}
+        {{ if .Params.image }}
+          <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}">
+        {{ end }}
 
-          <div class="card-body text-center">
-            <h5 class="card-title">{{ .Title }}</h5>
-            {{ partial "date.html" . }}
-          </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ .Title }}</h5>
+          {{ partial "date.html" . }}
+        </div>
 
       </a>
     </div>

@@ -6,6 +6,11 @@
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
+<script>
+  if (localStorage.getItem('dark-mode') === 'true') {
+    document.documentElement.classList.add('dark-mode'); 
+  }
+</script>
 
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
@@ -61,6 +66,25 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+#nav i {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+.nav-link, #dark-mode-toggle {
+  color: var(--nav-text-color);
+}
+
+ 
+:root {
+  --nav-text-color: #000;
+}
+
+ 
+body.dark-mode {
+  --nav-text-color: #fff;
+}
 
  
 #main {
@@ -365,6 +389,59 @@ div.highlight {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+ 
+
+ 
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .card-title {
+  color: #ffffff;
+}
+
+body.dark-mode .card-body {
+  color: #e0e0e0;
+}
+
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode th {
+  background-color: #333;
+}
+
+body.dark-mode td {
+  border-bottom: 1px solid #444;
+}
+
+
+
+body.dark-mode #nav {
+    background-color: #121212;  
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode #nav a {
+    color: #eee;  
+}
+
+body.dark-mode #nav a:hover {
+    color: #bbb;
+}
+
 </style>
 
   <script type="text/javascript" async
@@ -426,41 +503,46 @@ div.highlight {
   
   <body>
         <div id="nav-border" class="container">
-  <nav id="nav" class="nav justify-content-center">
-   
-    
-    
-    <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
-   
-    
-    
-    <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
-   
-    
-    
-    <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
-   
-    
-    
-    <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
-   
-    
-    
-    <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
-   
-    
-    
-    <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
-   
-    
-    
-    <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
-  
+  <nav id="nav" class="nav justify-content-center align-items-center">
 
+    
+     
+      
+      
+      <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+     
+      
+      
+      <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+     
+      
+      
+      <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+     
+      
+      
+      <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+     
+      
+      
+      <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+     
+      
+      
+      <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+     
+      
+      
+      <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+    
+
+    
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
 
   </nav>
 </div>
-
  
 
 
@@ -530,9 +612,44 @@ This is an attempt to get some protein in me!</p>
     </div>
     
 <script src="http://localhost:1313/js/feather.min.js"></script>
+
 <script>
-  feather.replace()
-</script>  
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('dark-mode-toggle');
+  const body = document.body;
+
+  
+  if (localStorage.getItem('dark-mode') === 'true') {
+    body.classList.add('dark-mode');
+  }
+
+  
+  function updateIcon() {
+    
+    toggle.innerHTML = '';
+
+    
+    const iconEl = document.createElement('i');
+    iconEl.setAttribute('data-feather', body.classList.contains('dark-mode') ? 'moon' : 'sun');
+
+    toggle.appendChild(iconEl);
+
+    
+    feather.replace();
+  }
+
+  
+  updateIcon();
+
+  
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+    updateIcon(); 
+  });
+});
+</script>
+  
     <script>
   function addCopyButtonToCode(){
     var allCodeBlocksElements = $( "div.highlight pre" );
