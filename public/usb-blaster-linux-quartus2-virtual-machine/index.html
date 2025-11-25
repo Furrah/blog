@@ -129,6 +129,42 @@ div.highlight, div.chroma {
 
 
  
+
+.chroma .k  { color: #f92672; }   
+.chroma .kc { color: #f92672; }
+.chroma .kd { color: #f92672; }
+.chroma .kn { color: #f92672; }
+
+.chroma .s  { color: #e6db74; }   
+.chroma .sb { color: #e6db74; }
+.chroma .sc { color: #e6db74; }
+
+.chroma .n  { color: #f8f8f2; }   
+.chroma .na { color: #a6e22e; }
+.chroma .nb { color: #66d9ef; }
+.chroma .bp { color: #66d9ef; }
+
+.chroma .c  { color: #75715e; font-style: italic; }  
+.chroma .cm { color: #75715e; }
+.chroma .c1 { color: #75715e; }
+
+ 
+.chroma .m { color: #ae81ff; }
+
+ 
+.chroma .o { color: #f92672; }
+
+ 
+.chroma .nf { color: #a6e22e; }
+
+ 
+ 
+
+
+
+
+
+ 
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -136,7 +172,7 @@ div.highlight, div.chroma {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
-.card:hover { transform: translateY(-5px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card:hover { transform: translateY(-0px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
 .card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
 .card:hover .card-img-top { transform: scale(1.02); }
 .card-img-top::before {
@@ -376,31 +412,31 @@ body.dark-mode .image-caption { color: #ccc; }
 <br><br>
 <p>SOURCE: <a href="https://stackoverflow.com/questions/18704913/unable-to-lock-chain-insufficient-port-permissions">https://stackoverflow.com/questions/18704913/unable-to-lock-chain-insufficient-port-permissions</a></p>
 <p>If when jtagconfig is ran</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1<span style="color:#666">)</span> USB-Blaster varient <span style="color:#666">[</span>2-1<span style="color:#666">]</span>
-</span></span><span style="display:flex;"><span>	unable to lock chain<span style="color:#666">(</span>Insufficient port permissions<span style="color:#666">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1<span style="color:#56b6c2">)</span> USB-Blaster varient <span style="color:#56b6c2">[</span>2-1<span style="color:#56b6c2">]</span>
+</span></span><span style="display:flex;"><span>	unable to lock chain<span style="color:#56b6c2">(</span>Insufficient port permissions<span style="color:#56b6c2">)</span>
 </span></span></code></pre></div><p>is returned and Quartus cant program your FPGA. The following steps should fix this problem. An amazing resource on setting up Quartus and other Altera related design software is
 <a href=https://wiki.archlinux.org/index.php/Altera_Design_Software  target="_blank"> Altera Design Software  </a></p>
 <p>Before a USB Blaster can be used its jtag rules and permissions must be configured.</p>
 <p>First kill jtagd.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo killall -9 jtagd
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo killall -9 jtagd
 </span></span></code></pre></div><p>If jtagconfig is ran whilst jtagd is already running then jtagconfig will have no effect.
 jtagd and jtagconfig can be found in</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/altera/3.1/quartus/bin 
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/altera/3.1/quartus/bin 
 </span></span></code></pre></div><p>And can be executed using</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./jtagd 
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./jtagd 
 </span></span><span style="display:flex;"><span>./jtagconfig
 </span></span></code></pre></div><p>As root create file /etc/udev/rules.d/51-altera-usb-blaster.rules</p>
 <p>Inside the file, include</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bb60d5">SUBSYSTEM</span><span style="color:#666">==</span><span style="color:#4070a0">&#34;usb&#34;</span>, ATTR<span style="color:#666">{</span>idVendor<span style="color:#666">}==</span><span style="color:#4070a0">&#34;09fb&#34;</span>, ATTR<span style="color:#666">{</span>idProduct<span style="color:#666">}==</span><span style="color:#4070a0">&#34;6001&#34;</span>, <span style="color:#bb60d5">MODE</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;0666&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SUBSYSTEM</span><span style="color:#666">==</span><span style="color:#4070a0">&#34;usb&#34;</span>, ATTR<span style="color:#666">{</span>idVendor<span style="color:#666">}==</span><span style="color:#4070a0">&#34;09fb&#34;</span>, ATTR<span style="color:#666">{</span>idProduct<span style="color:#666">}==</span><span style="color:#4070a0">&#34;6002&#34;</span>, <span style="color:#bb60d5">MODE</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;0666&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SUBSYSTEM</span><span style="color:#666">==</span><span style="color:#4070a0">&#34;usb&#34;</span>, ATTR<span style="color:#666">{</span>idVendor<span style="color:#666">}==</span><span style="color:#4070a0">&#34;09fb&#34;</span>, ATTR<span style="color:#666">{</span>idProduct<span style="color:#666">}==</span><span style="color:#4070a0">&#34;6003&#34;</span>, <span style="color:#bb60d5">MODE</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;0666&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SUBSYSTEM</span><span style="color:#666">==</span><span style="color:#4070a0">&#34;usb&#34;</span>, ATTR<span style="color:#666">{</span>idVendor<span style="color:#666">}==</span><span style="color:#4070a0">&#34;09fb&#34;</span>, ATTR<span style="color:#666">{</span>idProduct<span style="color:#666">}==</span><span style="color:#4070a0">&#34;6010&#34;</span>, <span style="color:#bb60d5">MODE</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;0666&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SUBSYSTEM</span><span style="color:#666">==</span><span style="color:#4070a0">&#34;usb&#34;</span>, ATTR<span style="color:#666">{</span>idVendor<span style="color:#666">}==</span><span style="color:#4070a0">&#34;09fb&#34;</span>, ATTR<span style="color:#666">{</span>idProduct<span style="color:#666">}==</span><span style="color:#4070a0">&#34;6810&#34;</span>, <span style="color:#bb60d5">MODE</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;0666&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e06c75">SUBSYSTEM</span><span style="color:#56b6c2">==</span><span style="color:#98c379">&#34;usb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idVendor<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;09fb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idProduct<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;6001&#34;</span>, <span style="color:#e06c75">MODE</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;0666&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">SUBSYSTEM</span><span style="color:#56b6c2">==</span><span style="color:#98c379">&#34;usb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idVendor<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;09fb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idProduct<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;6002&#34;</span>, <span style="color:#e06c75">MODE</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;0666&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">SUBSYSTEM</span><span style="color:#56b6c2">==</span><span style="color:#98c379">&#34;usb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idVendor<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;09fb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idProduct<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;6003&#34;</span>, <span style="color:#e06c75">MODE</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;0666&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">SUBSYSTEM</span><span style="color:#56b6c2">==</span><span style="color:#98c379">&#34;usb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idVendor<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;09fb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idProduct<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;6010&#34;</span>, <span style="color:#e06c75">MODE</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;0666&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">SUBSYSTEM</span><span style="color:#56b6c2">==</span><span style="color:#98c379">&#34;usb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idVendor<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;09fb&#34;</span>, ATTR<span style="color:#56b6c2">{</span>idProduct<span style="color:#56b6c2">}==</span><span style="color:#98c379">&#34;6810&#34;</span>, <span style="color:#e06c75">MODE</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;0666&#34;</span>
 </span></span></code></pre></div><p>The five idProducts are all the known USB-Blaster Download Cable USB product IDs (for the Altera vendor ID, 0x09fb).</p>
 <p>Then run</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo udevadm control --reload
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo udevadm control --reload
 </span></span></code></pre></div><p>Now run jtagd.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./jtagd
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./jtagd
 </span></span></code></pre></div><p>Before jtagconfig returned</p>
 <ol>
 <li>USB-Blaster varient [2-1]
@@ -493,35 +529,44 @@ toggle.addEventListener('click', () => {
 </script>
    
     <script>
-  function addCopyButtonToCode(){
-    var allCodeBlocksElements = $( "div.highlight pre" );
+function addCopyButtonToCode() {
+  var allCodeBlocksElements = $("div.highlight pre");
 
-    allCodeBlocksElements.each(function(ii) {
+  allCodeBlocksElements.each(function(ii) {
+    var currentId = "codeblock" + (ii + 1);
+    $(this).attr("id", currentId);
 
-      var currentId = "codeblock" + (ii + 1);
-      $(this).attr('id', currentId);
-
-    feather.replace()
-      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
-        currentId + '"><i data-feather="copy" width="20"></i></button>';
-      $(this).after(clipButton);
-    });
-
-    var clipboard = new Clipboard('.btn');
-    clipboard.on('success', function(e) {
-      setTimeout(function() {
-        
-        e.clearSelection();
-      }, 250);
-    });
-    clipboard.on('error', function(e) {
-      $(e.trigger).text("Can't in Safari");
-    });
-  }
-  $(document).ready(function () {
     
-    addCopyButtonToCode();
+    var iconColor = document.body.classList.contains("dark-mode") ? "#e2e8f0" : "#333";
+
+    
+    var clipButton = `
+      <button class="btn copybtn" data-clipboard-target="#${currentId}">
+        <i data-feather="copy" width="20" style="color: ${iconColor}"></i>
+      </button>
+    `;
+
+    $(this).after(clipButton);
   });
+
+  feather.replace(); 
+
+  
+  var clipboard = new Clipboard(".btn");
+  clipboard.on("success", function(e) {
+    setTimeout(function() {
+      e.clearSelection();
+    }, 250);
+  });
+  clipboard.on("error", function(e) {
+    $(e.trigger).text("Can't in Safari");
+  });
+}
+
+
+$(document).ready(function() {
+  addCopyButtonToCode();
+});
 
 
 

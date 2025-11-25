@@ -129,6 +129,42 @@ div.highlight, div.chroma {
 
 
  
+
+.chroma .k  { color: #f92672; }   
+.chroma .kc { color: #f92672; }
+.chroma .kd { color: #f92672; }
+.chroma .kn { color: #f92672; }
+
+.chroma .s  { color: #e6db74; }   
+.chroma .sb { color: #e6db74; }
+.chroma .sc { color: #e6db74; }
+
+.chroma .n  { color: #f8f8f2; }   
+.chroma .na { color: #a6e22e; }
+.chroma .nb { color: #66d9ef; }
+.chroma .bp { color: #66d9ef; }
+
+.chroma .c  { color: #75715e; font-style: italic; }  
+.chroma .cm { color: #75715e; }
+.chroma .c1 { color: #75715e; }
+
+ 
+.chroma .m { color: #ae81ff; }
+
+ 
+.chroma .o { color: #f92672; }
+
+ 
+.chroma .nf { color: #a6e22e; }
+
+ 
+ 
+
+
+
+
+
+ 
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -136,7 +172,7 @@ div.highlight, div.chroma {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
-.card:hover { transform: translateY(-5px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card:hover { transform: translateY(-0px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
 .card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
 .card:hover .card-img-top { transform: scale(1.02); }
 .card-img-top::before {
@@ -529,124 +565,124 @@ $$
 <p>The implementation is made in a jupyter notebook which can be downloaded here.
 For ease of viewing I have pasted the code segments here - <a href="/docs/kalman_RLC.ipynb">Kalman RLC Notebook</a></p>
 <h4 id="requirements">Requirements</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#666">%</span>matplotlib qt
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">numpy</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">np</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">matplotlib.pyplot</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">plt</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">numpy.linalg</span> <span style="color:#007020;font-weight:bold">import</span> inv
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">copy</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#56b6c2">%</span><span style="color:#e06c75">matplotlib</span> <span style="color:#e06c75">qt</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">numpy</span> <span style="color:#c678dd">as</span> <span style="color:#e06c75">np</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">matplotlib.pyplot</span> <span style="color:#c678dd">as</span> <span style="color:#e06c75">plt</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">from</span> <span style="color:#e06c75">numpy.linalg</span> <span style="color:#c678dd">import</span> <span style="color:#e06c75">inv</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">copy</span>
 </span></span></code></pre></div><h4 id="transition-model">Transition Model</h4>
 <div>
 $$
 \hat{X}_k = F_k X_{k-1} + B_{k} U_{k}
 $$
 </div>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prediction</span>(Il,Ildot,I,t):
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#c678dd">def</span> <span style="color:#61afef;font-weight:bold">prediction</span>(<span style="color:#e06c75">Il</span>,<span style="color:#e06c75">Ildot</span>,<span style="color:#e06c75">I</span>,<span style="color:#e06c75">t</span>):
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
-</span></span><span style="display:flex;"><span>    C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
-</span></span><span style="display:flex;"><span>    R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">L</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">5</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">C</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">500e-9</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">R</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">50e3</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, t],
-</span></span><span style="display:flex;"><span>                  [<span style="color:#666">-</span>t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), <span style="color:#40a070">1</span> <span style="color:#666">-</span> (t<span style="color:#666">/</span>(R<span style="color:#666">*</span>C))]])
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">A</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">array</span>([[<span style="color:#d19a66">1</span>, <span style="color:#e06c75">t</span>],
+</span></span><span style="display:flex;"><span>                  [<span style="color:#56b6c2">-</span><span style="color:#e06c75">t</span><span style="color:#56b6c2">/</span>(<span style="color:#e06c75">L</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">C</span>), <span style="color:#d19a66">1</span> <span style="color:#56b6c2">-</span> (<span style="color:#e06c75">t</span><span style="color:#56b6c2">/</span>(<span style="color:#e06c75">R</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">C</span>))]])
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    X <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[Il],
-</span></span><span style="display:flex;"><span>                 [Ildot]])
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">X</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">array</span>([[<span style="color:#e06c75">Il</span>],
+</span></span><span style="display:flex;"><span>                 [<span style="color:#e06c75">Ildot</span>]])
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    B <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>],
-</span></span><span style="display:flex;"><span>                  [t<span style="color:#666">/</span>(L<span style="color:#666">*</span>C)]])
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">B</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">array</span>([[<span style="color:#d19a66">0</span>],
+</span></span><span style="display:flex;"><span>                  [<span style="color:#e06c75">t</span><span style="color:#56b6c2">/</span>(<span style="color:#e06c75">L</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">C</span>)]])
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    U <span style="color:#666">=</span> I
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">U</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">I</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    X_prediction <span style="color:#666">=</span> A<span style="color:#666">.</span>dot(X) <span style="color:#666">+</span> B<span style="color:#666">.</span>dot(U)
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">X_prediction</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">A</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">X</span>) <span style="color:#56b6c2">+</span> <span style="color:#e06c75">B</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">U</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">return</span> X_prediction
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#time </span>
-</span></span><span style="display:flex;"><span>T <span style="color:#666">=</span> <span style="color:#40a070">0.14</span>
-</span></span><span style="display:flex;"><span>t <span style="color:#666">=</span> np<span style="color:#666">.</span>linspace(<span style="color:#40a070">0</span>,T,<span style="color:#40a070">100e3</span><span style="color:#666">*</span>T)
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">return</span> <span style="color:#e06c75">X_prediction</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#7f848e">#time </span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">T</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">0.14</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">t</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">linspace</span>(<span style="color:#d19a66">0</span>,<span style="color:#e06c75">T</span>,<span style="color:#d19a66">100e3</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">T</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#initialise inductor current and its derivertive</span>
-</span></span><span style="display:flex;"><span>Il_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
-</span></span><span style="display:flex;"><span>Ildot_true <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros(<span style="color:#007020">len</span>(t))
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#initialise inductor current and its derivertive</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Il_true</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">zeros</span>(<span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>))
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Ildot_true</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">zeros</span>(<span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#cicuit component definitions</span>
-</span></span><span style="display:flex;"><span>L <span style="color:#666">=</span> <span style="color:#40a070">5</span>
-</span></span><span style="display:flex;"><span>C <span style="color:#666">=</span> <span style="color:#40a070">500e-9</span>
-</span></span><span style="display:flex;"><span>R <span style="color:#666">=</span> <span style="color:#40a070">50e3</span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#create input signal </span>
-</span></span><span style="display:flex;"><span>wr <span style="color:#666">=</span> <span style="color:#40a070">1</span><span style="color:#666">/</span>np<span style="color:#666">.</span>sqrt(L<span style="color:#666">*</span>C)
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#cicuit component definitions</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">L</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">C</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">500e-9</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">R</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">50e3</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#create input signal </span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">wr</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">1</span><span style="color:#56b6c2">/</span><span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">sqrt</span>(<span style="color:#e06c75">L</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">C</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>I_true <span style="color:#666">=</span> <span style="color:#40a070">25e-6</span> <span style="color:#666">*</span> np<span style="color:#666">.</span>sin(wr <span style="color:#666">*</span> t)
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">I_true</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">25e-6</span> <span style="color:#56b6c2">*</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">sin</span>(<span style="color:#e06c75">wr</span> <span style="color:#56b6c2">*</span> <span style="color:#e06c75">t</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#time step</span>
-</span></span><span style="display:flex;"><span>dt <span style="color:#666">=</span> t[<span style="color:#40a070">1</span>] <span style="color:#666">-</span> t[<span style="color:#40a070">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#time step</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">dt</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">t</span>[<span style="color:#d19a66">1</span>] <span style="color:#56b6c2">-</span> <span style="color:#e06c75">t</span>[<span style="color:#d19a66">0</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#create True data </span>
-</span></span><span style="display:flex;"><span>I <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros((<span style="color:#40a070">2</span>,<span style="color:#007020">len</span>(t)))
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#create True data </span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">I</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">zeros</span>((<span style="color:#d19a66">2</span>,<span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>)))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>,<span style="color:#007020">len</span>(t)):
-</span></span><span style="display:flex;"><span>    a <span style="color:#666">=</span>  prediction(I[<span style="color:#40a070">0</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I[<span style="color:#40a070">1</span>][i<span style="color:#666">-</span><span style="color:#40a070">1</span>],I_true[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)<span style="color:#666">.</span>T
-</span></span><span style="display:flex;"><span>    I[:,i] <span style="color:#666">=</span> a
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">for</span> <span style="color:#e06c75">i</span> <span style="color:#56b6c2">in</span> <span style="color:#e5c07b">range</span>(<span style="color:#d19a66">1</span>,<span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>)):
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">a</span> <span style="color:#56b6c2">=</span>  <span style="color:#e06c75">prediction</span>(<span style="color:#e06c75">I</span>[<span style="color:#d19a66">0</span>][<span style="color:#e06c75">i</span><span style="color:#56b6c2">-</span><span style="color:#d19a66">1</span>],<span style="color:#e06c75">I</span>[<span style="color:#d19a66">1</span>][<span style="color:#e06c75">i</span><span style="color:#56b6c2">-</span><span style="color:#d19a66">1</span>],<span style="color:#e06c75">I_true</span>[<span style="color:#e06c75">i</span><span style="color:#56b6c2">-</span><span style="color:#d19a66">1</span>],<span style="color:#e06c75">dt</span>)<span style="color:#56b6c2">.</span><span style="color:#e06c75">T</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">I</span>[:,<span style="color:#e06c75">i</span>] <span style="color:#56b6c2">=</span> <span style="color:#e06c75">a</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Il_true <span style="color:#666">=</span> I[<span style="color:#40a070">0</span>]
-</span></span><span style="display:flex;"><span>Ildot_true <span style="color:#666">=</span> I[<span style="color:#40a070">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Il_true</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">I</span>[<span style="color:#d19a66">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Ildot_true</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">I</span>[<span style="color:#d19a66">1</span>]
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>V_true <span style="color:#666">=</span> L<span style="color:#666">*</span>Ildot_true
-</span></span><span style="display:flex;"><span>noise <span style="color:#666">=</span> np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal(loc<span style="color:#666">=</span><span style="color:#40a070">0</span>, scale<span style="color:#666">=</span><span style="color:#40a070">0.5</span>, size<span style="color:#666">=</span><span style="color:#007020">len</span>(t))
-</span></span><span style="display:flex;"><span>V_meas <span style="color:#666">=</span> V_true <span style="color:#666">+</span> noise
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#state transition model </span>
-</span></span><span style="display:flex;"><span>A <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">1</span>, dt],
-</span></span><span style="display:flex;"><span>              [<span style="color:#666">-</span>dt<span style="color:#666">/</span>(L<span style="color:#666">*</span>C), (<span style="color:#40a070">1</span> <span style="color:#666">-</span> (dt<span style="color:#666">/</span>(R<span style="color:#666">*</span>C)))]],dtype<span style="color:#666">=</span><span style="color:#4070a0">&#39;float&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">V_true</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">L</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">Ildot_true</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">noise</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">random</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">normal</span>(<span style="color:#e06c75">loc</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">0</span>, <span style="color:#e06c75">scale</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">0.5</span>, <span style="color:#e06c75">size</span><span style="color:#56b6c2">=</span><span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>))
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">V_meas</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">V_true</span> <span style="color:#56b6c2">+</span> <span style="color:#e06c75">noise</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#7f848e">#state transition model </span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">A</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">array</span>([[<span style="color:#d19a66">1</span>, <span style="color:#e06c75">dt</span>],
+</span></span><span style="display:flex;"><span>              [<span style="color:#56b6c2">-</span><span style="color:#e06c75">dt</span><span style="color:#56b6c2">/</span>(<span style="color:#e06c75">L</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">C</span>), (<span style="color:#d19a66">1</span> <span style="color:#56b6c2">-</span> (<span style="color:#e06c75">dt</span><span style="color:#56b6c2">/</span>(<span style="color:#e06c75">R</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">C</span>)))]],<span style="color:#e06c75">dtype</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#39;float&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#process noise(model noise)</span>
-</span></span><span style="display:flex;"><span>Q <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4e-9</span>, <span style="color:#40a070">0</span>],
-</span></span><span style="display:flex;"><span>              [<span style="color:#40a070">0</span>, <span style="color:#40a070">4e-9</span>]])
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#process noise(model noise)</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Q</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">array</span>([[<span style="color:#d19a66">4e-9</span>, <span style="color:#d19a66">0</span>],
+</span></span><span style="display:flex;"><span>              [<span style="color:#d19a66">0</span>, <span style="color:#d19a66">4e-9</span>]])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#measurement noise</span>
-</span></span><span style="display:flex;"><span>R <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">4</span>]])
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#measurement noise</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">R</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">array</span>([[<span style="color:#d19a66">4</span>]])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#Initial Predicted (a priori) estimate</span>
-</span></span><span style="display:flex;"><span>P<span style="color:#666">=</span>Q
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#store values for plotting</span>
-</span></span><span style="display:flex;"><span>Il_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
-</span></span><span style="display:flex;"><span>Ildot_a <span style="color:#666">=</span> np<span style="color:#666">.</span>zeros([<span style="color:#007020">len</span>(t)])
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#Initial Predicted (a priori) estimate</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">P</span><span style="color:#56b6c2">=</span><span style="color:#e06c75">Q</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#store values for plotting</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Il_a</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">zeros</span>([<span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>)])
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Ildot_a</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">zeros</span>([<span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>)])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#initial values</span>
-</span></span><span style="display:flex;"><span>Il_a[<span style="color:#40a070">0</span>]    <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-</span></span><span style="display:flex;"><span>Ildot_a[<span style="color:#40a070">0</span>] <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#initial values</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Il_a</span>[<span style="color:#d19a66">0</span>]    <span style="color:#56b6c2">=</span> <span style="color:#d19a66">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Ildot_a</span>[<span style="color:#d19a66">0</span>] <span style="color:#56b6c2">=</span> <span style="color:#d19a66">0</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic">#set the input matrix to be the true input</span>
-</span></span><span style="display:flex;"><span>I_a <span style="color:#666">=</span> I_true
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#set the input matrix to be the true input</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">I_a</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">I_true</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># for i in range(1,len(t)):</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#007020">len</span>(t)):
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#prediction</span>
-</span></span><span style="display:flex;"><span>    X_hat <span style="color:#666">=</span> prediction(Il_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], Ildot_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>], I_a[i<span style="color:#666">-</span><span style="color:#40a070">1</span>],dt)
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># for i in range(1,len(t)):</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">for</span> <span style="color:#e06c75">i</span> <span style="color:#56b6c2">in</span> <span style="color:#e5c07b">range</span>(<span style="color:#e5c07b">len</span>(<span style="color:#e06c75">t</span>)):
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#prediction</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">X_hat</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">prediction</span>(<span style="color:#e06c75">Il_a</span>[<span style="color:#e06c75">i</span><span style="color:#56b6c2">-</span><span style="color:#d19a66">1</span>], <span style="color:#e06c75">Ildot_a</span>[<span style="color:#e06c75">i</span><span style="color:#56b6c2">-</span><span style="color:#d19a66">1</span>], <span style="color:#e06c75">I_a</span>[<span style="color:#e06c75">i</span><span style="color:#56b6c2">-</span><span style="color:#d19a66">1</span>],<span style="color:#e06c75">dt</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#predicted estimate covariance</span>
-</span></span><span style="display:flex;"><span>    P_hat <span style="color:#666">=</span> np<span style="color:#666">.</span>diag(np<span style="color:#666">.</span>diag(A<span style="color:#666">.</span>dot(P)<span style="color:#666">.</span>dot(A<span style="color:#666">.</span>T))) <span style="color:#666">+</span> Q
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#predicted estimate covariance</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">P_hat</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">diag</span>(<span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">diag</span>(<span style="color:#e06c75">A</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">P</span>)<span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">A</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">T</span>))) <span style="color:#56b6c2">+</span> <span style="color:#e06c75">Q</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#observation matrix v(t) = Ldi/dt</span>
-</span></span><span style="display:flex;"><span>    H <span style="color:#666">=</span> np<span style="color:#666">.</span>array([[<span style="color:#40a070">0</span>,L]])
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#observation matrix v(t) = Ldi/dt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">H</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">array</span>([[<span style="color:#d19a66">0</span>,<span style="color:#e06c75">L</span>]])
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#innovation covariance</span>
-</span></span><span style="display:flex;"><span>    S <span style="color:#666">=</span> H<span style="color:#666">.</span>dot(P_hat)<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T) <span style="color:#666">+</span> R
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#innovation covariance</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">S</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">H</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">P_hat</span>)<span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">H</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">T</span>) <span style="color:#56b6c2">+</span> <span style="color:#e06c75">R</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic"># Kalman Gain</span>
-</span></span><span style="display:flex;"><span>    K <span style="color:#666">=</span> P_hat<span style="color:#666">.</span>dot(H<span style="color:#666">.</span>T)<span style="color:#666">.</span>dot(inv(S))
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e"># Kalman Gain</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">K</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">P_hat</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">H</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">T</span>)<span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">inv</span>(<span style="color:#e06c75">S</span>))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#measurement - prediction </span>
-</span></span><span style="display:flex;"><span>    y <span style="color:#666">=</span> V_meas[i] <span style="color:#666">-</span> H<span style="color:#666">.</span>dot(X_hat)   
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#measurement - prediction </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">y</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">V_meas</span>[<span style="color:#e06c75">i</span>] <span style="color:#56b6c2">-</span> <span style="color:#e06c75">H</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">X_hat</span>)   
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#updated state estimate</span>
-</span></span><span style="display:flex;"><span>    X <span style="color:#666">=</span> X_hat <span style="color:#666">+</span> K<span style="color:#666">.</span>dot(y)
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#updated state estimate</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">X</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">X_hat</span> <span style="color:#56b6c2">+</span> <span style="color:#e06c75">K</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">y</span>)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#Updated (a posteriori) estimate covariance</span>
-</span></span><span style="display:flex;"><span>    P <span style="color:#666">=</span> (np<span style="color:#666">.</span>identity(<span style="color:#40a070">2</span>) <span style="color:#666">-</span> K<span style="color:#666">.</span>dot(H))<span style="color:#666">.</span>dot(P_hat)
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#Updated (a posteriori) estimate covariance</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">P</span> <span style="color:#56b6c2">=</span> (<span style="color:#e06c75">np</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">identity</span>(<span style="color:#d19a66">2</span>) <span style="color:#56b6c2">-</span> <span style="color:#e06c75">K</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">H</span>))<span style="color:#56b6c2">.</span><span style="color:#e06c75">dot</span>(<span style="color:#e06c75">P_hat</span>)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic">#update values</span>
-</span></span><span style="display:flex;"><span>    Il_a[i]    <span style="color:#666">=</span> X[<span style="color:#40a070">0</span>]
-</span></span><span style="display:flex;"><span>    Ildot_a[i] <span style="color:#666">=</span> X[<span style="color:#40a070">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">#update values</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">Il_a</span>[<span style="color:#e06c75">i</span>]    <span style="color:#56b6c2">=</span> <span style="color:#e06c75">X</span>[<span style="color:#d19a66">0</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">Ildot_a</span>[<span style="color:#e06c75">i</span>] <span style="color:#56b6c2">=</span> <span style="color:#e06c75">X</span>[<span style="color:#d19a66">1</span>]
 </span></span></code></pre></div>
 
 

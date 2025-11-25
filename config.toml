@@ -9,11 +9,14 @@ disqusShortname = "www-mybrainhertz-co-uk"
 googleAnalytics = "G-8PKWFQVGKH"
 
 [markup]
+  defaultMarkup = "goldmark"
+
   [markup.highlight]
+    noClasses = true          # IMPORTANT: enables Chroma CSS classes
     codeFences = true
     guessSyntax = false
-    noClasses = true      
-    style = "friendly"    
+    style = "onedark"          # Better for dark mode; can change
+    tabWidth = 4
 
   [markup.goldmark.renderer]
     unsafe = true

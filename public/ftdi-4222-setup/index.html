@@ -129,6 +129,42 @@ div.highlight, div.chroma {
 
 
  
+
+.chroma .k  { color: #f92672; }   
+.chroma .kc { color: #f92672; }
+.chroma .kd { color: #f92672; }
+.chroma .kn { color: #f92672; }
+
+.chroma .s  { color: #e6db74; }   
+.chroma .sb { color: #e6db74; }
+.chroma .sc { color: #e6db74; }
+
+.chroma .n  { color: #f8f8f2; }   
+.chroma .na { color: #a6e22e; }
+.chroma .nb { color: #66d9ef; }
+.chroma .bp { color: #66d9ef; }
+
+.chroma .c  { color: #75715e; font-style: italic; }  
+.chroma .cm { color: #75715e; }
+.chroma .c1 { color: #75715e; }
+
+ 
+.chroma .m { color: #ae81ff; }
+
+ 
+.chroma .o { color: #f92672; }
+
+ 
+.chroma .nf { color: #a6e22e; }
+
+ 
+ 
+
+
+
+
+
+ 
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -136,7 +172,7 @@ div.highlight, div.chroma {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
-.card:hover { transform: translateY(-5px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card:hover { transform: translateY(-0px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
 .card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
 .card:hover .card-img-top { transform: scale(1.02); }
 .card-img-top::before {
@@ -392,11 +428,11 @@ body.dark-mode .image-caption { color: #ccc; }
 <li>Open a terminal and navigate to the D2XX folder on your desktop</li>
 <li>Move .h files to /usr/local/include</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv ftd2xx.h WinTypes.h /usr/local/include 
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv ftd2xx.h WinTypes.h /usr/local/include 
 </span></span></code></pre></div><ol start="5">
 <li>Move &lsquo;.dylib&rsquo; file to /usr/local/lib</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv libftd2xx.1.14.16.dylib /usr/local/lib 
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv libftd2xx.1.14.16.dylib /usr/local/lib 
 </span></span></code></pre></div><ol start="6">
 <li>Create second folder on Desktop and copy contents of libft4222.1.4.4.14.dmg to it</li>
 <li>move <code>libft4222.1.4.4.14.dylib</code> to /usr/local/lib</li>
@@ -404,7 +440,7 @@ body.dark-mode .image-caption { color: #ccc; }
 <li>move <code>libft4222.h</code> to /usr/local/include</li>
 <li>Create symbolic links for <code>libft4222.1.4.4.14.dylib</code> and <code>libftd2xx.1.4.16.dylib</code></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ln -s /usr/local/lib/libft4222.1.4.4.14.dylib /usr/local/lib/libft4222.dylib
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ln -s /usr/local/lib/libft4222.1.4.4.14.dylib /usr/local/lib/libft4222.dylib
 </span></span><span style="display:flex;"><span>sudo ln -s /usr/local/lib/libftd2xx.1.4.16.dylib /usr/local/lib/libftd2xx.dylib
 </span></span></code></pre></div><h4 id="notes-on-installing">Notes on installing</h4>
 <p>If using a device with standard FTDI vendor and product identifiers, install D2xxHelper to prevent mac OS from claiming the device as a serial port (locking out D2XX programs). This will prevent the device being used with the VCP driver as a standard COM port. D2xxHelper can be found here : <a href=https://www.ftdichip.com/Drivers/D2XX/MacOSX/D2xxHelper_v2.0.0.pkg target="_blank">D2xxHelper</a></p>
@@ -412,43 +448,43 @@ body.dark-mode .image-caption { color: #ccc; }
 <h4 id="1-find-chip-version">1. Find chip version</h4>
 <p>Inside libft4222.1.4.4.14.dmg is a folder called examples with a .c file called <code>get-version.c</code>.
 using the following command</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cc get-version.c -lft4222 -lftd2xx  -Wl,-L/usr/local/lib -o version.out
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cc get-version.c -lft4222 -lftd2xx  -Wl,-L/usr/local/lib -o version.out
 </span></span></code></pre></div><p>If compilation has gone well and all libraries have been found <code>version.out</code> will have been made.
 execute using</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./version.out
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./version.out
 </span></span></code></pre></div><p>This should return something similar to this</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Device 0: <span style="color:#4070a0">&#39;FT4222 A&#39;</span>
-</span></span><span style="display:flex;"><span>  Chip version: 42220400, LibFT4222 version: <span style="color:#40a070">01040409</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Device 0: <span style="color:#98c379">&#39;FT4222 A&#39;</span>
+</span></span><span style="display:flex;"><span>  Chip version: 42220400, LibFT4222 version: <span style="color:#d19a66">01040409</span>
 </span></span></code></pre></div><h3 id="2-accessing-eeprom">2. Accessing EEPROM</h3>
 <p>Create a folder in the root directory of D2XX called <code>build</code> and move <code>libftd2xx.a</code> into it.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir build
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir build
 </span></span><span style="display:flex;"><span>mv libftd2xx.a build
 </span></span></code></pre></div><p>now navigate to the folder <code>Samples</code></p>
 <p>Inside the D2XX folder navigate to the folder samples and execute <code>make</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make
 </span></span></code></pre></div><p>once this has complete navigate to D2XX/Samples/EEPROM/read and exectute read</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./read
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./read
 </span></span></code></pre></div><p>This should return something similar to this</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bb60d5">Signature1</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Signature2</span> <span style="color:#666">=</span> -1
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Version</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">VendorId</span> <span style="color:#666">=</span> 0x0403
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">ProductId</span> <span style="color:#666">=</span> 0x601C
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Manufacturer</span> <span style="color:#666">=</span> FTDI
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">ManufacturerId</span> <span style="color:#666">=</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">Description</span> <span style="color:#666">=</span> FT4222
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SerialNumber</span> <span style="color:#666">=</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">MaxPower</span> <span style="color:#666">=</span> <span style="color:#40a070">100</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">PnP</span> <span style="color:#666">=</span> <span style="color:#40a070">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">SelfPowered</span> <span style="color:#666">=</span> <span style="color:#40a070">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#bb60d5">RemoteWakeup</span> <span style="color:#666">=</span> <span style="color:#40a070">1</span>
-</span></span><span style="display:flex;"><span>Returning <span style="color:#40a070">0</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e06c75">Signature1</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Signature2</span> <span style="color:#56b6c2">=</span> -1
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Version</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">VendorId</span> <span style="color:#56b6c2">=</span> 0x0403
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">ProductId</span> <span style="color:#56b6c2">=</span> 0x601C
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Manufacturer</span> <span style="color:#56b6c2">=</span> FTDI
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">ManufacturerId</span> <span style="color:#56b6c2">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Description</span> <span style="color:#56b6c2">=</span> FT4222
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">SerialNumber</span> <span style="color:#56b6c2">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">MaxPower</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">PnP</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">SelfPowered</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">RemoteWakeup</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">1</span>
+</span></span><span style="display:flex;"><span>Returning <span style="color:#d19a66">0</span>
 </span></span></code></pre></div><h3 id="3-using-cmake">3. Using Cmake</h3>
 <p>Navigate to the examples folder as before containing <code>get-version.c</code><br>
 Create a directory called <code>build</code></p>
 <p>create a text file called <code>CMakeLists.txt</code></p>
 <p>Inside add the following</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>cmake_minimum_required(VERSION 3.17.2)
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>cmake_minimum_required(VERSION 3.17.2)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>project (FT4222H_test)
 </span></span><span style="display:flex;"><span>
@@ -462,14 +498,14 @@ Create a directory called <code>build</code></p>
 </span></span></code></pre></div><p>This tells the compiler where to find our files and links them to the project.<br>
 Inside link directories replace the first directory with the location of your build folder.
 Navigate to the build folder and run</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cmake ..
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cmake ..
 </span></span><span style="display:flex;"><span>make
 </span></span></code></pre></div><p>The file <code>FT4222H_Version</code> should now be built.</p>
 <p>execute with</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./FT4222H_Version
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./FT4222H_Version
 </span></span></code></pre></div><p>Again, the following should be returned</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Device 0: <span style="color:#4070a0">&#39;FT4222 A&#39;</span>
-</span></span><span style="display:flex;"><span>  Chip version: 42220400, LibFT4222 version: <span style="color:#40a070">01040409</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Device 0: <span style="color:#98c379">&#39;FT4222 A&#39;</span>
+</span></span><span style="display:flex;"><span>  Chip version: 42220400, LibFT4222 version: <span style="color:#d19a66">01040409</span>
 </span></span></code></pre></div>
 
 
@@ -547,35 +583,44 @@ toggle.addEventListener('click', () => {
 </script>
    
     <script>
-  function addCopyButtonToCode(){
-    var allCodeBlocksElements = $( "div.highlight pre" );
+function addCopyButtonToCode() {
+  var allCodeBlocksElements = $("div.highlight pre");
 
-    allCodeBlocksElements.each(function(ii) {
+  allCodeBlocksElements.each(function(ii) {
+    var currentId = "codeblock" + (ii + 1);
+    $(this).attr("id", currentId);
 
-      var currentId = "codeblock" + (ii + 1);
-      $(this).attr('id', currentId);
-
-    feather.replace()
-      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
-        currentId + '"><i data-feather="copy" width="20"></i></button>';
-      $(this).after(clipButton);
-    });
-
-    var clipboard = new Clipboard('.btn');
-    clipboard.on('success', function(e) {
-      setTimeout(function() {
-        
-        e.clearSelection();
-      }, 250);
-    });
-    clipboard.on('error', function(e) {
-      $(e.trigger).text("Can't in Safari");
-    });
-  }
-  $(document).ready(function () {
     
-    addCopyButtonToCode();
+    var iconColor = document.body.classList.contains("dark-mode") ? "#e2e8f0" : "#333";
+
+    
+    var clipButton = `
+      <button class="btn copybtn" data-clipboard-target="#${currentId}">
+        <i data-feather="copy" width="20" style="color: ${iconColor}"></i>
+      </button>
+    `;
+
+    $(this).after(clipButton);
   });
+
+  feather.replace(); 
+
+  
+  var clipboard = new Clipboard(".btn");
+  clipboard.on("success", function(e) {
+    setTimeout(function() {
+      e.clearSelection();
+    }, 250);
+  });
+  clipboard.on("error", function(e) {
+    $(e.trigger).text("Can't in Safari");
+  });
+}
+
+
+$(document).ready(function() {
+  addCopyButtonToCode();
+});
 
 
 

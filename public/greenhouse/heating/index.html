@@ -129,6 +129,42 @@ div.highlight, div.chroma {
 
 
  
+
+.chroma .k  { color: #f92672; }   
+.chroma .kc { color: #f92672; }
+.chroma .kd { color: #f92672; }
+.chroma .kn { color: #f92672; }
+
+.chroma .s  { color: #e6db74; }   
+.chroma .sb { color: #e6db74; }
+.chroma .sc { color: #e6db74; }
+
+.chroma .n  { color: #f8f8f2; }   
+.chroma .na { color: #a6e22e; }
+.chroma .nb { color: #66d9ef; }
+.chroma .bp { color: #66d9ef; }
+
+.chroma .c  { color: #75715e; font-style: italic; }  
+.chroma .cm { color: #75715e; }
+.chroma .c1 { color: #75715e; }
+
+ 
+.chroma .m { color: #ae81ff; }
+
+ 
+.chroma .o { color: #f92672; }
+
+ 
+.chroma .nf { color: #a6e22e; }
+
+ 
+ 
+
+
+
+
+
+ 
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -136,7 +172,7 @@ div.highlight, div.chroma {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
-.card:hover { transform: translateY(-5px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card:hover { transform: translateY(-0px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
 .card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
 .card:hover .card-img-top { transform: scale(1.02); }
 .card-img-top::before {
@@ -380,25 +416,25 @@ body.dark-mode .image-caption { color: #ccc; }
 <p><a href="https://www.engineersedge.com/heat_transfer/convective_heat_transfer_coefficients__13378.htm">Engineering edge - list of heat transfer coefficients</a><br>
 <a href="https://www.engineersedge.com/heat_transfer/heat_transfer_coefficients_13822.htm">Engineering edge - double glazed window heat transfer coefficients</a><br>
 <a href="https://www.bregroup.com/insights/is-bigger-always-better-triple-better-than-double/">Bre Group -  is bigger always better - triple better than double?</a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>k_glass <span style="color:#666">=</span> <span style="color:#40a070">1.1</span> <span style="color:#60a0b0;font-style:italic"># https://www.bregroup.com/insights/is-bigger-always-better-triple-better-than-double/</span>
-</span></span><span style="display:flex;"><span>h_inside <span style="color:#666">=</span> <span style="color:#40a070">5</span> <span style="color:#60a0b0;font-style:italic"># can vary from 5-37 for free air convection . examples seen have used 8 - 10 </span>
-</span></span><span style="display:flex;"><span>h_outside <span style="color:#666">=</span> <span style="color:#40a070">15</span> <span style="color:#60a0b0;font-style:italic"># can vary from 10 to 100 depending of wind speed outside. examples seen have used 15-40</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e06c75">k_glass</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">1.1</span> <span style="color:#7f848e"># https://www.bregroup.com/insights/is-bigger-always-better-triple-better-than-double/</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">h_inside</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">5</span> <span style="color:#7f848e"># can vary from 5-37 for free air convection . examples seen have used 8 - 10 </span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">h_outside</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">15</span> <span style="color:#7f848e"># can vary from 10 to 100 depending of wind speed outside. examples seen have used 15-40</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>L <span style="color:#666">=</span> <span style="color:#40a070">28e-3</span> <span style="color:#60a0b0;font-style:italic"># thickness of window </span>
-</span></span><span style="display:flex;"><span>A <span style="color:#666">=</span> <span style="color:#40a070">15</span> <span style="color:#60a0b0;font-style:italic">#m2 area of window</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">L</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">28e-3</span> <span style="color:#7f848e"># thickness of window </span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">A</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">15</span> <span style="color:#7f848e">#m2 area of window</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>R_cond <span style="color:#666">=</span> L <span style="color:#666">/</span> (k_glass <span style="color:#666">*</span> A)
-</span></span><span style="display:flex;"><span>R_conv_i <span style="color:#666">=</span> <span style="color:#40a070">1</span> <span style="color:#666">/</span> (h_inside <span style="color:#666">*</span> A)
-</span></span><span style="display:flex;"><span>R_conv_o <span style="color:#666">=</span> <span style="color:#40a070">1</span> <span style="color:#666">/</span> (h_outside <span style="color:#666">*</span> A)
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">R_cond</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">L</span> <span style="color:#56b6c2">/</span> (<span style="color:#e06c75">k_glass</span> <span style="color:#56b6c2">*</span> <span style="color:#e06c75">A</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">R_conv_i</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">1</span> <span style="color:#56b6c2">/</span> (<span style="color:#e06c75">h_inside</span> <span style="color:#56b6c2">*</span> <span style="color:#e06c75">A</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">R_conv_o</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">1</span> <span style="color:#56b6c2">/</span> (<span style="color:#e06c75">h_outside</span> <span style="color:#56b6c2">*</span> <span style="color:#e06c75">A</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>R_total <span style="color:#666">=</span>  R_cond <span style="color:#666">+</span> R_conv_i <span style="color:#666">+</span> R_conv_o
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">R_total</span> <span style="color:#56b6c2">=</span>  <span style="color:#e06c75">R_cond</span> <span style="color:#56b6c2">+</span> <span style="color:#e06c75">R_conv_i</span> <span style="color:#56b6c2">+</span> <span style="color:#e06c75">R_conv_o</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>T_inside <span style="color:#666">=</span> <span style="color:#40a070">5</span>
-</span></span><span style="display:flex;"><span>T_outside <span style="color:#666">=</span> <span style="color:#40a070">0</span> 
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">T_inside</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">T_outside</span> <span style="color:#56b6c2">=</span> <span style="color:#d19a66">0</span> 
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Q_dot <span style="color:#666">=</span> (T_inside <span style="color:#666">-</span> T_outside) <span style="color:#666">/</span> R_total
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">Q_dot</span> <span style="color:#56b6c2">=</span> (<span style="color:#e06c75">T_inside</span> <span style="color:#56b6c2">-</span> <span style="color:#e06c75">T_outside</span>) <span style="color:#56b6c2">/</span> <span style="color:#e06c75">R_total</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007020">print</span>(<span style="color:#4070a0">f</span><span style="color:#4070a0">&#39;</span><span style="color:#70a0d0">{</span>Q_dot<span style="color:#70a0d0">:</span><span style="color:#4070a0">.2f</span><span style="color:#70a0d0">}</span><span style="color:#4070a0">W&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e5c07b">print</span>(<span style="color:#98c379">f</span><span style="color:#98c379">&#39;</span><span style="color:#98c379">{</span><span style="color:#e06c75">Q_dot</span><span style="color:#98c379">:</span><span style="color:#98c379">.2f</span><span style="color:#98c379">}</span><span style="color:#98c379">W&#39;</span>)
 </span></span></code></pre></div><p>This gives 256.74W but if you play about with the numbers you&rsquo;ll quickly see this can vary quite a lot.</p>
 <form id="form" onsubmit="return false;">
 	k glass:   <input  type="text" id="k_glass" value="1.1" />
