@@ -15,7 +15,7 @@
 
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
-
+<link rel="stylesheet" href="/css/pygments.css">
 
 
   <meta charset="utf-8">
@@ -47,86 +47,32 @@ h1, h2, h3 {
 }
 
  
-
- 
-#nav-border {
-  border-bottom: 1px solid #333;  
-}
-
- 
+#nav-border { border-bottom: 1px solid #333; }
 #nav {
   font-family: "Geist Sans", sans-serif;
   position: sticky;
   top: 0;
-  background: #121212;  
-  border-bottom: none;  
+  background: #121212;
+  border-bottom: none;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #eee;
-}
-
-#nav .nav-link {
-  font-weight: 900;
-}
-
-#nav i {
-  color: inherit;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-}
-
-#dark-mode-toggle {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #eee;
-}
-
-#dark-mode-toggle i {
-  color: inherit;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-}
+#nav a { font-weight: bold; color: #eee; }
+#nav .nav-link { font-weight: 900; }
+#nav i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+#dark-mode-toggle { background: transparent; border: none; cursor: pointer; color: #eee; }
+#dark-mode-toggle i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
 
  
-#main {
-  margin-top: 1em;
-  margin-bottom: 4em;
-}
-
-#home-jumbotron {
-  background-color: inherit;
-  font-family: "Geist Sans", sans-serif;
-}
-
+#main { margin-top: 1em; margin-bottom: 4em; }
+#home-jumbotron { background-color: inherit; font-family: "Geist Sans", sans-serif; }
 #home-jumbotron h1 { font-weight: 900; }
 #home-jumbotron p { font-weight: 400; }
-
 .font-125 { font-size: 125%; }
-
 img { max-width: 100%; }
-
-.btn {
-  margin-bottom: 0.3em;
-  margin-right: 0.3em;
-}
+.btn { margin-bottom: 0.3em; margin-right: 0.3em; }
 
  
-a {
-  color: #eee;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #d0aaff;
-  text-decoration: underline;
-}
+a { color: #eee; font-size: 1rem; font-weight: bold; text-decoration: none; }
+a:hover { color: #d0aaff; text-decoration: underline; }
 
  
 table {
@@ -137,44 +83,50 @@ table {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   background: #1e1e1e;
 }
-
-th {
-  background-color: #333;
-  color: #fff;
-  padding: 12px;
-  text-align: left;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-td {
-  padding: 12px;
-  border-bottom: 1px solid #444;
-}
-
+th { background-color: #333; color: #fff; padding: 12px; text-align: left; font-weight: bold; text-transform: uppercase; }
+td { padding: 12px; border-bottom: 1px solid #444; }
 tr:nth-child(even) { background-color: #222; }
 tr:hover { background-color: #333; }
+@media (max-width: 768px) { table { display: block; overflow-x: auto; white-space: nowrap; } }
 
-@media (max-width: 768px) {
-  table { display: block; overflow-x: auto; white-space: nowrap; }
+ 
+ 
+
+ 
+div.highlight pre[style],
+div.chroma pre[style],
+pre[style],
+pre.chroma,
+pre {
+  background-color: #202124 !important;       
+  background-image: none !important;
+  color: #e2e8f0 !important;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,255,255,0.05) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45) !important;
+  margin: 1rem 0 !important;
+  overflow-x: auto !important;
 }
 
  
-pre {
-  background: #1e1e1e;
-  border: 1px solid #444;
-  color: #e0e0e0;
-  font-family: monospace;
-  font-size: 13px;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  word-wrap: break-word;
+div.highlight pre[style] code,
+pre[style] code {
+  background: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: pre !important;
 }
 
-code { font-size: 14px; }
+ 
+div.highlight, div.chroma {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
 
  
 .card {
@@ -184,23 +136,9 @@ code { font-size: 14px; }
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.7);
-}
-
-.card-img-top {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-}
-
-
+.card:hover { transform: translateY(-5px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
 .card:hover .card-img-top { transform: scale(1.02); }
-
 .card-img-top::before {
   content: "";
   position: absolute;
@@ -209,63 +147,20 @@ code { font-size: 14px; }
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
 }
-
 .card:hover .card-img-top::before { opacity: 0.8; }
-
 .card-body { padding: 15px; text-align: center; }
 .card-title { font-size: 1.2rem; font-weight: bold; color: #fff; transition: color 0.3s; }
 .card:hover .card-title { color: #d0aaff; }
 
-
-
  
-.section-travel h1 {
-  text-align: left;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-}
-
-.section-travel .page-subtitle {
-  text-align: center;
-  color: #bbb;
-  font-size: 1.05rem;
-  margin-bottom: 1.5rem;
-}
-
-.section-travel .travel-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.section-travel .card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #1e1e1e;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
+.section-travel h1 { text-align: left; margin-bottom: 0.5rem; font-size: 2rem; }
+.section-travel .page-subtitle { text-align: center; color: #bbb; font-size: 1.05rem; margin-bottom: 1.5rem; }
+.section-travel .travel-cards { display: flex; flex-direction: column; gap: 2rem; }
+.section-travel .card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; background: #1e1e1e; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
 .section-travel .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
-
-.section-travel .card > a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-.section-travel .card-img-top {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px 12px 0 0;
-  transition: transform 0.35s ease;
-}
-
+.section-travel .card > a { display: block; color: inherit; text-decoration: none; }
+.section-travel .card-img-top { width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.35s ease; }
 .section-travel .card:hover .card-img-top { transform: scale(1.03); }
-
 .section-travel .card-img-top::before {
   content: "";
   position: absolute;
@@ -273,104 +168,99 @@ code { font-size: 14px; }
   background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
   pointer-events: none;
 }
-
 .section-travel .card-body { padding: 1.2rem 1rem; text-align: left; }
 .section-travel .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
 .section-travel time { color: #aaa; font-size: 0.95rem; }
+.section-travel .card.no-image { min-height: 160px; background: #222; border: 1px dashed rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; padding: 1.2rem; }
+@media (max-width: 600px) { .section-travel .card-img-top { height: 280px; } }
 
-.section-travel .card.no-image {
-  min-height: 160px;
-  background: #222;
-  border: 1px dashed rgba(255,255,255,0.1);
+ 
+
+ 
+.section-food.vertical .food-categories {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-
-@media (max-width: 600px) { 
-  .section-travel .card-img-top { height: 280px; } 
+.section-food.vertical .food-categories .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-food.vertical .food-categories .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
  
-button.copybtn {
-  transition: opacity .3s ease-in-out;
-  opacity: .15;
-  padding: 2px 6px;
-  position: absolute;
-  right: 4px;
-  top: 4px;
+.section-food.masonry .food-recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+}
+.section-food.masonry .food-recipes .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-food.masonry .food-recipes .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.section-food .card-img-top { width: 100%; height: 200px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.3s ease; }
+.section-food .card:hover .card-img-top { transform: scale(1.03); }
+.section-food .card-body { padding: 1rem; text-align: left; }
+.section-food .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+@media (max-width: 600px) { 
+  .section-food.masonry .food-recipes { grid-template-columns: 1fr; }
+  .section-food.vertical .food-categories .card { width: 100%; }
 }
 
-div.highlight .copybtn:hover {
-  opacity: 1;
-  border-color: #51a7e8;
-}
-
+ 
+button.copybtn { transition: opacity .3s ease-in-out; opacity: .15; padding: 2px 6px; position: absolute; right: 4px; top: 4px; }
+div.highlight .copybtn:hover { opacity: 1; border-color: #51a7e8; }
 div.highlight { position: relative; }
 
  
 .col { padding-left: 0; }
-
-.small {
-  max-width: 400px;
-  margin: 1rem 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
+.small { max-width: 400px; margin: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
 
  
 body.light-mode {
   background-color: #fff;
   color: #000;
 }
-
-body.light-mode #nav-border {
-  border-bottom: 1px solid #212529;  
-}
-
-body.light-mode #nav {
-  background-color: #fff;
-  border-bottom: none;  
-}
-
+body.light-mode #nav-border { border-bottom: 1px solid #212529; }
+body.light-mode #nav { background-color: #fff; border-bottom: none; }
 body.light-mode #nav a { color: #000; }
 body.light-mode #nav a:hover { color: #0070f3; }
 body.light-mode #dark-mode-toggle { color: #000; }
-
-body.light-mode .card {
-  background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-}
-
+body.light-mode .card { background-color: #fff; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
 body.light-mode .card-title { color: #333; }
 body.light-mode .card-body { color: #000; }
-
 body.light-mode table { background-color: #fff; color: #000; }
 body.light-mode th { background-color: #212529; color: #fff; }
 body.light-mode td { border-bottom: 1px solid #ddd; }
-
 body.light-mode a { color: #333; }
 body.light-mode a:hover { color: #0070f3; }
 
  
-#dark-mode-toggle i,
-#nav a,
-.card,
-.table,
-body {
+#dark-mode-toggle i, #nav a, .card, .table, body {
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
  
-.image-caption {
-  font-size: 0.9em;
-  margin-top: 0.25em;
-  color: #555;  
-}
-
-body.dark-mode .image-caption {
-  color: #ccc;
-}
+.image-caption { font-size: 0.9em; margin-top: 0.25em; color: #555; }
+body.dark-mode .image-caption { color: #ccc; }
 
 </style>
 
@@ -482,659 +372,467 @@ body.dark-mode .image-caption {
       <main id="main">
       
 
-
-
 <h1>Miscellaneous</h1>
 
 
 
-<div class="card-columns">
-  
 
 
-<div class="card">
-  <a href="/squash-soup/">
-    
-    
-      <img class="card-img-top" src="/food/images/squash_soup/IMG_6208.jpeg">
-    
 
-    <div class="card-body text-center">
-      <a href="/squash-soup/">
-        <h5 class="card-title">Squash Soup</h5>
-      </a>
+<section class="section-food masonry">
+  <div class="food-recipes">
+    
       
-      
+      <div class="card">
+        <a href="/squash-soup/">
+          
+            <img class="card-img-top" src="/food/images/squash_soup/IMG_6208.jpeg" alt="Squash Soup">
+          
+          <div class="card-body">
+            <h3 class="card-title">Squash Soup</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-11-15">Nov 15, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/peach_chutney/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/peach_and_chilli_chutney/IMG_0129.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/peach_chutney/">
-        <h5 class="card-title">Peach &amp; Chilli Chutney</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/peach_chutney/">
+          
+            <img class="card-img-top" src="/food/images/peach_and_chilli_chutney/IMG_0129.jpeg" alt="Peach &amp; Chilli Chutney">
+          
+          <div class="card-body">
+            <h3 class="card-title">Peach &amp; Chilli Chutney</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-09-10">Sep 10, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/sweetchestnut-champagne/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/sweet_chestnut_champagne/IMG_5312.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/sweetchestnut-champagne/">
-        <h5 class="card-title">Sweet Chestnut Champagne</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/sweetchestnut-champagne/">
+          
+            <img class="card-img-top" src="/food/images/sweet_chestnut_champagne/IMG_5312.jpeg" alt="Sweet Chestnut Champagne">
+          
+          <div class="card-body">
+            <h3 class="card-title">Sweet Chestnut Champagne</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-04-04">Apr 4, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/fermented_brussels/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/fermented_brussel/IMG_7597.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/fermented_brussels/">
-        <h5 class="card-title">Fermented Brussels</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/fermented_brussels/">
+          
+            <img class="card-img-top" src="/food/images/fermented_brussel/IMG_7597.jpeg" alt="Fermented Brussels">
+          
+          <div class="card-body">
+            <h3 class="card-title">Fermented Brussels</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-04-04">Apr 4, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/sardine-beans/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/sardine_beans/IMG_7583.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/sardine-beans/">
-        <h5 class="card-title">Sardines, Beans, and Eggs</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/sardine-beans/">
+          
+            <img class="card-img-top" src="/food/images/sardine_beans/IMG_7583.jpeg" alt="Sardines, Beans, and Eggs">
+          
+          <div class="card-body">
+            <h3 class="card-title">Sardines, Beans, and Eggs</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-04-01">Apr 1, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/honey-mustard-salad-dressing/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/honey_mustard_dressing/IMG_7589.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/honey-mustard-salad-dressing/">
-        <h5 class="card-title">Honey Mustard Salad Dressing</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/honey-mustard-salad-dressing/">
+          
+            <img class="card-img-top" src="/food/images/honey_mustard_dressing/IMG_7589.jpeg" alt="Honey Mustard Salad Dressing">
+          
+          <div class="card-body">
+            <h3 class="card-title">Honey Mustard Salad Dressing</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-03-31">Mar 31, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/joes-kimchi/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/kimchi/IMG_7534.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/joes-kimchi/">
-        <h5 class="card-title">Joe&#39;s Kimchi</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/joes-kimchi/">
+          
+            <img class="card-img-top" src="/food/images/kimchi/IMG_7534.jpeg" alt="Joe&#39;s Kimchi">
+          
+          <div class="card-body">
+            <h3 class="card-title">Joe&#39;s Kimchi</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-03-31">Mar 31, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/caitlins-kimchi/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/kimchi/IMG_7117.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/caitlins-kimchi/">
-        <h5 class="card-title">Caitlin&#39;s Kimchi</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/caitlins-kimchi/">
+          
+            <img class="card-img-top" src="/food/images/kimchi/IMG_7117.jpeg" alt="Caitlin&#39;s Kimchi">
+          
+          <div class="card-body">
+            <h3 class="card-title">Caitlin&#39;s Kimchi</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-03-31">Mar 31, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/wild-garlic-pesto/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/wild_garlic/IMG_7564.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/wild-garlic-pesto/">
-        <h5 class="card-title">Wild Garlic Pesto</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/wild-garlic-pesto/">
+          
+            <img class="card-img-top" src="/food/images/wild_garlic/IMG_7564.jpeg" alt="Wild Garlic Pesto">
+          
+          <div class="card-body">
+            <h3 class="card-title">Wild Garlic Pesto</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-03-31">Mar 31, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/fermented-wild-garlic/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/wild_garlic/IMG_7573.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/fermented-wild-garlic/">
-        <h5 class="card-title">Lacto Fermented Wild Garlic</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/fermented-wild-garlic/">
+          
+            <img class="card-img-top" src="/food/images/wild_garlic/IMG_7573.jpeg" alt="Lacto Fermented Wild Garlic">
+          
+          <div class="card-body">
+            <h3 class="card-title">Lacto Fermented Wild Garlic</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-03-31">Mar 31, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/american-beans/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/american_beans/IMG_7095.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/american-beans/">
-        <h5 class="card-title">American Beans</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/american-beans/">
+          
+            <img class="card-img-top" src="/food/images/american_beans/IMG_7095.jpeg" alt="American Beans">
+          
+          <div class="card-body">
+            <h3 class="card-title">American Beans</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2025-01-16">Jan 16, 2025</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/elderflower_cordial/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/elderflower_cordial/IMG_4840.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/elderflower_cordial/">
-        <h5 class="card-title">Elderflower Cordial</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/elderflower_cordial/">
+          
+            <img class="card-img-top" src="/food/images/elderflower_cordial/IMG_4840.jpeg" alt="Elderflower Cordial">
+          
+          <div class="card-body">
+            <h3 class="card-title">Elderflower Cordial</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2024-05-27">May 27, 2024</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/sausage-casserole/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/sausage_casserole/pic.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/sausage-casserole/">
-        <h5 class="card-title">Benj&#39;s Essential Sausage Casserole</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/sausage-casserole/">
+          
+            <img class="card-img-top" src="/food/images/sausage_casserole/pic.jpeg" alt="Benj&#39;s Essential Sausage Casserole">
+          
+          <div class="card-body">
+            <h3 class="card-title">Benj&#39;s Essential Sausage Casserole</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-10-02">Oct 2, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/red_onion_soup/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/Red_Onion_Soup.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/red_onion_soup/">
-        <h5 class="card-title">Red Onion Soup</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/red_onion_soup/">
+          
+            <img class="card-img-top" src="/food/images/Red_Onion_Soup.jpeg" alt="Red Onion Soup">
+          
+          <div class="card-body">
+            <h3 class="card-title">Red Onion Soup</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-08-21">Aug 21, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/green_tomato_chutney/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_4489.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/green_tomato_chutney/">
-        <h5 class="card-title">Green Tomato Chutney</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/green_tomato_chutney/">
+          
+            <img class="card-img-top" src="/food/images/IMG_4489.jpg" alt="Green Tomato Chutney">
+          
+          <div class="card-body">
+            <h3 class="card-title">Green Tomato Chutney</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-08-21">Aug 21, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/tomato-soup/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_4480.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/tomato-soup/">
-        <h5 class="card-title">Tomato Soup</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/tomato-soup/">
+          
+            <img class="card-img-top" src="/food/images/IMG_4480.jpeg" alt="Tomato Soup">
+          
+          <div class="card-body">
+            <h3 class="card-title">Tomato Soup</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-08-19">Aug 19, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/beetroot-dip/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_2867-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/beetroot-dip/">
-        <h5 class="card-title">Beetroot Dip</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/beetroot-dip/">
+          
+            <img class="card-img-top" src="/food/images/IMG_2867-2.jpg" alt="Beetroot Dip">
+          
+          <div class="card-body">
+            <h3 class="card-title">Beetroot Dip</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-03-24">Mar 24, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/kale-salad/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_2830-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/kale-salad/">
-        <h5 class="card-title">Kale Salad</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/kale-salad/">
+          
+            <img class="card-img-top" src="/food/images/IMG_2830-2.jpg" alt="Kale Salad">
+          
+          <div class="card-body">
+            <h3 class="card-title">Kale Salad</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-03-23">Mar 23, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/gorgonzola-pasta/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_2311-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/gorgonzola-pasta/">
-        <h5 class="card-title">Gorgonzola Pasta</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/gorgonzola-pasta/">
+          
+            <img class="card-img-top" src="/food/images/IMG_2311-2.jpg" alt="Gorgonzola Pasta">
+          
+          <div class="card-body">
+            <h3 class="card-title">Gorgonzola Pasta</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-01-28">Jan 28, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/african-peanut-stew/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_2208-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/african-peanut-stew/">
-        <h5 class="card-title">African Peanut Stew</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/african-peanut-stew/">
+          
+            <img class="card-img-top" src="/food/images/IMG_2208-2.jpg" alt="African Peanut Stew">
+          
+          <div class="card-body">
+            <h3 class="card-title">African Peanut Stew</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2021-01-19">Jan 19, 2021</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/lentil-ragu/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_1576-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/lentil-ragu/">
-        <h5 class="card-title">Lentil Ragu</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/lentil-ragu/">
+          
+            <img class="card-img-top" src="/food/images/IMG_1576-2.jpg" alt="Lentil Ragu">
+          
+          <div class="card-body">
+            <h3 class="card-title">Lentil Ragu</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2020-11-02">Nov 2, 2020</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/beetroot-sandwich/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_1522-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/beetroot-sandwich/">
-        <h5 class="card-title">Spicy Beetroot Sandwich Filler</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/beetroot-sandwich/">
+          
+            <img class="card-img-top" src="/food/images/IMG_1522-2.jpg" alt="Spicy Beetroot Sandwich Filler">
+          
+          <div class="card-body">
+            <h3 class="card-title">Spicy Beetroot Sandwich Filler</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2020-10-26">Oct 26, 2020</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/banana-bread/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/bananabread.jpeg">
-    
-
-    <div class="card-body text-center">
-      <a href="/banana-bread/">
-        <h5 class="card-title">Banana Bread</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/banana-bread/">
+          
+            <img class="card-img-top" src="/food/images/bananabread.jpeg" alt="Banana Bread">
+          
+          <div class="card-body">
+            <h3 class="card-title">Banana Bread</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2020-10-24">Oct 24, 2020</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/roasted-tomato/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_1441-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/roasted-tomato/">
-        <h5 class="card-title">Roasted Tomato</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/roasted-tomato/">
+          
+            <img class="card-img-top" src="/food/images/IMG_1441-2.jpg" alt="Roasted Tomato">
+          
+          <div class="card-body">
+            <h3 class="card-title">Roasted Tomato</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2020-10-24">Oct 24, 2020</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/leek-and-mushroom-pie/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_1130.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/leek-and-mushroom-pie/">
-        <h5 class="card-title">Leek and Mushroom Pie</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/leek-and-mushroom-pie/">
+          
+            <img class="card-img-top" src="/food/images/IMG_1130.jpg" alt="Leek and Mushroom Pie">
+          
+          <div class="card-body">
+            <h3 class="card-title">Leek and Mushroom Pie</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2020-09-14">Sep 14, 2020</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/beetroot-riossotto/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_1950-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/beetroot-riossotto/">
-        <h5 class="card-title">Beetroot Risotto</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/beetroot-riossotto/">
+          
+            <img class="card-img-top" src="/food/images/IMG_1950-2.jpg" alt="Beetroot Risotto">
+          
+          <div class="card-body">
+            <h3 class="card-title">Beetroot Risotto</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2020-03-31">Mar 31, 2020</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/one-pot-mexican-quinoa/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_2046-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/one-pot-mexican-quinoa/">
-        <h5 class="card-title">One Pot Mexican Quinoa</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/one-pot-mexican-quinoa/">
+          
+            <img class="card-img-top" src="/food/images/IMG_2046-2.jpg" alt="One Pot Mexican Quinoa">
+          
+          <div class="card-body">
+            <h3 class="card-title">One Pot Mexican Quinoa</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2020-03-31">Mar 31, 2020</time>
-    </div>
-
-  </a>
-</div>
-
-
-
-
-<div class="card">
-  <a href="/flapjack/">
+          </div>
+        </a>
+      </div>
     
-    
-      <img class="card-img-top" src="/food/images/IMG_0868-2.jpg">
-    
-
-    <div class="card-body text-center">
-      <a href="/flapjack/">
-        <h5 class="card-title">Flapjack</h5>
-      </a>
       
-      
+      <div class="card">
+        <a href="/flapjack/">
+          
+            <img class="card-img-top" src="/food/images/IMG_0868-2.jpg" alt="Flapjack">
+          
+          <div class="card-body">
+            <h3 class="card-title">Flapjack</h3>
+            
+            
 
 <i data-feather="calendar"></i> <time datetime="2019-11-03">Nov 3, 2019</time>
-    </div>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+</section>
 
-  </a>
-</div>
-
-
-</div>
 
 
 

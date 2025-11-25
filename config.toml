@@ -3,19 +3,21 @@ languageCode = "en-us"
 title = "Well lets take a look at it, Mr Gumby!"
 
 disqusShortname = "www-mybrainhertz-co-uk"
-pygmentsCodefences = true
-pygmentsUseClasses = false
-pygmentsStyle = 'friendly' #required for lexer to work
+
 
 # googleAnalytics = "UA-177014444-1"
 googleAnalytics = "G-8PKWFQVGKH"
 
-
-
-
 [markup]
-[markup.goldmark.renderer]
-unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    noClasses = true      
+    style = "friendly"    
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
 
 
 [permalinks]

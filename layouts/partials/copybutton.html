@@ -1,33 +1,42 @@
 <script>
-  function addCopyButtonToCode(){
-    var allCodeBlocksElements = $( "div.highlight pre" );
+function addCopyButtonToCode() {
+  var allCodeBlocksElements = $("div.highlight pre");
 
-    allCodeBlocksElements.each(function(ii) {
+  allCodeBlocksElements.each(function(ii) {
+    var currentId = "codeblock" + (ii + 1);
+    $(this).attr("id", currentId);
 
-      var currentId = "codeblock" + (ii + 1);
-      $(this).attr('id', currentId);
+    // Determine icon color based on dark/light mode
+    var iconColor = document.body.classList.contains("dark-mode") ? "#e2e8f0" : "#333";
 
-    feather.replace()
-      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
-        currentId + '"><i data-feather="copy" width="20"></i></button>';
-      $(this).after(clipButton);
-    });
+    // Create button HTML
+    var clipButton = `
+      <button class="btn copybtn" data-clipboard-target="#${currentId}">
+        <i data-feather="copy" width="20" style="color: ${iconColor}"></i>
+      </button>
+    `;
 
-    var clipboard = new Clipboard('.btn');
-    clipboard.on('success', function(e) {
-      setTimeout(function() {
-        //$(e.trigger).text("Copied!");
-        e.clearSelection();
-      }, 250);
-    });
-    clipboard.on('error', function(e) {
-      $(e.trigger).text("Can't in Safari");
-    });
-  }
-  $(document).ready(function () {
-    // Once the DOM is loaded for the page, attach clipboard buttons
-    addCopyButtonToCode();
+    $(this).after(clipButton);
   });
+
+  feather.replace(); // render all Feather icons
+
+  // Clipboard handling
+  var clipboard = new Clipboard(".btn");
+  clipboard.on("success", function(e) {
+    setTimeout(function() {
+      e.clearSelection();
+    }, 250);
+  });
+  clipboard.on("error", function(e) {
+    $(e.trigger).text("Can't in Safari");
+  });
+}
+
+// Initialize on DOM ready
+$(document).ready(function() {
+  addCopyButtonToCode();
+});
 
 
 

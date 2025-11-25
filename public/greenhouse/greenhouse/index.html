@@ -15,7 +15,7 @@
 
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
-
+<link rel="stylesheet" href="/css/pygments.css">
 
 
   <meta charset="utf-8">
@@ -47,86 +47,32 @@ h1, h2, h3 {
 }
 
  
-
- 
-#nav-border {
-  border-bottom: 1px solid #333;  
-}
-
- 
+#nav-border { border-bottom: 1px solid #333; }
 #nav {
   font-family: "Geist Sans", sans-serif;
   position: sticky;
   top: 0;
-  background: #121212;  
-  border-bottom: none;  
+  background: #121212;
+  border-bottom: none;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #eee;
-}
-
-#nav .nav-link {
-  font-weight: 900;
-}
-
-#nav i {
-  color: inherit;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-}
-
-#dark-mode-toggle {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #eee;
-}
-
-#dark-mode-toggle i {
-  color: inherit;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-}
+#nav a { font-weight: bold; color: #eee; }
+#nav .nav-link { font-weight: 900; }
+#nav i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+#dark-mode-toggle { background: transparent; border: none; cursor: pointer; color: #eee; }
+#dark-mode-toggle i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
 
  
-#main {
-  margin-top: 1em;
-  margin-bottom: 4em;
-}
-
-#home-jumbotron {
-  background-color: inherit;
-  font-family: "Geist Sans", sans-serif;
-}
-
+#main { margin-top: 1em; margin-bottom: 4em; }
+#home-jumbotron { background-color: inherit; font-family: "Geist Sans", sans-serif; }
 #home-jumbotron h1 { font-weight: 900; }
 #home-jumbotron p { font-weight: 400; }
-
 .font-125 { font-size: 125%; }
-
 img { max-width: 100%; }
-
-.btn {
-  margin-bottom: 0.3em;
-  margin-right: 0.3em;
-}
+.btn { margin-bottom: 0.3em; margin-right: 0.3em; }
 
  
-a {
-  color: #eee;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #d0aaff;
-  text-decoration: underline;
-}
+a { color: #eee; font-size: 1rem; font-weight: bold; text-decoration: none; }
+a:hover { color: #d0aaff; text-decoration: underline; }
 
  
 table {
@@ -137,44 +83,50 @@ table {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   background: #1e1e1e;
 }
-
-th {
-  background-color: #333;
-  color: #fff;
-  padding: 12px;
-  text-align: left;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-td {
-  padding: 12px;
-  border-bottom: 1px solid #444;
-}
-
+th { background-color: #333; color: #fff; padding: 12px; text-align: left; font-weight: bold; text-transform: uppercase; }
+td { padding: 12px; border-bottom: 1px solid #444; }
 tr:nth-child(even) { background-color: #222; }
 tr:hover { background-color: #333; }
+@media (max-width: 768px) { table { display: block; overflow-x: auto; white-space: nowrap; } }
 
-@media (max-width: 768px) {
-  table { display: block; overflow-x: auto; white-space: nowrap; }
+ 
+ 
+
+ 
+div.highlight pre[style],
+div.chroma pre[style],
+pre[style],
+pre.chroma,
+pre {
+  background-color: #202124 !important;       
+  background-image: none !important;
+  color: #e2e8f0 !important;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,255,255,0.05) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45) !important;
+  margin: 1rem 0 !important;
+  overflow-x: auto !important;
 }
 
  
-pre {
-  background: #1e1e1e;
-  border: 1px solid #444;
-  color: #e0e0e0;
-  font-family: monospace;
-  font-size: 13px;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  word-wrap: break-word;
+div.highlight pre[style] code,
+pre[style] code {
+  background: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: pre !important;
 }
 
-code { font-size: 14px; }
+ 
+div.highlight, div.chroma {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
 
  
 .card {
@@ -184,23 +136,9 @@ code { font-size: 14px; }
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.7);
-}
-
-.card-img-top {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-}
-
-
+.card:hover { transform: translateY(-5px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
 .card:hover .card-img-top { transform: scale(1.02); }
-
 .card-img-top::before {
   content: "";
   position: absolute;
@@ -209,63 +147,20 @@ code { font-size: 14px; }
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
 }
-
 .card:hover .card-img-top::before { opacity: 0.8; }
-
 .card-body { padding: 15px; text-align: center; }
 .card-title { font-size: 1.2rem; font-weight: bold; color: #fff; transition: color 0.3s; }
 .card:hover .card-title { color: #d0aaff; }
 
-
-
  
-.section-travel h1 {
-  text-align: left;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-}
-
-.section-travel .page-subtitle {
-  text-align: center;
-  color: #bbb;
-  font-size: 1.05rem;
-  margin-bottom: 1.5rem;
-}
-
-.section-travel .travel-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.section-travel .card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #1e1e1e;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
+.section-travel h1 { text-align: left; margin-bottom: 0.5rem; font-size: 2rem; }
+.section-travel .page-subtitle { text-align: center; color: #bbb; font-size: 1.05rem; margin-bottom: 1.5rem; }
+.section-travel .travel-cards { display: flex; flex-direction: column; gap: 2rem; }
+.section-travel .card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; background: #1e1e1e; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
 .section-travel .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
-
-.section-travel .card > a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-.section-travel .card-img-top {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px 12px 0 0;
-  transition: transform 0.35s ease;
-}
-
+.section-travel .card > a { display: block; color: inherit; text-decoration: none; }
+.section-travel .card-img-top { width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.35s ease; }
 .section-travel .card:hover .card-img-top { transform: scale(1.03); }
-
 .section-travel .card-img-top::before {
   content: "";
   position: absolute;
@@ -273,104 +168,99 @@ code { font-size: 14px; }
   background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
   pointer-events: none;
 }
-
 .section-travel .card-body { padding: 1.2rem 1rem; text-align: left; }
 .section-travel .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
 .section-travel time { color: #aaa; font-size: 0.95rem; }
+.section-travel .card.no-image { min-height: 160px; background: #222; border: 1px dashed rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; padding: 1.2rem; }
+@media (max-width: 600px) { .section-travel .card-img-top { height: 280px; } }
 
-.section-travel .card.no-image {
-  min-height: 160px;
-  background: #222;
-  border: 1px dashed rgba(255,255,255,0.1);
+ 
+
+ 
+.section-food.vertical .food-categories {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-
-@media (max-width: 600px) { 
-  .section-travel .card-img-top { height: 280px; } 
+.section-food.vertical .food-categories .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-food.vertical .food-categories .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
  
-button.copybtn {
-  transition: opacity .3s ease-in-out;
-  opacity: .15;
-  padding: 2px 6px;
-  position: absolute;
-  right: 4px;
-  top: 4px;
+.section-food.masonry .food-recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+}
+.section-food.masonry .food-recipes .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-food.masonry .food-recipes .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.section-food .card-img-top { width: 100%; height: 200px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.3s ease; }
+.section-food .card:hover .card-img-top { transform: scale(1.03); }
+.section-food .card-body { padding: 1rem; text-align: left; }
+.section-food .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+@media (max-width: 600px) { 
+  .section-food.masonry .food-recipes { grid-template-columns: 1fr; }
+  .section-food.vertical .food-categories .card { width: 100%; }
 }
 
-div.highlight .copybtn:hover {
-  opacity: 1;
-  border-color: #51a7e8;
-}
-
+ 
+button.copybtn { transition: opacity .3s ease-in-out; opacity: .15; padding: 2px 6px; position: absolute; right: 4px; top: 4px; }
+div.highlight .copybtn:hover { opacity: 1; border-color: #51a7e8; }
 div.highlight { position: relative; }
 
  
 .col { padding-left: 0; }
-
-.small {
-  max-width: 400px;
-  margin: 1rem 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
+.small { max-width: 400px; margin: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
 
  
 body.light-mode {
   background-color: #fff;
   color: #000;
 }
-
-body.light-mode #nav-border {
-  border-bottom: 1px solid #212529;  
-}
-
-body.light-mode #nav {
-  background-color: #fff;
-  border-bottom: none;  
-}
-
+body.light-mode #nav-border { border-bottom: 1px solid #212529; }
+body.light-mode #nav { background-color: #fff; border-bottom: none; }
 body.light-mode #nav a { color: #000; }
 body.light-mode #nav a:hover { color: #0070f3; }
 body.light-mode #dark-mode-toggle { color: #000; }
-
-body.light-mode .card {
-  background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-}
-
+body.light-mode .card { background-color: #fff; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
 body.light-mode .card-title { color: #333; }
 body.light-mode .card-body { color: #000; }
-
 body.light-mode table { background-color: #fff; color: #000; }
 body.light-mode th { background-color: #212529; color: #fff; }
 body.light-mode td { border-bottom: 1px solid #ddd; }
-
 body.light-mode a { color: #333; }
 body.light-mode a:hover { color: #0070f3; }
 
  
-#dark-mode-toggle i,
-#nav a,
-.card,
-.table,
-body {
+#dark-mode-toggle i, #nav a, .card, .table, body {
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
  
-.image-caption {
-  font-size: 0.9em;
-  margin-top: 0.25em;
-  color: #555;  
-}
-
-body.dark-mode .image-caption {
-  color: #ccc;
-}
+.image-caption { font-size: 0.9em; margin-top: 0.25em; color: #555; }
+body.dark-mode .image-caption { color: #ccc; }
 
 </style>
 
@@ -667,35 +557,44 @@ toggle.addEventListener('click', () => {
 </script>
    
     <script>
-  function addCopyButtonToCode(){
-    var allCodeBlocksElements = $( "div.highlight pre" );
+function addCopyButtonToCode() {
+  var allCodeBlocksElements = $("div.highlight pre");
 
-    allCodeBlocksElements.each(function(ii) {
+  allCodeBlocksElements.each(function(ii) {
+    var currentId = "codeblock" + (ii + 1);
+    $(this).attr("id", currentId);
 
-      var currentId = "codeblock" + (ii + 1);
-      $(this).attr('id', currentId);
-
-    feather.replace()
-      var clipButton = '<button class="btn copybtn" data-clipboard-target="#' +
-        currentId + '"><i data-feather="copy" width="20"></i></button>';
-      $(this).after(clipButton);
-    });
-
-    var clipboard = new Clipboard('.btn');
-    clipboard.on('success', function(e) {
-      setTimeout(function() {
-        
-        e.clearSelection();
-      }, 250);
-    });
-    clipboard.on('error', function(e) {
-      $(e.trigger).text("Can't in Safari");
-    });
-  }
-  $(document).ready(function () {
     
-    addCopyButtonToCode();
+    var iconColor = document.body.classList.contains("dark-mode") ? "#e2e8f0" : "#333";
+
+    
+    var clipButton = `
+      <button class="btn copybtn" data-clipboard-target="#${currentId}">
+        <i data-feather="copy" width="20" style="color: ${iconColor}"></i>
+      </button>
+    `;
+
+    $(this).after(clipButton);
   });
+
+  feather.replace(); 
+
+  
+  var clipboard = new Clipboard(".btn");
+  clipboard.on("success", function(e) {
+    setTimeout(function() {
+      e.clearSelection();
+    }, 250);
+  });
+  clipboard.on("error", function(e) {
+    $(e.trigger).text("Can't in Safari");
+  });
+}
+
+
+$(document).ready(function() {
+  addCopyButtonToCode();
+});
 
 
 

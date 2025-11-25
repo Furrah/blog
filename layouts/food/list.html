@@ -1,37 +1,54 @@
 {{ define "main" }}
 
-
-
 <h1>{{ .Title }}</h1>
 
-
-
-<div class="card-columns">
-  {{ range .Pages.ByPublishDate.Reverse }}
-
-
-<div class="card">
-  <a href="{{ .RelPermalink }}">
-    
-    {{ if .Params.image }}
-      <img class="card-img-top" src="{{ .Params.image }}">
+<!-- Category pages (vertical cards) for subsections only -->
+{{ if gt (len .Sections) 0 }}
+<section class="section-food vertical">
+  <div class="food-categories">
+    {{ range .Sections.ByPublishDate.Reverse }}
+      {{ $page := . }}
+      <div class="card">
+        <a href="{{ $page.RelPermalink }}">
+          {{ with $page.Params.image }}
+            <img class="card-img-top" src="{{ . }}" alt="{{ $page.Title }}">
+          {{ end }}
+          <div class="card-body">
+            <h3 class="card-title">{{ $page.Title }}</h3>
+            {{ with $page.Params.description }}
+              <p>{{ . }}</p>
+            {{ end }}
+          </div>
+        </a>
+      </div>
     {{ end }}
-
-    <div class="card-body text-center">
-      <a href="{{ .RelPermalink }}">
-        <h5 class="card-title">{{ .Title }}</h5>
-      </a>
-      
-      {{ partial "date.html" . }}
-    </div>
-
-  </a>
-</div>
-
-{{ end }}
-</div>
-
+  </div>
+</section>
 {{ end }}
 
+<!-- Recipe pages (masonry layout) -->
+{{ if gt (len .RegularPages) 0 }}
+<section class="section-food masonry">
+  <div class="food-recipes">
+    {{ range .RegularPages.ByPublishDate.Reverse }}
+      {{ $page := . }}
+      <div class="card">
+        <a href="{{ $page.RelPermalink }}">
+          {{ with $page.Params.image }}
+            <img class="card-img-top" src="{{ . }}" alt="{{ $page.Title }}">
+          {{ end }}
+          <div class="card-body">
+            <h3 class="card-title">{{ $page.Title }}</h3>
+            {{ with $page.Params.description }}
+              <p>{{ . }}</p>
+            {{ end }}
+            {{ partial "date.html" $page }}
+          </div>
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
 
-
+{{ end }}
