@@ -1,5 +1,5 @@
 ---
-title: "The beginning"
+title: "The Beginning"
 date: 2022-04-24T22:02:52+01:00
 tags: []
 draft: false

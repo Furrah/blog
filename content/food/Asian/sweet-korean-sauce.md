@@ -3,6 +3,7 @@ title: "Sweet Korean Sauce"
 date: 2025-08-25T12:50:41+02:00
 tags: []
 draft: false
+image: "/food/images/sweet_korean_sauce/IMG_9584.jpeg"
 ---
 
 This is quite a sweet sauce but also has a bit of a kick! When making these type of sauce you can really mix and match with your ingrediants. You'll need something sweet, acidic, unami, and salty.  
