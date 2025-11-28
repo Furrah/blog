@@ -61,6 +61,12 @@ h1, h2, h3 {
 #dark-mode-toggle { background: transparent; border: none; cursor: pointer; color: #eee; }
 #dark-mode-toggle i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
 
+body.dark-mode #nav a:hover {
+  color: #d0aaff;
+}
+
+
+
  
 #main { margin-top: 1em; margin-bottom: 4em; }
 #home-jumbotron { background-color: inherit; font-family: "Geist Sans", sans-serif; }
@@ -73,6 +79,26 @@ img { max-width: 100%; }
  
 a { color: #eee; font-size: 1rem; font-weight: bold; text-decoration: none; }
 a:hover { color: #d0aaff; text-decoration: underline; }
+
+
+.download-link {
+  color: #4cc3ff;  
+  font-weight: 600;
+}
+
+.download-link:hover {
+  color: #80d9ff;
+  text-decoration: underline;
+}
+
+body.light-mode .download-link {
+  color: #0066cc;            
+}
+
+body.light-mode .download-link:hover {
+  color: #004c99;            
+}
+
 
  
 table {
@@ -157,8 +183,7 @@ div.highlight, div.chroma {
  
 .chroma .nf { color: #a6e22e; }
 
- 
- 
+
 
 
 
@@ -226,6 +251,9 @@ div.highlight, div.chroma {
   background: #1e1e1e;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;  
+  width: 100%;
+  margin: 0 auto;
 }
 .section-food.vertical .food-categories .card:hover {
   transform: translateY(-3px);
@@ -260,6 +288,19 @@ div.highlight, div.chroma {
   .section-food.masonry .food-recipes { grid-template-columns: 1fr; }
   .section-food.vertical .food-categories .card { width: 100%; }
 }
+
+body.light-mode .section-food.vertical .food-categories .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .section-food.masonry .food-recipes .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
 
  
 button.copybtn { transition: opacity .3s ease-in-out; opacity: .15; padding: 2px 6px; position: absolute; right: 4px; top: 4px; }
@@ -297,6 +338,20 @@ body.light-mode a:hover { color: #0070f3; }
  
 .image-caption { font-size: 0.9em; margin-top: 0.25em; color: #555; }
 body.dark-mode .image-caption { color: #ccc; }
+
+
+body.dark-mode img {
+  border: 1px solid rgba(255, 255, 255, 0.08);  
+  border-radius: 8px;                             
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);    
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode img {
+  border-radius: 8px;                             
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
 
 </style>
 
@@ -563,7 +618,10 @@ $$
 </p>
 <h2 id="python-implementation">Python Implementation</h2>
 <p>The implementation is made in a jupyter notebook which can be downloaded here.
-For ease of viewing I have pasted the code segments here - <a href="/docs/kalman_RLC.ipynb">Kalman RLC Notebook</a></p>
+For ease of viewing I have pasted the code segments here -
+<a href="/docs/kalman_RLC.ipynb" download class="download-link">Kalman RLC Notebook
+<i data-feather="download" style="margin-left:6px;"></i>
+</a></p>
 <h4 id="requirements">Requirements</h4>
 <div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#56b6c2">%</span><span style="color:#e06c75">matplotlib</span> <span style="color:#e06c75">qt</span>
 </span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">numpy</span> <span style="color:#c678dd">as</span> <span style="color:#e06c75">np</span>

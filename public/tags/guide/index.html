@@ -61,6 +61,12 @@ h1, h2, h3 {
 #dark-mode-toggle { background: transparent; border: none; cursor: pointer; color: #eee; }
 #dark-mode-toggle i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
 
+body.dark-mode #nav a:hover {
+  color: #d0aaff;
+}
+
+
+
  
 #main { margin-top: 1em; margin-bottom: 4em; }
 #home-jumbotron { background-color: inherit; font-family: "Geist Sans", sans-serif; }
@@ -157,8 +163,7 @@ div.highlight, div.chroma {
  
 .chroma .nf { color: #a6e22e; }
 
- 
- 
+
 
 
 
@@ -226,6 +231,9 @@ div.highlight, div.chroma {
   background: #1e1e1e;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;  
+  width: 100%;
+  margin: 0 auto;
 }
 .section-food.vertical .food-categories .card:hover {
   transform: translateY(-3px);
@@ -260,6 +268,19 @@ div.highlight, div.chroma {
   .section-food.masonry .food-recipes { grid-template-columns: 1fr; }
   .section-food.vertical .food-categories .card { width: 100%; }
 }
+
+body.light-mode .section-food.vertical .food-categories .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .section-food.masonry .food-recipes .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
 
  
 button.copybtn { transition: opacity .3s ease-in-out; opacity: .15; padding: 2px 6px; position: absolute; right: 4px; top: 4px; }
@@ -297,6 +318,20 @@ body.light-mode a:hover { color: #0070f3; }
  
 .image-caption { font-size: 0.9em; margin-top: 0.25em; color: #555; }
 body.dark-mode .image-caption { color: #ccc; }
+
+
+body.dark-mode img {
+  border: 1px solid rgba(255, 255, 255, 0.08);  
+  border-radius: 8px;                             
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);    
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode img {
+  border-radius: 8px;                             
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
 
 </style>
 
