@@ -380,6 +380,38 @@ body.light-mode img {
 }
 
 
+ 
+.custom-image-switch .dark-mode {
+  display: none;
+}
+
+ 
+body.dark-mode .custom-image-switch .light-mode {
+  display: none;
+}
+body.dark-mode .custom-image-switch .dark-mode {
+  display: inline;
+}
+
+ 
+body.light-mode .custom-image-switch .light-mode {
+  display: inline;
+}
+body.light-mode .custom-image-switch .dark-mode {
+  display: none;
+}
+
+
+ 
+.no-style-image {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  transition: none !important;
+}
+
+
+
 </style>
 
   <script type="text/javascript" async
@@ -645,10 +677,15 @@ $$
 </p>
 <h2 id="python-implementation">Python Implementation</h2>
 <p>The implementation is made in a jupyter notebook which can be downloaded here.
-For ease of viewing I have pasted the code segments here -
-<a href="/docs/kalman_RLC.ipynb" download class="download-link">Kalman RLC Notebook
-<i data-feather="download" style="margin-left:6px;"></i>
-</a></p>
+For ease of viewing I have pasted the code segments here -</p>
+<!-- <a href="/docs/kalman_RLC.ipynb" download class="download-link">Kalman RLC Notebook
+  <i data-feather="download" style="margin-left:6px;"></i>
+</a>
+ -->
+<a href="/docs/kalman_RLC.ipynb" download="Kalman_RLC.ipynb" class="download-link">
+  Kalman RLC Notebook
+  <i data-feather="download" style="margin-left:6px;"></i>
+</a>
 <h4 id="requirements">Requirements</h4>
 <div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#56b6c2">%</span><span style="color:#e06c75">matplotlib</span> <span style="color:#e06c75">qt</span>
 </span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">numpy</span> <span style="color:#c678dd">as</span> <span style="color:#e06c75">np</span>

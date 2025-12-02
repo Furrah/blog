@@ -6,8 +6,15 @@
     <description>Recent content in Travel on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Nov 2025 10:20:46 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 18:19:48 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing with LoRa</title>
+      <link>http://localhost:1313/lora/</link>
+      <pubDate>Fri, 28 Nov 2025 18:19:48 +0100</pubDate>
+      <guid>http://localhost:1313/lora/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always been interested in LoRa communications and had read the fabled stories of communicating more than 10km but without trying, how would I know if it is really possible.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt; &#xA;&lt;img src=&#34;http://localhost:1313/misc/images/lora/me_on_bike.jpg&#34; alt=&#34;drawing&#34; width=&#34;400&#34; loading=&#34;lazy&#34;/&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-plan&#34;&gt;The Plan&lt;/h1&gt;&#xA;&lt;p&gt;I had downloaded some sample code off the internet but I wasn&amp;rsquo;t really sure what was going on and testing required me to carry my laptop with me which wasn&amp;rsquo;t ideal, especially as it is very cold right now!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>China Day 3</title>
       <link>http://localhost:1313/travel/china/china_day3/</link>

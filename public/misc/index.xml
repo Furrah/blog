@@ -6,8 +6,15 @@
     <description>Recent content in Miscellaneous on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 May 2024 10:06:43 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 18:19:48 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing with LoRa</title>
+      <link>http://localhost:1313/lora/</link>
+      <pubDate>Fri, 28 Nov 2025 18:19:48 +0100</pubDate>
+      <guid>http://localhost:1313/lora/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always been interested in LoRa communications and had read the fabled stories of communicating more than 10km but without trying, how would I know if it is really possible.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-plan&#34;&gt;The Plan&lt;/h1&gt;&#xA;&lt;p&gt;I had downloaded some sample code off the internet but I wasn&amp;rsquo;t really sure what was going on and testing required me to carry my laptop with me which wasn&amp;rsquo;t ideal, especially as it is very cold right now!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Bluehouse</title>
       <link>http://localhost:1313/bluehouse/</link>

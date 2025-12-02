@@ -1,0 +1,738 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<script>
+      
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+<link rel="stylesheet" href="/css/pygments.css">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
+  
+  
+  <title>Playing with LoRa</title>
+  <style>
+
+ 
+body {
+  background-color: #121212;  
+  color: #e0e0e0;
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 910px;
+}
+
+ 
+#nav-border { border-bottom: 1px solid #333; }
+#nav {
+  font-family: "Geist Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: #121212;
+  border-bottom: none;
+}
+#nav a { font-weight: bold; color: #eee; }
+#nav .nav-link { font-weight: 900; }
+#nav i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+#dark-mode-toggle { background: transparent; border: none; cursor: pointer; color: #eee; }
+#dark-mode-toggle i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+
+body.dark-mode #nav a:hover {
+  color: #d0aaff;
+}
+
+
+
+ 
+#main { margin-top: 1em; margin-bottom: 4em; }
+#home-jumbotron { background-color: inherit; font-family: "Geist Sans", sans-serif; }
+#home-jumbotron h1 { font-weight: 900; }
+#home-jumbotron p { font-weight: 400; }
+.font-125 { font-size: 125%; }
+img { max-width: 100%; }
+.btn { margin-bottom: 0.3em; margin-right: 0.3em; }
+
+ 
+a { color: #eee; font-size: 1rem; font-weight: bold; text-decoration: none; }
+a:hover { color: #d0aaff; text-decoration: underline; }
+
+
+.download-link {
+  color: #4cc3ff;  
+  font-weight: 600;
+}
+
+.download-link:hover {
+  color: #80d9ff;
+  text-decoration: underline;
+}
+
+body.light-mode .download-link {
+  color: #0066cc;            
+}
+
+body.light-mode .download-link:hover {
+  color: #004c99;            
+}
+
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  background: #1e1e1e;
+}
+th { background-color: #333; color: #fff; padding: 12px; text-align: left; font-weight: bold; text-transform: uppercase; }
+td { padding: 12px; border-bottom: 1px solid #444; }
+tr:nth-child(even) { background-color: #222; }
+tr:hover { background-color: #333; }
+@media (max-width: 768px) { table { display: block; overflow-x: auto; white-space: nowrap; } }
+
+
+body.light-mode th {
+  background-color: #f5f5f5;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+body.light-mode tr:hover {
+  background-color: #f1f3f5;
+}
+
+body.light-mode table {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+body.light-mode td {
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+ 
+ 
+
+ 
+div.highlight pre[style],
+div.chroma pre[style],
+pre[style],
+pre.chroma,
+pre {
+  background-color: #202124 !important;       
+  background-image: none !important;
+  color: #e2e8f0 !important;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,255,255,0.05) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45) !important;
+  margin: 1rem 0 !important;
+  overflow-x: auto !important;
+}
+
+ 
+div.highlight pre[style] code,
+pre[style] code {
+  background: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: pre !important;
+}
+
+ 
+div.highlight, div.chroma {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+
+ 
+
+.chroma .k  { color: #f92672; }   
+.chroma .kc { color: #f92672; }
+.chroma .kd { color: #f92672; }
+.chroma .kn { color: #f92672; }
+
+.chroma .s  { color: #e6db74; }   
+.chroma .sb { color: #e6db74; }
+.chroma .sc { color: #e6db74; }
+
+.chroma .n  { color: #f8f8f2; }   
+.chroma .na { color: #a6e22e; }
+.chroma .nb { color: #66d9ef; }
+.chroma .bp { color: #66d9ef; }
+
+.chroma .c  { color: #75715e; font-style: italic; }  
+.chroma .cm { color: #75715e; }
+.chroma .c1 { color: #75715e; }
+
+ 
+.chroma .m { color: #ae81ff; }
+
+ 
+.chroma .o { color: #f92672; }
+
+ 
+.chroma .nf { color: #a6e22e; }
+
+
+
+
+
+
+
+ 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+.card:hover { transform: translateY(-0px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
+.card:hover .card-img-top { transform: scale(1.02); }
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .card-img-top::before { opacity: 0.8; }
+.card-body { padding: 15px; text-align: center; }
+.card-title { font-size: 1.2rem; font-weight: bold; color: #fff; transition: color 0.3s; }
+.card:hover .card-title { color: #d0aaff; }
+
+ 
+.section-travel h1 { text-align: left; margin-bottom: 0.5rem; font-size: 2rem; }
+.section-travel .page-subtitle { text-align: center; color: #bbb; font-size: 1.05rem; margin-bottom: 1.5rem; }
+.section-travel .travel-cards { display: flex; flex-direction: column; gap: 2rem; }
+.section-travel .card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; background: #1e1e1e; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+.section-travel .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+.section-travel .card > a { display: block; color: inherit; text-decoration: none; }
+.section-travel .card-img-top { width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.35s ease; }
+.section-travel .card:hover .card-img-top { transform: scale(1.03); }
+.section-travel .card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+.section-travel .card-body { padding: 1.2rem 1rem; text-align: left; }
+.section-travel .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+.section-travel time { color: #aaa; font-size: 0.95rem; }
+.section-travel .card.no-image { min-height: 160px; background: #222; border: 1px dashed rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; padding: 1.2rem; }
+@media (max-width: 600px) { .section-travel .card-img-top { height: 280px; } }
+
+ 
+
+ 
+.section-food.vertical .food-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.section-food.vertical .food-categories .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;  
+  width: 100%;
+  margin: 0 auto;
+}
+.section-food.vertical .food-categories .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+ 
+.section-food.masonry .food-recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+}
+.section-food.masonry .food-recipes .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-food.masonry .food-recipes .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.section-food .card-img-top { width: 100%; height: 200px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.3s ease; }
+.section-food .card:hover .card-img-top { transform: scale(1.03); }
+.section-food .card-body { padding: 1rem; text-align: left; }
+.section-food .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+@media (max-width: 600px) { 
+  .section-food.masonry .food-recipes { grid-template-columns: 1fr; }
+  .section-food.vertical .food-categories .card { width: 100%; }
+}
+
+body.light-mode .section-food.vertical .food-categories .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .section-food.masonry .food-recipes .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+ 
+button.copybtn { transition: opacity .3s ease-in-out; opacity: .15; padding: 2px 6px; position: absolute; right: 4px; top: 4px; }
+div.highlight .copybtn:hover { opacity: 1; border-color: #51a7e8; }
+div.highlight { position: relative; }
+
+ 
+.col { padding-left: 0; }
+.small { max-width: 400px; margin: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
+
+ 
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+body.light-mode #nav-border { border-bottom: 1px solid #212529; }
+body.light-mode #nav { background-color: #fff; border-bottom: none; }
+body.light-mode #nav a { color: #000; }
+body.light-mode #nav a:hover { color: #0070f3; }
+body.light-mode #dark-mode-toggle { color: #000; }
+body.light-mode .card { background-color: #fff; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+body.light-mode .card-title { color: #333; }
+body.light-mode .card-body { color: #000; }
+body.light-mode table { background-color: #fff; color: #000; }
+body.light-mode th { background-color: #212529; color: #fff; }
+body.light-mode td { border-bottom: 1px solid #ddd; }
+body.light-mode a { color: #333; }
+body.light-mode a:hover { color: #0070f3; }
+
+ 
+#dark-mode-toggle i, #nav a, .card, .table, body {
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+ 
+.image-caption { font-size: 0.9em; margin-top: 0.25em; color: #555; }
+body.dark-mode .image-caption { color: #ccc; }
+
+
+body.dark-mode img {
+  border: 1px solid rgba(255, 255, 255, 0.08);  
+  border-radius: 8px;                             
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);    
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode img {
+  border-radius: 8px;                             
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+ 
+.custom-image-switch .dark-mode {
+  display: none;
+}
+
+ 
+body.dark-mode .custom-image-switch .light-mode {
+  display: none;
+}
+body.dark-mode .custom-image-switch .dark-mode {
+  display: inline;
+}
+
+ 
+body.light-mode .custom-image-switch .light-mode {
+  display: inline;
+}
+body.light-mode .custom-image-switch .dark-mode {
+  display: none;
+}
+
+
+ 
+.no-style-image {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  transition: none !important;
+}
+
+
+
+</style>
+
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  <body>
+    
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center align-items-center">
+
+    
+     
+      
+      
+      <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+     
+      
+      
+      <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+     
+      
+      
+      <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+     
+      
+      
+      <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+     
+      
+      
+      <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+     
+      
+      
+      <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+     
+      
+      
+      <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+    
+
+    
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
+
+  </nav>
+</div>
+ 
+        
+    <div class="container">
+      <main id="main">
+      
+<h1>Playing with LoRa</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2025-11-28">Nov 28, 2025</time>
+
+<br><br>
+<p>I&rsquo;ve always been interested in LoRa communications and had read the fabled stories of communicating more than 10km but without trying, how would I know if it is really possible.</p>
+<h1 id="the-plan">The Plan</h1>
+<p>I had downloaded some sample code off the internet but I wasn&rsquo;t really sure what was going on and testing required me to carry my laptop with me which wasn&rsquo;t ideal, especially as it is very cold right now!</p>
+<p>I rewrote the software so that the slave device would send two numbers to the master. The master would then add these numbers together and transmit the summed value back to the slave. If the sum equalled the expected sum then the onboard LED on the slave would flash. As this is all happening the master would be recording each messages received signal strength indicator (RSSI) and signal to noise (SNR) value to a file.</p>
+<p>This meant i could cycle around on my bike and know if i was receiving data or not. HOORAY!</p>
+<p align="center"> 
+<img src="/misc/images/lora/me_on_bike.jpg" alt="drawing" width="300" loading="lazy"/>
+</p>
+<h1 id="radio-parameters">Radio Parameters</h1>
+<h3 id="spreading-factor">Spreading factor</h3>
+<p>Larger spreading factors mean larger processing gain, and so a signal modulated with a larger spreading factor can be received with less errors compared to a signal with a lower spreading factor, and therefore travel a longer distance. For example, a signal modulated with the SF12 can travel a longer distance than a signal modulated with the SF7. <a href="https://www.thethingsnetwork.org/docs/lorawan/spreading-factors/" target="_blank"> [1] </a></p>
+<p>The SNR limits are determined by the spreading factor.</p>
+<p>SF7 -7.5dB SF8 -10dB SF9 -12.5dB SF10 -15dB SF11 -17.5dB SF12 -20dB
+<a href= "https://stuartsprojects.github.io/WhatisLoRa.html"  target="_blank" > [2]</a> <a href= "https://se1.isc.heia-fr.ch/lecture/com/lora/" target="_blank"> [3]</a></p>
+<p>If I maximise the spreading factor I sacrifice bit rate but I gain distance.</p>
+<h3 id="bandwidth">Bandwidth</h3>
+<p>The bandwidth of a LoRa system determines the chirp rate of each symbol. Lower bandwidth results in a slower chirp, which increases the symbol duration. Longer symbols provide more samples per symbol at the receiver, increasing the processing gain and improving sensitivity.</p>
+<p>To future proof the system I&rsquo;m going to use 125kHz as this is what is used by LoRaWAN. This is a network protocol that sits on top of the LoRa protocol and grants access to networks of LoRa devices.</p>
+<h3 id="coding-rate">Coding rate</h3>
+<p>The coding rate allows for error correction. Increasing the coding rate results in longer data packets but offers increased error correction. For example a coding rate of 4/8 uses 4 bits for data and 4 bits for error correction.</p>
+<h3 id="preamble">Preamble</h3>
+<p>This is the number of symbols used to synchronise with the receiver. LoRaWAN networks require 8 to be used.</p>
+<h3 id="power">Power</h3>
+<p>The EU rules state that the maximum effective isotropic radiated power from a LoRa device is limited to 16dbm. The antenna that came with the board has a gain of 2.81dB. To account for loses I&rsquo;ve selected 14dBm.</p>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frequency</td>
+      <td>868.1 MHz</td>
+    </tr>
+    <tr>
+      <td>Spreading Factor</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Bandwidth</td>
+      <td>125 kHz</td>
+    </tr>
+    <tr>
+      <td>Coding Rate</td>
+      <td>4/8</td>
+    </tr>
+    <tr>
+      <td>Preamble</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Power</td>
+      <td>14 dBm</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="results">Results</h1>
+<p>The master is somewhere in the village in the north west of the map and the red line shows my bike ride.
+The maximum distance I managed to transmit was 4km. Not the 10km I was hoping for. In the background of the picture you can see the village I live in.</p>
+<h2 id="the-bike-ride">The Bike Ride</h2>
+<p align="center"> 
+<img src="/misc/images/lora/map.jpg" alt="drawing" width="1000" loading="lazy"/>
+</p>
+<p align="center"> 
+<img src="/misc/images/lora/view.jpg" alt="drawing" width="1000" loading="lazy"/>
+</p>
+<h2 id="why-the-range-might-have-been-limited">Why the range might have been limited?</h2>
+<p>The plot below shows the elevation profile of the yellow max distance line. As you can see its one big valley so free space comms should have been strong. The communication was lost when i went on the other side of the valley near index 80. You can see how i did a little loop on the bike around that area but did not find the signal I was so hoping to find.</p>
+<p align="center"> 
+<img src="/misc/images/lora/elevation.jpeg" alt="drawing" width="1000" loading="lazy"/>
+</p>
+<h2 id="signal-strength">Signal Strength</h2>
+<p>These results are quite spurious. Unfortunately there&rsquo;s little correlation with my actual route and the data points as i recorded no spacial information. All I can tell is that RSSI dropped off alost immeadiately after leaving the house.</p>
+<p align="center"> 
+<img src="/misc/images/lora/rssi_snr.png" alt="drawing" width="1000" loading="lazy"/>
+</p>
+<h2 id="files">Files</h2>
+<p>The files that i used can be download from this link -&gt; <a href="/docs/lora/lora_master_slave.zip" download="lora_master_slave.zip" class="download-link">
+lora_master_slave.zip
+<i data-feather="download" style="margin-left:6px;"></i>
+</a></p>
+<h1 id="future-plan">Future plan</h1>
+<p>I want to build a private network where LoRa packets can be transmitted over very long distances. Under normal circumstances, LoRaWAN is used for this: end nodes send their packets to a gateway, and LoRaWAN handles all the difficult parts of managing many devices—such as collision avoidance, retransmissions, acknowledgements, timing, and secure delivery. LoRaWAN removes a huge amount of complexity that would otherwise need to be implemented manually.</p>
+<p>However, LoRaWAN assumes that gateways do not talk directly to each other. Instead, gateways forward all received packets to a central network server, which performs the routing, deduplication, and data handling. But in a situation where a central server is not available—or where gateways must relay packets over large distances—this becomes a challenge. The traditional LoRaWAN architecture does not include gateway-to-gateway forwarding.</p>
+<p>If we imagine a system with hundreds or even thousands of end nodes, we need a more flexible design where gateways can pass messages between themselves until the data reaches a final collection point. This would allow large coverage areas without relying on continuous access to a central server.</p>
+<p>Below is how I think such a system could be implemented.</p>
+<div class="custom-image-switch">
+<img src="/misc/images/lora/High_level_outline-light_.png" class="light-mode no-style-image" alt="Light Mode Image">
+<img src="/misc/images/lora/High_level_outline-dark.png" class="dark-mode no-style-image" alt="Dark Mode Image">
+</div>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </main>
+
+    </div>
+    
+<script src="http://localhost:1313/js/feather.min.js"></script>
+
+<script>
+const toggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+
+body.classList.add('dark-mode');
+
+
+const saved = localStorage.getItem('dark-mode');
+if (saved === 'true') {
+  body.classList.add('dark-mode');
+  body.classList.remove('light-mode');
+} else if (saved === 'false') {
+  body.classList.remove('dark-mode');
+  body.classList.add('light-mode');
+}
+
+
+function updateIcon() {
+  const iconEl = toggle.querySelector('i');
+  if (body.classList.contains('dark-mode')) {
+    iconEl.setAttribute('data-feather', 'moon'); 
+  } else {
+    iconEl.setAttribute('data-feather', 'sun');  
+  }
+  feather.replace(); 
+}
+
+
+updateIcon();
+
+
+toggle.addEventListener('click', () => {
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+    localStorage.setItem('dark-mode', 'false');
+  } else {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    localStorage.setItem('dark-mode', 'true');
+  }
+  updateIcon();
+});
+</script>
+   
+    <script>
+function addCopyButtonToCode() {
+  var allCodeBlocksElements = $("div.highlight pre");
+
+  allCodeBlocksElements.each(function(ii) {
+    var currentId = "codeblock" + (ii + 1);
+    $(this).attr("id", currentId);
+
+    
+    var iconColor = document.body.classList.contains("dark-mode") ? "#e2e8f0" : "#333";
+
+    
+    var clipButton = `
+      <button class="btn copybtn" data-clipboard-target="#${currentId}">
+        <i data-feather="copy" width="20" style="color: ${iconColor}"></i>
+      </button>
+    `;
+
+    $(this).after(clipButton);
+  });
+
+  feather.replace(); 
+
+  
+  var clipboard = new Clipboard(".btn");
+  clipboard.on("success", function(e) {
+    setTimeout(function() {
+      e.clearSelection();
+    }, 250);
+  });
+  clipboard.on("error", function(e) {
+    $(e.trigger).text("Can't in Safari");
+  });
+}
+
+
+$(document).ready(function() {
+  addCopyButtonToCode();
+});
+
+
+
+</script>   
+  </body>
+</html>

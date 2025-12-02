@@ -201,9 +201,15 @@ This is all that is needed in terms of design. The rest of the algorithm follows
 
 The implementation is made in a jupyter notebook which can be downloaded here.
 For ease of viewing I have pasted the code segments here - 
-<a href="/docs/kalman_RLC.ipynb" download class="download-link">Kalman RLC Notebook
+<!-- <a href="/docs/kalman_RLC.ipynb" download class="download-link">Kalman RLC Notebook
   <i data-feather="download" style="margin-left:6px;"></i>
 </a>
+ -->
+<a href="/docs/kalman_RLC.ipynb" download="Kalman_RLC.ipynb" class="download-link">
+  Kalman RLC Notebook
+  <i data-feather="download" style="margin-left:6px;"></i>
+</a>
+
 
 #### Requirements 
 
