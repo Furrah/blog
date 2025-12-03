@@ -71,7 +71,7 @@ We decide to visit Baoguo temple in the foothills of the mountain and search for
 
 It is quickly becoming apparent that absolutely no one speaks anything other than mandarin here but luckily for me, Will has been learning mandarin for the last couple of years which has already got us through a lot of confusing conversations. What Will had not been expecting was that the Sichuan accent is very thick. He's struggling to understand what people are saying but they are able to understand him. Many conversations end with me asking what Will and the person have been talking about for the last five minutes. Some of the time Will will respond with "I have absolutely no idea, I couldn't understand a single thing they were saying.". I try to learn a few phrases to get by but im notoriously awful with languages. I have remembered "Wo bu ming bi", I don't understand. 
 
-Eventually we are told to leave as the staff were finished for the day as they bring out a giant pot of noodles for them all to slurp up. As we get back to the teddy bear hostel the person running the desk lets us know that tomorrow it is going to absolutely piss it down and wished us good luck. 
+Eventually we are told to leave as the staff were finished for the day as they bring out a giant pot of noodles for them all to slurp up. As we get back to the teddy bear hostel the person running the desk lets us know that tomorrow it is going to absolutely piss it down and wished us good luck. We gather supplies and go get an early night, which of course ends in complete disaster as weve just drank our body weight in caffeine. 
 
 <script>insertImage("IMG_0422.jpeg", 800, "The Teddy bear hostel <3")</script>
 

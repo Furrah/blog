@@ -6,8 +6,15 @@
     <description>Recent content in China on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Nov 2025 10:20:46 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 14:39:53 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/travel/china/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>China Day 4</title>
+      <link>http://localhost:1313/travel/china/china_day4/</link>
+      <pubDate>Mon, 24 Nov 2025 14:39:53 +0100</pubDate>
+      <guid>http://localhost:1313/travel/china/china_day4/</guid>
+      <description>&lt;script&gt;&#xA;function insertImage(path, maxWidth, caption = null) {&#xA;&#xA;  // Allow numbers or strings for width&#xA;  if (typeof maxWidth === &#34;number&#34;) {&#xA;    maxWidth = maxWidth + &#34;px&#34;;&#xA;  }&#xA;&#xA;  const wrapper = document.createElement(&#34;div&#34;);&#xA;  wrapper.style.textAlign = &#34;center&#34;;&#xA;  wrapper.style.margin = &#34;1em 0&#34;;&#xA;&#xA;  const link = document.createElement(&#34;a&#34;);&#xA;  link.href = &#34;/travel/images/china/Day4/&#34; + path;&#xA;  link.target = &#34;_blank&#34;;&#xA;&#xA;  const img = document.createElement(&#34;img&#34;);&#xA;  img.src = &#34;/travel/images/china/Day4/&#34; + path;&#xA;  img.alt = caption || &#34;image&#34;;&#xA;  img.style.width = &#34;100%&#34;;      // responsive width&#xA;  img.style.maxWidth = maxWidth;  // limit on large screens&#xA;  img.style.height = &#34;auto&#34;;      // keep aspect ratio&#xA;  img.loading = &#34;lazy&#34;;&#xA;&#xA;  link.appendChild(img);&#xA;  wrapper.appendChild(link);&#xA;&#xA;  // If caption provided, add it&#xA;  if (caption) {&#xA;    const captionEl = document.createElement(&#34;div&#34;);&#xA;    captionEl.textContent = caption;&#xA;    captionEl.classList.add(&#34;image-caption&#34;); // use CSS class&#xA;    wrapper.appendChild(captionEl);&#xA;  }&#xA;&#xA;  // Insert after the &lt;script&gt; tag&#xA;  const scriptTag = document.currentScript;&#xA;  scriptTag.insertAdjacentElement(&#34;afterend&#34;, wrapper);&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;h1 id=&#34;the-journey-of-mount-emei&#34;&gt;The Journey of Mount Emei&lt;/h1&gt;&#xA;&lt;p&gt;Wake up. Go. We&amp;rsquo;re packed full of supplies. Will has bought endless brioche which tastes of ethanol and preservatives, somehow he finds comfort in this. We&amp;rsquo;ve also got nuts, bananas, and cucumber flavoured crisps and I hate cucumber. We&amp;rsquo;ve bought ourselves some bamboo walking poles and the sun is shinning, JIAYOUUUUUUUU! We&amp;rsquo;ve been told the riverside path is likely closed due to a landfall so we would be taking the forest path up and the river path down. This is the longest path you can take up the mountain and it begins at Baoguo temple taking us back to our tea spot of yesterday. As we walk to the start, more and more people start to accumulate readying themselves for the pilgrimage of the sacred mountain.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>China Day 3</title>
       <link>http://localhost:1313/travel/china/china_day3/</link>

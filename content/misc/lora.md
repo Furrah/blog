@@ -46,7 +46,7 @@ The coding rate allows for error correction. Increasing the coding rate results 
 This is the number of symbols used to synchronise with the receiver. LoRaWAN networks require 8 to be used. 
 
 ### Power
-The EU rules state that the maximum effective isotropic radiated power from a LoRa device is limited to 16dbm. The antenna that came with the board has a gain of 2.81dB. To account for loses I've selected 14dBm.
+The EU rules state that the maximum effective isotropic radiated power (EIRP) from a LoRa device is limited to 16dbm. The antenna that came with the board has a gain of 2.81dB. To account for loses I've selected 14dBm.
 
 
 <table border="1" cellpadding="8" cellspacing="0">

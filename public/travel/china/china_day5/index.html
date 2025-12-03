@@ -1,8 +1,4 @@
 <!doctype html>
-
-
-
-
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
@@ -25,7 +21,7 @@
   <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
   
   
-  <title>Playing with LoRa</title>
+  <title>China Day 5</title>
   <style>
 
  
@@ -470,8 +466,10 @@ body.light-mode .custom-image-switch .dark-mode {
 </head>  
 
 
-  <body>
-    
+  
+  
+<body class="section-travel">
+
         <div id="nav-border" class="container">
   <nav id="nav" class="nav justify-content-center align-items-center">
 
@@ -514,108 +512,27 @@ body.light-mode .custom-image-switch .dark-mode {
   </nav>
 </div>
  
+
         
-    <div class="container">
-      <main id="main">
-      
-<h1>Playing with LoRa</h1>
+        <div class="container">
+          <main id="main">
+            
+
+<h1>China Day 5</h1>
 
 
-<i data-feather="calendar"></i> <time datetime="2025-11-28">Nov 28, 2025</time>
+<i data-feather="calendar"></i> <time datetime="2025-12-03">Dec 3, 2025</time>
 
+        
 <br><br>
-<p>I&rsquo;ve always been interested in LoRa communications and had read the fabled stories of communicating more than 10km but without trying, how would I know if it is really possible.</p>
-<h1 id="the-plan">The Plan</h1>
-<p>I had downloaded some sample code off the internet but I wasn&rsquo;t really sure what was going on and testing required me to carry my laptop with me which wasn&rsquo;t ideal, especially as it is very cold right now!</p>
-<p>I rewrote the software so that the slave device would send two numbers to the master. The master would then add these numbers together and transmit the summed value back to the slave. If the sum equalled the expected sum then the onboard LED on the slave would flash. As this is all happening the master would be recording each messages received signal strength indicator (RSSI) and signal to noise (SNR) value to a file.</p>
-<p>This meant i could cycle around on my bike and know if i was receiving data or not. HOORAY!</p>
-<p align="center"> 
-<img src="/misc/images/lora/me_on_bike.jpg" alt="drawing" width="300" loading="lazy"/>
-</p>
-<h1 id="radio-parameters">Radio Parameters</h1>
-<h3 id="spreading-factor">Spreading factor</h3>
-<p>Larger spreading factors mean larger processing gain, and so a signal modulated with a larger spreading factor can be received with less errors compared to a signal with a lower spreading factor, and therefore travel a longer distance. For example, a signal modulated with the SF12 can travel a longer distance than a signal modulated with the SF7. <a href="https://www.thethingsnetwork.org/docs/lorawan/spreading-factors/" target="_blank"> [1] </a></p>
-<p>The SNR limits are determined by the spreading factor.</p>
-<p>SF7 -7.5dB SF8 -10dB SF9 -12.5dB SF10 -15dB SF11 -17.5dB SF12 -20dB
-<a href= "https://stuartsprojects.github.io/WhatisLoRa.html"  target="_blank" > [2]</a> <a href= "https://se1.isc.heia-fr.ch/lecture/com/lora/" target="_blank"> [3]</a></p>
-<p>If I maximise the spreading factor I sacrifice bit rate but I gain distance.</p>
-<h3 id="bandwidth">Bandwidth</h3>
-<p>The bandwidth of a LoRa system determines the chirp rate of each symbol. Lower bandwidth results in a slower chirp, which increases the symbol duration. Longer symbols provide more samples per symbol at the receiver, increasing the processing gain and improving sensitivity.</p>
-<p>To future proof the system I&rsquo;m going to use 125kHz as this is what is used by LoRaWAN. This is a network protocol that sits on top of the LoRa protocol and grants access to networks of LoRa devices.</p>
-<h3 id="coding-rate">Coding rate</h3>
-<p>The coding rate allows for error correction. Increasing the coding rate results in longer data packets but offers increased error correction. For example a coding rate of 4/8 uses 4 bits for data and 4 bits for error correction.</p>
-<h3 id="preamble">Preamble</h3>
-<p>This is the number of symbols used to synchronise with the receiver. LoRaWAN networks require 8 to be used.</p>
-<h3 id="power">Power</h3>
-<p>The EU rules state that the maximum effective isotropic radiated power (EIRP) from a LoRa device is limited to 16dbm. The antenna that came with the board has a gain of 2.81dB. To account for loses I&rsquo;ve selected 14dBm.</p>
-<table border="1" cellpadding="8" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Frequency</td>
-      <td>868.1 MHz</td>
-    </tr>
-    <tr>
-      <td>Spreading Factor</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <td>Bandwidth</td>
-      <td>125 kHz</td>
-    </tr>
-    <tr>
-      <td>Coding Rate</td>
-      <td>4/8</td>
-    </tr>
-    <tr>
-      <td>Preamble</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Power</td>
-      <td>14 dBm</td>
-    </tr>
-  </tbody>
-</table>
-<h1 id="results">Results</h1>
-<p>The master is somewhere in the village in the north west of the map and the red line shows my bike ride.
-The maximum distance I managed to transmit was 4km. Not the 10km I was hoping for. In the background of the picture you can see the village I live in.</p>
-<h2 id="the-bike-ride">The Bike Ride</h2>
-<p align="center"> 
-<img src="/misc/images/lora/map.jpg" alt="drawing" width="1000" loading="lazy"/>
-</p>
-<p align="center"> 
-<img src="/misc/images/lora/view.jpg" alt="drawing" width="1000" loading="lazy"/>
-</p>
-<h2 id="why-the-range-might-have-been-limited">Why the range might have been limited?</h2>
-<p>The plot below shows the elevation profile of the yellow max distance line. As you can see its one big valley so free space comms should have been strong. The communication was lost when i went on the other side of the valley near index 80. You can see how i did a little loop on the bike around that area but did not find the signal I was so hoping to find.</p>
-<p align="center"> 
-<img src="/misc/images/lora/elevation.jpeg" alt="drawing" width="1000" loading="lazy"/>
-</p>
-<h2 id="signal-strength">Signal Strength</h2>
-<p>These results are quite spurious. Unfortunately there&rsquo;s little correlation with my actual route and the data points as i recorded no spacial information. All I can tell is that RSSI dropped off alost immeadiately after leaving the house.</p>
-<p align="center"> 
-<img src="/misc/images/lora/rssi_snr.png" alt="drawing" width="1000" loading="lazy"/>
-</p>
-<h2 id="files">Files</h2>
-<p>The files that i used can be download from this link -&gt; <a href="/docs/lora/lora_master_slave.zip" download="lora_master_slave.zip" class="download-link">
-lora_master_slave.zip
-<i data-feather="download" style="margin-left:6px;"></i>
-</a></p>
-<h1 id="future-plan">Future plan</h1>
-<p>I want to build a private network where LoRa packets can be transmitted over very long distances. Under normal circumstances, LoRaWAN is used for this: end nodes send their packets to a gateway, and LoRaWAN handles all the difficult parts of managing many devices—such as collision avoidance, retransmissions, acknowledgements, timing, and secure delivery. LoRaWAN removes a huge amount of complexity that would otherwise need to be implemented manually.</p>
-<p>However, LoRaWAN assumes that gateways do not talk directly to each other. Instead, gateways forward all received packets to a central network server, which performs the routing, deduplication, and data handling. But in a situation where a central server is not available—or where gateways must relay packets over large distances—this becomes a challenge. The traditional LoRaWAN architecture does not include gateway-to-gateway forwarding.</p>
-<p>If we imagine a system with hundreds or even thousands of end nodes, we need a more flexible design where gateways can pass messages between themselves until the data reaches a final collection point. This would allow large coverage areas without relying on continuous access to a central server.</p>
-<p>Below is how I think such a system could be implemented.</p>
-<div class="custom-image-switch">
-<img src="/misc/images/lora/High_level_outline-light_.png" class="light-mode no-style-image" alt="Light Mode Image">
-<img src="/misc/images/lora/High_level_outline-dark.png" class="dark-mode no-style-image" alt="Dark Mode Image">
-</div>
+<p>In the morning I take a look around the temples vegetable garden and we continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us…</p>
+<p>The summit is beautiful. Both will and I are overcome with emotion, joy, relief, exhaustion, the realisation we had to go back down. We both shed a tear or 10.
+At the base we both light a candle in memory of our loved ones and then proceed climb the final steps to the golden statue. There are 1000s of tourists here as you can get a cable car up instead of climbing the infinite stairs. We spend an hour looking at the temples and just appreciating where we are. A German woman starts talking to us with a mouth full of food. She notices that we’re British and apologises for talking to hs with her mouth full as it’s rude in our country. It’s rude in everyone’s country. Stop talking to us. They were on an action packed tour of China spending very little time jn each place. For example they got a bus to the temple, spent an hour there and then were getting a bus down and onto the next place. The magic of this place was definitely I felt in the journey itself.</p>
+<p>We begin our decent down and battle our way past the tourists and the monkeys stealing everyone’s open food. One woman almost lost her tote bag as a monkey tried to free it from her. The path becomes empty again and peace is restored. We make our way to the elephant pool temple and sleep for the night. The accommodation there is really nice! They even have toilets and showers! The shower at chu temple had blood up the wall and many big insects staring you down…</p>
+<p>We wake up in the morning and will is desperate for the toilet. He leaves the room and immediately comes back and locks the door. There’s a monkey guarding the moon gate to the main path to the toilet. It’s baring its teeth and snarling at us. I pick up my bamboo walking stick and we go out together and investigate. Don’t worry will I’ve got this as I start banging my stick on the floor. This really riles the monkey and it starts approaching us. We both run back and I’ve made matters worse. We repeat this several times before the monkey finds something more interesting. Will legs it to the toilet and I go down to the dining room for breakfast. Tofu skins, a potato curry dish and some pickled greens.</p>
+<p>We spend the rest of the day hiking down to the bottom taking the gorge route down and it is beautiful. The water gleams glacial blue as butterflies dance around. Will finds a couple of 100 plants we have seen before. We walk through an avenue of hankerchief trees and will is just blown away. He must have said “I must come back in spring” at least 1000 times on the mountain. It was incredible beautiful in its pre autumnal state but the mind does wonder what the mountain looks like in full bloom!</p>
+<p>The story continues, down down down we go. Finally as we are arriving at the bus station I finally sea a green snake! Hallelujah!</p>
+<p>Approximately 10 pence later we are back in emeishan town bus station and the great pilgrimage is complete. 1 Buddhist mountain down, 3 to go.</p>
 
 
 
@@ -637,12 +554,10 @@ lora_master_slave.zip
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
+          </main>
+        </div>
 
-
-      </main>
-
-    </div>
-    
+        
 <script src="http://localhost:1313/js/feather.min.js"></script>
 
 <script>
@@ -690,8 +605,8 @@ toggle.addEventListener('click', () => {
   updateIcon();
 });
 </script>
-   
-    <script>
+  
+        <script>
 function addCopyButtonToCode() {
   var allCodeBlocksElements = $("div.highlight pre");
 
@@ -733,6 +648,6 @@ $(document).ready(function() {
 
 
 
-</script>   
+</script>  
   </body>
 </html>
