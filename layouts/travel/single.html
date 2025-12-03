@@ -5,5 +5,22 @@
         <!-- {{partial "sidebar.html" .}} -->
 <br><br>
 {{ .Content }}
+
+<nav class="day-nav">
+  {{ with .PrevInSection }}
+    <a class="day-btn" href="{{ .RelPermalink }}">
+      <i data-feather="arrow-left"></i>
+      {{ .Title }}
+    </a>
+  {{ end }}
+
+  {{ with .NextInSection }}
+    <a class="day-btn" href="{{ .RelPermalink }}">
+      {{ .Title }}
+      <i data-feather="arrow-right"></i>
+    </a>
+  {{ end }}
+</nav>
+
 {{ partial "disqus.html" . }}
 {{ end }}

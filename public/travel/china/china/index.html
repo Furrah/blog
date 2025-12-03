@@ -406,6 +406,70 @@ body.light-mode .custom-image-switch .dark-mode {
   transition: none !important;
 }
 
+ 
+
+ 
+.day-nav {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+ 
+.day-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+
+  background: #1e1e1e;                    
+  color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+}
+
+.day-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.2;
+  stroke: currentColor;
+}
+
+.day-btn:hover {
+  background: #2a2a2a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+  color: #d0aaff;                         
+}
+
+ 
+body.light-mode .day-nav {
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+body.light-mode .day-btn {
+  background: #f2f2f2;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+body.light-mode .day-btn:hover {
+  background: #e6e6e6;
+  color: #0070f3;                          
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+
+
 
 
 </style>
@@ -578,6 +642,18 @@ function insertImage(path, maxWidth, caption = null) {
 <p>We exit the metro at Renmin North Road and take our first steps, breathes, and smells of Chengdu. There&rsquo;s definitely a smell unlike anywhere I have been before but it&rsquo;s not pollution, the city is silent, every single vehicle is electric. Every single one! It&rsquo;s incredible, you just can&rsquo;t imagine this at home. I don&rsquo;t know when this will happen in the UK but I&rsquo;m pretty sure it won&rsquo;t be for at least another thirty years or more. We&rsquo;ve travelled half way across the globe and have arrived in the future.</p>
 <p>We walk along the river and find out hostal, drop our bags and head to the Wenshu Monastry area for dinner. After finding a place we spend forty minutes deciphering the menu and then spend a further fifteen minutes trying to figure out how we order food. I&rsquo;m finally going to eat Chinese food for breakfast lunch and dinner and I cannot wait. I wanted to eat sweet and sour and the closest I could get away from meat was fish. I had said to myself I was going to eat everything in China but as Will is a vegetarian I decided not to stray too far. Still, i order the fish and then make a joke that its definitely going to be the whole fish and not chunks of fish. I was right, I got a whole deep fried fish in sweet and sour sauce and it was delicious. Will on the other hand had ordered a cold noodle mushroom salad and a soup.</p>
 <script>insertImage("IMG_0226.jpeg", 600)</script>
+
+
+<nav class="day-nav">
+  
+
+  
+    <a class="day-btn" href="/travel/china/china_day2/">
+      China Day 2
+      <i data-feather="arrow-right"></i>
+    </a>
+  
+</nav>
 
 
 
