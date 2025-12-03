@@ -3,6 +3,7 @@ title: "China Day 4"
 date: 2025-11-24T14:39:53+01:00
 tags: []
 draft: false
+image: "/travel/images/china/Day4/IMG_0619.jpg"
 ---
 
 <script>
