@@ -164,6 +164,7 @@ We leave lunch and we continue on, the chat never stops, we're having the best t
 
 <script>insertImage("IMG_0661.jpg", 800, "Temple delivery service")</script>
 
+
 # The Rain
 We managed to get pretty far without the rain but its time has come. We loiter around the Elephant pool temple (Xinxin) hiding from the rain and chatting to some fellow pilgrimmers. One guy told us how holiday from work functions in China. You start off with a base of 5 days holiday pay which increases by 5 days for every 5 years you work at the company. 
 

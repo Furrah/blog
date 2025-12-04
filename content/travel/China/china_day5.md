@@ -2,8 +2,72 @@
 title: "China Day 5"
 date: 2025-12-03T13:51:08+01:00
 tags: []
-draft: true
+draft: false
 ---
+
+# The Vegetable Patch
+
+<script>
+function insertImage(path, maxWidth, caption = null) {
+
+  // Allow numbers or strings for width
+  if (typeof maxWidth === "number") {
+    maxWidth = maxWidth + "px";
+  }
+
+  const wrapper = document.createElement("div");
+  wrapper.style.textAlign = "center";
+  wrapper.style.margin = "1em 0";
+
+  const link = document.createElement("a");
+  link.href = "/travel/images/china/Day5/" + path;
+  link.target = "_blank";
+
+  const img = document.createElement("img");
+  img.src = "/travel/images/china/Day5/" + path;
+  img.alt = caption || "image";
+
+  img.style.width = "100%";      // responsive width
+  img.style.maxWidth = maxWidth;  // limit on large screens
+  img.style.height = "auto";      // keep aspect ratio
+  img.loading = "lazy";
+
+  link.appendChild(img);
+  wrapper.appendChild(link);
+
+  // If caption provided, add it
+  if (caption) {
+    const captionEl = document.createElement("div");
+    captionEl.textContent = caption;
+    captionEl.classList.add("image-caption"); // use CSS class
+    wrapper.appendChild(captionEl);
+  }
+
+  // Insert after the <script> tag
+  const scriptTag = document.currentScript;
+  scriptTag.insertAdjacentElement("afterend", wrapper);
+}
+</script>
+
+
+
+<script>insertImage("IMG_0674.jpg", 800, "")</script>
+<script>insertImage("IMG_0670.jpg", 800, "")</script>
+<script>insertImage("IMG_0679.jpg", 800, "")</script>
+<script>insertImage("IMG_0686.jpg", 800, "")</script>
+<script>insertImage("IMG_0695.jpg", 800, "")</script>
+<script>insertImage("IMG_0697.jpg", 800, "")</script>
+<script>insertImage("IMG_0720.jpg", 800, "")</script>
+<script>insertImage("IMG_0722.jpg", 500, "")</script>
+<script>insertImage("IMG_0725.jpg", 800, "")</script>
+<script>insertImage("IMG_0732.jpg", 800, "")</script>
+<script>insertImage("IMG_0733.jpg", 800, "")</script>
+<script>insertImage("IMG_0747.jpg", 800, "")</script>
+<script>insertImage("IMG_0749.jpg", 800, "")</script>
+<script>insertImage("IMG_0753.jpg", 800, "")</script>
+<script>insertImage("IMG_0769.jpg", 800, "")</script>
+<script>insertImage("IMG_0776.jpg", 800, "")</script>
+<script>insertImage("IMG_0782.jpg", 800, "")</script>
 
 
 

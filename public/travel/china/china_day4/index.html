@@ -364,9 +364,9 @@ body.dark-mode .image-caption { color: #ccc; }
 
 
 body.dark-mode img {
-  border: 1px solid rgba(255, 255, 255, 0.08);  
-  border-radius: 8px;                             
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);    
+ 
+  border-radius: 8px;                            
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);   
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -467,6 +467,27 @@ body.light-mode .day-btn:hover {
   color: #0070f3;                          
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
   transform: translateY(-3px);
+}
+
+
+
+
+
+
+ 
+.sharp-responsive-img {
+     
+    max-width: var(--sharp-max-width) !important;  
+    width: 100% !important; 
+    height: auto !important;
+    
+     
+    box-sizing: border-box !important;
+
+     
+    image-rendering: high-quality !important;
+    transform: none !important;  
+    display: block !important; 
 }
 
 
@@ -713,6 +734,11 @@ At around 5pm we arrive at Chu temple, where we meet the father and his son agai
     </a>
   
 
+  
+    <a class="day-btn" href="/travel/china/china_day5/">
+      China Day 5
+      <i data-feather="arrow-right"></i>
+    </a>
   
 </nav>
 

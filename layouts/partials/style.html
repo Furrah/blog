@@ -372,9 +372,9 @@ body.dark-mode .image-caption { color: #ccc; }
 
 
 body.dark-mode img {
-  border: 1px solid rgba(255, 255, 255, 0.08); /* subtle light border */
-  border-radius: 8px;                            /* optional rounded corners */
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);   /* stronger shadow for dark mode */
+/*  border: 1px solid rgba(255, 255, 255, 0.08); */
+  border-radius: 8px;                            
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);   
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -477,6 +477,29 @@ body.light-mode .day-btn:hover {
   color: #0070f3;                         /* matches your light-mode link hover */
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
   transform: translateY(-3px);
+}
+
+
+
+
+
+
+/* ----------------------------------------------------
+   Custom Image Sizing for Sharpness
+---------------------------------------------------- */
+.sharp-responsive-img {
+    /* Use !important to override ALL external style sheets/conflicts */
+    max-width: var(--sharp-max-width) !important; /* Will be set by JS */
+    width: 100% !important; 
+    height: auto !important;
+    
+    /* Ensure border/padding are calculated inside the width */
+    box-sizing: border-box !important;
+
+    /* Override any global effects that might apply unwanted scaling */
+    image-rendering: high-quality !important;
+    transform: none !important; /* Override translateZ(0) if it caused issues */
+    display: block !important; 
 }
 
 

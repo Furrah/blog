@@ -364,9 +364,9 @@ body.dark-mode .image-caption { color: #ccc; }
 
 
 body.dark-mode img {
-  border: 1px solid rgba(255, 255, 255, 0.08);  
-  border-radius: 8px;                             
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);    
+ 
+  border-radius: 8px;                            
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);   
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -405,6 +405,92 @@ body.light-mode .custom-image-switch .dark-mode {
   border-radius: 0 !important;
   transition: none !important;
 }
+
+ 
+
+ 
+.day-nav {
+  margin-top: 3rem;
+  margin-bottom: 2rem;  
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+ 
+.day-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+
+  background: #1e1e1e;                    
+  color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+}
+
+.day-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.2;
+  stroke: currentColor;
+}
+
+.day-btn:hover {
+  background: #2a2a2a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+  color: #d0aaff;                         
+}
+
+ 
+body.light-mode .day-nav {
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+body.light-mode .day-btn {
+  background: #f2f2f2;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+body.light-mode .day-btn:hover {
+  background: #e6e6e6;
+  color: #0070f3;                          
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+
+
+
+
+
+ 
+.sharp-responsive-img {
+     
+    max-width: var(--sharp-max-width) !important;  
+    width: 100% !important; 
+    height: auto !important;
+    
+     
+    box-sizing: border-box !important;
+
+     
+    image-rendering: high-quality !important;
+    transform: none !important;  
+    display: block !important; 
+}
+
+
 
 
 
@@ -525,6 +611,65 @@ body.light-mode .custom-image-switch .dark-mode {
 
         
 <br><br>
+<h1 id="the-vegetable-patch">The Vegetable Patch</h1>
+<script>
+function insertImage(path, maxWidth, caption = null) {
+
+  // Allow numbers or strings for width
+  if (typeof maxWidth === "number") {
+    maxWidth = maxWidth + "px";
+  }
+
+  const wrapper = document.createElement("div");
+  wrapper.style.textAlign = "center";
+  wrapper.style.margin = "1em 0";
+
+  const link = document.createElement("a");
+  link.href = "/travel/images/china/Day5/" + path;
+  link.target = "_blank";
+
+  const img = document.createElement("img");
+  img.src = "/travel/images/china/Day5/" + path;
+  img.alt = caption || "image";
+
+  img.style.width = "100%";      // responsive width
+  img.style.maxWidth = maxWidth;  // limit on large screens
+  img.style.height = "auto";      // keep aspect ratio
+  img.loading = "lazy";
+
+  link.appendChild(img);
+  wrapper.appendChild(link);
+
+  // If caption provided, add it
+  if (caption) {
+    const captionEl = document.createElement("div");
+    captionEl.textContent = caption;
+    captionEl.classList.add("image-caption"); // use CSS class
+    wrapper.appendChild(captionEl);
+  }
+
+  // Insert after the <script> tag
+  const scriptTag = document.currentScript;
+  scriptTag.insertAdjacentElement("afterend", wrapper);
+}
+</script>
+<script>insertImage("IMG_0674.jpg", 800, "")</script>
+<script>insertImage("IMG_0670.jpg", 800, "")</script>
+<script>insertImage("IMG_0679.jpg", 800, "")</script>
+<script>insertImage("IMG_0686.jpg", 800, "")</script>
+<script>insertImage("IMG_0695.jpg", 800, "")</script>
+<script>insertImage("IMG_0697.jpg", 800, "")</script>
+<script>insertImage("IMG_0720.jpg", 800, "")</script>
+<script>insertImage("IMG_0722.jpg", 500, "")</script>
+<script>insertImage("IMG_0725.jpg", 800, "")</script>
+<script>insertImage("IMG_0732.jpg", 800, "")</script>
+<script>insertImage("IMG_0733.jpg", 800, "")</script>
+<script>insertImage("IMG_0747.jpg", 800, "")</script>
+<script>insertImage("IMG_0749.jpg", 800, "")</script>
+<script>insertImage("IMG_0753.jpg", 800, "")</script>
+<script>insertImage("IMG_0769.jpg", 800, "")</script>
+<script>insertImage("IMG_0776.jpg", 800, "")</script>
+<script>insertImage("IMG_0782.jpg", 800, "")</script>
 <p>In the morning I take a look around the temples vegetable garden and we continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us…</p>
 <p>The summit is beautiful. Both will and I are overcome with emotion, joy, relief, exhaustion, the realisation we had to go back down. We both shed a tear or 10.
 At the base we both light a candle in memory of our loved ones and then proceed climb the final steps to the golden statue. There are 1000s of tourists here as you can get a cable car up instead of climbing the infinite stairs. We spend an hour looking at the temples and just appreciating where we are. A German woman starts talking to us with a mouth full of food. She notices that we’re British and apologises for talking to hs with her mouth full as it’s rude in our country. It’s rude in everyone’s country. Stop talking to us. They were on an action packed tour of China spending very little time jn each place. For example they got a bus to the temple, spent an hour there and then were getting a bus down and onto the next place. The magic of this place was definitely I felt in the journey itself.</p>
@@ -533,6 +678,18 @@ At the base we both light a candle in memory of our loved ones and then proceed 
 <p>We spend the rest of the day hiking down to the bottom taking the gorge route down and it is beautiful. The water gleams glacial blue as butterflies dance around. Will finds a couple of 100 plants we have seen before. We walk through an avenue of hankerchief trees and will is just blown away. He must have said “I must come back in spring” at least 1000 times on the mountain. It was incredible beautiful in its pre autumnal state but the mind does wonder what the mountain looks like in full bloom!</p>
 <p>The story continues, down down down we go. Finally as we are arriving at the bus station I finally sea a green snake! Hallelujah!</p>
 <p>Approximately 10 pence later we are back in emeishan town bus station and the great pilgrimage is complete. 1 Buddhist mountain down, 3 to go.</p>
+
+
+<nav class="day-nav">
+  
+    <a class="day-btn" href="/travel/china/china_day4/">
+      <i data-feather="arrow-left"></i>
+      China Day 4
+    </a>
+  
+
+  
+</nav>
 
 
 
