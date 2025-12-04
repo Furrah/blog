@@ -3,6 +3,7 @@ title: "China Day 5"
 date: 2025-12-03T13:51:08+01:00
 tags: []
 draft: true
+image: "/travel/images/china/Day5/IMG_0686.jpg"
 ---
 
 # The Vegetable Patch
@@ -49,12 +50,32 @@ function insertImage(path, maxWidth, caption = null) {
 }
 </script>
 
+In the morning we take a look around the temples vegetable garden. They are growing a lot of cabbages but also aubergines, chillis, squash, carrots, raddish, leafy greens, tomatoes, and more! Most of what the temples eat is usually grown on site we've been told. This isn't exlusive to the temples though, we see vegetables being grown in every possible space that can sustain a plant. Cabbages grown on roadside verges can be seen absolutely everywhere. Where you would normally see flowers you are likely to see a cabbage instead. 
 
 
-<script>insertImage("IMG_0674.jpg", 800, "")</script>
-<script>insertImage("IMG_0670.jpg", 800, "")</script>
-<script>insertImage("IMG_0679.jpg", 800, "")</script>
-<script>insertImage("IMG_0686.jpg", 800, "")</script>
+ and continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us… 
+
+
+<script>insertImage("IMG_0674.jpg", 800, "The temple and the accomodation to the right")</script>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+		<script>insertImage("IMG_0670.jpg", 500, "Aubergines!")</script>
+    </div>
+    <div class="col">
+    <p align="center"> 
+      <script>insertImage("IMG_0679.jpg", 500, "Chillis!")</script>
+    </p>
+    </div>
+  </div>
+</div> 
+
+<script>insertImage("IMG_0686.jpg", 800, "Atmospheric Weeding")</script>
+
+
 <script>insertImage("IMG_0695.jpg", 800, "")</script>
 <script>insertImage("IMG_0697.jpg", 800, "")</script>
 <script>insertImage("IMG_0720.jpg", 800, "")</script>
@@ -73,7 +94,7 @@ function insertImage(path, maxWidth, caption = null) {
 
 
 
-In the morning I take a look around the temples vegetable garden and we continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us… 
+
 
 The summit is beautiful. Both will and I are overcome with emotion, joy, relief, exhaustion, the realisation we had to go back down. We both shed a tear or 10.
 At the base we both light a candle in memory of our loved ones and then proceed climb the final steps to the golden statue. There are 1000s of tourists here as you can get a cable car up instead of climbing the infinite stairs. We spend an hour looking at the temples and just appreciating where we are. A German woman starts talking to us with a mouth full of food. She notices that we’re British and apologises for talking to hs with her mouth full as it’s rude in our country. It’s rude in everyone’s country. Stop talking to us. They were on an action packed tour of China spending very little time jn each place. For example they got a bus to the temple, spent an hour there and then were getting a bus down and onto the next place. The magic of this place was definitely I felt in the journey itself.

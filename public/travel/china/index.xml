@@ -6,8 +6,15 @@
     <description>Recent content in China on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Nov 2025 14:39:53 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 13:51:08 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/travel/china/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>China Day 5</title>
+      <link>http://localhost:1313/travel/china/china_day5/</link>
+      <pubDate>Wed, 03 Dec 2025 13:51:08 +0100</pubDate>
+      <guid>http://localhost:1313/travel/china/china_day5/</guid>
+      <description>&lt;h1 id=&#34;the-vegetable-patch&#34;&gt;The Vegetable Patch&lt;/h1&gt;&#xA;&lt;script&gt;&#xA;function insertImage(path, maxWidth, caption = null) {&#xA;&#xA;  // Allow numbers or strings for width&#xA;  if (typeof maxWidth === &#34;number&#34;) {&#xA;    maxWidth = maxWidth + &#34;px&#34;;&#xA;  }&#xA;&#xA;  const wrapper = document.createElement(&#34;div&#34;);&#xA;  wrapper.style.textAlign = &#34;center&#34;;&#xA;  wrapper.style.margin = &#34;1em 0&#34;;&#xA;&#xA;  const link = document.createElement(&#34;a&#34;);&#xA;  link.href = &#34;/travel/images/china/Day5/&#34; + path;&#xA;  link.target = &#34;_blank&#34;;&#xA;&#xA;  const img = document.createElement(&#34;img&#34;);&#xA;  img.src = &#34;/travel/images/china/Day5/&#34; + path;&#xA;  img.alt = caption || &#34;image&#34;;&#xA;&#xA;  img.style.width = &#34;100%&#34;;      // responsive width&#xA;  img.style.maxWidth = maxWidth;  // limit on large screens&#xA;  img.style.height = &#34;auto&#34;;      // keep aspect ratio&#xA;  img.loading = &#34;lazy&#34;;&#xA;&#xA;  link.appendChild(img);&#xA;  wrapper.appendChild(link);&#xA;&#xA;  // If caption provided, add it&#xA;  if (caption) {&#xA;    const captionEl = document.createElement(&#34;div&#34;);&#xA;    captionEl.textContent = caption;&#xA;    captionEl.classList.add(&#34;image-caption&#34;); // use CSS class&#xA;    wrapper.appendChild(captionEl);&#xA;  }&#xA;&#xA;  // Insert after the &lt;script&gt; tag&#xA;  const scriptTag = document.currentScript;&#xA;  scriptTag.insertAdjacentElement(&#34;afterend&#34;, wrapper);&#xA;}&#xA;&lt;/script&gt;&#xA;&lt;p&gt;In the morning we take a look around the temples vegetable garden. They are growing a lot of cabbages but also aubergines, chillis, squash, carrots, raddish, leafy greens, tomatoes, and more! Most of what the temples eat is usually grown on site we&amp;rsquo;ve been told. This isn&amp;rsquo;t exlusive to the temples though, we see vegetables being grown in every possible space that can sustain a plant. Cabbages grown on roadside verges can be seen absolutely everywhere. Where you would normally see flowers you are likely to see a cabbage instead.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>China Day 4</title>
       <link>http://localhost:1313/travel/china/china_day4/</link>
