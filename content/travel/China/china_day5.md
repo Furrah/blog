@@ -50,7 +50,11 @@ function insertImage(path, maxWidth, caption = null) {
 }
 </script>
 
-In the morning we take a look around the temples vegetable garden. They are growing a lot of cabbages but also aubergines, chillis, squash, carrots, raddish, leafy greens, tomatoes, and more! Most of what the temples eat is usually grown on site we've been told. This isn't exlusive to the temples though, we see vegetables being grown in every possible space that can sustain a plant. Cabbages grown on roadside verges can be seen absolutely everywhere. Where you would normally see flowers you are likely to see a cabbage instead. 
+In the morning we take a look around the temples vegetable garden where they are growing a large variety of vegetables. Amongst the many cabbages there are also aubergines, chillis, squash, carrots, raddish, leafy greens, tomatoes, and more! Most of what the temples eat is usually grown on site we've been told. This isn't exclusive to the temples though, we see vegetables being grown in every possible space that can sustain a plant. Cabbages grown on roadside verges can be seen absolutely everywhere, which probably stems from Chinas pursuit of self sufficiency and is deeply engrained in their society. 
+
+Chinas connection with it's food feels very real and is something I wish to see more in the UK where people have lost touch with the origin of their food and have grown accustomed to supermarkets where a visceral link to the earth has been severed. Food on tap has become the norm and the beauty of the food market is seen as an encumbrance to productivity rather than a celebration of seasonality, community, and the pleasure of knowing where your food came from. 
+
+We leave the temple in the drizzle which follows us for 
 
 
  and continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us… 

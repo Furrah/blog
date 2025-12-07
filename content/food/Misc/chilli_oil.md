@@ -1,5 +1,5 @@
 ---
-title: "Chilli Oil"
+title: "Crispy Chilli Oil"
 date: 2025-12-04T13:07:48+01:00
 tags: []
 draft: false
@@ -10,15 +10,16 @@ Honestly might have tasted better before adding the soy sauce and rice wine vine
 
 # Ingredients
 
-* 500ml Rapeseed oil
-* 2 Shallot chopped with mandolin
-* 4cm Ginger chopped fine
-* 12 Galrlic cloves chopped fine
-* 2 tbsp Sugar
-* 2 tsp MSG
-* 30 Dried Chillis blended
-* 2 tbsp Light soy sauce 
-* 2 tbsp rice wine vinegar
+
+- 500 ml rapeseed oil
+- 2 shallots, thinly sliced with a mandolin
+- 4 cm ginger, finely chopped
+- 12 garlic cloves, finely chopped
+- 2 tbsp sugar
+- 2 tsp MSG
+- 30 dried chillies, blended
+- 2 tbsp light soy sauce
+- 2 tbsp rice wine vinegar
 
 # Method 
 

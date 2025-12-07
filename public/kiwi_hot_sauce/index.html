@@ -1,0 +1,776 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<script>
+      
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+<link rel="stylesheet" href="/css/pygments.css">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
+  
+  
+  <title>Kiwi Hot Sauce</title>
+  <style>
+
+ 
+body {
+  background-color: #121212;  
+  color: #e0e0e0;
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 910px;
+}
+
+ 
+#nav-border { border-bottom: 1px solid #333; }
+#nav {
+  font-family: "Geist Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: #121212;
+  border-bottom: none;
+}
+#nav a { font-weight: bold; color: #eee; }
+#nav .nav-link { font-weight: 900; }
+#nav i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+#dark-mode-toggle { background: transparent; border: none; cursor: pointer; color: #eee; }
+#dark-mode-toggle i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+
+body.dark-mode #nav a:hover {
+  color: #d0aaff;
+}
+
+
+
+ 
+#main { margin-top: 1em; margin-bottom: 4em; }
+#home-jumbotron { background-color: inherit; font-family: "Geist Sans", sans-serif; }
+#home-jumbotron h1 { font-weight: 900; }
+#home-jumbotron p { font-weight: 400; }
+.font-125 { font-size: 125%; }
+img { max-width: 100%; }
+.btn { margin-bottom: 0.3em; margin-right: 0.3em; }
+
+ 
+a { color: #eee; font-size: 1rem; font-weight: bold; text-decoration: none; }
+a:hover { color: #d0aaff; text-decoration: underline; }
+
+
+.download-link {
+  color: #4cc3ff;  
+  font-weight: 600;
+}
+
+.download-link:hover {
+  color: #80d9ff;
+  text-decoration: underline;
+}
+
+body.light-mode .download-link {
+  color: #0066cc;            
+}
+
+body.light-mode .download-link:hover {
+  color: #004c99;            
+}
+
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  background: #1e1e1e;
+}
+th { background-color: #333; color: #fff; padding: 12px; text-align: left; font-weight: bold; text-transform: uppercase; }
+td { padding: 12px; border-bottom: 1px solid #444; }
+tr:nth-child(even) { background-color: #222; }
+tr:hover { background-color: #333; }
+@media (max-width: 768px) { table { display: block; overflow-x: auto; white-space: nowrap; } }
+
+
+body.light-mode th {
+  background-color: #f5f5f5;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+body.light-mode tr:hover {
+  background-color: #f1f3f5;
+}
+
+body.light-mode table {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+body.light-mode td {
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+ 
+ 
+
+ 
+div.highlight pre[style],
+div.chroma pre[style],
+pre[style],
+pre.chroma,
+pre {
+  background-color: #202124 !important;       
+  background-image: none !important;
+  color: #e2e8f0 !important;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,255,255,0.05) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45) !important;
+  margin: 1rem 0 !important;
+  overflow-x: auto !important;
+}
+
+ 
+div.highlight pre[style] code,
+pre[style] code {
+  background: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: pre !important;
+}
+
+ 
+div.highlight, div.chroma {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+
+ 
+
+.chroma .k  { color: #f92672; }   
+.chroma .kc { color: #f92672; }
+.chroma .kd { color: #f92672; }
+.chroma .kn { color: #f92672; }
+
+.chroma .s  { color: #e6db74; }   
+.chroma .sb { color: #e6db74; }
+.chroma .sc { color: #e6db74; }
+
+.chroma .n  { color: #f8f8f2; }   
+.chroma .na { color: #a6e22e; }
+.chroma .nb { color: #66d9ef; }
+.chroma .bp { color: #66d9ef; }
+
+.chroma .c  { color: #75715e; font-style: italic; }  
+.chroma .cm { color: #75715e; }
+.chroma .c1 { color: #75715e; }
+
+ 
+.chroma .m { color: #ae81ff; }
+
+ 
+.chroma .o { color: #f92672; }
+
+ 
+.chroma .nf { color: #a6e22e; }
+
+
+
+
+
+
+
+ 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+.card:hover { transform: translateY(-0px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
+.card:hover .card-img-top { transform: scale(1.02); }
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .card-img-top::before { opacity: 0.8; }
+.card-body { padding: 15px; text-align: center; }
+.card-title { font-size: 1.2rem; font-weight: bold; color: #fff; transition: color 0.3s; }
+.card:hover .card-title { color: #d0aaff; }
+
+ 
+.section-travel h1 { text-align: left; margin-bottom: 0.5rem; font-size: 2rem; }
+.section-travel .page-subtitle { text-align: center; color: #bbb; font-size: 1.05rem; margin-bottom: 1.5rem; }
+.section-travel .travel-cards { display: flex; flex-direction: column; gap: 2rem; }
+.section-travel .card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; background: #1e1e1e; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+.section-travel .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+.section-travel .card > a { display: block; color: inherit; text-decoration: none; }
+.section-travel .card-img-top { width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.35s ease; }
+.section-travel .card:hover .card-img-top { transform: scale(1.03); }
+.section-travel .card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+.section-travel .card-body { padding: 1.2rem 1rem; text-align: left; }
+.section-travel .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+.section-travel time { color: #aaa; font-size: 0.95rem; }
+.section-travel .card.no-image { min-height: 160px; background: #222; border: 1px dashed rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; padding: 1.2rem; }
+@media (max-width: 600px) { .section-travel .card-img-top { height: 280px; } }
+
+ 
+
+ 
+.section-food.vertical .food-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.section-food.vertical .food-categories .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;  
+  width: 100%;
+  margin: 0 auto;
+}
+.section-food.vertical .food-categories .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+ 
+.section-food.masonry .food-recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+}
+.section-food.masonry .food-recipes .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-food.masonry .food-recipes .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.section-food .card-img-top { width: 100%; height: 200px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.3s ease; }
+.section-food .card:hover .card-img-top { transform: scale(1.03); }
+.section-food .card-body { padding: 1rem; text-align: left; }
+.section-food .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+@media (max-width: 600px) { 
+  .section-food.masonry .food-recipes { grid-template-columns: 1fr; }
+  .section-food.vertical .food-categories .card { width: 100%; }
+}
+
+body.light-mode .section-food.vertical .food-categories .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .section-food.masonry .food-recipes .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+ 
+button.copybtn { transition: opacity .3s ease-in-out; opacity: .15; padding: 2px 6px; position: absolute; right: 4px; top: 4px; }
+div.highlight .copybtn:hover { opacity: 1; border-color: #51a7e8; }
+div.highlight { position: relative; }
+
+ 
+.col { padding-left: 0; }
+.small { max-width: 400px; margin: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
+
+ 
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+body.light-mode #nav-border { border-bottom: 1px solid #212529; }
+body.light-mode #nav { background-color: #fff; border-bottom: none; }
+body.light-mode #nav a { color: #000; }
+body.light-mode #nav a:hover { color: #0070f3; }
+body.light-mode #dark-mode-toggle { color: #000; }
+body.light-mode .card { background-color: #fff; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+body.light-mode .card-title { color: #333; }
+body.light-mode .card-body { color: #000; }
+body.light-mode table { background-color: #fff; color: #000; }
+body.light-mode th { background-color: #212529; color: #fff; }
+body.light-mode td { border-bottom: 1px solid #ddd; }
+body.light-mode a { color: #333; }
+body.light-mode a:hover { color: #0070f3; }
+
+ 
+#dark-mode-toggle i, #nav a, .card, .table, body {
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+ 
+.image-caption { font-size: 0.9em; margin-top: 0.25em; color: #555; }
+body.dark-mode .image-caption { color: #ccc; }
+
+
+body.dark-mode img {
+ 
+  border-radius: 8px;                            
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);   
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode img {
+  border-radius: 8px;                             
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+ 
+.custom-image-switch .dark-mode {
+  display: none;
+}
+
+ 
+body.dark-mode .custom-image-switch .light-mode {
+  display: none;
+}
+body.dark-mode .custom-image-switch .dark-mode {
+  display: inline;
+}
+
+ 
+body.light-mode .custom-image-switch .light-mode {
+  display: inline;
+}
+body.light-mode .custom-image-switch .dark-mode {
+  display: none;
+}
+
+
+ 
+.no-style-image {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  transition: none !important;
+}
+
+ 
+
+ 
+.day-nav {
+  margin-top: 3rem;
+  margin-bottom: 2rem;  
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+ 
+.day-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+
+  background: #1e1e1e;                    
+  color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+}
+
+.day-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.2;
+  stroke: currentColor;
+}
+
+.day-btn:hover {
+  background: #2a2a2a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+  color: #d0aaff;                         
+}
+
+ 
+body.light-mode .day-nav {
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+body.light-mode .day-btn {
+  background: #f2f2f2;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+body.light-mode .day-btn:hover {
+  background: #e6e6e6;
+  color: #0070f3;                          
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+
+
+
+
+
+ 
+.sharp-responsive-img {
+     
+    max-width: var(--sharp-max-width) !important;  
+    width: 100% !important; 
+    height: auto !important;
+    
+     
+    box-sizing: border-box !important;
+
+     
+    image-rendering: high-quality !important;
+    transform: none !important;  
+    display: block !important; 
+}
+
+
+
+
+
+</style>
+
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  
+  <body>
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center align-items-center">
+
+    
+     
+      
+      
+      <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+     
+      
+      
+      <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+     
+      
+      
+      <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+     
+      
+      
+      <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+     
+      
+      
+      <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+     
+      
+      
+      <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+     
+      
+      
+      <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+    
+
+    
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
+
+  </nav>
+</div>
+ 
+
+
+
+        
+    <div class="container">
+      <main id="main">
+      
+
+<h1>Kiwi Hot Sauce</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2025-12-05">Dec 5, 2025</time>
+
+        
+<br><br>
+<p>This is a lacto fermented hot sauce! I used Gochugaru chilli peppers for this ferment which give a very mild hot sauce. A more common chilli for this type of ferment is the jalepeno</p>
+<h1 id="ingredients">Ingredients</h1>
+<ul>
+<li>20-25 Green chillis heads removed and chopped lengthways</li>
+<li>2 spring onions, chopped</li>
+<li>70g fresh corriander</li>
+<li>6 kiwis sliced thinly with skins</li>
+<li>Salt</li>
+<li>Water</li>
+<li>500ml Apple cider vinegar</li>
+</ul>
+<h1 id="method">Method</h1>
+<p><strong>Fermentation</strong></p>
+<ol>
+<li>Sterilise Kilner jar in oven at 110C for 30 mins.</li>
+<li>Allow jar to cool and take note of the weight of the jar</li>
+<li>Add all the vegetables to the jar and fill remaining space with water</li>
+<li>Add 2.5% by weight of salt to the vegetables and water</li>
+<li>Leave for 2-3 weeks and allow to ferment, remembering to burp once a day.</li>
+</ol>
+<p><strong>Bottle up</strong></p>
+<ol>
+<li>Strain the ferment and keep the brine to one side</li>
+<li>Blend the solids and then add the apple cider vinegar.</li>
+<li>Add 500ml of the brine back to the solids and taste.</li>
+<li>Add more brine or vinegar to taste.</li>
+<li>Bottle up</li>
+</ol>
+<h1 id="notes">Notes</h1>
+<p>The ferment will go cloudy after a couple of days. This is a good thing. It is the Lacto bacteria growing and becoming the dominant bacteria present in the ferment. You can see the difference between the first (Day 1) and second picture (Day 7).</p>
+<p align="center"> 
+<img src="/food/images/kiwi_hot_sauce/IMG_6264.jpg" alt="drawing" width="600"/>
+</p>
+<p align="center"> 
+<img src="/food/images/kiwi_hot_sauce/DSC_1532.jpg" alt="drawing" width="600"/>
+</p>
+<p align="center"> 
+<img src="/food/images/kiwi_hot_sauce/IMG_6369.jpg" alt="drawing" width="600"/>
+</p>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </main>
+
+    </div>
+    
+<script src="http://localhost:1313/js/feather.min.js"></script>
+
+<script>
+const toggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+
+body.classList.add('dark-mode');
+
+
+const saved = localStorage.getItem('dark-mode');
+if (saved === 'true') {
+  body.classList.add('dark-mode');
+  body.classList.remove('light-mode');
+} else if (saved === 'false') {
+  body.classList.remove('dark-mode');
+  body.classList.add('light-mode');
+}
+
+
+function updateIcon() {
+  const iconEl = toggle.querySelector('i');
+  if (body.classList.contains('dark-mode')) {
+    iconEl.setAttribute('data-feather', 'moon'); 
+  } else {
+    iconEl.setAttribute('data-feather', 'sun');  
+  }
+  feather.replace(); 
+}
+
+
+updateIcon();
+
+
+toggle.addEventListener('click', () => {
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+    localStorage.setItem('dark-mode', 'false');
+  } else {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    localStorage.setItem('dark-mode', 'true');
+  }
+  updateIcon();
+});
+</script>
+  
+    <script>
+function addCopyButtonToCode() {
+  var allCodeBlocksElements = $("div.highlight pre");
+
+  allCodeBlocksElements.each(function(ii) {
+    var currentId = "codeblock" + (ii + 1);
+    $(this).attr("id", currentId);
+
+    
+    var iconColor = document.body.classList.contains("dark-mode") ? "#e2e8f0" : "#333";
+
+    
+    var clipButton = `
+      <button class="btn copybtn" data-clipboard-target="#${currentId}">
+        <i data-feather="copy" width="20" style="color: ${iconColor}"></i>
+      </button>
+    `;
+
+    $(this).after(clipButton);
+  });
+
+  feather.replace(); 
+
+  
+  var clipboard = new Clipboard(".btn");
+  clipboard.on("success", function(e) {
+    setTimeout(function() {
+      e.clearSelection();
+    }, 250);
+  });
+  clipboard.on("error", function(e) {
+    $(e.trigger).text("Can't in Safari");
+  });
+}
+
+
+$(document).ready(function() {
+  addCopyButtonToCode();
+});
+
+
+
+</script>  
+  </body>
+</html>
