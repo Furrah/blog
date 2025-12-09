@@ -633,7 +633,80 @@ body.light-mode .day-btn:hover {
   fungi_nn.zip
   <i data-feather="download" style="margin-left:6px;"></i>
 </a>
-
+<h1 id="code">Code</h1>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">os</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">from</span> <span style="color:#e06c75">PIL</span> <span style="color:#c678dd">import</span> <span style="color:#e06c75">Image</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">torch</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">torch.nn.functional</span> <span style="color:#c678dd">as</span> <span style="color:#e06c75">F</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">timm</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">torchvision.transforms</span> <span style="color:#c678dd">as</span> <span style="color:#e06c75">T</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">import</span> <span style="color:#e06c75">json</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># Helper functions</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">def</span> <span style="color:#61afef;font-weight:bold">get_all_image_paths</span>(<span style="color:#e06c75">root_dir</span>, <span style="color:#e06c75">extensions</span><span style="color:#56b6c2">=</span>{<span style="color:#98c379">&#34;.jpg&#34;</span>, <span style="color:#98c379">&#34;.jpeg&#34;</span>, <span style="color:#98c379">&#34;.png&#34;</span>, <span style="color:#98c379">&#34;.bmp&#34;</span>, <span style="color:#98c379">&#34;.gif&#34;</span>, <span style="color:#98c379">&#34;.tiff&#34;</span>}):
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">paths</span> <span style="color:#56b6c2">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">for</span> <span style="color:#e06c75">subdir</span>, <span style="color:#e06c75">_</span>, <span style="color:#e06c75">files</span> <span style="color:#56b6c2">in</span> <span style="color:#e06c75">os</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">walk</span>(<span style="color:#e06c75">root_dir</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#c678dd">for</span> <span style="color:#e06c75">f</span> <span style="color:#56b6c2">in</span> <span style="color:#e06c75">files</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#c678dd">if</span> <span style="color:#e06c75">os</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">path</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">splitext</span>(<span style="color:#e06c75">f</span>)[<span style="color:#d19a66">1</span>]<span style="color:#56b6c2">.</span><span style="color:#e06c75">lower</span>() <span style="color:#56b6c2">in</span> <span style="color:#e06c75">extensions</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#e06c75">paths</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">append</span>(<span style="color:#e06c75">os</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">path</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">join</span>(<span style="color:#e06c75">subdir</span>, <span style="color:#e06c75">f</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">return</span> <span style="color:#e06c75">paths</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">ID2LABEL_JSON</span> <span style="color:#56b6c2">=</span> <span style="color:#98c379">&#34;id2label.json&#34;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">with</span> <span style="color:#e5c07b">open</span>(<span style="color:#e06c75">ID2LABEL_JSON</span>, <span style="color:#98c379">&#34;r&#34;</span>, <span style="color:#e06c75">encoding</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;utf-8&#34;</span>) <span style="color:#c678dd">as</span> <span style="color:#e06c75">f</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">id_to_species</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">json</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">load</span>(<span style="color:#e06c75">f</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># Load FungiTastic via timm</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">model_name</span> <span style="color:#56b6c2">=</span> <span style="color:#98c379">&#34;BVRA/vit_base_patch16_384.in1k_ft_fungitastic_384&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">model</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">timm</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">create_model</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#98c379">f</span><span style="color:#98c379">&#34;hf-hub:</span><span style="color:#98c379">{</span><span style="color:#e06c75">model_name</span><span style="color:#98c379">}</span><span style="color:#98c379">&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">pretrained</span><span style="color:#56b6c2">=</span><span style="color:#e5c07b">True</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">model</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">eval</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># Define image transforms</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">transform</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">T</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">Compose</span>([
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">T</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">Resize</span>((<span style="color:#d19a66">224</span>, <span style="color:#d19a66">224</span>)),  
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">T</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">ToTensor</span>(),
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">T</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">Normalize</span>([<span style="color:#d19a66">0.5</span>, <span style="color:#d19a66">0.5</span>, <span style="color:#d19a66">0.5</span>], [<span style="color:#d19a66">0.5</span>, <span style="color:#d19a66">0.5</span>, <span style="color:#d19a66">0.5</span>])
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># Directory with images</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">fungi_root</span> <span style="color:#56b6c2">=</span> <span style="color:#98c379">&#34;./&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">paths</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">get_all_image_paths</span>(<span style="color:#e06c75">fungi_root</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># Predict loop</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># -----------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">for</span> <span style="color:#e06c75">img_path</span> <span style="color:#56b6c2">in</span> <span style="color:#e06c75">paths</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">img</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">Image</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">open</span>(<span style="color:#e06c75">img_path</span>)<span style="color:#56b6c2">.</span><span style="color:#e06c75">convert</span>(<span style="color:#98c379">&#34;RGB&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">x</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">transform</span>(<span style="color:#e06c75">img</span>)<span style="color:#56b6c2">.</span><span style="color:#e06c75">unsqueeze</span>(<span style="color:#d19a66">0</span>)  <span style="color:#7f848e"># add batch dimension</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#c678dd">with</span> <span style="color:#e06c75">torch</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">no_grad</span>():
+</span></span><span style="display:flex;"><span>            <span style="color:#e06c75">logits</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">model</span>(<span style="color:#e06c75">x</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#e06c75">probs</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">F</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">softmax</span>(<span style="color:#e06c75">logits</span>, <span style="color:#e06c75">dim</span><span style="color:#56b6c2">=-</span><span style="color:#d19a66">1</span>)[<span style="color:#d19a66">0</span>]
+</span></span><span style="display:flex;"><span>            <span style="color:#e06c75">class_id</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">probs</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">argmax</span>()<span style="color:#56b6c2">.</span><span style="color:#e06c75">item</span>()
+</span></span><span style="display:flex;"><span>            <span style="color:#e06c75">prob</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">probs</span>[<span style="color:#e06c75">class_id</span>]<span style="color:#56b6c2">.</span><span style="color:#e06c75">item</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e06c75">species_name</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">id_to_species</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">get</span>(<span style="color:#e5c07b">str</span>(<span style="color:#e06c75">class_id</span>), <span style="color:#98c379">f</span><span style="color:#98c379">&#34;Unknown_</span><span style="color:#98c379">{</span><span style="color:#e06c75">class_id</span><span style="color:#98c379">}</span><span style="color:#98c379">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e5c07b">print</span>(<span style="color:#98c379">f</span><span style="color:#98c379">&#34;</span><span style="color:#98c379">{</span><span style="color:#e06c75">img_path</span><span style="color:#98c379">:</span><span style="color:#98c379">&lt;30</span><span style="color:#98c379">}</span><span style="color:#98c379"> → </span><span style="color:#98c379">{</span><span style="color:#e06c75">species_name</span><span style="color:#98c379">:</span><span style="color:#98c379">&lt;40</span><span style="color:#98c379">}</span><span style="color:#98c379"> (</span><span style="color:#98c379">{</span><span style="color:#e06c75">prob</span><span style="color:#98c379">:</span><span style="color:#98c379">.3f</span><span style="color:#98c379">}</span><span style="color:#98c379">)&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">except</span> <span style="color:#e06c75">Exception</span> <span style="color:#c678dd">as</span> <span style="color:#e06c75">e</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e5c07b">print</span>(<span style="color:#98c379">&#34;Error with&#34;</span>, <span style="color:#e06c75">img_path</span>, <span style="color:#e06c75">e</span>)
+</span></span></code></pre></div>
 
 
 
