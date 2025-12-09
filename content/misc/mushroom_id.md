@@ -7,11 +7,11 @@ draft: false
 
 # There must be a dataset somewhere?
 
-Over the last few years I have been taking photos of almost every mushroom that I've seen but I don't always know what they are. There are many mushroom apps out there now and most of the good ones require some form of subscription. I woke up this morning thinking that there must be a compiled dataset somewhere for fungi, and there is! Hello FungiTastic! 
+Over the last few years I have been taking photos of almost every mushroom that I've seen but I don't always know what they are. There are many mushroom apps out there now and most of the good ones require some form of subscription. I woke up this morning thinking that there must be a compiled dataset somewhere for fungi, and there is! Hello <a href="https://bohemianvra.github.io/FungiTastic/" target="_blank"> FungiTastic</a>!
 
 # There must be a pre-trained model somewhere?
 
-Ok, brilliant, I've got the dataset, but someone must have trained a network on this data already and make it publicly available? Hello Bohemian Visual Recognition Alliance! 
+Ok, brilliant, I've got the dataset, but they must have pre-trained a model already right? They have! hooooray!
 
 # What is this mushroom?
 
