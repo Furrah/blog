@@ -50,18 +50,13 @@ function insertImage(path, maxWidth, caption = null) {
 }
 </script>
 
-In the morning we take a look around the temples vegetable garden where they are growing a large variety of vegetables. Amongst the many cabbages there are also aubergines, chillis, squash, carrots, raddish, leafy greens, tomatoes, and more! Most of what the temples eat is usually grown on site we've been told. This isn't exclusive to the temples though, we see vegetables being grown in every possible space that can sustain a plant. Cabbages grown on roadside verges can be seen absolutely everywhere, which probably stems from Chinas pursuit of self sufficiency and is deeply engrained in their society. 
+In the morning we explore the temples garden where they are growing a large variety of vegetables. Amongst the many cabbages are also aubergines, chillis, squash, carrots, radish, leafy greens, tomatoes, and more! Most of what the temples eat is usually grown on site we've been told. This isn't exclusive to the temples though, we see vegetables being grown in every possible space that can sustain a plant. Cabbages grown on roadside verges can be seen absolutely everywhere in Sichuan as well as maize and other crops which probably stems from Chinas pursuit of self sufficiency and is deeply engrained in their society. 
 
 Chinas connection with it's food feels very real and is something I wish to see more in the UK where people have lost touch with the origin of their food and have grown accustomed to supermarkets where a visceral link to the earth has been severed. Food on tap has become the norm and the beauty of the food market is seen as an encumbrance to productivity rather than a celebration of seasonality, community, and the pleasure of knowing where your food came from. 
 
-We leave the temple in the drizzle which follows us for 
 
 
- and continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us… 
-
-
-<script>insertImage("IMG_0674.jpg", 800, "The temple and the accomodation to the right")</script>
-
+<script>insertImage("IMG_0674.jpg", 800, "The temple and the accommodation attached to the right")</script>
 
 
 <div class="container">
@@ -80,14 +75,34 @@ We leave the temple in the drizzle which follows us for
 <script>insertImage("IMG_0686.jpg", 800, "Atmospheric Weeding")</script>
 
 
+We leave the temple in the drizzle which follows us for for sometime before clearing up. We are blessed with some incredible views of the mountains as we climb and we are able to see the city of Emei below through the clouds. 
+
 <script>insertImage("IMG_0695.jpg", 800, "")</script>
+
+An hour or so later we arrive at the temple we had aimed to get to the night before. It sits on top of a peak  above the cloud line with a clear view of the mountains in the distance. It's a stunning view but I think we might have had quite the cold night sleep if we had stayed here! 
+
 <script>insertImage("IMG_0697.jpg", 800, "")</script>
+
+Later we encountered two prostrating Buddhists - taking three steps forward and then prostrating which is the act of bowing all the way to the floor with the head and hands touching the ground. A ritual honouring the Buddha but also an inward journey of surrender and purification. This is most often practised by Tibetan Buddhists. Their hands looked sore and cold, and their bodies exhausted as they took small breaks between each sequence. I stand in awe imaging myself doing this. I think I would break almost immediately. 
+
+
 <script>insertImage("IMG_0720.jpg", 800, "")</script>
-<script>insertImage("IMG_0722.jpg", 500, "")</script>
-<script>insertImage("IMG_0725.jpg", 800, "")</script>
-<script>insertImage("IMG_0732.jpg", 800, "")</script>
-<script>insertImage("IMG_0733.jpg", 800, "")</script>
-<script>insertImage("IMG_0747.jpg", 800, "")</script>
+
+
+I spent a good amount of time referencing Jurassic park, specifically the third film with giant aviaries. I don't think Will has ever seen the films. They're all great. In fact they get greater as they go on. They are now on the seventh film and it is so so terrible it is great. 
+
+<script>insertImage("IMG_0722.jpg", 500, "Jurassic Park 3 - The giant aviary")</script>
+
+We approach a small 
+
+ and continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us… 
+
+
+
+<script>insertImage("IMG_0725.jpg", 800, "More Cabbages!")</script>
+<script>insertImage("IMG_0732.jpg", 800, "More feats of incredible strength")</script>
+<script>insertImage("IMG_0733.jpg", 800, "Even more feats of incredible strength")</script>
+<script>insertImage("IMG_0747.jpg", 800, "Moments before we ")</script>
 <script>insertImage("IMG_0749.jpg", 800, "")</script>
 <script>insertImage("IMG_0753.jpg", 800, "")</script>
 <script>insertImage("IMG_0769.jpg", 800, "")</script>

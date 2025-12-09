@@ -262,10 +262,18 @@ div.highlight, div.chroma {
 
  
 .section-food.vertical .food-categories {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
   gap: 1.5rem;
 }
+
+@media (max-width: 600px) {
+  .section-food.vertical .food-categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .section-food.vertical .food-categories .card {
   display: flex;
   flex-direction: column;
@@ -616,28 +624,6 @@ body.light-mode .day-btn:hover {
 
 <div class="travel-cards">
 
-  
-    
-
-    <div class="card mb-4">
-
-      
-        <a href="/travel/china/china_day5/">
-      
-
-        
-          <img class="card-img-top" src="/travel/images/china/Day5/IMG_0686.jpg" alt="China Day 5">
-        
-
-        <div class="card-body text-center">
-          <h5 class="card-title">China Day 5</h5>
-          
-
-<i data-feather="calendar"></i> <time datetime="2025-12-03">Dec 3, 2025</time>
-        </div>
-
-      </a>
-    </div>
   
     
 
