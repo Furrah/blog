@@ -89,19 +89,14 @@ Later we encountered two prostrating Buddhists - taking three steps forward and 
 <script>insertImage("IMG_0720.jpg", 800, "")</script>
 
 
-I spent a good amount of time referencing Jurassic park, specifically the third film with giant aviaries. I don't think Will has ever seen the films. They're all great. In fact they get greater as they go on. They are now on the seventh film and it is so so terrible it is great. 
+I spent a good amount of time referencing Jurassic park, specifically the third film with the giant aviaries. I don't think Will has ever seen the films but they're all great. In fact, I would say they get greater as they go on. They are now on the seventh film and it is so terrible it might be the best one yet. Anyway, the route sometimes has areas to protect you from rock fall which look like cages. Most of the time it does not have these areas and you really wish it did. 
 
 <script>insertImage("IMG_0722.jpg", 500, "Jurassic Park 3 - The giant aviary")</script>
 
-We approach a small 
+We still have no idea how far away the summit it and we start to ask those who are coming back down how long they think we are from the summit. Some tell us two hours, others four, one couple said around an hour and a half away. We arrived at 3pm, so it took us about seven hours. and we weren't even going slow!
 
- and continue. It’s still raining but only a drizzle. We’re gonna be ok. We’re trying to figure out where we might end up that night to sleep so we ask some passers by who are coming down how far they think the summit is. Anywhere from 2-4 hours we hear. Well we arrive at 3pm after leaving at 8am so it was around 7 hours for us… 
+Finally, we emerge from the forest and arrive at the base of the summit. We still have an hour or so ahead of us and 
 
-
-
-<script>insertImage("IMG_0725.jpg", 800, "More Cabbages!")</script>
-<script>insertImage("IMG_0732.jpg", 800, "More feats of incredible strength")</script>
-<script>insertImage("IMG_0733.jpg", 800, "Even more feats of incredible strength")</script>
 <script>insertImage("IMG_0747.jpg", 800, "Moments before we ")</script>
 <script>insertImage("IMG_0749.jpg", 800, "")</script>
 <script>insertImage("IMG_0753.jpg", 800, "")</script>
@@ -109,6 +104,10 @@ We approach a small
 <script>insertImage("IMG_0776.jpg", 800, "")</script>
 <script>insertImage("IMG_0782.jpg", 800, "")</script>
 
+
+<script>insertImage("IMG_0725.jpg", 800, "More Cabbages!")</script>
+<script>insertImage("IMG_0732.jpg", 800, "More feats of incredible strength")</script>
+<script>insertImage("IMG_0733.jpg", 800, "Even more feats of incredible strength")</script>
 
 
 

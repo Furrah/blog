@@ -2,7 +2,8 @@
 title: "Gochugaru Hot Sauce"
 date: 2025-12-10T10:02:11+01:00
 tags: []
-draft: true
+draft: false
+image: "/food/images/gochugaru_hot_sauce/DSC_0279.avif"
 ---
 
 This is a lacto fermented hot sauce! I used Gochugaru chilli peppers for this ferment which give a very mild hot sauce. A more common chilli for this type of ferment is the jalepeno 
@@ -49,6 +50,11 @@ This is a lacto fermented hot sauce! I used Gochugaru chilli peppers for this fe
 - 5 coriander stems with leaves
 
 <p align="center"> 
-<img src="/food/images/gochugaru_hot_sauce/DSC_1543.avif" alt="drawing" width="600"/>
+<img src="/food/images/gochugaru_hot_sauce/DSC_1543.avif" alt="drawing" width="400"/>
 </p>
+
+<p align="center"> 
+<img src="/food/images/gochugaru_hot_sauce/DSC_0279.avif" alt="drawing" width="600"/>
+</p>
+
 
