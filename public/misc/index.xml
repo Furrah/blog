@@ -6,8 +6,15 @@
     <description>Recent content in Miscellaneous on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Nov 2025 18:19:48 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 18:10:30 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fung-Identify</title>
+      <link>http://localhost:1313/mushroom_id/</link>
+      <pubDate>Tue, 09 Dec 2025 18:10:30 +0100</pubDate>
+      <guid>http://localhost:1313/mushroom_id/</guid>
+      <description>&lt;h1 id=&#34;there-must-be-a-dataset-somewhere&#34;&gt;There must be a dataset somewhere?&lt;/h1&gt;&#xA;&lt;p&gt;Over the last few years I have been taking photos of almost every mushroom that I&amp;rsquo;ve seen but I don&amp;rsquo;t always know what they are. There are many mushroom apps out there now and most of the good ones require some form of subscription. I woke up this morning thinking that there must be a compiled dataset somewhere for fungi, and there is! Hello &lt;a href=&#34;https://bohemianvra.github.io/FungiTastic/&#34; target=&#34;_blank&#34;&gt; FungiTastic&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Playing with LoRa</title>
       <link>http://localhost:1313/lora/</link>

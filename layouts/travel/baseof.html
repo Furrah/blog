@@ -3,8 +3,7 @@
   {{ partial "head.html" . }}
   
   <!-- Add section class -->
-<body class="section-{{ .Section }}">
-
+<body class="section-{{ .Section }} {{ if .IsPage }}single-page{{ end }}" >
         {{ partial "nav.html" . }} 
 
         <!-- {{partial "sidebar.html" .}} -->

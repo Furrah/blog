@@ -262,10 +262,18 @@ div.highlight, div.chroma {
 
  
 .section-food.vertical .food-categories {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
   gap: 1.5rem;
 }
+
+@media (max-width: 600px) {
+  .section-food.vertical .food-categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .section-food.vertical .food-categories .card {
   display: flex;
   flex-direction: column;
@@ -491,6 +499,22 @@ body.light-mode .day-btn:hover {
 }
 
 
+.single-page a {
+  color: #9ecbff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.single-page a:hover {
+  color: #d0aaff;
+}
+
+
+body.light-mode.single-page a {
+  color: #0055cc;
+}
+body.light-mode.single-page a:hover {
+  color: #0070f3;
+}
 
 
 

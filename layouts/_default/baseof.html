@@ -5,7 +5,7 @@
 
 <html lang="en">
   {{ partial "head.html" . }}
-  <body>
+  <body class="{{ if .IsPage }}single-page{{ end }}">
     
         {{ partial "nav.html" . }} 
         <!-- {{partial "sidebar.html" .}} -->
