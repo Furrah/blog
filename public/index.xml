@@ -9,7 +9,7 @@
     <lastBuildDate>Tue, 09 Dec 2025 18:10:30 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fungi Identify Neural Network</title>
+      <title>Fung-Identify</title>
       <link>http://localhost:1313/mushroom_id/</link>
       <pubDate>Tue, 09 Dec 2025 18:10:30 +0100</pubDate>
       <guid>http://localhost:1313/mushroom_id/</guid>

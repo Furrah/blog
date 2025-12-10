@@ -1,5 +1,5 @@
 ---
-title: "Fungi Identify Neural Network"
+title: "Fung-Identify"
 date: 2025-12-09T18:10:30+01:00
 tags: []
 draft: false
