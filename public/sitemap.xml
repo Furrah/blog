@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/travel/china/china_day6/</loc>
+    <lastmod>2025-12-12T16:18:04+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-12T16:18:04+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/travel/</loc>
+    <lastmod>2025-12-12T16:18:04+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/food/</loc>
     <lastmod>2025-12-10T10:02:11+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/gochugaru-hot-sauce/</loc>
-    <lastmod>2025-12-10T10:02:11+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-10T10:02:11+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mushroom_id/</loc>
@@ -27,9 +33,6 @@
     <lastmod>2025-12-04T13:07:48+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/travel/china/china_day5/</loc>
-    <lastmod>2025-12-03T13:51:08+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/travel/</loc>
     <lastmod>2025-12-03T13:51:08+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/lora/</loc>

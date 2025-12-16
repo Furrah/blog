@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<script>
+      
+      if (localStorage.getItem('dark-mode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans/index.min.css">
+<link rel="stylesheet" href="/css/pygments.css">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.139.3">
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/bootstrap.min.css">
+  
+  
+  <title>China Day 6</title>
+  <style>
+
+ 
+body {
+  background-color: #121212;  
+  color: #e0e0e0;
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 910px;
+}
+
+ 
+#nav-border { border-bottom: 1px solid #333; }
+#nav {
+  font-family: "Geist Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: #121212;
+  border-bottom: none;
+}
+#nav a { font-weight: bold; color: #eee; }
+#nav .nav-link { font-weight: 900; }
+#nav i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+#dark-mode-toggle { background: transparent; border: none; cursor: pointer; color: #eee; }
+#dark-mode-toggle i { color: inherit; width: 1em; height: 1em; vertical-align: middle; }
+
+body.dark-mode #nav a:hover {
+  color: #d0aaff;
+}
+
+
+
+ 
+#main { margin-top: 1em; margin-bottom: 4em; }
+#home-jumbotron { background-color: inherit; font-family: "Geist Sans", sans-serif; }
+#home-jumbotron h1 { font-weight: 900; }
+#home-jumbotron p { font-weight: 400; }
+.font-125 { font-size: 125%; }
+img { max-width: 100%; }
+.btn { margin-bottom: 0.3em; margin-right: 0.3em; }
+
+ 
+a { color: #eee; font-size: 1rem; font-weight: bold; text-decoration: none; }
+a:hover { color: #d0aaff; text-decoration: underline; }
+
+
+.download-link {
+  color: #4cc3ff;  
+  font-weight: 600;
+}
+
+.download-link:hover {
+  color: #80d9ff;
+  text-decoration: underline;
+}
+
+body.light-mode .download-link {
+  color: #0066cc;            
+}
+
+body.light-mode .download-link:hover {
+  color: #004c99;            
+}
+
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  background: #1e1e1e;
+}
+th { background-color: #333; color: #fff; padding: 12px; text-align: left; font-weight: bold; text-transform: uppercase; }
+td { padding: 12px; border-bottom: 1px solid #444; }
+tr:nth-child(even) { background-color: #222; }
+tr:hover { background-color: #333; }
+@media (max-width: 768px) { table { display: block; overflow-x: auto; white-space: nowrap; } }
+
+
+body.light-mode th {
+  background-color: #f5f5f5;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+body.light-mode tr:hover {
+  background-color: #f1f3f5;
+}
+
+body.light-mode table {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+body.light-mode td {
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+ 
+ 
+
+ 
+div.highlight pre[style],
+div.chroma pre[style],
+pre[style],
+pre.chroma,
+pre {
+  background-color: #202124 !important;       
+  background-image: none !important;
+  color: #e2e8f0 !important;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,255,255,0.05) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45) !important;
+  margin: 1rem 0 !important;
+  overflow-x: auto !important;
+}
+
+ 
+div.highlight pre[style] code,
+pre[style] code {
+  background: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: pre !important;
+}
+
+ 
+div.highlight, div.chroma {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+
+ 
+
+.chroma .k  { color: #f92672; }   
+.chroma .kc { color: #f92672; }
+.chroma .kd { color: #f92672; }
+.chroma .kn { color: #f92672; }
+
+.chroma .s  { color: #e6db74; }   
+.chroma .sb { color: #e6db74; }
+.chroma .sc { color: #e6db74; }
+
+.chroma .n  { color: #f8f8f2; }   
+.chroma .na { color: #a6e22e; }
+.chroma .nb { color: #66d9ef; }
+.chroma .bp { color: #66d9ef; }
+
+.chroma .c  { color: #75715e; font-style: italic; }  
+.chroma .cm { color: #75715e; }
+.chroma .c1 { color: #75715e; }
+
+ 
+.chroma .m { color: #ae81ff; }
+
+ 
+.chroma .o { color: #f92672; }
+
+ 
+.chroma .nf { color: #a6e22e; }
+
+
+
+
+
+
+
+ 
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+.card:hover { transform: translateY(-0px); box-shadow: 0px 10px 20px rgba(0,0,0,0.7); }
+.card-img-top { width: 100%; height: 200px; object-fit: cover; position: relative; transition: transform 0.3s ease-in-out; }
+.card:hover .card-img-top { transform: scale(1.02); }
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .card-img-top::before { opacity: 0.8; }
+.card-body { padding: 15px; text-align: center; }
+.card-title { font-size: 1.2rem; font-weight: bold; color: #fff; transition: color 0.3s; }
+.card:hover .card-title { color: #d0aaff; }
+
+ 
+.section-travel h1 { text-align: left; margin-bottom: 0.5rem; font-size: 2rem; }
+.section-travel .page-subtitle { text-align: center; color: #bbb; font-size: 1.05rem; margin-bottom: 1.5rem; }
+.section-travel .travel-cards { display: flex; flex-direction: column; gap: 2rem; }
+.section-travel .card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; background: #1e1e1e; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+.section-travel .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+.section-travel .card > a { display: block; color: inherit; text-decoration: none; }
+.section-travel .card-img-top { width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.35s ease; }
+.section-travel .card:hover .card-img-top { transform: scale(1.03); }
+.section-travel .card-img-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  pointer-events: none;
+}
+.section-travel .card-body { padding: 1.2rem 1rem; text-align: left; }
+.section-travel .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+.section-travel time { color: #aaa; font-size: 0.95rem; }
+.section-travel .card.no-image { min-height: 160px; background: #222; border: 1px dashed rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; padding: 1.2rem; }
+@media (max-width: 600px) { .section-travel .card-img-top { height: 280px; } }
+
+ 
+
+ 
+.section-food.vertical .food-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .section-food.vertical .food-categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.section-food.vertical .food-categories .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;  
+  width: 100%;
+  margin: 0 auto;
+}
+.section-food.vertical .food-categories .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+ 
+.section-food.masonry .food-recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+}
+.section-food.masonry .food-recipes .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-food.masonry .food-recipes .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.section-food .card-img-top { width: 100%; height: 200px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0; transition: transform 0.3s ease; }
+.section-food .card:hover .card-img-top { transform: scale(1.03); }
+.section-food .card-body { padding: 1rem; text-align: left; }
+.section-food .card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+@media (max-width: 600px) { 
+  .section-food.masonry .food-recipes { grid-template-columns: 1fr; }
+  .section-food.vertical .food-categories .card { width: 100%; }
+}
+
+body.light-mode .section-food.vertical .food-categories .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .section-food.masonry .food-recipes .card {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+ 
+button.copybtn { transition: opacity .3s ease-in-out; opacity: .15; padding: 2px 6px; position: absolute; right: 4px; top: 4px; }
+div.highlight .copybtn:hover { opacity: 1; border-color: #51a7e8; }
+div.highlight { position: relative; }
+
+ 
+.col { padding-left: 0; }
+.small { max-width: 400px; margin: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
+
+ 
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+body.light-mode #nav-border { border-bottom: 1px solid #212529; }
+body.light-mode #nav { background-color: #fff; border-bottom: none; }
+body.light-mode #nav a { color: #000; }
+body.light-mode #nav a:hover { color: #0070f3; }
+body.light-mode #dark-mode-toggle { color: #000; }
+body.light-mode .card { background-color: #fff; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+body.light-mode .card-title { color: #333; }
+body.light-mode .card-body { color: #000; }
+body.light-mode table { background-color: #fff; color: #000; }
+body.light-mode th { background-color: #212529; color: #fff; }
+body.light-mode td { border-bottom: 1px solid #ddd; }
+body.light-mode a { color: #333; }
+body.light-mode a:hover { color: #0070f3; }
+
+ 
+#dark-mode-toggle i, #nav a, .card, .table, body {
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+ 
+.image-caption { font-size: 0.9em; margin-top: 0.25em; color: #555; }
+body.dark-mode .image-caption { color: #ccc; }
+
+
+body.dark-mode img {
+ 
+  border-radius: 8px;                            
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);   
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode img {
+  border-radius: 8px;                             
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+ 
+.custom-image-switch .dark-mode {
+  display: none;
+}
+
+ 
+body.dark-mode .custom-image-switch .light-mode {
+  display: none;
+}
+body.dark-mode .custom-image-switch .dark-mode {
+  display: inline;
+}
+
+ 
+body.light-mode .custom-image-switch .light-mode {
+  display: inline;
+}
+body.light-mode .custom-image-switch .dark-mode {
+  display: none;
+}
+
+
+ 
+.no-style-image {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  transition: none !important;
+}
+
+ 
+
+ 
+.day-nav {
+  margin-top: 3rem;
+  margin-bottom: 2rem;  
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+ 
+.day-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+
+  background: #1e1e1e;                    
+  color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+}
+
+.day-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.2;
+  stroke: currentColor;
+}
+
+.day-btn:hover {
+  background: #2a2a2a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+  color: #d0aaff;                         
+}
+
+ 
+body.light-mode .day-nav {
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+body.light-mode .day-btn {
+  background: #f2f2f2;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+body.light-mode .day-btn:hover {
+  background: #e6e6e6;
+  color: #0070f3;                          
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+
+
+
+
+
+ 
+.sharp-responsive-img {
+     
+    max-width: var(--sharp-max-width) !important;  
+    width: 100% !important; 
+    height: auto !important;
+    
+     
+    box-sizing: border-box !important;
+
+     
+    image-rendering: high-quality !important;
+    transform: none !important;  
+    display: block !important; 
+}
+
+
+.single-page a {
+  color: #d0aaff;          
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.single-page a:hover {
+  color: #d0aaff;             
+  text-decoration: underline;
+}
+
+body.light-mode.single-page a {
+  color: #0070f3;
+}
+
+body.light-mode.single-page a:hover {
+  color: #0070f3;
+}
+
+
+
+</style>
+
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+
+
+
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKWFQVGKH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PKWFQVGKH');
+        }
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+</head>  
+
+
+  
+  
+<body class="section-travel single-page" >
+        <div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center align-items-center">
+
+    
+     
+      
+      
+      <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+     
+      
+      
+      <a class="nav-link" href="/electronics/"><i data-feather="cpu"></i> Electronics</a>
+     
+      
+      
+      <a class="nav-link" href="/food/"><i data-feather="heart"></i> Food</a>
+     
+      
+      
+      <a class="nav-link" href="/travel/"><i data-feather="aperture"></i> Travel</a>
+     
+      
+      
+      <a class="nav-link" href="/misc/"><i data-feather="coffee"></i> Misc</a>
+     
+      
+      
+      <a class="nav-link" href="/greenhouse/"><i data-feather="sun"></i> Greenhouse</a>
+     
+      
+      
+      <a class="nav-link" href="/archive/"><i data-feather="archive"></i> Archive</a>
+    
+
+    
+<button id="dark-mode-toggle" class="btn btn-sm ms-2">
+  <i></i>
+</button>
+
+  </nav>
+</div>
+ 
+
+        
+        <div class="container">
+          <main id="main">
+            
+
+<h1>China Day 6</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2025-12-12">Dec 12, 2025</time>
+
+        
+<br><br>
+<script>
+function insertImage(path, maxWidth, caption = null) {
+
+  // Allow numbers or strings for width
+  if (typeof maxWidth === "number") {
+    maxWidth = maxWidth + "px";
+  }
+
+  const wrapper = document.createElement("div");
+  wrapper.style.textAlign = "center";
+  wrapper.style.margin = "1em 0";
+
+  const link = document.createElement("a");
+  link.href = "/travel/images/china/Day6/" + path;
+  link.target = "_blank";
+
+  const img = document.createElement("img");
+  img.src = "/travel/images/china/Day6/" + path;
+  img.alt = caption || "image";
+
+  img.style.width = "100%";      // responsive width
+  img.style.maxWidth = maxWidth;  // limit on large screens
+  img.style.height = "auto";      // keep aspect ratio
+  img.loading = "lazy";
+
+  link.appendChild(img);
+  wrapper.appendChild(link);
+
+  // If caption provided, add it
+  if (caption) {
+    const captionEl = document.createElement("div");
+    captionEl.textContent = caption;
+    captionEl.classList.add("image-caption"); // use CSS class
+    wrapper.appendChild(captionEl);
+  }
+
+  // Insert after the <script> tag
+  const scriptTag = document.currentScript;
+  scriptTag.insertAdjacentElement("afterend", wrapper);
+}
+</script>
+<h1 id="you-shall-not-pass">You Shall not Pass!</h1>
+<p>We wake up in the morning and Will lets me know he is desperate for the toilet. I thank him for his wisdom and he leaves the room, immediately returns, and then locks the door. There&rsquo;s a monkey guarding the moon gate and is now unpassable. The monkey is baring its teeth, snarling, and demanding a bribe to pass. It can&rsquo;t be that bad can it? We both go out and have a look together and I tell Will not to fret for I have a cunning plan as I&rsquo;ve seen people shift monkeys on the way up. I go and get my walking stick and start banging it on the floor and within two bangs the monkey is fully riled up and begins approaching us erratically and is now snarling much more aggressively than before. I&rsquo;ve made a terrible terrible mistake and now Will is going to shit himself and it&rsquo;s all my fault.  We run back, lock the door, and commence operation peek-a-poo. We scope the monkey out multiple times and it does not appear to be leaving. Eventually, during one of our stare downs someone walked past on the other side of the bridge and has now become the new target. Will makes his way to the bathroom and I go to the dining room. Tofu skins, potato curry, and some pickled greens for breakfast!</p>
+<script>insertImage("IMG_0785.jpg", 500, "")</script>
+<h1 id="drones">Drones!</h1>
+<p>How do you get food, drink, and building materials up and down a mountain in China? Drones! Drones everywhere, all piloted by 15 year old kids in black hoodies who definitely have a fear of sunlight. They appear out of the clouds and land next to a restaurant ladened with cans of drink, fresh vegetables, noodles, and everything else you could dream of up here before jetting back into the sky to collect more. China is able to both be ahead of the rest of the world technologically whilst maintaining such deep connections to it&rsquo;s past.</p>
+<script>insertImage("IMG_0801.jpg", 500, "")</script>
+<h1 id="goodbye-furcation">Goodbye-furcation</h1>
+<p>We reach the fork to take the gorge route down and down we go. This route is much steeper than the way up and despite going down, there still seems to be an awful lot of up. This is all fine as Will has spotted another couple of hundred plants to photograph and I have found all the butterflies of western China, all of whom are doing an excellent job of avoiding my camera despite my best effort. I am no longer out of breath and my camera roll looks like a gallery of smudges.</p>
+<script>insertImage("IMG_0813.jpg", 800, "")</script>
+<script>insertImage("IMG_0821.jpg", 800, "I'm not sure what this temple is called but it had a good ol' view!")</script>
+<h1 id="potential-boss-battles">Potential Boss Battles</h1>
+<p>A woman who must have been at least seventy bounded down the hill in front of us whilst we were enjoying a small bridge and the river flowing beneath it. &ldquo;MONKEYS AHEAD, BE CAREFUL&rdquo;. This is slightly inferred. We knew the word for monkey by this point and she waves her arms around pointing her stick up the steps. She then taught us how to deter the monkeys by banging her stick on the floor. I knew it was a good idea. The monkeys we encountered weren&rsquo;t outraged or remotely interested in anything I had to offer.</p>
+<script>insertImage("IMG_0845.jpg", 800, "")</script>
+<script>insertImage("IMG_0849.jpg", 800, "Moments after we've been told that the ginger tea is bottomless and free")</script>
+<script>insertImage("IMG_0854.jpg", 800, "Flower and grass ARE lives!")</script>
+<script>insertImage("IMG_0862.jpg", 600, "A tale of ups and downs")</script>
+<script>insertImage("IMG_0867.jpg", 800, "")</script>
+<script>insertImage("IMG_0892.jpg", 800, "")</script>
+<h1 id="gorge-ous">Gorge-ous</h1>
+<p>The final part of the walk brings us back to Qingyin Pavilion along the gorge. Unfortunately, I dont have too much photos of this part of the walk but what I do remember is Will and I repeating to each other that this is hands down one of the most beautiful places we have ever been. Will also spoke of Handkerchief trees a lot. Looks like we are coming back in spring to see the flowering! If we say it enough times it must be true?</p>
+<script>insertImage("IMG_0932.jpg", 600, "")</script>
+<script>insertImage("IMG_0936.jpg", 600, "A pair of very happy chappies")</script>
+<script>insertImage("IMG_0956.jpg", 800, "")</script>
+<h1 id="the-saga-of-the-snake">The Saga of the Snake</h1>
+<p>Since arriving in China I have dreamed of seeing a snake in the woods. Throughout the days on the mountain we have seen countless signs to be aware of snakes. Many people have told us to be careful. Everyone is terrified of the legless lizards (they&rsquo;re not lizards) and I am desperate to find one. As we are walking towards the bus stop at the end of the day I let Will know of my serpent based woes. But then, out of a bush slithers a Chinese green snake! Joy fills the air and I let the two people walking in front of us how brilliant this moment is. We all rejoice and then get on a bus.</p>
+<script>insertImage("IMG_0985.jpg", 800, "Moments before we get to the bus station I finally see a snake!")</script>
+
+
+<nav class="day-nav">
+  
+    <a class="day-btn" href="/travel/china/china_day5/">
+      <i data-feather="arrow-left"></i>
+      China Day 5
+    </a>
+  
+
+  
+</nav>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'www-mybrainhertz-co-uk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          </main>
+        </div>
+
+        
+<script src="http://localhost:1313/js/feather.min.js"></script>
+
+<script>
+const toggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+
+body.classList.add('dark-mode');
+
+
+const saved = localStorage.getItem('dark-mode');
+if (saved === 'true') {
+  body.classList.add('dark-mode');
+  body.classList.remove('light-mode');
+} else if (saved === 'false') {
+  body.classList.remove('dark-mode');
+  body.classList.add('light-mode');
+}
+
+
+function updateIcon() {
+  const iconEl = toggle.querySelector('i');
+  if (body.classList.contains('dark-mode')) {
+    iconEl.setAttribute('data-feather', 'moon'); 
+  } else {
+    iconEl.setAttribute('data-feather', 'sun');  
+  }
+  feather.replace(); 
+}
+
+
+updateIcon();
+
+
+toggle.addEventListener('click', () => {
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+    localStorage.setItem('dark-mode', 'false');
+  } else {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    localStorage.setItem('dark-mode', 'true');
+  }
+  updateIcon();
+});
+</script>
+  
+        <script>
+function addCopyButtonToCode() {
+  var allCodeBlocksElements = $("div.highlight pre");
+
+  allCodeBlocksElements.each(function(ii) {
+    var currentId = "codeblock" + (ii + 1);
+    $(this).attr("id", currentId);
+
+    
+    var iconColor = document.body.classList.contains("dark-mode") ? "#e2e8f0" : "#333";
+
+    
+    var clipButton = `
+      <button class="btn copybtn" data-clipboard-target="#${currentId}">
+        <i data-feather="copy" width="20" style="color: ${iconColor}"></i>
+      </button>
+    `;
+
+    $(this).after(clipButton);
+  });
+
+  feather.replace(); 
+
+  
+  var clipboard = new Clipboard(".btn");
+  clipboard.on("success", function(e) {
+    setTimeout(function() {
+      e.clearSelection();
+    }, 250);
+  });
+  clipboard.on("error", function(e) {
+    $(e.trigger).text("Can't in Safari");
+  });
+}
+
+
+$(document).ready(function() {
+  addCopyButtonToCode();
+});
+
+
+
+</script>  
+  </body>
+</html>
