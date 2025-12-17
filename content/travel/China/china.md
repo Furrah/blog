@@ -1,5 +1,5 @@
 ---
-title: "China"
+title: "China Day 1"
 date: 2025-11-19T14:48:53+01:00
 tags: []
 draft: false
