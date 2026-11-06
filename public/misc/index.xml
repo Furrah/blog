@@ -6,8 +6,15 @@
     <description>Recent content in Miscellaneous on Well lets take a look at it, Mr Gumby!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Dec 2025 18:10:30 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 12:01:50 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Seed_planner</title>
+      <link>http://localhost:1313/seed_planner/</link>
+      <pubDate>Fri, 06 Nov 2026 12:01:50 +0100</pubDate>
+      <guid>http://localhost:1313/seed_planner/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary-when-im-sowing-each-of-next-years-vegetables-and-whether-they-start-in-modules-or-go-straight-in-the-ground&#34;&gt;title: &amp;ldquo;Vegetable sowing planner 2027&amp;rdquo;&#xA;date: 2026-11-06&#xA;tags: [&amp;ldquo;garden&amp;rdquo;, &amp;ldquo;vegetables&amp;rdquo;, &amp;ldquo;seeds&amp;rdquo;]&#xA;summary: &amp;ldquo;When I&amp;rsquo;m sowing each of next year&amp;rsquo;s vegetables, and whether they start in modules or go straight in the ground.&amp;rdquo;&lt;/h2&gt;&#xA;&lt;p&gt;My sowing plan for next year&amp;rsquo;s vegetable garden in the Pays de Gex (about 500 m up, last frost around mid-May).&#xA;Each month has two columns: the 1st–15th, then the 16th to month end. The highlighted column is where we are now.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fung-Identify</title>
       <link>http://localhost:1313/mushroom_id/</link>

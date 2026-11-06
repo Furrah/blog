@@ -1,0 +1,53 @@
+{{- /*
+  Wraps a Markdown sowing table, colours the M / D cells,
+  and highlights the current half-month column when the page loads.
+  Usage:
+    {{< sowing-table >}}
+    | Crop | Jan | | Feb | | ... |
+    {{< /sowing-table >}}
+*/ -}}
+{{- $id := printf "sowing-table-%d" .Ordinal -}}
+<div class="sowing-table" id="{{ $id }}">
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>
+<style>
+.sowing-table{overflow-x:auto; margin:1.5rem 0;}
+.sowing-table table{border-collapse:collapse; font-size:12px; width:100%; min-width:720px; margin:0; display:table;}
+.sowing-table th, .sowing-table td{padding:4px 0; border-bottom:1px solid rgba(127,127,127,.25); text-align:center; min-width:23px;}
+.sowing-table th:first-child, .sowing-table td:first-child{text-align:left; padding-left:6px; min-width:150px;}
+.sowing-table th:nth-child(2n), .sowing-table td:nth-child(2n){border-left:1px solid rgba(127,127,127,.35);}
+.sowing-table td.st-m{background:#c6e0b4; color:#24461a;}
+.sowing-table td.st-d{background:#f8cbad; color:#6a2d0c;}
+.sowing-table td.st-md{background:#ffe699; color:#5c4600; font-size:10px;}
+.sowing-table .st-now{box-shadow:inset 2px 0 0 #2f6b25, inset -2px 0 0 #2f6b25; background-color:rgba(47,107,37,.12);}
+.sowing-table th.st-now{background:#2f6b25; color:#fff;}
+.sowing-table tr.st-section td{background:rgba(106,168,79,.20); border-top:2px solid rgba(106,168,79,.75); border-bottom:1px solid rgba(106,168,79,.45);}
+.sowing-table tr.st-section td:first-child{padding:9px 6px 5px 10px; font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; white-space:nowrap; overflow:visible;}
+.sowing-table tr.st-section td:first-child strong{font-weight:inherit;}
+</style>
+<script>
+(function () {
+  var root = document.getElementById({{ $id }});
+  if (!root) return;
+  var cls = { 'M': 'st-m', 'D': 'st-d', 'M/D': 'st-md' };
+  root.querySelectorAll('td').forEach(function (td) {
+    var c = cls[td.textContent.trim()];
+    if (c) td.classList.add(c);
+  });
+  // Group rows: first cell is bold text only, every other cell empty
+  root.querySelectorAll('tbody tr').forEach(function (tr) {
+    var first = tr.children[0];
+    if (!first || !first.querySelector('strong') || first.querySelector('a')) return;
+    for (var i = 1; i < tr.children.length; i++) {
+      if (tr.children[i].textContent.trim()) return;
+    }
+    tr.classList.add('st-section');
+  });
+  var d = new Date();
+  var col = d.getMonth() * 2 + (d.getDate() > 15 ? 1 : 0) + 1; // +1 for the Crop column
+  root.querySelectorAll('tr').forEach(function (tr) {
+    var cell = tr.children[col];
+    if (cell) cell.classList.add('st-now');
+  });
+})();
+</script>
